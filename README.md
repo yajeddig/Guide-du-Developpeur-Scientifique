@@ -1,6 +1,6 @@
-# Fondamentaux et bonnes pratiques de l'ingénieur développeur chez INEVO
+# Guide du développeur scientifique
 
-Bienvenue sur ce wiki compilant les connaissances fondamentales et bonnes pratiques issues du domaine de l'informatique (computer science) pour les scientifiques et ingénieurs non initiés. Ces pages concernent ceux qui sont particulièrement intéressé et/ou concerné par une activité digitale marqué dans leur activité tel que la modélisation, la simulation, l'analyse de donnée, la data science, l'automatisation des tâches et d'autres sujets.
+Bienvenue sur ce guide compilant les connaissances fondamentales et bonnes pratiques issues du domaine de du développement informatique (computer science) pour les scientifiques et ingénieurs non initiés. Ces pages concernent ceux qui sont particulièrement intéressé et/ou concerné par une activité digitale marqué dans leur activité tel que la modélisation, la simulation, l'analyse de donnée, la data science, l'automatisation des tâches, le déploiement de solution et d'autres sujets.
 
 ## Table des matières
 
@@ -8,8 +8,8 @@ Bienvenue sur ce wiki compilant les connaissances fondamentales et bonnes pratiq
   1. [Git Basics](1-git_basics/git_basics.md)
      - [Local and Remote Repositories](1-git_basics/local_remote_repositories.md)
      - [Commencer avec GitLab](1-git_basics/getting_started_with_gitlab.md)
+     - [Branching Strategy](1-git_basics/branching_strategy.md)
   2. [Collaboration Procedure](2-collaboration_procedure/collab_procedure.md)
-     - [Branching Strategy](2-collaboration_procedure/branching_strategy.md)
      - [Project Management](2-collaboration_procedure/project_management.md)
          - [Classic project Management](2-collaboration_procedure/project_management/A-Classic_Project_Management.md)
              - [Initial Project Setup](2-collaboration_procedure/project_management/A-Classic_Project_Management/i-initialiser_projet.md)
@@ -21,16 +21,6 @@ Bienvenue sur ce wiki compilant les connaissances fondamentales et bonnes pratiq
              - [Agile Visual Tools](2-collaboration_procedure/project_management/B-Agile_Project_Management/iii-outils_visuels_agile.md)
              - [Conclusion](2-collaboration_procedure/project_management/B-Agile_Project_Management/iv-conclusion.md)
          - [Data Science Project Guide](2-collaboration_procedure/project_management/C-Data_Science_Project_Guide.md)
-         - Travailler dans un projet chez INEVO
-           - Projet R&D et Projet Digital
-           - Démarrer un projet
-           - Rejoindre un projet
-           - Reprendre un projet
-         <!-- - [Travailler dans un projet chez INEVO](2-collaboration_procedure/project_management/D-working_at_inevo.md)
-           - [Projet R&D et Projet Digital](2-collaboration_procedure/project_management/D-working_at_inevo/digital_project_rd_project.md)
-           - [Démarrer un projet](2-collaboration_procedure/project_management/D-working_at_inevo/start_project.md)
-           - [Rejoindre un projet](2-collaboration_procedure/project_management/D-working_at_inevo/join_project.md)
-           - [Reprendre un projet](2-collaboration_procedure/project_management/D-working_at_inevo/resuming_project.md)   -->
   3. Best Practices
      - [Code Writing](3-bests_practices/code_writing.md)
        - [Architecture](3-bests_practices/code_writing/architecture.md)
