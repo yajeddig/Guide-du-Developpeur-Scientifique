@@ -229,13 +229,13 @@ def function2():
     return "Goodbye from module 2!"
 ```
 
-### Étapes pour générer la documentation avec pdoc
+### Étapes pour générer la documentation avec pdoc3
 
-1. **Installer pdoc**
-   Vous pouvez installer `pdoc` via pip :
+1. **Installer pdoc3**
+   Vous pouvez installer `pdoc3` via pip :
 
    ```sh
-   pip install pdoc
+   pip install pdoc3
    ```
 
 2. **Générer la documentation**
@@ -251,7 +251,7 @@ def function2():
 **docs/module1.md**
 
 ```markdown
-# Module 1 of the project.
+# Module 1 of the project
 
 ## function1
 
@@ -265,7 +265,7 @@ Function 1 of module 1.
 **docs/module2.md**
 
 ```markdown
-# Module 2 of the project.
+# Module 2 of the project
 
 ## function2
 
@@ -279,7 +279,7 @@ Function 2 of module 2.
 **docs/main_script.md**
 
 ```markdown
-# Main script of the project.
+# Main script of the project
 
 ## main
 

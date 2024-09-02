@@ -138,4 +138,4 @@ Black simplifie la vie des développeurs Python en s'occupant du formatage du co
 
 https://realpython.com/python-pep8/
 
-Voir la partie [Architecture - Lien entre architecture et lisibilité du code](https://gitlab.inevo.fr/inevo/INEVO-Homepage/-/wikis/Home/3.-Best-Practices/Code-writing/Architecture#lien-entre-architecture-et-lisibilit%C3%A9-du-code)
+Voir la partie [Architecture](architecture.md) pour comprendre le lien entre architecture et lisibilité du code.
