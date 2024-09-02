@@ -8,15 +8,15 @@ Imaginons que vous construisez une maison. Avant même de penser à la peinture 
 
 # Comment Définir l'Architecture d'un Code
 
-1. **Comprendre le projet** : Avant tout, il est crucial de savoir ce que vous voulez que votre logiciel fasse. Pour notre exemple, cela pourrait être de simuler le comportement d'un procédé chimique sous différentes conditions.
+1. **Comprendre le projet** : Avant tout, il est crucial de savoir ce que vous voulez que votre logiciel fasse. Pour notre exemple, cela pourrait être de simuler le comportement d'un procédé industriel sous différentes conditions.
 2. **Déterminer les grandes parties** : Divisez votre logiciel en grandes zones fonctionnelles. Par exemple, une partie pour l'entrée des données (comme les réactifs et les conditions de température), une autre pour le cœur de la simulation, et enfin une partie pour afficher les résultats.
-3. **Choisir les bons outils** : Sélectionnez les outils et langages qui correspondent le mieux à chaque partie. Pour une simulation chimique, vous pourriez utiliser un langage de programmation connu pour sa capacité à gérer des calculs complexes.
+3. **Choisir les bons outils** : Sélectionnez les outils et langages qui correspondent le mieux à chaque partie. Pour une simulation industrielle, vous pourriez utiliser un langage de programmation connu pour sa capacité à gérer des calculs complexes.
 4. **Planifier les interactions** : Décidez comment ces parties vont communiquer entre elles. Par exemple, comment les données entrées par l'utilisateur seront transmises au moteur de simulation, puis comment les résultats seront affichés.
 5. **Tester et ajuster** : Une fois l'architecture définie, commencez par développer une petite partie pour tester si tout fonctionne comme prévu. Utilisez les retours pour ajuster le plan initial si nécessaire.
 
-# Exemple Pratique: Simulateur et detecteur d'anomalie
+# Exemple Pratique: Jumeau numérique et détecteur en ligne
 
-Un exemple ici, sur nos solutions digital sur équipement procédé classique (simulateur + détection d'anomalie).
+Un exemple ici, sur un jumeau numérique de procédé classique (simulateur + détection ).
 
 ![image](image/architecture.png)
 
@@ -49,7 +49,7 @@ Une architecture efficace divise le système en composants distincts, chacun gé
 
 # 3\. **Conventions et standards**
 
-Une bonne architecture s'appuie sur des conventions et des standards bien établis, tels que le nommage des composants, les structures de données à utiliser, et les patterns de conception. L'adoption de ces conventions à travers le codebase assure une cohérence qui rend le code plus prévisible et plus facile à lire. (voir [Comment rédiger un beau code python ?](https://gitlab.inevo.fr/inevo/INEVO-Homepage/-/wikis/Home/3.-Best-Practices/Code-writing/Guide-%C3%A9criture-code-python))
+Une bonne architecture s'appuie sur des conventions et des standards bien établis, tels que le nommage des composants, les structures de données à utiliser, et les patterns de conception. L'adoption de ces conventions à travers le codebase assure une cohérence qui rend le code plus prévisible et plus facile à lire. (voir [Comment rédiger un beau code python ?](beautiful_code_pep8.md))
 
 # 4\. **Documentation**
 
