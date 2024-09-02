@@ -14,7 +14,6 @@ Bienvenue sur ce guide, conçu pour compiler les connaissances fondamentales et 
 |-----------|-----------------|
 | [Git Basics](1-git_basics/git_basics.md) | Introduction aux bases de Git. |
 | [Local and Remote Repositories](1-git_basics/local_remote_repositories.md) | Introduction aux dépôts locaux et distants. |
-| [Commencer avec GitLab](1-git_basics/getting_started_with_gitlab.md) | Guide pour débuter avec GitLab. |
 | [Branching Strategy](1-git_basics/branching_strategy.md) | Stratégies de branchement pour une gestion efficace du code. |
 
 ### 2. Collaboration Procedure
