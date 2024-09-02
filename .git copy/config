@@ -1,0 +1,14 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[branch "main"]
+	vscode-merge-base = origin/main
+[branch "dev"]
+	vscode-merge-base = origin/main
+[remote "Guide-du-Developpeur-Scientifique"]
+	url = https://github.com/yajeddig/Guide-du-D-veloppeur-Scientifique.git
+	fetch = +refs/heads/*:refs/remotes/Guide-du-Developpeur-Scientifique/*
