@@ -1,16 +1,19 @@
-# Comment collaborer efficacement sur du développement
-Comment travailler en équipe sur un projet digital ? Comment travailler ensemble sur un projet digital sans que l'un empiète sur le travail de l'autre, que plusieurs collborateurs ne fassent pas la même chose, et que les modifications de l'un ne perturbent pas les fonctionnalité en cours de développement ?
+# Comment collaborer efficacement sur un projet de développement
 
-Comment établir la liste des tâches, se les attribuer, utiliser les tickets GitLab pour gérer la création de branche et gérer l'avancement des tâches ? Comment être réactif face aux imprévus dans le développement de produit innovant ?
+Comment travailler en équipe sur un projet de développement de code ? Comment collaborer sans interférer avec le travail des autres, éviter les doublons, et garantir que les modifications d’un membre n’affectent pas les fonctionnalités en cours de développement ?
+
+Comment organiser les tâches, se les attribuer, et utiliser des outils comme GitHub ou GitLab pour gérer la création de branches et suivre l'avancement du projet ? Comment rester agile et réactif face aux imprévus dans le développement de produits innovants ?
 
 # Contexte
 
-Projet digital mené en collaboration, c'est à dire avec au moins deux collaborateurs. L'utilisation de git et gitlab permet de simplifier cette collaboration.
+Lorsqu'un projet de développement est mené en collaboration, c'est-à-dire avec au moins deux contributeurs, l'utilisation de Git et de plateformes comme GitHub ou GitLab devient essentielle pour simplifier et structurer cette collaboration.
 
-# Points abordées dans cette partie
+# Points abordés dans cette partie
 
-* Définir la stratégie de branche lors de l'utilisation de Git & GitHub
-* Notion de gestion de projet
-  * Gestion de projet classique (cascade)
+* Définir une stratégie de branches lors de l'utilisation de Git et GitHub.
+* Notions de gestion de projet :
+  * Gestion de projet classique (en cascade)
   * Gestion de projet Agile
-  * Méthodologie de gestion de projet en Data Science
+  * Méthodologies de gestion de projet en Data Science
+
+---
