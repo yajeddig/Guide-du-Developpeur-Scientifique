@@ -73,21 +73,27 @@ Le wiki est une section de GitHub, GitLab, ou tout autre outil de documentation 
 
 - **Page d'Accueil :** Introduction générale au projet, avec des liens vers les sections principales du wiki.
 - **Guides Utilisateur :** Instructions détaillées sur l'utilisation des différentes fonctionnalités de l'application.
-- **Documentation Technique :** Explications sur l'architecture du projet, les choix technologiques, et les détails de l'implémentation.
+- **Documentation Technique :** Une section dédiée qui inclut :
+  - **Définition des outils et du code :** Détailler les outils et bibliothèques utilisés dans le projet, en expliquant leurs rôles et avantages. Utiliser les docstrings présentes dans le code pour fournir des explications claires sur les fonctions, classes et modules importants.
+  - **Justification des choix technologiques :** Expliquer pourquoi certains outils ou technologies ont été choisis par rapport à d'autres, en tenant compte des besoins spécifiques du projet.
+- **Documentation Scientifique :** Une section qui comprend :
+  - **Littérature :** Références aux articles scientifiques, livres, ou autres sources académiques qui ont inspiré ou guidé le projet.
+  - **Modèle et Hypothèses :** Explication des modèles théoriques utilisés, des hypothèses formulées, et des méthodes employées pour tester ces hypothèses.
+  - **Conclusions :** Résumé des résultats obtenus, avec une discussion sur leur interprétation et leur pertinence pour le projet.
 - **FAQs :** Liste de questions fréquemment posées et leurs réponses.
 - **Roadmap :** Plans et futures améliorations prévues pour le projet.
 - **Journal des Modifications :** Historique des versions et des modifications importantes.
+
+---
 
 ## 4. Différences Entre README et Wiki
 
 - **Portée et Détail :** Le `README` donne une vue d'ensemble rapide et concise du projet, tandis que le wiki fournit une documentation détaillée et approfondie.
 - **Structure :** Le `README` est un document unique, alors que le wiki est composé de plusieurs pages structurées en sections.
-- **Objectif :** Le `README` vise à informer rapidement et efficacement les utilisateurs ou contributeurs potentiels, tandis que le wiki sert de référence exhaustive pour les utilisateurs avancés et les développeurs.
+- **Objectif :** Le `README` vise à informer rapidement et efficacement les utilisateurs ou contributeurs potentiels, tandis que le wiki sert de référence exhaustive pour les utilisateurs avancés, les développeurs, ainsi que pour ceux qui souhaitent comprendre la science et la technologie derrière le projet.
 
 ## 5. Conclusion
 
-En résumé, le fichier `README` et le wiki jouent des rôles complémentaires dans la documentation d'un projet. Le `README` offre une introduction rapide et essentielle, tandis que le wiki permet d'explorer en profondeur les différents aspects du projet. Utiliser ces deux outils de manière appropriée améliore la clarté, la collaboration, et la maintenabilité du projet.
+En résumé, le fichier `README` et le wiki jouent des rôles complémentaires dans la documentation d'un projet. Le `README` offre une introduction rapide et essentielle, tandis que le wiki permet d'explorer en profondeur les différents aspects du projet. Une documentation complète inclut à la fois des explications techniques sur le code et les outils utilisés, ainsi qu'une documentation scientifique qui contextualise et justifie les choix méthodologiques. Utiliser ces deux outils de manière appropriée améliore la clarté, la collaboration, et la maintenabilité du projet.
 
 En appliquant ces bonnes pratiques, votre équipe peut assurer une meilleure gestion du code et une collaboration plus efficace, tout en rendant le projet accessible et compréhensible pour les nouveaux arrivants.
-
----
