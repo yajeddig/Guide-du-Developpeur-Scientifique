@@ -1,94 +1,151 @@
-Git est un outil qui s'utilise d'abord en local, c'est à dire sur son ordinateur.
+# Git : Utilisation en Local
 
-# Principe de fonctionnement
+Git est avant tout un outil conçu pour être utilisé localement, c'est-à-dire sur votre propre ordinateur.
 
-- On travaille en local (sur son ordinateur) dans le répertoire/dossier de travail (« working directory »)
-- On initialise le suivi de version par git, créant deux espaces virtuels dans le répertoire de travail (création d’un dossier .git dans le dossier de travail) :
-  * Zone de transit (« staging area ») : les fichiers ajoutés dans ce groupe seront suivis pour leurs modifications
-  * Dépôt local (« Local repository ») : lorsqu’on engage (commit) des modifications dans le dépôt local, on enregistre les modifications faites par les fichiers désignés dans la zone de transit
-  * Dépôt distant (« Remote repository ») : nous verrons son utilisation plus tard avec GitLab
+## Principe de fonctionnement
 
-![image.png](image/local_remote.png){width="515" height="483"}
+- **Travail en local :** Vous travaillez dans un répertoire ou dossier de travail (appelé "working directory").
+- **Initialisation du suivi de version :** Lorsque vous initialisez Git dans un projet, deux espaces virtuels sont créés au sein du répertoire de travail, avec la création d'un dossier caché `.git` :
+  - **Zone de transit ("staging area") :** C'est ici que vous placez les fichiers que vous souhaitez préparer pour le prochain commit. Les fichiers ajoutés à cette zone sont suivis pour les modifications.
+  - **Dépôt local ("local repository") :** Une fois que vous effectuez un commit, les modifications des fichiers dans la zone de transit sont enregistrées ici.
+  - **Dépôt distant ("remote repository") :** Les modifications locales peuvent être envoyées vers un dépôt distant pour sauvegarde ou collaboration avec d'autres développeurs. Nous explorerons son utilisation plus tard avec des plateformes comme GitLab.
 
-# Plus en détail
+![Schéma du fonctionnement de Git](image/local_remote.png)
 
-## Répertoire `.git`
+## Plus en détail : le répertoire `.git`
 
-Quand on initialise un dépôt Git, un sous-dossier caché `.git` est créé. Voici ce qu'il contient :
+Lorsque vous initialisez un dépôt Git, un sous-dossier caché `.git` est créé. Ce répertoire contient les éléments suivants :
 
-- `config/` : Configuration de l'utilisateur et du dépôt Git.
-- `objects/*` : Tous les objets Git (commits, tags, arbres, blobs) sont ici.
-- `refs/heads/*` : Pointeurs vers les commits de chaque branche locale.
-- `logs/*` : Historique des opérations réalisées dans le dépôt.
-- `refs/remotes/*` : Pointeurs vers les états des branches suivies dans les dépôts distants.
-- `index` : Prépare les données pour le prochain commit.
-- `HEAD` : Pointeur vers la branche courante ou le commit actuel.
+- **`config/` :** Contient la configuration spécifique à l'utilisateur et au dépôt Git.
+- **`objects/` :** Tous les objets Git (commits, tags, arbres, blobs) sont stockés ici.
+- **`refs/heads/` :** Contient des pointeurs vers les commits de chaque branche locale.
+- **`logs/` :** Stocke l'historique des opérations effectuées dans le dépôt.
+- **`refs/remotes/` :** Pointeurs vers les états des branches suivies dans les dépôts distants.
+- **`index` :** Prépare les données pour le prochain commit.
+- **`HEAD` :** Pointeur vers la branche courante ou le commit actuel.
 
 ## Configuration de Git
 
-### Via le terminal (git bash) :
+### Via le terminal (Git Bash) :
 
-1. Définir son identité pour les commits :
+1. **Définir votre identité pour les commits :**
 
-`git config --global user.name « FirstName LastName »`
+   ```bash
+   git config --global user.name "Prénom Nom"
+   git config --global user.email "votre.email@example.com"
+   ```
 
-`git config --global user.email «` your_email@email_provider.com`»`
+   > **Remarque :** Veillez à ce que le nom et l'adresse e-mail configurés ici correspondent à ceux que vous utiliserez sur des plateformes comme GitHub ou GitLab. Si les informations diffèrent, vos commits pourraient ne pas être correctement associés à votre compte sur ces plateformes, ce qui peut poser des problèmes de suivi des contributions.
 
-2. Initialiser un dépôt local et vérifier son état :
+2. **Initialiser un dépôt local et vérifier son état :**
 
-`cd &path_of_your_repo&`
+   ```bash
+   cd chemin_vers_votre_projet
+   git init
+   git status
+   ```
 
-`git init`
+## Utilisation de Git par les commandes Bash
 
-`Git status`
+Une fois Git configuré, vous pouvez commencer à l'utiliser pour gérer les versions de votre code via le terminal (Git Bash). Voici les commandes de base que vous utiliserez fréquemment :
 
-### Avec un outil intégré
+1. **Initialiser un dépôt Git :**
 
-#### VSCode
+   Pour commencer à utiliser Git dans un projet existant, naviguez vers le répertoire du projet et exécutez :
 
-Visual Studio Code (VSCode) est doté d'un support Git intégré qui facilite le contrôle de version pour les développeurs. Voici comment configurer et utiliser Git dans VSCode :
+   ```bash
+   git init
+   ```
 
-1. **Ouverture d'un projet avec VSCode :**
+   Cela crée un dépôt Git local dans le répertoire courant en ajoutant un sous-dossier caché `.git`. Ce dépôt suivra les modifications apportées aux fichiers du projet.
+
+2. **Cloner un dépôt existant :**
+
+   Si vous souhaitez travailler sur un projet existant qui est hébergé sur une plateforme comme GitHub ou GitLab, vous pouvez cloner le dépôt avec :
+
+   ```bash
+   git clone url_du_dépôt
+   ```
+
+   Cela crée une copie locale du dépôt distant, incluant tout l'historique des commits, les branches, etc.
+
+3. **Ajouter des fichiers à la zone de transit (staging area) :**
+
+   Avant de sauvegarder vos modifications dans un commit, vous devez ajouter les fichiers modifiés à la zone de transit :
+
+   ```bash
+   git add nom_du_fichier
+   ```
+
+   Pour ajouter tous les fichiers modifiés, utilisez :
+
+   ```bash
+   git add .
+   ```
+
+   Cette commande prépare les fichiers pour le commit en les ajoutant à la zone de transit.
+
+4. **Faire un commit :**
+
+   Un commit est une "photo" ou un instantané du projet à un moment donné. Il enregistre les modifications apportées aux fichiers dans la zone de transit. Chaque commit doit représenter une petite étape logique dans le développement du projet, comme la correction d'un bug ou l'ajout d'une fonctionnalité.
+
+   Pour créer un commit, exécutez :
+
+   ```bash
+   git commit -m "Message court et concis décrivant la modification"
+   ```
+
+   Le message de commit doit être bref et explicite, indiquant clairement ce qui a été modifié. Par exemple, `git commit -m "Fix bug in user authentication"`.
+
+   > **Conseil :** Un bon message de commit aide à comprendre l'historique du projet et à identifier rapidement les changements apportés.
+
+---
+
+## Utilisation de Git avec Visual Studio Code (VSCode)
+
+VSCode intègre Git de manière native, facilitant ainsi la gestion du contrôle de version pour les développeurs.
+
+1. **Ouvrir un projet avec VSCode :**
    - Lancez VSCode.
-   - Ouvrez le dossier de votre projet en utilisant `File > Open Folder`.
+   - Ouvrez le dossier de votre projet via `File > Open Folder`.
 2. **Initialisation d'un dépôt Git :**
-   - Ouvrez le terminal intégré avec `` Ctrl+` `` (la touche backtick).
+   - Ouvrez le terminal intégré avec `` Ctrl+` ``.
    - Tapez `git init` pour initialiser un nouveau dépôt Git.
    - Si le dossier est déjà un dépôt Git, VSCode le reconnaîtra automatiquement.
-3. **Gestion des changements :**
-   - Les fichiers modifiés seront marqués dans l'explorateur de fichiers.
-   - Pour ajouter des fichiers à la zone de transit (staging area), cliquez sur le signe `+` à côté du fichier dans l'onglet `Source Control` ou utilisez le terminal avec la commande `git add <nom_du_fichier>`.
+3. **Gestion des modifications :**
+   - Les fichiers modifiés apparaissent dans l'explorateur de fichiers.
+   - Ajoutez des fichiers à la zone de transit en cliquant sur le signe `+` à côté du fichier dans l'onglet `Source Control` ou via la commande `git add <nom_du_fichier>` dans le terminal.
 4. **Commit des modifications :**
-   - Saisissez un message de commit dans la zone de texte en haut de l'onglet `Source Control`.
+   - Saisissez un message de commit dans la zone de texte de l'onglet `Source Control`.
    - Appuyez sur `Ctrl+Enter` pour commettre les modifications.
-   - Vous pouvez aussi faire un commit via le terminal en utilisant `git commit -m "Votre message de commit"`.
+   - Alternativement, vous pouvez faire un commit via le terminal avec `git commit -m "Votre message de commit"`.
 5. **Gestion des branches :**
-   - Pour créer ou changer de branche, utilisez l'interface en bas de la fenêtre de VSCode ou ouvrez la palette de commandes avec `Ctrl+Shift+P` et tapez `Git: Create Branch`.
+   - Créez ou changez de branche en utilisant l'interface en bas de la fenêtre de VSCode ou en ouvrant la palette de commandes avec `Ctrl+Shift+P` et en tapant `Git: Create Branch`.
 6. **Synchronisation avec un dépôt distant :**
-   - Cliquez sur le bouton `Sync Changes` dans l'onglet `Source Control` pour pousser vos commits vers le dépôt distant et pour tirer les changements depuis celui-ci.
+   - Cliquez sur le bouton `Sync Changes` dans l'onglet `Source Control` pour pousser vos commits vers le dépôt distant et récupérer les changements.
 7. **Résolution des conflits :**
-   - En cas de conflit de fusion, VSCode met en évidence les différences et vous permet de choisir entre différentes options pour les résoudre.
+   - En cas de conflit de fusion, VSCode met en évidence les différences et propose des options pour les résoudre.
 
-VSCode offre également des extensions Git qui peuvent améliorer votre expérience, comme GitLens, qui enrichit l'interface utilisateur de VSCode avec des informations sur Git.
+VSCode dispose aussi de nombreuses extensions Git, comme GitLens, qui enrichissent l'interface avec des informations supplémentaires.
 
-Extensions conseillées : ![image](image/vscode_extension_gitgraph.png)
+## PyCharm
 
-#### PyCharm
+PyCharm propose une intégration Git robuste. Pour l'utiliser :
 
-- PyCharm a une intégration Git robuste. Pour l'utiliser :
-  1. Ouvrez le projet dans PyCharm.
-  2. Allez dans `VCS` -\> `Enable Version Control Integration`, puis sélectionnez Git.
-  3. Utilisez l'onglet `Version Control` en bas pour committer, pousser, et gérer les branches.
+1. Ouvrez le projet dans PyCharm.
+2. Allez dans `VCS > Enable Version Control Integration`, puis sélectionnez Git.
+3. Utilisez l'onglet `Version Control` pour effectuer des commits, pousser des modifications, et gérer les branches.
 
-#### Autres IDEs
+## Autres IDEs
 
-- **IntelliJ IDEA :** Utilisez le panneau 'Version Control' pour gérer vos dépôts Git.
-- **Eclipse :** Installez le plugin 'EGit' pour intégrer la gestion Git.
-- **GitKraken :** Une interface graphique pour gérer les dépôts sans utiliser la ligne de commande.
+- **IntelliJ IDEA :** Utilisez le panneau `Version Control` pour gérer vos dépôts Git.
+- **Eclipse :** Installez le plugin `EGit` pour intégrer la gestion Git.
+- **GitKraken :** Une interface graphique qui permet de gérer les dépôts sans passer par la ligne de commande.
+- **Atom :** a aussi un module de versionning intégré
 
 ## Git Cheat Sheet
 
-Voici quelques commandes utiles à garder sous la main :
+Voici quelques commandes essentielles à garder sous la main :
 
 - Cloner un dépôt : `git clone url_du_dépôt`
 - Ajouter tous les fichiers modifiés à la zone de transit : `git add .`
@@ -96,4 +153,10 @@ Voici quelques commandes utiles à garder sous la main :
 - Pousser les changements vers le dépôt distant : `git push`
 - Mettre à jour le répertoire local avec les changements du dépôt distant : `git pull`
 
-![image.png](image/git_cheat_sheet.png)
+![Git Cheat Sheet](image/git_cheat_sheet.png)
+
+
+
+
+
+
