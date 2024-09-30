@@ -120,6 +120,10 @@ Pour commencer avec Git, consultez [la documentation officielle de Git](https://
 
 ## Ressources supplémentaires
 
+[Learn Git and GitHub - Step by step guide to learn Git and GitHub in 2024 - Beginner](https://roadmap.sh/git-github?r=git-github-beginner)
+
+[Learn Git and GitHub - Step by step guide to learn Git and GitHub in 2024](https://roadmap.sh/git-github)
+
 [OpenClassRoom - Gérez du code avec Git et GitHub](https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github)
 
 [OpenClassRoom - Devenez un expert de Git et GitHub](https://openclassrooms.com/fr/courses/7688581-devenez-un-expert-de-git-et-github)

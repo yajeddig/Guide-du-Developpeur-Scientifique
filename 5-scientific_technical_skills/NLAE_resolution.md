@@ -1,22 +1,24 @@
-# Résolution de Systèmes d'Équations Algébriques Non Linéaires en Python
+Certainly, let's enhance the page on solving nonlinear algebraic equation systems in Python to make it more accessible and informative for non-experts.
+
+# Résolution de Systèmes d'Équations Algébriques Non Linéaires en Python : Un guide pour les scientifiques
 
 ## Introduction
 
-Les systèmes d'équations algébriques non linéaires apparaissent fréquemment dans divers domaines scientifiques et techniques. Contrairement aux systèmes linéaires, ils ne peuvent pas être résolus en utilisant des méthodes analytiques simples et nécessitent souvent des approches numériques. Python, avec ses bibliothèques riches et diversifiées, offre plusieurs outils puissants pour résoudre ces systèmes.
+Imaginez que vous essayez de trouver l'intersection de deux courbes complexes. C'est un peu comme chercher le point de rencontre de deux chemins sinueux dans une forêt dense. Dans le monde mathématique, cela revient à résoudre un système d'équations algébriques non linéaires. 
+
+Contrairement aux systèmes linéaires, qui peuvent être résolus avec des méthodes directes comme l'élimination gaussienne, les systèmes non linéaires nécessitent souvent des approches numériques plus sophistiquées. Heureusement, Python, avec ses bibliothèques puissantes, offre plusieurs outils pour vous aider à naviguer dans cette forêt mathématique et à trouver les solutions recherchées.
 
 ## Méthodes Numériques Disponibles
 
-Parmi les nombreuses méthodes disponibles, les plus couramment utilisées pour résoudre des systèmes d'équations non linéaires en Python sont :
+Python propose plusieurs méthodes pour résoudre ces systèmes complexes :
 
-1. **Méthode de Newton-Raphson** : Une méthode itérative efficace pour les systèmes non linéaires.
-2. **Scipy.optimize.fsolve** : Une fonction de la bibliothèque SciPy qui implémente une version améliorée de la méthode de Newton-Raphson.
-3. **Méthode de Levenberg-Marquardt** : Une méthode qui combine les mérites de la descente de gradient et de la méthode de Gauss-Newton.
+1. **Méthode de Newton-Raphson:** Une méthode itérative qui affine progressivement une estimation initiale de la solution jusqu'à atteindre une précision suffisante. C'est comme suivre un sentier qui se rapproche de plus en plus du point d'intersection.
+2. **`scipy.optimize.fsolve`:** Une fonction de la bibliothèque SciPy qui implémente une version robuste et optimisée de la méthode de Newton-Raphson. C'est comme avoir un guide expérimenté qui vous aide à trouver le chemin le plus rapide vers la solution.
+3. **Méthode de Levenberg-Marquardt:** Une méthode hybride qui combine les avantages de la descente de gradient et de la méthode de Gauss-Newton. Elle est particulièrement utile lorsque les équations sont complexes ou que les estimations initiales sont éloignées de la solution.
 
 ## Exemples de Code
 
-### 1. Utilisation de `fsolve` de SciPy
-
-La fonction `fsolve` de SciPy est souvent utilisée pour résoudre des systèmes d'équations non linéaires. Voici un exemple illustrant son utilisation :
+### 1. Utilisation de `fsolve` de SciPy : La voie rapide
 
 ```python
 import numpy as np
@@ -25,11 +27,11 @@ from scipy.optimize import fsolve
 # Définir le système d'équations
 def equations(vars):
     x, y = vars
-    eq1 = x**2 + y**2 - 4
-    eq2 = x * y - 1
+    eq1 = x**2 + y**2 - 4  # Première équation : x² + y² = 4 (un cercle)
+    eq2 = x * y - 1        # Deuxième équation: x * y = 1 (une hyperbole)
     return [eq1, eq2]
 
-# Valeurs initiales
+# Valeurs initiales (une estimation de la solution)
 initial_guess = [1, 1]
 
 # Résoudre le système
@@ -38,9 +40,9 @@ solution = fsolve(equations, initial_guess)
 print(f'Solution: x = {solution[0]}, y = {solution[1]}')
 ```
 
-### 2. Utilisation de SymPy pour une Approche Symbolique
+### 2. Utilisation de SymPy pour une Approche Symbolique : La voie élégante
 
-SymPy permet de manipuler des expressions symboliques et de résoudre des systèmes d'équations algébriques symboliquement. Voici comment :
+SymPy permet de résoudre des équations de manière symbolique, c'est-à-dire en manipulant les expressions mathématiques directement plutôt que de les évaluer numériquement.
 
 ```python
 import sympy as sp
@@ -55,12 +57,10 @@ eq2 = sp.Eq(x * y, 1)
 # Résoudre le système
 solution = sp.solve((eq1, eq2), (x, y))
 
-print(f'Solutions: {solution}')
+print(f'Solutions: {solution}') 
 ```
 
-### 3. Utilisation de la Méthode de Newton-Raphson
-
-La méthode de Newton-Raphson peut être implémentée manuellement pour résoudre des systèmes d'équations non linéaires. Voici un exemple intégrant la gestion des erreurs pour les matrices singulières :
+### 3. Implémentation de la Méthode de Newton-Raphson : La voie personnalisée (avec gestion des erreurs)
 
 ```python
 import numpy as np
@@ -102,14 +102,15 @@ print(f'Solution: x = {solution[0]}, y = {solution[1]}')
 
 ```
 
-### Explication
+**Explication de la gestion des erreurs**
 
-1. **Gestion des erreurs** : La méthode `try-except` est utilisée pour détecter et gérer les erreurs de matrice singulière. Lorsqu'une matrice singulière est rencontrée, une petite perturbation aléatoire est ajoutée au vecteur de variables pour tenter de sortir de la singularité.
-
-2. **Perturbation des variables** : Si une matrice singulière est rencontrée, les variables sont ajustées légèrement avec une perturbation aléatoire très petite (`np.random.uniform(-1e-4, 1e-4, size=guess.shape)`).
-
-Cette approche permet à la méthode de Newton-Raphson de continuer même lorsqu'une singularité est rencontrée, augmentant ainsi la robustesse de l'algorithme.
+* **Matrices singulières :** Parfois, la méthode de Newton-Raphson peut rencontrer une situation où la matrice jacobienne est singulière (non inversible). Cela peut bloquer la progression de l'algorithme.
+* **Gestion de l'erreur :** Le code inclut un bloc `try-except` pour détecter cette erreur. Si une matrice singulière est rencontrée, une petite perturbation aléatoire est ajoutée à l'estimation actuelle pour tenter de contourner le problème et permettre à l'algorithme de continuer.
 
 ## Conclusion
 
-Résoudre des systèmes d'équations non linéaires en Python peut être réalisé efficacement en utilisant des outils comme SciPy et SymPy. La méthode choisie dépend souvent du problème spécifique et des préférences personnelles pour les approches symboliques ou numériques. Grâce à la flexibilité et la puissance des bibliothèques Python, même les systèmes d'équations non linéaires complexes peuvent être résolus avec précision et efficacité.
+Résoudre des systèmes d'équations non linéaires est une tâche courante dans de nombreux domaines scientifiques. Python, grâce à ses bibliothèques puissantes comme SciPy et SymPy, offre des outils efficaces pour résoudre ces systèmes, que vous préfériez une approche numérique directe, une résolution symbolique élégante ou une implémentation personnalisée avec gestion des erreurs. 
+
+N'hésitez pas à explorer ces différentes méthodes et à choisir celle qui convient le mieux à votre problème spécifique. Avec un peu de pratique, vous pourrez résoudre même les systèmes d'équations les plus complexes avec aisance et précision.
+
+**Astuce :** N'oubliez pas que le choix de la méthode et des valeurs initiales peut influencer la convergence et la précision de la solution. Il est souvent utile d'expérimenter avec différentes approches et de visualiser les résultats pour s'assurer de leur validité. 

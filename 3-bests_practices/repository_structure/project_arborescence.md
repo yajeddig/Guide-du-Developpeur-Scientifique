@@ -54,7 +54,7 @@ project_root/
 └── requirements.txt
 ```
 
-## Explication
+### Explication
 
 1. **data/**: Contient toutes les données utilisées et générées par le projet, classées en fonction de leur état (brutes, traitées, intermédiaires, externes).
 2. **src/** : Contient tout le code source du projet, organisé par fonctionnalité. Chaque sous-dossier correspond à une étape du processus :
@@ -122,15 +122,13 @@ def create_structure(base_path, structure):
 base_path = os.path.join(os.getcwd(), "project_root")
 create_structure(base_path, structure)
 ```
+
 Ce script vous permettra, une fois exécuté, d'obtenir automatiquement tout les dossiers et fichiers prévus dans le répertoire ou il a été exécuté.
 
-## Explication :
+### Explication et mode d'emploi
+
 1. **Définir la structure de dossiers et fichiers** : La structure est définie sous forme de dictionnaire imbriqué, où les clés représentent les noms des dossiers et les valeurs peuvent être des listes (pour les fichiers) ou d'autres dictionnaires (pour les sous-dossiers).
 
 2. **Fonction `create_structure`** : Cette fonction récursive parcourt le dictionnaire de structure et crée les dossiers et fichiers nécessaires.
-   
+
 3. **Création de la structure** : Le chemin de base est défini comme le répertoire courant (où le script est exécuté) et la fonction create_structure est appelée avec cette base et la structure définie.
-
-
-
-

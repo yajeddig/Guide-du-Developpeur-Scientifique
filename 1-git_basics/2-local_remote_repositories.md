@@ -26,7 +26,7 @@ Lorsque vous initialisez un dépôt Git, un sous-dossier caché `.git` est cré�
 
 ## Configuration de Git
 
-### Via le terminal (Git Bash) :
+### Via le terminal (Git Bash)
 
 1. **Définir votre identité pour les commits :**
 
@@ -105,13 +105,13 @@ Une fois Git configuré, vous pouvez commencer à l'utiliser pour gérer les ver
 
 Bien que Git puisse être utilisé entièrement via la ligne de commande, de nombreux outils graphiques facilitent son utilisation, en particulier pour les débutants ou ceux qui préfèrent une interface visuelle. Voici quelques exemples d'outils populaires :
 
-* **Visual Studio Code (VSCode) :** VSCode intègre Git de manière native, offrant une interface graphique conviviale pour gérer les commits, les branches, les fusions, etc. Vous pouvez également installer des extensions comme GitLens pour obtenir des informations supplémentaires sur l'historique de votre projet.
+- **Visual Studio Code (VSCode) :** VSCode intègre Git de manière native, offrant une interface graphique conviviale pour gérer les commits, les branches, les fusions, etc. Vous pouvez également installer des extensions comme GitLens pour obtenir des informations supplémentaires sur l'historique de votre projet.
 ![Git sur VSCode](image/git_vscode.png)
 
-* **PyCharm :** PyCharm propose également une intégration Git robuste, avec des fonctionnalités similaires à celles de VSCode.
+- **PyCharm :** PyCharm propose également une intégration Git robuste, avec des fonctionnalités similaires à celles de VSCode.
 ![Git sur PyCharm](image/git_pycharm.png)
-* **Autres IDEs :** De nombreux autres environnements de développement intègrent Git, tels qu'IntelliJ IDEA et Eclipse.
-* **Clients Git dédiés :** Il existe également des clients Git dédiés comme GitKraken, Sourcetree et TortoiseGit, qui offrent une interface graphique complète pour gérer vos dépôts Git.
+- **Autres IDEs :** De nombreux autres environnements de développement intègrent Git, tels qu'IntelliJ IDEA et Eclipse.
+- **Clients Git dédiés :** Il existe également des clients Git dédiés comme GitKraken, Sourcetree et TortoiseGit, qui offrent une interface graphique complète pour gérer vos dépôts Git.
 ![Gitkraken](image/gitkraken.png)
 
 ## Git Cheat Sheet
@@ -130,4 +130,4 @@ Voici quelques commandes essentielles à garder sous la main :
 
 Git est un outil puissant qui peut grandement améliorer votre flux de travail en vous permettant de suivre les modifications de votre projet, de collaborer avec d'autres développeurs et de protéger votre travail contre les pertes de données. Que vous préfériez utiliser la ligne de commande ou une interface graphique, Git offre la flexibilité nécessaire pour s'adapter à vos besoins et à votre façon de travailler.
 
-N'hésitez pas à explorer les ressources en ligne et à expérimenter avec Git pour découvrir tout son potentiel ! 
+N'hésitez pas à explorer les ressources en ligne et à expérimenter avec Git pour découvrir tout son potentiel !
