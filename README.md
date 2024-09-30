@@ -1,7 +1,3 @@
-Voici la version avec des tableaux séparés pour chaque grande partie :
-
----
-
 # Guide du Développeur Scientifique
 
 Bienvenue sur ce guide, conçu pour compiler les connaissances fondamentales et les bonnes pratiques du développement informatique (computer science) à l'intention des scientifiques et ingénieurs non initiés. Ce guide s'adresse à ceux qui ont une activité digitale marquée dans leur travail, telle que la modélisation, la simulation, l'analyse de données, la data science, l'automatisation des tâches, le déploiement de solutions, et bien d'autres sujets.
@@ -12,10 +8,10 @@ Bienvenue sur ce guide, conçu pour compiler les connaissances fondamentales et 
 
 | **Sujet** | **Description** |
 |-----------|-----------------|
-| [Git Basics](1-git_basics/git_basics.md) | Introduction aux bases de Git. |
-| [Local and Remote Repositories](1-git_basics/local_remote_repositories.md) | Introduction aux dépôts locaux et distants. |
-| [Commencer avec GitLab](1-git_basics/getting_started_with_gitlab.md) | Guide pour débuter avec GitLab. |
-| [Branching Strategy](1-git_basics/branching_strategy.md) | Stratégies de branchement pour une gestion efficace du code. |
+| [Git Basics](1-git_basics/1-git_basics.md) | Introduction aux bases de Git. |
+| [Local and Remote Repositories](1-git_basics/2-local_remote_repositories.md) | Introduction aux dépôts locaux et distants. |
+| [Commencer avec GitLab](1-git_basics/3-getting_started_with_github.md) | Guide pour débuter avec GitLab. |
+| [Branching Strategy](1-git_basics/4-branching_strategy.md) | Stratégies de branchement pour une gestion efficace du code. |
 
 ### 2. Collaboration Procedure
 
@@ -66,8 +62,3 @@ Bienvenue sur ce guide, conçu pour compiler les connaissances fondamentales et 
 | - Résolution d'un système d'équations aux dérivées partielles | Approches pour résoudre les systèmes d'équations aux dérivées partielles. |
 
 ---
-
-
-
-
-

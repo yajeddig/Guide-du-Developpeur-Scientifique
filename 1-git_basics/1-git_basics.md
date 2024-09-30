@@ -1,4 +1,16 @@
-# Fondamentaux de git
+# Fondamentaux de Git : Un guide pour les scientifiques
+
+Git est l'outil indispensable pour garder une trace de l'évolution de votre travail, un peu comme une machine à remonter le temps pour votre code et vos données. Imaginez que vous travaillez sur un projet complexe et que vous faites une erreur qui casse tout. Pas de panique ! Git vous permet de revenir à une version précédente, comme si vous remontiez dans le temps avant l'erreur.
+
+De plus, Git est essentiel pour le travail en équipe. Il permet à plusieurs personnes de travailler sur le même projet sans se marcher sur les pieds. Chacun a sa propre copie du projet, et Git permet de fusionner intelligemment les modifications de chacun.
+
+## Git est décentralisé : La liberté du travail collaboratif
+
+Git est un système décentralisé, ce qui signifie qu'il n'y a pas de serveur central qui contrôle tout. Chaque membre de l'équipe a une copie complète de l'historique du projet. Cela offre plusieurs avantages :
+
+Travail hors ligne : Vous pouvez travailler sur votre projet même sans connexion Internet.
+Sécurité : Si un ordinateur tombe en panne, l'historique du projet est préservé sur les autres ordinateurs.
+Flexibilité : Chaque membre de l'équipe peut expérimenter sans crainte de casser le travail des autres.
 
 ## Généralités
 
@@ -12,11 +24,11 @@
 
 - **Gestion centralisée :** Dans les systèmes de gestion de versions centralisés, chaque modification est enregistrée sur un serveur central.
 
-  ![image.png](image\git_centraliser.png){width="194" height="154"}
+  ![image.png](image\git_centraliser.png)
   
 - **Gestion décentralisée avec Git :** Git permet à chaque utilisateur de travailler de manière autonome, en synchronisant les modifications avec les autres développeurs à la demande.
 
-  ![image.png](image/git_decentralise.png){width="194" height="154"}
+  ![image.png](image/git_decentralise.png)
 
 ## Installation de Git
 
@@ -100,20 +112,14 @@ Une fois Git installé, il est recommandé de le configurer avec vos information
 
    Ces alias permettent de taper des commandes plus courtes comme `git st` au lieu de `git status`.
 
-
-
 ## En conclusion
 
 Git est essentiel pour le travail collaboratif dans le développement moderne. Il offre une flexibilité et un contrôle incomparables pour le suivi des modifications, le travail en équipe et la livraison continue de logiciels de qualité.
 
 Pour commencer avec Git, consultez [la documentation officielle de Git](https://git-scm.com/doc) ou suivez [ce tutoriel interactif](https://learngitbranching.js.org/).
 
-## Ressources supplémentaires : 
+## Ressources supplémentaires
 
-[OpenClassRoom - Gérez du code avec Git et GitHub](https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github) 
+[OpenClassRoom - Gérez du code avec Git et GitHub](https://openclassrooms.com/fr/courses/7162856-gerez-du-code-avec-git-et-github)
 
 [OpenClassRoom - Devenez un expert de Git et GitHub](https://openclassrooms.com/fr/courses/7688581-devenez-un-expert-de-git-et-github)
-
-
-
-
