@@ -1,10 +1,19 @@
-Voici la version avec des tableaux séparés pour chaque grande partie :
-
----
-
 # Guide du Développeur Scientifique
 
-Bienvenue sur ce guide, conçu pour compiler les connaissances fondamentales et les bonnes pratiques du développement informatique (computer science) à l'intention des scientifiques et ingénieurs non initiés. Ce guide s'adresse à ceux qui ont une activité digitale marquée dans leur travail, telle que la modélisation, la simulation, l'analyse de données, la data science, l'automatisation des tâches, le déploiement de solutions, et bien d'autres sujets.
+Bienvenue sur ce guide, conçu pour vous accompagner dans l'acquisition des connaissances fondamentales et des bonnes pratiques du développement informatique. Que vous soyez scientifique, ingénieur ou chercheur, si votre travail implique une dimension numérique significative - modélisation, simulation, analyse de données, data science, automatisation, déploiement de solutions, etc. - ce guide est fait pour vous.
+
+## Pourquoi ce guide ?
+
+La science moderne s'appuie de plus en plus sur des outils numériques. Que ce soit pour traiter de vastes ensembles de données, simuler des phénomènes complexes ou automatiser des tâches répétitives, la maîtrise des compétences en développement informatique est devenue indispensable.
+
+Ce guide a pour but de vous fournir les bases nécessaires pour :
+
+* **Écrire du code de qualité** : clair, maintenable et facile à partager.
+* **Utiliser les outils essentiels** : Git, GitHub, environnements de développement, etc.
+* **Comprendre les concepts clés** : architecture logicielle, tests, différents styles de programmation.
+* **Aborder des techniques spécifiques** : calcul scientifique, résolution d'équations, etc.
+
+Que vous soyez débutant ou que vous cherchiez à renforcer vos compétences, ce guide vous accompagnera dans votre parcours pour devenir un développeur scientifique autonome et efficace.
 
 ## Table des Matières
 
@@ -12,16 +21,17 @@ Bienvenue sur ce guide, conçu pour compiler les connaissances fondamentales et 
 
 | **Sujet** | **Description** |
 |-----------|-----------------|
-| [Git Basics](1-git_basics/git_basics.md) | Introduction aux bases de Git. |
-| [Local and Remote Repositories](1-git_basics/local_remote_repositories.md) | Introduction aux dépôts locaux et distants. |
-| [Branching Strategy](1-git_basics/branching_strategy.md) | Stratégies de branchement pour une gestion efficace du code. |
+| [Git Basics](1-git_basics/1-git_basics.md) | Introduction aux bases de Git. |
+| [Local and Remote Repositories](1-git_basics/2-local_remote_repositories.md) | Introduction aux dépôts locaux et distants. |
+| [Commencer avec GitHub](1-git_basics/3-getting_started_with_github.md) | Guide pour débuter avec GitHub. |
+| [Branching Strategy](1-git_basics/4-branching_strategy.md) | Stratégies de branchement pour une gestion efficace du code. |
 
 ### 2. Collaboration Procedure
 
 | **Sujet** | **Description** |
 |-----------|-----------------|
 | [Collaboration Procedure](2-collaboration_procedure/collab_procedure.md) | Introduction aux procédures de collaboration. |
-| [Project Management](2-collaboration_procedure/project_management.md) | Aperçu des méthodes de gestion de projet. |
+| [Ressource en ligne](2-collaboration_procedure/project_management.md) | Ressources en ligne pour la gestion de projet, et l'utilisation des outils intégré dans GitHub ou Gitlab |
 | - [Classic Project Management](2-collaboration_procedure/project_management/A-Classic_Project_Management.md) | Gestion de projet classique, de l'initialisation à l'exploitation. |
 | - [Agile Project Management](2-collaboration_procedure/project_management/B-Agile_Project_Management.md) | Gestion de projet Agile, y compris le modèle d'équipe de Tuckman et les outils visuels. |
 | - [Data Science Project Guide](2-collaboration_procedure/project_management/C-Data_Science_Project_Guide.md) | Guide pour la gestion de projets en data science. |
@@ -41,6 +51,10 @@ Bienvenue sur ce guide, conçu pour compiler les connaissances fondamentales et 
 | [Python Environment](3-bests_practices/python_environment.md) | Gestion des environnements Python avec Anaconda, Miniconda, Mamba, et venv. |
 | [Structure de Dossier](3-bests_practices/repository_structure/project_arborescence.md) | Conseils pour organiser les répertoires de projets. |
 | [Documentation](3-bests_practices/documentation/why_read_me_why_wiki.md) | Guide pour rédiger la documentation, incluant les ReadMe, les Docstrings, et les cas d'application. |
+| - [Rédiger ses documents en MarkDown](3-bests_practices/documentation/markdown.md) | Présentation du langage MarkDown (entre la légèreté de Word et la performance de LateX). |
+| - [Pourquoi écrire un ReadMe et un Wiki](3-bests_practices/documentation/why_read_me_why_wiki.md) | ReadMe et Wiki sont les principaux document d'un outil bien conçu et opérationnel. |
+| - [Documentation technique](3-bests_practices/documentation/technical_doc_code.md) | Présentation de la documentation technique, et des Docstrings en python |
+| - [Documentation scientifique](3-bests_practices/documentation/markdown.md) | Documentation scientifique allant droit au but tout en étant suffisamment riche pour comprendre l'outil |
 
 ### 4. Test & Validation
 
@@ -65,8 +79,3 @@ Bienvenue sur ce guide, conçu pour compiler les connaissances fondamentales et 
 | - Résolution d'un système d'équations aux dérivées partielles | Approches pour résoudre les systèmes d'équations aux dérivées partielles. |
 
 ---
-
-
-
-
-
