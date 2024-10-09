@@ -24,7 +24,7 @@ Flexibilité : Chaque membre de l'équipe peut expérimenter sans crainte de cas
 
 - **Gestion centralisée :** Dans les systèmes de gestion de versions centralisés, chaque modification est enregistrée sur un serveur central.
 
-  ![image.png](image\git_centraliser.png)
+  ![image.png](image/git_centraliser.png)
   
 - **Gestion décentralisée avec Git :** Git permet à chaque utilisateur de travailler de manière autonome, en synchronisant les modifications avec les autres développeurs à la demande.
 
