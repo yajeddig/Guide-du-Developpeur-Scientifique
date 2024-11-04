@@ -95,5 +95,3 @@ Python, avec ses bibliothèques SciPy et SymPy, fournit des outils puissants pou
 
 - [Documentation de SciPy pour solve_ivp](https://docs.scipy.org/doc/scipy/reference/generated/scipy.integrate.solve_ivp.html#scipy.integrate.solve_ivp)
 - [Documentation de SimPy](https://simpy.readthedocs.io/en/latest/)
-
-Avec ces connaissances et outils, les utilisateurs peuvent aborder une large gamme de problèmes impliquant des systèmes d'équations différentielles ordinaires en Python.
