@@ -6,6 +6,10 @@ description: "Accompagnement pour l'acquisition des connaissances fondamentales 
 url: "https://yajeddig.github.io/Guide-du-Developpeur-Scientifique/"
 baseurl: ""  # Laisser vide si le site est à la racine
 
+# Thème utilisé (ici le thème "minima" par défaut de GitHub Pages)
+theme: minima
+
+# Plugins Jekyll supplémentaires (facultatif)
 plugins:
 - jekyll-seo-tag
 
