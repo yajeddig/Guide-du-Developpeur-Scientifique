@@ -3,15 +3,16 @@ title: "Guide du Développeur Scientifique"
 description: "Accompagnement pour l'acquisition des connaissances fondamentales et bonnes pratiques du développement logiciel à des fins scientifiques."
 
 # URL du site (mettre votre domaine personnalisé)
-url: "https://yajeddig.github.io/Guide-du-Developpeur-Scientifique/"
-baseurl: ""  # Laisser vide si le site est à la racine
+url: "https://yajeddig.github.io"
+baseurl: "/Guide-du-Developpeur-Scientifique"  # Notez le slash initial
 
-# Thème utilisé (ici le thème "minima" par défaut de GitHub Pages)
-theme: jekyll-theme-minimal
+# Thème utilisé 
+remote_theme: pages-themes/hacker@v0.2.0
 
 # Plugins Jekyll supplémentaires (facultatif)
 plugins:
-- jekyll-seo-tag
+  - jekyll-remote-theme
+  - jekyll-seo-tag
 
 # Informations sur l'auteur (à personnaliser)
 author:
