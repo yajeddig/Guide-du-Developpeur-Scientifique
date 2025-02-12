@@ -897,9 +897,9 @@ plt.show()
    - **Étape 1 :** Résoudre les équations de Saint-Venant pour obtenir $h(\mathbf{x},t)$ et $\mathbf{u}(\mathbf{x},t)$.  
    - **Étape 2 :** Utiliser ces champs, supposés indépendants, comme données dans l’équation de transport réactif :
 
-     ```math
-     \frac{\partial (h\,C_i)}{\partial t} + \nabla \cdot (h\,\mathbf{u}\,C_i) = \nabla \cdot (h\,D_i\,\nabla C_i) + h \sum_{j=1}^{NR} \mu_{i,j}\,R_j.
-     ```
+  ```math
+  \frac{\partial (h\,C_i)}{\partial t} + \nabla \cdot (h\,\mathbf{u}\,C_i) = \nabla \cdot (h\,D_i\,\nabla C_i) + h \sum_{j=1}^{NR} \mu_{i,j}\,R_j.
+  ```
 
    - **Étape 3 :** Dans le cas où $h$ est constant, diviser par $h$ pour obtenir une équation plus simple.
 
