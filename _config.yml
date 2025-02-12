@@ -21,5 +21,4 @@ author:
 
 # Configuration Markdown
 markdown: kramdown
-kramdown:
-  input: GFM  # GitHub Flavored Markdown
+
