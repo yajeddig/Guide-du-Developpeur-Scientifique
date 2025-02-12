@@ -1,269 +1,380 @@
-# Guide du Développeur : Bilans de Population (PBE)
+# Bilans de Population (PBE)
 
-## Introduction aux Équations de Bilan de Population (PBE)
+## 1. Introduction
 
-Les équations de bilan de population (PBE - Population Balance Equations) constituent un outil mathématique puissant pour modéliser l'évolution de distributions de particules ou d'entités dans un système. Ces équations permettent de décrire la dynamique d'un système particulaire en tenant compte de divers phénomènes physiques tels que la nucléation, la croissance, l'agrégation et la rupture des particules.
+Les **équations de bilan de population (PBE)** modélisent l'évolution d'une distribution de particules ou entités dans un système en intégrant plusieurs phénomènes :
 
-## Forme Générale d'un PBE
+- **Naissance / Nucléation**
+- **Décès / Attrition**
+- **Croissance**
+- **Agrégation / Agglomération**
+- **Fragmentation / Rupture**
 
-La forme générale d'un PBE peut s'écrire sous la forme d'une équation aux dérivées partielles qui intègre tous ces phénomènes :
+---
 
-$$
-\frac{\partial n(t, x)}{\partial t} + \nabla \cdot (\mathbf{V} n(t, x)) = G(x) \frac{\partial n(t, x)}{\partial x} + B_{\text{agg}}(t, x) - D_{\text{agg}}(t, x) + B_{\text{break}}(t, x) - D_{\text{break}}(t, x) + S_{\text{nuc}}(t, x) + I(t, x) - O(t, x)
-$$
+## 2. Formulation Générale
 
-Où :
+L'équation générale s'écrit :
 
-- $n(t, x)$ : Fonction de densité en nombre de particules ayant la propriété $x$ à l'instant $t$
-- $\mathbf{V}$ : Vecteur de vitesse (pour les propriétés spatiales ou internes)
-- $G(x)$ : Fonction de taux de croissance
-- $B_{\text{agg}}(t, x)$ : Terme de naissance dû à l'agrégation
-- $D_{\text{agg}}(t, x)$ : Terme de mort dû à l'agrégation
-- $B_{\text{break}}(t, x)$ : Terme de naissance dû à la rupture
-- $D_{\text{break}}(t, x)$ : Terme de mort dû à la rupture
-- $S_{\text{nuc}}(t, x)$ : Terme source dû à la nucléation
-- $I(t, x)$ : Terme d'entrée représentant l'apport de particules
-- $O(t, x)$ : Terme de sortie représentant le départ de particules
+$
+\frac{\partial n(t,x)}{\partial t} + \nabla \cdot \Bigl( \mathbf{V}(t,x)\, n(t,x) \Bigr) = \underbrace{\,\partial_x \Bigl(G(x)n(t,x)\Bigr)}_{\text{Croissance}} + \underbrace{ {\text{naiss}}(t,x)}_{\text{Naissance}} - \underbrace{D(t,x)}_{\text{Décès}}+ \underbrace{B_{\text{agg}}(t,x) - D_{\text{agg}}(t,x)}_{\text{Agrégation}}   + \underbrace{B_{\text{frag}}(t,x) - D_{\text{frag}}(t,x)}_{\text{Fragmentation}}   + \underbrace{I(t,x) - O(t,x)}_{\text{Transport}}
+$
 
-## Phénomènes Physiques Modélisés par un bilan de population
+### Nomenclature
 
-1. **Nucléation** ou **Naissance** : Création de nouvelles particules dans le système, ou de personne qui naissent dans une population
-2. **Croissance** ou **Vieillissement** : Augmentation de la taille ou de la masse des particules au cours du temps, ou augmentation de l'age de la population.
-3. **Agrégation (Coalescence)** ou **Association** : Fusion de particules plus petites pour former des particules plus grosses, ou suivi de la formation de famille.
-4. **Rupture (Fragmentation)** : Division de particules plus grosses en particules plus petites, ou séparation de famille.
-5. **Transport** : Entrée et sortie de particules dans le système, entrée et sortie d'un pays.
-<!-- Ajouter mort ? -->
-Chacun de ces phénomènes est représenté dans l'équation générale par des termes spécifiques, permettant de décrire finement la dynamique du système particulaire.
+| Symbole                     | Signification                                                           |
+|-----------------------------|-------------------------------------------------------------------------|
+| **$t$**                   | Temps                                                                   |
+| **$x$**                   | Propriété caractéristique (ex. taille, masse, etc.)                     |
+| **$n(t,x)$**              | Densité en nombre de particules possédant la propriété $x$ au temps $t$ |
+| **$\mathbf{V}(t,x)$**     | Vecteur vitesse (pour transport spatial ou dans l'espace des propriétés)  |
+| **$G(x)$**                | Taux de croissance (dépendant de $x$)                                   |
+| **$S_{\text{naiss}}(t,x)$** | Terme de naissance ou nucléation                                        |
+| **$D(t,x)$**              | Terme de décès (attrition)                                              |
+| **$B_{\text{agg}}(t,x)$**  | Terme de création par agrégation                                        |
+| **$D_{\text{agg}}(t,x)$**  | Terme de disparition par agrégation                                     |
+| **$B_{\text{frag}}(t,x)$** | Terme de création par fragmentation                                     |
+| **$D_{\text{frag}}(t,x)$** | Terme de disparition par fragmentation                                  |
+| **$I(t,x)$**              | Terme d'entrée (apport de particules)                                   |
+| **$O(t,x)$**              | Terme de sortie (retrait de particules)                                 |
 
-## Résolution Numérique des PBE
+> **Remarque importante :**  
+> Le terme de **croissance** est exprimé sous forme dérivée par rapport à $x$ :  
+> $\displaystyle G(x)\,\partial_x n(t,x)$.  
+> Cela permet de tenir compte de la dépendance de la cinétique de croissance à la propriété $x$.
 
-La résolution analytique des PBE étant généralement complexe, des méthodes numériques sont employées. Parmi les principales approches on peut citer :
+---
 
-- **Méthode des Moments** : Simplification du PBE en un système d'équations différentielles ordinaires (EDO) décrivant l'évolution des moments de la distribution.
-- **Méthodes Sectionnelles** : Discrétisation de l'espace des propriétés en sections, avec un bilan de population pour chaque section.
-- **Méthodes de Volumes Finis et Éléments Finis** : Résolution numérique de l'équation aux dérivées partielles, en assurant la conservation des lois physiques.
-- **Méthodes Stochastiques (Monte Carlo)** : Particulièrement adaptées aux problèmes de grande dimension.
+## 3. Modélisation des Phénomènes
 
-Ces différentes méthodes visent à obtenir des solutions précises, évolutives et calculatoirement réalisables aux PBE, permettant ainsi aux ingénieurs et scientifiques de prédire le comportement des systèmes particulaires et d'optimiser les procédés.
+Chaque terme représente un mécanisme :
 
-Dans la suite de ce guide, nous allons présenter la mise en œuvre de deux de ces méthodes numériques : la méthode des moments et la méthode sectionnelle.
+- **Naissance / Nucléation**  
+  $S_{\text{naiss}}(t,x)$ : Création de nouvelles particules (ex. formation de cristaux).
 
-## Méthodes Numériques pour Résoudre les PBE
+- **Décès / Attrition**  
+  $D(t,x)$ : Perte de particules par dégradation ou autres mécanismes.
 
-### Méthode des Moments
+- **Croissance**  
+  $\partial_x \Bigl(G(x)n(t,x)\Bigr)$ : Évolution de la propriété $x$ (ex. augmentation de la taille).
 
-Dans un contexte plus général, les moments d'une distribution peuvent être définis pour toute distribution de probabilité, pas seulement pour des distributions représentant la taille des particules. Les moments permettent de caractériser la distribution d'une variable aléatoire $ X $ (qui peut représenter diverses propriétés, comme la taille, la masse, la position, etc.) autour d'un point de référence, généralement la moyenne.
+- **Agrégation / Agglomération**  
+  $\displaystyle B_{\text{agg}}(t,x) - D_{\text{agg}}(t,x)$ : Fusion ou association de particules.
 
-### Définition générale des moments
+- **Fragmentation / Rupture**  
+  $\displaystyle B_{\text{frag}}(t,x) - D_{\text{frag}}(t,x)$ : Division des particules.
 
-1. **Moment d'ordre $ n $ centré à l'origine** :
-   Le moment d'ordre $ n $ autour de l'origine pour une variable aléatoire continue $ X $ avec une densité de probabilité $ f(x) $ est défini par :
-   $$
-   M_n = \int_{-\infty}^{\infty} x^n \, f(x) \, dx
-   $$
-   où $ x $ est la variable aléatoire et $ f(x) $ est la fonction de densité de probabilité.
+- **Transport**  
+  $I(t,x) - O(t,x)$ : Entrée ou sortie de particules dans le système.
 
-2. **Moment d'ordre $ n $ centré** (ou moment centré) :
-   Les moments centrés sont calculés par rapport à la moyenne $ \mu $ de la distribution, ce qui permet de caractériser la dispersion des valeurs autour de la moyenne. Le moment centré d'ordre $ n $ est donné par :
-   $$
-   \mu_n' = \int_{-\infty}^{\infty} (x - \mu)^n \, f(x) \, dx
-   $$
-   où $ \mu $ est la moyenne de la distribution définie par $ \mu = \int_{-\infty}^{\infty} x \, f(x) \, dx $.
+Les équations de bilan de population (PBE) permettent de décrire l’évolution d’une distribution de particules (ou entités) en intégrant plusieurs mécanismes physiques. Pour quantifier ces interactions, on introduit souvent des fonctions dites **noyaux** (*kernels*).  
+Un **noyau** est une fonction qui détermine le taux d’interaction entre particules en fonction de leurs propriétés (taille, masse, etc.). Il traduit la physique sous-jacente (collision, rupture, etc.) et intervient directement dans les termes sources ou puits de la PBE.
 
-### Les premiers moments en général
+---
 
-1. **Moment d'ordre 0** :
-   - Le moment d'ordre 0 est toujours égal à 1 pour une distribution de probabilité normale (intégrale de la densité sur tout l'espace).
+### Nucléation (ou Naissance)
 
-2. **Moment d'ordre 1** (Moyenne ou espérance) :
-   - Le moment d'ordre 1 est l'espérance $ E[X] $, qui représente la moyenne de la distribution.
-   $$
-   M_1 = \mu = \int_{-\infty}^{\infty} x \, f(x) \, dx
-   $$
+- **Description :**  
+  Processus de formation de nouvelles particules dans le système, souvent par condensation ou réaction chimique.
+  
+- **Modélisation :**  
+  - **Terme source :** $S_{\text{naiss}}(t,x)$  
+    Peut être défini de manière constante ou dépendre d’un surcroît de concentration/saturation.
+  - **Exemple classique :**  
+    Une nucléation homogène où le taux est constant pour une certaine plage de $x$ :
+    $
+    S_{\text{naiss}}(t,x) = J_0\, \delta(x - x_0)
+    $
+    avec $J_0$ le taux de nucléation et $\delta$ la fonction delta de Dirac, indiquant la formation de particules de taille $x_0$.
 
-3. **Moment d'ordre 2 centré** (Variance) :
-   - Le moment centré d'ordre 2 est la variance, qui mesure la dispersion des valeurs autour de la moyenne.
-   $$
-   \sigma^2 = \mu_2' = \int_{-\infty}^{\infty} (x - \mu)^2 \, f(x) \, dx
-   $$
+---
 
-4. **Moment d'ordre 3 centré** (Asymétrie ou Skewness) :
-   - Le moment centré d'ordre 3 est utilisé pour mesurer l'asymétrie de la distribution. Une valeur positive indique une distribution étalée à droite, et une valeur négative, à gauche.
-   $$
-   \text{Skewness} = \frac{\mu_3'}{\sigma^3} = \frac{1}{\sigma^3} \int_{-\infty}^{\infty} (x - \mu)^3 \, f(x) \, dx
-   $$
+### Croissance
 
-5. **Moment d'ordre 4 centré** (Aplatissement ou Kurtosis) :
-   - Le moment centré d'ordre 4 est utilisé pour mesurer l'aplatissement de la distribution. Un kurtosis supérieur à 3 indique une distribution plus pointue que la normale, et inférieur à 3, une distribution plus aplatie.
-   $$
-   \text{Kurtosis} = \frac{\mu_4'}{\sigma^4} = \frac{1}{\sigma^4} \int_{-\infty}^{\infty} (x - \mu)^4 \, f(x) \, dx
-   $$
+- **Description :**  
+  Augmentation continue d’une propriété (ex. taille ou masse) d’une particule au cours du temps.
+  
+- **Modélisation :**  
+  - **Taux de croissance :** $G(x)$  
+    Il exprime la vitesse de changement de la propriété $x$ et apparaît dans le terme :
+    $
+    G(x)\, \partial_x n(t,x)
+    $
+    Ce terme traduit l’effet différentiel sur la distribution, en tenant compte de la dépendance de la croissance à la taille.
 
-### Utilité des moments dans un cas général
+- **Exemples de modèles :**
+  - **Linéaire :** $G(x) = k\, x$  
+    (la croissance est proportionnelle à la taille)
+  - **Puissance :** $G(x) = k\, x^\alpha$  
+    où \(\alpha\) est un exposant déterminé expérimentalement.
 
-- **Moyenne (Moment d'ordre 1)** : Indique le centre de gravité de la distribution.
-- **Variance (Moment d'ordre 2)** : Indique l'étalement ou la dispersion des données.
-- **Asymétrie (Moment d'ordre 3)** : Indique la symétrie ou l'asymétrie de la distribution.
-- **Aplatissement (Moment d'ordre 4)** : Indique la concentration des données autour de la moyenne.
+---
 
-Les moments d'une distribution sont des outils essentiels en statistique et en probabilités, car ils permettent de décrire et d'analyser la forme et les caractéristiques fondamentales d'une distribution de manière systématique.
+### Agrégation / Agglomération
 
-### Utilisation des moments sur une distribution de particule
+- **Description :**  
+  Fusion ou coalescence de deux particules pour former une particule plus grosse.
+  
+- **Modélisation avec noyau d’agrégation :**  
+  - **Noyau d’agrégation :** $K(x,y)$  
+    Il définit le taux de collision (et potentiellement de fusion) entre une particule de taille $x$ et une autre de taille $y$.  
+  - **Termes dans la PBE :**
+    - **Naissance par agrégation :**
+      $
+      B_{\text{agg}}(t,x) = \frac{1}{2} \int_0^x K(x-y,y)\, n(t,x-y)\, n(t,y) \, dy
+      $
+    - **Mort par agrégation :**
+      $
+      D_{\text{agg}}(t,x) = n(t,x) \int_0^\infty K(x,y)\, n(t,y)\, dy
+      $
 
-La méthode des moments consiste à simplifier le PBE en un système d'équations différentielles ordinaires (EDO) décrivant l'évolution temporelle des moments de la distribution.
+- **Kernels classiques :**
 
-Les moments d'une distribution sont des quantités statistiques qui caractérisent la forme et la répartition de la distribution. Plus précisément, le moment d'ordre $ n $ d'une distribution est défini par l'intégrale :
+  | **Modèle**               | **Expression**                   | **Commentaires**                                                   |
+  |--------------------------|----------------------------------|--------------------------------------------------------------------|
+  | **Noyau constant**       | $K(x,y)=K_0$                 | Hypothèse simple, taux de collision indépendant des tailles.       |
+  | **Noyau somme**          | $K(x,y)=K_0 (x+y)$             | Tient compte de la contribution additive de chaque taille.         |
+  | **Noyau produit**        | $K(x,y)=K_0\, x\, y$           | Utilisé dans certains systèmes où le taux augmente fortement avec la taille. |
+  | **Kernel de Smoluchowski** | $K(x,y) \propto (x^{1/3}+y^{1/3})(x^{-1/3}+y^{-1/3})$ | Adapté aux collisions browniens.                                     |
 
-$$
-M_n = \int_0^{\infty} L^n \, n(L) \, dL
-$$
+---
 
-où :
+### Fragmentation / Rupture
 
-- $ M_n $ est le moment d'ordre $ n $,
-- $ L $ représente la taille des particules (ou toute autre propriété caractéristique),
-- $ n(L) $ est la fonction de densité de population qui indique le nombre de particules de taille $ L $.
+- **Description :**  
+  Division d’une particule en plusieurs fragments.
+  
+- **Modélisation avec noyau de fragmentation :**  
+  - **Taux de rupture :** $F(x)$  
+    Exprime la fréquence de rupture d’une particule de taille $x$.
+  - **Distribution des fragments :** $b(y,x)$  
+    Fonction de probabilité indiquant la proportion de fragments de taille $y$ issus de la rupture d’une particule de taille $x$.  
+  - **Termes dans la PBE :**
+    - **Mort par fragmentation :**
+      $
+      D_{\text{frag}}(t,x) = F(x)\, n(t,x)
+      $
+    - **Naissance par fragmentation :**
+      $
+      B_{\text{frag}}(t,x) = \int_x^\infty F(z)\, b(x,z)\, n(t,z) \, dz
+      $
 
-### Signification des premiers moments
+- **Kernels classiques :**
+  
+  | **Modèle**                       | **Expression / Hypothèse**                                              | **Commentaires**                                                   |
+  |----------------------------------|-------------------------------------------------------------------------|--------------------------------------------------------------------|
+  | **Rupture binaire**              | $b(y,x) = \delta(y - x/2)$                                           | Chaque particule se casse en deux fragments de taille égale.       |
+  | **Distribution uniforme**        | $b(y,x) = \frac{1}{x}$ pour $0<y<x$                              | Chaque fragment est également probable, sous condition de conservation. |
+  | **Modèle de Weibull**            | $F(x) = k\, x^\beta$ et $b(y,x)$ selon une loi de Weibull         | Permet d’ajuster la sensibilité à la taille via l’exposant \(\beta\).  |
 
-1. **Moment d'ordre 0 ($ M_0 $)** :
-   - Représente le nombre total de particules dans le système. C'est un indicateur de la quantité de particules indépendamment de leur taille.
-   - Mathématiquement :
-   $$
-   M_0 = \int_0^{\infty} n(L) \, dL
-   $$
+---
 
-2. **Moment d'ordre 1 ($ M_1 $)** :
-   - Représente la somme des longueurs de toutes les particules dans le système. Ce moment est proportionnel à une longueur totale.
-   - Mathématiquement :
-   $$
-   M_1 = \int_0^{\infty} L \, n(L) \, dL
-   $$
+### Autres Phénomènes (Transport, Décès)
 
-3. **Moment d'ordre 2 ($ M_2 $)** :
-   - Correspond à la somme des carrés des tailles des particules et est proportionnel à une surface totale. Ce moment est lié à des propriétés telles que l'aire de section transversale des particules.
-   - Mathématiquement :
-   $$
-   M_2 = \int_0^{\infty} L^2 \, n(L) \, dL
-   $$
+- **Transport :**  
+  Les termes $I(t,x)$ et $O(t,x)$ modélisent l’entrée et la sortie de particules.  
+  Ils peuvent être définis par des flux imposés ou par des conditions aux limites en fonction du système.
 
-4. **Moment d'ordre 3 ($ M_3 $)** :
-   - Est proportionnel au volume total des particules, donc représente une mesure du volume total ou de la masse (si la densité est uniforme) de toutes les particules dans le système.
-   - Mathématiquement :
-   $$
-   M_3 = \int_0^{\infty} L^3 \, n(L) \, dL
-   $$
+- **Décès / Attrition :**  
+  Le terme $D(t,x)$ représente la disparition spontanée ou provoquée des particules (ex. par dissolution ou dégradation).  
+  Il peut être modélisé par une loi exponentielle $D(t,x)=k_d\, n(t,x)$ ou par d’autres formes selon la nature du phénomène.
 
-### Utilité des moments
+---
 
-Les moments permettent de calculer des grandeurs moyennes telles que la taille moyenne des particules, l'écart-type, et d'autres caractéristiques de la distribution. Par exemple, le diamètre moyen en nombre ($ D_{n,0} $), le diamètre de Sauter ($ D_{3,2} $), et le diamètre moyen en masse ($ D_{4,3} $) peuvent être calculés à l'aide des moments de la distribution :
+### Conclusion Pédagogique
 
-- **Diamètre moyen en nombre** ($ D_{n,0} $) :
+- **Importance des noyaux :**  
+  Chaque phénomène (agrégation, fragmentation, etc.) est décrit par un noyau spécifique qui quantifie l’interaction entre particules ou le taux de rupture.  
+  La bonne sélection du noyau permet d’adapter le modèle aux conditions expérimentales et physiques du procédé.
 
-$$
-D_{n,0} = \frac{M_1}{M_0}
-$$
+- **Choix du modèle :**  
+  - Pour **l’agrégation**, le choix entre noyau constant, somme ou produit (ou des modèles plus élaborés comme ceux dérivés de la dynamique brownienne) dépend du régime dominant (diffusion, turbulence, etc.).
+  - Pour **la fragmentation**, la forme du noyau (et de la distribution des fragments) est essentielle pour reproduire correctement la distribution finale des tailles après rupture.
 
-- **Diamètre de Sauter** ($ D_{3,2} $) :
+En combinant ces éléments, la PBE offre une approche flexible et puissante pour modéliser la dynamique des systèmes particulaires, tout en laissant le soin au modélisateur de choisir les noyaux adaptés aux mécanismes physiques qu’il souhaite représenter.
 
-$$
-D_{3,2} = \frac{M_3}{M_2}
-$$
+---
 
-- **Diamètre moyen en masse** ($ D_{4,3} $) :
+## 4. Méthodes de Résolution Numérique
 
-$$
-D_{4,3} = \frac{M_4}{M_3}
-$$
+### 4.1 Méthode des Moments
 
-Ces moments et les grandeurs dérivées permettent de caractériser finement la distribution des particules dans un système et sont essentiels dans des applications telles que la modélisation de procédés de cristallisation, la pulvérisation, et d'autres procédés industriels.
+**Principe :**  
+Calculer les moments de la distribution :
 
-En dérivant ces moments par rapport au temps, on obtient un système d'EDO couplées qui peut être résolu numériquement :
+$
+M_n(t) = \int_0^\infty x^n\, n(t,x)\, dx
+$
+
+Ce procédé réduit l'EDP à un système d'EDO pour $M_n(t)$.
+
+**Variantes et leurs avantages/inconvénients :**
+
+| Variante                               | Avantages                                            | Inconvénients                                    |
+|----------------------------------------|------------------------------------------------------|--------------------------------------------------|
+| **Simple (moments premiers)**          | Facile à implémenter, faible coût de calcul          | Perte d'information sur la forme complète        |
+| **Quadratique / par quadrature**       | Meilleure reconstruction de la distribution          | Complexité accrue, coût numérique plus élevé     |
+| **Fermeture par fonction d'approximation** | Flexibilité dans le choix du modèle (ex. log-normal)   | Dépend fortement de l'hypothèse sur la distribution |
+
+**Avantages généraux :**
+
+- Réduction dimensionnelle (système d'EDO de faible taille)
+- Rapidité de calcul
+
+**Inconvénients généraux :**
+
+- Approximation de la distribution complète
+- Difficulté à capturer des phénomènes complexes (non linéaires)
+
+---
+
+### 4.2 Méthode Sectionnelle / Discrétisation
+
+**Principe :**  
+Discrétiser l'espace de la propriété $x$ en $N$ sections et écrire un bilan pour chaque section.
+
+Pour chaque section $i$ :
+
+$
+\frac{dn_i(t)}{dt} = F_i\big(n_1, n_2, \dots, n_N\big)
+$
+
+**Variantes et leurs avantages/inconvénients :**
+
+| Variante                | Avantages                                            | Inconvénients                                  |
+|-------------------------|------------------------------------------------------|------------------------------------------------|
+| **Volumes Finis**       | Conservation stricte des quantités physiques         | Peut nécessiter un maillage fin pour précision  |
+| **Éléments Finis**      | Bonne précision locale et flexibilité géométrique      | Coût en calcul potentiellement plus élevé       |
+| **Sections fixes vs. adaptatives** | Simplicité (sections fixes) ou meilleure adaptation (adaptatives) | Choix de la grille peut influencer la solution  |
+
+**Avantages généraux :**
+
+- Représentation complète de la distribution
+- Possibilité de suivre précisément l'évolution locale
+
+**Inconvénients généraux :**
+
+- Coût de calcul élevé (nombre important d'équations)
+- Sensibilité au choix et à la finesse de la discrétisation
+
+---
+
+## 5. Implémentation Python
+
+### 5.1 Exemple : Méthode des Moments
+
+Cet exemple simplifié résout un système ODE pour deux moments (nombre total $M_0$ et somme des tailles $M_1$). La cinétique de croissance dépendrait, dans un modèle complet, de la fonction $G(x)$ intégrée dans le calcul des dérivées des moments.
 
 ```python
-def solve_moments(n0, t_span, parameters):
+import numpy as np
+from scipy.integrate import solve_ivp
+import matplotlib.pyplot as plt
+
+def moment_odes(t, M, params):
     """
-    Résolution du PBE par la méthode des moments.
-    
-    Paramètres:
-    n0 (numpy.ndarray) : Condition initiale pour les moments
-    t_span (tuple) : Intervalle de temps à simuler (t0, tf)
-    parameters (dict) : Paramètres du modèle (coefficients de croissance, agrégation, etc.)
-    
-    Retourne:
-    scipy.integrate.solve_ivp.Solution : Objet contenant la solution temporelle des moments
+    Évolution des moments.
+    Variables :
+      - M[0] : Moment d'ordre 0 (nombre total de particules)
+      - M[1] : Moment d'ordre 1 (somme des tailles)
+      
+    Paramètres du modèle :
+      - birth_rate : taux de naissance
+      - k_decay   : coefficient de décès
+      - k_growth  : coefficient moyen de croissance (dans un modèle complet, dépend de G(x))
     """
-    def moment_odes(t, m):
-        """
-        Système d'EDO pour l'évolution des moments.
-        
-        Paramètres:
-        t (float) : Temps courant
-        m (numpy.ndarray) : Vecteur des moments
-        
-        Retourne:
-        numpy.ndarray : Dérivées temporelles des moments
-        """
-        dmdt = np.zeros_like(m)
-        
-        # Calculer les termes sources/puits pour chaque moment
-        # en fonction des paramètres du modèle
-        
-        return dmdt
+    birth_rate = params.get("birth_rate", 1.0)
+    k_decay    = params.get("k_decay", 0.05)
+    k_growth   = params.get("k_growth", 0.1)
     
-    # Résolution du système d'EDO avec solve_ivp
-    from scipy.integrate import solve_ivp
-    solution = solve_ivp(moment_odes, t_span, n0)
-    
-    return solution
+    M0, M1 = M
+    dM0_dt = birth_rate - k_decay * M0
+    # Pour un modèle complet, la contribution de croissance serait calculée via une intégration pondérée de G(x)
+    dM1_dt = k_growth * M0 - k_decay * M1  
+    return [dM0_dt, dM1_dt]
+
+# Paramètres et conditions initiales
+params = {"birth_rate": 1.0, "k_decay": 0.05, "k_growth": 0.1}
+M_initial = [0, 0]  # [M0, M1]
+t_span = (0, 50)
+
+sol = solve_ivp(lambda t, M: moment_odes(t, M, params), t_span, M_initial, dense_output=True)
+
+# Affichage
+t_eval = np.linspace(*t_span, 200)
+M0, M1 = sol.sol(t_eval)
+plt.plot(t_eval, M0, label='M0 (nombre total)')
+plt.plot(t_eval, M1, label='M1 (somme des tailles)')
+plt.xlabel("Temps")
+plt.ylabel("Moments")
+plt.legend()
+plt.show()
 ```
 
-### Méthode Sectionnelle
+---
 
-La méthode sectionnelle consiste à discrétiser l'espace des propriétés en un nombre fini de sections, puis à écrire un bilan de population pour chacune de ces sections.
+### 5.2 Exemple : Méthode Sectionnelle
 
-Soit $N$ le nombre de sections, on note $n_i(t)$ la densité en nombre de particules dans la section $i$ à l'instant $t$.
-
-Le système d'EDO régissant l'évolution temporelle de ces densités s'écrit :
+Dans cet exemple, l'espace des tailles est discrétisé sur une grille $x_{\text{grid}}$. Le terme de croissance transfère une quantité depuis une section vers la suivante.
 
 ```python
-def sectional_method(n0, t_span, x_grid, parameters):
+def sectional_odes(t, n, params, x_grid):
     """
-    Résolution du PBE par la méthode sectionnelle.
-    
-    Paramètres:
-    n0 (numpy.ndarray) : Condition initiale pour les densités dans chaque section
-    t_span (tuple) : Intervalle de temps à simuler (t0, tf)
-    x_grid (numpy.ndarray) : Grille des propriétés discrétisées
-    parameters (dict) : Paramètres du modèle (coefficients de croissance, agrégation, etc.)
-    
-    Retourne:
-    scipy.integrate.solve_ivp.Solution : Objet contenant la solution temporelle des densités par section
+    Évolution des densités n[i] dans chaque section associée à x_grid[i].
+    Exemple simplifié avec transfert dû à la croissance :
+      - La croissance est donnée par k * x, et affecte la section i et i+1.
     """
-    def section_odes(t, n):
-        """
-        Système d'EDO pour l'évolution des densités par section.
-        
-        Paramètres:
-        t (float) : Temps courant
-        n (numpy.ndarray) : Vecteur des densités par section
-        
-        Retourne:
-        numpy.ndarray : Dérivées temporelles des densités
-        """
-        dndt = np.zeros_like(n)
-        
-        # Calculer les flux entre les sections en fonction des paramètres du modèle
-        
-        return dndt
-    
-    # Résolution du système d'EDO avec solve_ivp
-    from scipy.integrate import solve_ivp
-    solution = solve_ivp(section_odes, t_span, n0)
-    
-    return solution
+    N = len(n)
+    dn_dt = np.zeros_like(n)
+    k = params.get("k", 0.1)
+    for i in range(N):
+        # Croissance locale dans la section i
+        growth = k * x_grid[i] * n[i]
+        dn_dt[i] -= growth  # perte dans la section i
+        if i < N - 1:
+            dn_dt[i+1] += growth  # apport à la section suivante
+    return dn_dt
+
+# Discrétisation et conditions initiales
+x_grid = np.linspace(1, 10, 50)
+n0 = np.zeros_like(x_grid)
+n0[0] = 100  # Concentration initiale dans la première section
+
+sol_sec = solve_ivp(lambda t, n: sectional_odes(t, n, {"k": 0.1}, x_grid),
+                    t_span, n0, dense_output=True)
+
+# Affichage de quelques sections
+plt.figure()
+for i in [0, 10, 20, 30, 40]:
+    plt.plot(sol_sec.t, sol_sec.y[i, :], label=f'Section {i}')
+plt.xlabel("Temps")
+plt.ylabel("Densité")
+plt.legend()
+plt.show()
 ```
 
-Ces deux méthodes numériques permettent de résoudre de manière efficace les équations de bilan de population, en fournissant la distribution temporelle des particules ou des entités modélisées.
+---
 
-Dans la prochaine section, nous aborderons les bonnes pratiques pour l'implémentation et l'analyse des résultats.
+## 6. Conclusion
+
+- **PBE** : Permettent d'intégrer plusieurs phénomènes (naissance, décès, croissance, agrégation, fragmentation) dans un cadre mathématique général.
+- **Méthode des moments**  
+  - *Avantages* : Réduction dimensionnelle, rapidité.  
+  - *Inconvénients* : Approximation de la distribution complète.
+- **Méthode sectionnelle**  
+  - *Avantages* : Représentation détaillée de la distribution.  
+  - *Inconvénients* : Coût de calcul plus élevé et sensibilité à la discrétisation.
+
+Chaque méthode présente des variantes permettant d'adapter la modélisation en fonction des hypothèses du système étudié et des ressources numériques disponibles.
+
+## Quid des distributions non gaussiennes
+
+- **Méthode des moments :**  
+  - Habituellement, elle nécessite une fermeture (closure) qui repose sur une hypothèse sur la forme de la distribution (souvent gaussienne).  
+  - **Pour des distributions non gaussiennes :**  
+    - Des fermetures alternatives (ex. fermetures basées sur la quadrature, QMOM) permettent de mieux capturer des formes arbitraires.  
+    - Ces variantes utilisent des points de quadrature et des poids ajustables pour reconstituer la distribution sans présumer sa forme.
+
+- **Méthode sectionnelle :**  
+  - Elle discrétise directement l'espace des propriétés, sans supposer de forme particulière de la distribution.  
+  - **Avantage :**  
+    - Elle s'adapte naturellement aux distributions non gaussiennes, à condition que la discrétisation soit suffisamment fine pour capturer les variations de forme.

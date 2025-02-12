@@ -71,11 +71,9 @@ Que vous soyez débutant ou que vous cherchiez à renforcer vos compétences, ce
 |-----------|-----------------|
 | **Calcul Scientifique** | Techniques de calcul scientifique, résolution d'équations, et méthodes numériques. |
 | - [Résolution d'un système d'équations algébriques non linéaires](5-scientific_technical_skills/NLAE_resolution.md) | Résolution des systèmes d'équations algébriques non linéaires. |
-| - [Résolution d'un système d'équations différentielles ordinaires](5-scientific_technical_skills/ODE_resolution.md) | Méthodes pour résoudre les équations différentielles ordinaires. |
-| - Résolution d'un bilan de population | Approches pour la résolution des bilans de population. |
-| -- Méthode des moments | Utilisation de la méthode des moments pour les bilans de population. |
-| -- Méthode par discrétisation | Application de la méthode par discrétisation pour les bilans de population. |
-| - Résolution d'un système d'équations algébro-différentielles | Techniques pour résoudre les systèmes d'équations algébro-différentielles. |
-| - Résolution d'un système d'équations aux dérivées partielles | Approches pour résoudre les systèmes d'équations aux dérivées partielles. |
+| - [Résolution d'un système d'équations différentielles ordinaires](5-scientific_technical_skills/ODE_resolution.md) <br/> - [Introduction aux algorithmes de résolution des systèmes d'équations différentielles ordinaires](5-scientific_technical_skills/ODE_algorithm.md)  | Algorithmes et Méthodes pour résoudre les équations différentielles ordinaires. |
+| - [Résolution d'un bilan de population](5-scientific_technical_skills/PBE_resolution.md) <br/> -- Méthode des moments <br/> -- Méthode par discrétisation <br/> -- Modélisation des phénomènes en PBE| Approches pour la résolution des bilans de population. |
+| - [Résolution d'un système d'équations algébro-différentielles](5-scientific_technical_skills\DAE_resolution.md) | Techniques pour résoudre les systèmes d'équations algébro-différentielles. |
+| - [Résolution d'un système d'équations aux dérivées partielles](5-scientific_technical_skills\PDE_resolution.md) | Approches pour résoudre les systèmes d'équations aux dérivées partielles. |
 
 ---
