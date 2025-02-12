@@ -7,7 +7,7 @@ url: "https://yajeddig.github.io/Guide-du-Developpeur-Scientifique/"
 baseurl: ""  # Laisser vide si le site est à la racine
 
 # Thème utilisé (ici le thème Hacker via remote_theme)
-remote_theme: pages-themes/hacker
+remote_theme: hacker
 
 # Plugins Jekyll (fusion des plugins nécessaires)
 plugins:
