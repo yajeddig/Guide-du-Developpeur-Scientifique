@@ -162,9 +162,9 @@ La FEM repose sur :
 - **La discrétisation du domaine** en éléments (triangles en 2D, tétraèdres en 3D ou segments en 1D) à l’aide d’un maillage.
 - **La formulation variationnelle** du problème, par exemple en recherchant $u$ tel que pour toute fonction test $v$,
   
-  ```math
-  \int_\Omega k(x) \frac{du}{dx}\frac{dv}{dx}\,dx = \int_\Omega f(x)v(x)\,dx.
-  ```
+```math
+\int_\Omega k(x) \frac{du}{dx}\frac{dv}{dx}\,dx = \int_\Omega f(x)v(x)\,dx.
+```
 
 - **L'assemblage d'un système linéaire** $KU = F$, où $K$ est la matrice de rigidité.
 
@@ -218,9 +218,9 @@ La FVM divise le domaine en volumes de contrôle et applique le principe de cons
 
 - **Intégration sur chaque volume :** Pour l’équation de la chaleur en 1D, l’intégration sur un volume $V_i$ donne
   
-  ```math
-  \frac{d}{dt}\int_{V_i} u\,dx = \alpha \left( \text{flux entrant} - \text{flux sortant} \right).
-  ```
+```math
+\frac{d}{dt}\int_{V_i} u\,dx = \alpha \left( \text{flux entrant} - \text{flux sortant} \right).
+```
 
 - **Approximation des flux :** Ceux-ci sont calculés à partir des valeurs moyennes dans les volumes adjacents.
 
@@ -438,20 +438,20 @@ plt.show()
 1. **Équations générales :**  
    Les équations de transport réactif se généralisent pour $NC$ espèces et $NR$ réactions avec  
 
-   ```math
-   \frac{\partial C_i}{\partial t} + \nabla \cdot (\mathbf{u}\,C_i) = \nabla \cdot (D_i\,\nabla C_i) + \sum_{j=1}^{NR} \mu_{i,j}\, R_j(C_1,\dots,C_{NC}).
-   ```
+```math
+\frac{\partial C_i}{\partial t} + \nabla \cdot (\mathbf{u}\,C_i) = \nabla \cdot (D_i\,\nabla C_i) + \sum_{j=1}^{NR} \mu_{i,j}\, R_j(C_1,\dots,C_{NC}).
+```
 
 2. **Cas spécifique 1D (A, B, C) :**  
    Pour la réaction A + B → C, avec $\mu_{A,1}=\mu_{B,1}=-1$ et $\mu_{C,1}=+1$, les équations deviennent
 
-   ```math
-   \begin{aligned}
-   \frac{\partial C_A}{\partial t} + u\,\frac{\partial C_A}{\partial x} &= D_A\,\frac{\partial^2 C_A}{\partial x^2} - k_r\,C_A\,C_B, \\
-   \frac{\partial C_B}{\partial t} + u\,\frac{\partial C_B}{\partial x} &= D_B\,\frac{\partial^2 C_B}{\partial x^2} - k_r\,C_A\,C_B, \\
-   \frac{\partial C_C}{\partial t} + u\,\frac{\partial C_C}{\partial x} &= D_C\,\frac{\partial^2 C_C}{\partial x^2} + k_r\,C_A\,C_B.
-   \end{aligned}
-   ```
+```math
+\begin{aligned}
+\frac{\partial C_A}{\partial t} + u\,\frac{\partial C_A}{\partial x} &= D_A\,\frac{\partial^2 C_A}{\partial x^2} - k_r\,C_A\,C_B, \\
+\frac{\partial C_B}{\partial t} + u\,\frac{\partial C_B}{\partial x} &= D_B\,\frac{\partial^2 C_B}{\partial x^2} - k_r\,C_A\,C_B, \\
+\frac{\partial C_C}{\partial t} + u\,\frac{\partial C_C}{\partial x} &= D_C\,\frac{\partial^2 C_C}{\partial x^2} + k_r\,C_A\,C_B.
+\end{aligned}
+```
 
 3. **Implémentation en Python :**  
    Le code présenté utilise un schéma en différences finies (upwind pour l’advection et centré pour la diffusion) pour résoudre ces équations dans un domaine 1D.
@@ -481,9 +481,9 @@ Pour un domaine donné, les équations de Saint-Venant se décomposent en deux p
 
 1. **Conservation de la masse (équation de continuité) :**
 
-   ```math
-   \frac{\partial h}{\partial t} + \nabla\cdot (h\,\mathbf{u}) = 0,
-   ```
+```math
+\frac{\partial h}{\partial t} + \nabla\cdot (h\,\mathbf{u}) = 0,
+```
 
    où  
    - $h = h(\mathbf{x},t)$ est la hauteur d’eau (profondeur locale),  
@@ -492,9 +492,9 @@ Pour un domaine donné, les équations de Saint-Venant se décomposent en deux p
 
 2. **Conservation de la quantité de mouvement :**
 
-   ```math
-   \frac{\partial (h\,\mathbf{u})}{\partial t} + \nabla\cdot \Bigl(h\,\mathbf{u}\otimes\mathbf{u} + \frac{1}{2}\,g\,h^2\,\mathbf{I}\Bigr) = -g\,h\,\nabla z_b - \tau,
-   ```
+```math
+\frac{\partial (h\,\mathbf{u})}{\partial t} + \nabla\cdot \Bigl(h\,\mathbf{u}\otimes\mathbf{u} + \frac{1}{2}\,g\,h^2\,\mathbf{I}\Bigr) = -g\,h\,\nabla z_b - \tau,
+```
 
    où  
    - $g$ est l’accélération due à la pesanteur,  
@@ -689,9 +689,9 @@ plt.show()
 2. **Transport Réactif :**  
    En ajoutant une équation de transport pour chaque constituant, on peut décrire l’advection, la diffusion et la réaction des espèces. La formulation générale est :
 
-   ```math
-   \frac{\partial (h\,C_i)}{\partial t} + \nabla \cdot (h\,\mathbf{u}\,C_i) = \nabla \cdot (h\,D_i\,\nabla C_i) + h \sum_{j=1}^{NR} \mu_{i,j}\,R_j(C_1,\dots,C_{NC}).
-   ```
+```math
+\frac{\partial (h\,C_i)}{\partial t} + \nabla \cdot (h\,\mathbf{u}\,C_i) = \nabla \cdot (h\,D_i\,\nabla C_i) + h \sum_{j=1}^{NR} \mu_{i,j}\,R_j(C_1,\dots,C_{NC}).
+```
 
 3. **Cas 1D avec A, B, C :**  
    Pour la réaction A + B → C (avec $\mu_{A,1}=\mu_{B,1}=-1$ et $\mu_{C,1}=+1$), et en supposant un régime hydraulique stationnaire ( $h$ et $u$ constants), les équations se simplifient et prennent la forme usuelle d’un problème advection–diffusion–réaction.
