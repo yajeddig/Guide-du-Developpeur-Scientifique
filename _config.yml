@@ -6,9 +6,7 @@ description: "Accompagnement pour l'acquisition des connaissances fondamentales 
 url: "https://yajeddig.github.io/Guide-du-Developpeur-Scientifique/"
 baseurl: ""  # Laisser vide si le site est à la racine
 
-remote_theme: pages-themes/minimal
 plugins:
-- jekyll-remote-theme 
 - jekyll-seo-tag
 
 # Informations sur l'auteur (à personnaliser)
