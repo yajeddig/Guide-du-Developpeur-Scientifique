@@ -7,7 +7,7 @@ url: "https://yajeddig.github.io/Guide-du-Developpeur-Scientifique/"
 baseurl: ""  # Laisser vide si le site est à la racine
 
 # Thème utilisé (ici le thème "minima" par défaut de GitHub Pages)
-theme: minima
+theme: jekyll-theme-minimal
 
 # Plugins Jekyll supplémentaires (facultatif)
 plugins:
