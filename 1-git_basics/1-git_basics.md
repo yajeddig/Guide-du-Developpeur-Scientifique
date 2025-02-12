@@ -77,7 +77,7 @@ Nous vous encourageons vivement à consulter les ressources recommandées ci-des
 
 ## Pourquoi utiliser Git ?
 
-Imaginez que vous travaillez sur un projet complexe et que vous faites une erreur qui casse tout. Pas de panique ! Git vous permet de revenir à une version précédente, comme si vous remontiez dans le temps avant l'erreur. De plus, Git est essentiel pour le travail en équipe. Il permet à plusieurs personnes de travailler sur le même projet sans se marcher sur les pieds. Chacun a sa propre copie du projet, et Git permet de fusionner intelligemment les modifications de chacun.
+Imaginez que vous travaillez sur un projet complexe et que vous faites une erreur qui casse tout. Pas de panique ! Git vous permet de revenir à une version précédente, comme si vous remontiez dans le temps avant l'erreur. De plus, Git est essentiel pour le travail en équipe. Il permet à plusieurs personnes de travailler sur le même projet sans se marcher sur les pieds. Chacun a sa propre copie du projet, et Git permet de fusionner intelligemment les modifications de chacun. De plus, il vous permet d'avoir un historique précis des modifications réalisées dans le projet, par qui et pourquoi.
 
 ## Git est décentralisé : La liberté du travail collaboratif
 
