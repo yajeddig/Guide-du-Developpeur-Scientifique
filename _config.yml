@@ -1,0 +1,25 @@
+# Titre et description du site
+title: "Guide du Développeur Scientifique"
+description: "Accompagnement pour l'acquisition des connaissances fondamentales et bonnes pratiques du développement logiciel à des fins scientifiques."
+
+# URL du site (mettre votre domaine personnalisé)
+url: "https://yajeddig.github.io/Guide-du-Developpeur-Scientifique/"
+baseurl: ""  # Laisser vide si le site est à la racine
+
+# Thème utilisé (ici le thème "minima" par défaut de GitHub Pages)
+theme: hacker
+
+# Informations sur l'auteur (à personnaliser)
+author:
+  name: "Younes AJEDDIG"
+  email: "younes.ajeddig@live.fr"
+
+# Plugins Jekyll supplémentaires (facultatif)
+plugins:
+  - jekyll-seo-tag
+
+# Configuration Markdown
+markdown: kramdown
+kramdown:
+  input: GFM  # GitHub Flavored Markdown
+
