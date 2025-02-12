@@ -691,7 +691,7 @@ Nous pouvons, dans certains cas, considérer que le transport et la réaction ch
 
 #### a. Description de l’Hypothèse
 
-L’hypothèse consiste à considérer que le transport des constituants dissous et leurs réactions chimiques n’ont pas d’effet rétroactif sur le régime hydraulique. Autrement dit, les concentrations restent suffisamment faibles ou la réaction n’entraîne pas de variations notables de densité, viscosité ou autres propriétés physiques du fluide. Ainsi, le champ de vitesse \( \mathbf{u}(\mathbf{x},t) \) et, si nécessaire, la hauteur d’eau \( h(\mathbf{x},t) \) peuvent être calculés en résolvant les équations de Saint-Venant sans tenir compte des effets du transport réactif.
+L’hypothèse consiste à considérer que le transport des constituants dissous et leurs réactions chimiques n’ont pas d’effet rétroactif sur le régime hydraulique. Autrement dit, les concentrations restent suffisamment faibles ou la réaction n’entraîne pas de variations notables de densité, viscosité ou autres propriétés physiques du fluide. Ainsi, le champ de vitesse $\mathbf{u}(\mathbf{x},t)$ et, si nécessaire, la hauteur d’eau $h(\mathbf{x},t)$ peuvent être calculés en résolvant les équations de Saint-Venant sans tenir compte des effets du transport réactif.
 
 #### b. Conditions d’Utilisation et Validation
 
@@ -716,38 +716,38 @@ Pour valider cette hypothèse, on peut :
 Les équations de Saint-Venant (ou de Barré de Saint-Venant) en dimension générale sont écrites sous la forme :
 
 - **Conservation de la masse :**  
-  \[
+  $
   \frac{\partial h}{\partial t} + \nabla\cdot (h\,\mathbf{u}) = 0,
-  \]
+  $
 - **Conservation de la quantité de mouvement :**  
-  \[
+  $
   \frac{\partial (h\,\mathbf{u})}{\partial t} + \nabla\cdot \Bigl(h\,\mathbf{u}\otimes\mathbf{u} + \frac{1}{2}\,g\,h^2\,\mathbf{I}\Bigr) = -g\,h\,\nabla z_b - \tau,
-  \]
-où \( z_b \) est l'élévation du lit, \( g \) la pesanteur et \( \tau \) les pertes de charge ou frottements.
+  $
+où $z_b$ est l'élévation du lit, $g$ la pesanteur et $\tau$ les pertes de charge ou frottements.
 
-En résolvant ces équations (par exemple avec un schéma numérique adapté), on obtient le champ de vitesse \( \mathbf{u}(\mathbf{x},t) \) (et \( h(\mathbf{x},t) \) si nécessaire).
+En résolvant ces équations (par exemple avec un schéma numérique adapté), on obtient le champ de vitesse $\mathbf{u}(\mathbf{x},t)$ (et $h(\mathbf{x},t)$ si nécessaire).
 
 #### b. Application Découplée au Transport Réactif
 
-Une fois le champ hydraulique obtenu, on considère ce dernier comme donné dans l’équation de transport des constituants. La formulation générale pour chaque espèce \( i \) (pour \( i=1,\dots,NC \)) est alors :
+Une fois le champ hydraulique obtenu, on considère ce dernier comme donné dans l’équation de transport des constituants. La formulation générale pour chaque espèce $i$ (pour $i=1,\dots,NC$) est alors :
 
-\[
+$
 \frac{\partial (h\,C_i)}{\partial t} + \nabla \cdot \Bigl(h\,\mathbf{u}\, C_i\Bigr) = \nabla \cdot \Bigl(h\,D_i\, \nabla C_i\Bigr) + h \sum_{j=1}^{NR} \mu_{i,j}\, R_j(C_1,\dots,C_{NC}),
-\]
+$
 
 où :
 
-- \( C_i(\mathbf{x},t) \) est la concentration de l’espèce \( i \) (moyennée en profondeur),
-- \( D_i \) est son coefficient de diffusion,
-- \( R_j \) est la vitesse de la réaction \( j \) et \( \mu_{i,j} \) le coefficient stœchiométrique associé.
+- $C_i(\mathbf{x},t)$ est la concentration de l’espèce $i$ (moyennée en profondeur),
+- $D_i$ est son coefficient de diffusion,
+- $R_j$ est la vitesse de la réaction $j$ et $\mu_{i,j}$ le coefficient stœchiométrique associé.
 
-Si \( h \) est constant ou si l’on souhaite travailler avec des concentrations « normalisées » par la hauteur, on peut diviser l’équation par \( h \) (non nul) pour obtenir :
+Si $h$ est constant ou si l’on souhaite travailler avec des concentrations « normalisées » par la hauteur, on peut diviser l’équation par $h$ (non nul) pour obtenir :
 
-\[
+$
 \frac{\partial C_i}{\partial t} + \mathbf{u}\cdot\nabla C_i = D_i\, \Delta C_i + \sum_{j=1}^{NR} \mu_{i,j}\, R_j(C_1,\dots,C_{NC}).
-\]
+$
 
-Cette équation de transport réactif est ainsi traitée de manière découplée en utilisant \( \mathbf{u} \) et éventuellement \( h \) fournis par la résolution hydraulique.
+Cette équation de transport réactif est ainsi traitée de manière découplée en utilisant $\mathbf{u}$ et éventuellement $h$ fournis par la résolution hydraulique.
 
 ---
 
@@ -755,30 +755,30 @@ Cette équation de transport réactif est ainsi traitée de manière découplée
 
 #### a. Hypothèse Spécifique
 
-Pour un canal 1D, nous supposons que le régime hydraulique est établi et que la hauteur d’eau \( h \) ainsi que la vitesse \( u \) sont connus et constants dans le domaine. Cette hypothèse est raisonnable dans un canal de débit stable et lorsque les concentrations de A, B et C restent faibles, de sorte qu’elles n’influencent pas la dynamique d’écoulement.
+Pour un canal 1D, nous supposons que le régime hydraulique est établi et que la hauteur d’eau $h$ ainsi que la vitesse $u$ sont connus et constants dans le domaine. Cette hypothèse est raisonnable dans un canal de débit stable et lorsque les concentrations de A, B et C restent faibles, de sorte qu’elles n’influencent pas la dynamique d’écoulement.
 
 #### b. Écriture des Équations
 
-En appliquant le découplage, et en supposant \( h \) constant (nous prendrons \( h = 1 \) pour simplifier la forme), les équations de transport réactif pour les trois espèces deviennent :
+En appliquant le découplage, et en supposant $h$ constant (nous prendrons $h = 1$ pour simplifier la forme), les équations de transport réactif pour les trois espèces deviennent :
 
 - **Pour l’espèce A :**
-  \[
+  $
   \frac{\partial C_A}{\partial t} + u\,\frac{\partial C_A}{\partial x} = D_A\,\frac{\partial^2 C_A}{\partial x^2} - k_r\, C_A\, C_B,
-  \]
+  $
 - **Pour l’espèce B :**
-  \[
+  $
   \frac{\partial C_B}{\partial t} + u\,\frac{\partial C_B}{\partial x} = D_B\,\frac{\partial^2 C_B}{\partial x^2} - k_r\, C_A\, C_B,
-  \]
+  $
 - **Pour l’espèce C :**
-  \[
+  $
   \frac{\partial C_C}{\partial t} + u\,\frac{\partial C_C}{\partial x} = D_C\,\frac{\partial^2 C_C}{\partial x^2} + k_r\, C_A\, C_B.
-  \]
+  $
 
-Ici, \( k_r \) est la constante de réaction (loi de masse d’action), et \( u \) est le champ de vitesse obtenu préalablement de la résolution hydraulique.
+Ici, $k_r$ est la constante de réaction (loi de masse d’action), et $u$ est le champ de vitesse obtenu préalablement de la résolution hydraulique.
 
 #### c. Implémentation en Python
 
-Dans cet exemple, nous supposons que le champ hydraulique a été calculé séparément et que nous disposons d’un \( u \) constant (par exemple, \( u = 1.0 \) m/s). Nous utilisons un schéma explicite en différences finies avec un traitement "upwind" pour l’advection.
+Dans cet exemple, nous supposons que le champ hydraulique a été calculé séparément et que nous disposons d’un $u$ constant (par exemple, $u = 1.0$ m/s). Nous utilisons un schéma explicite en différences finies avec un traitement "upwind" pour l’advection.
 
 ```python
 import numpy as np
@@ -867,14 +867,14 @@ plt.show()
    On suppose que le transport et la réaction ne modifient pas le champ hydraulique, ce qui est valable lorsque les concentrations restent faibles et que la réaction n’affecte pas les propriétés physiques du fluide. Cette hypothèse doit être validée par des comparaisons d’ordres de grandeur ou par des simulations comparatives.
 
 2. **Procédure générale :**  
-   - **Étape 1 :** Résoudre les équations de Saint-Venant pour obtenir \( h(\mathbf{x},t) \) et \( \mathbf{u}(\mathbf{x},t) \).  
+   - **Étape 1 :** Résoudre les équations de Saint-Venant pour obtenir $h(\mathbf{x},t)$ et $\mathbf{u}(\mathbf{x},t)$.  
    - **Étape 2 :** Utiliser ces champs, supposés indépendants, comme données dans l’équation de transport réactif :
-     \[
+     $
      \frac{\partial (h\,C_i)}{\partial t} + \nabla \cdot (h\,\mathbf{u}\,C_i) = \nabla \cdot (h\,D_i\,\nabla C_i) + h \sum_{j=1}^{NR} \mu_{i,j}\,R_j.
-     \]
-   - **Étape 3 :** Dans le cas où \( h \) est constant, diviser par \( h \) pour obtenir une équation plus simple.
+     $
+   - **Étape 3 :** Dans le cas où $h$ est constant, diviser par $h$ pour obtenir une équation plus simple.
 
 3. **Application au cas 1D avec A, B et C :**  
-   En supposant \( u \) constant et issu d’une simulation hydraulique découplée, nous obtenons un système d’équations d’advection–diffusion–réaction pour A, B et C. L’implémentation en Python ci-dessus illustre cette approche en utilisant un schéma explicite en différences finies.
+   En supposant $u$ constant et issu d’une simulation hydraulique découplée, nous obtenons un système d’équations d’advection–diffusion–réaction pour A, B et C. L’implémentation en Python ci-dessus illustre cette approche en utilisant un schéma explicite en différences finies.
 
 Cette démarche permet de traiter de manière modulaire le problème complexe en deux étapes distinctes, facilitant ainsi la résolution numérique et l’analyse de l’influence de chaque phénomène.
