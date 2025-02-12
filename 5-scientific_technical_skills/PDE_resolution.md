@@ -2,14 +2,16 @@
 
 Les EDP modélisent de nombreux phénomènes physiques tels que le transfert de chaleur, la propagation d’ondes ou les écoulements fluides. Par exemple, l’équation de la chaleur en 1D s’exprime par  
 
-$$\frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2}$$
- 
+```math
+\frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2}
+```
+
 où $u(x,t)$ est la température, $\alpha$ le coefficient de diffusion, $x$ la variable spatiale et $t$ le temps.
 
 Les mêmes concepts s’étendent naturellement aux problèmes en 2D et 3D. Par exemple, l’équation de la chaleur en 2D s’écrit  
-$$
+```math
 \frac{\partial u}{\partial t} = \alpha \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} \right),
-$$  
+```  
 et en 3D, on ajoute la dérivée selon $z$.
 
 Pour résoudre numériquement une EDP, il faut :
@@ -29,25 +31,25 @@ Nous présentons ici trois grandes familles de méthodes et leur extension aux p
 #### Schéma Explicite – FTCS (Forward Time Centered Space)
 
 Pour l’équation de la chaleur en 1D,
-$$
+```math
 \frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2},
-$$  
+```  
 on remplace la dérivée temporelle par une différence avancée et la dérivée spatiale seconde par une différence centrée :
   
 - **Dérivée temporelle (forward) :**  
-  $$
+  ```math
   \frac{\partial u}{\partial t}(x_i,t^n) \approx \frac{u_i^{n+1} - u_i^n}{\Delta t}.
-  $$
+  ```
   
 - **Dérivée spatiale seconde (centrée) :**  
-  $$
+  ```math
   \frac{\partial^2 u}{\partial x^2}(x_i,t^n) \approx \frac{u_{i+1}^n - 2u_i^n + u_{i-1}^n}{(\Delta x)^2}.
-  $$
+  ```
   
 Le schéma s’écrit alors :
-$$
+```math
 u_i^{n+1} = u_i^n + \lambda \left( u_{i+1}^n - 2u_i^n + u_{i-1}^n \right),
-$$  
+```  
 avec $\lambda = \alpha\,\Delta t/(\Delta x)^2$.  
 **Condition de stabilité (CFL) :** En 1D, il faut généralement que $\lambda \leq \frac{1}{2}$.
 
@@ -92,9 +94,9 @@ plt.show()
 #### Extension aux cas 2D et 3D
 
 En 2D, pour l’équation
-$$
+```math
 \frac{\partial u}{\partial t} = \alpha \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} \right),
-$$  
+```  
 la discrétisation implique deux directions spatiales. Par exemple, en FTCS 2D :
 
 ```python
@@ -149,9 +151,9 @@ La FEM repose sur :
 
 - **La discrétisation du domaine** en éléments (triangles en 2D, tétraèdres en 3D ou segments en 1D) à l’aide d’un maillage.
 - **La formulation variationnelle** du problème, par exemple en recherchant $u$ tel que pour toute fonction test $v$,
-  $$
+  ```math
   \int_\Omega k(x) \frac{du}{dx}\frac{dv}{dx}\,dx = \int_\Omega f(x)v(x)\,dx.
-  $$
+  ```
 - **L'assemblage d'un système linéaire** $KU = F$, où $K$ est la matrice de rigidité.
 
 #### Définir la Géométrie et Générer le Maillage
@@ -203,9 +205,9 @@ solution.save('solution.vtk')
 La FVM divise le domaine en volumes de contrôle et applique le principe de conservation sur chacun :
 
 - **Intégration sur chaque volume :** Pour l’équation de la chaleur en 1D, l’intégration sur un volume $V_i$ donne
-  $$
+  ```math
   \frac{d}{dt}\int_{V_i} u\,dx = \alpha \left( \text{flux entrant} - \text{flux sortant} \right).
-  $$
+  ```
 - **Approximation des flux :** Ceux-ci sont calculés à partir des valeurs moyennes dans les volumes adjacents.
 
 #### Exemple en Python pour 1D
