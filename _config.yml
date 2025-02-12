@@ -6,13 +6,10 @@ description: "Accompagnement pour l'acquisition des connaissances fondamentales 
 url: "https://yajeddig.github.io/Guide-du-Developpeur-Scientifique/"
 baseurl: ""  # Laisser vide si le site est à la racine
 
-# Thème utilisé (ici le thème Hacker via remote_theme)
-theme: hacker
-
-# Plugins Jekyll (fusion des plugins nécessaires)
+remote_theme: pages-themes/hacker@v0.2.0
 plugins:
-  - jekyll-remote-theme
-  - jekyll-seo-tag
+- jekyll-remote-theme 
+- jekyll-seo-tag
 
 # Informations sur l'auteur (à personnaliser)
 author:
