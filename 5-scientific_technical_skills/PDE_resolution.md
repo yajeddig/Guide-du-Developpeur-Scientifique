@@ -2,6 +2,15 @@
 
 Les EDP modélisent de nombreux phénomènes physiques tels que le transfert de chaleur, la propagation d’ondes ou les écoulements fluides. Par exemple, l’équation de la chaleur en 1D s’exprime par  
 
+<div>
+$$
+\frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2}
+$$
+</div>
+
+<p>\(\frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2}\)</p>
+
+
 ```math
 \frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2}
 ```
