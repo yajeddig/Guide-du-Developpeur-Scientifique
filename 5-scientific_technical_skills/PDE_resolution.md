@@ -1,9 +1,6 @@
 # Introduction aux Équations aux Dérivées Partielles (EDP)
 
 Les EDP modélisent de nombreux phénomènes physiques tels que le transfert de chaleur, la propagation d’ondes ou les écoulements fluides. Par exemple, l’équation de la chaleur en 1D s’exprime par  
-<p>
-<div class="cmath"> `f(x) = (x+2)/(2x+1)`          `x in RR,\ x !=-1/2`</div>
-</p>
 
 ```math
 \frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2}
