@@ -1,15 +1,9 @@
 # Introduction aux Équations aux Dérivées Partielles (EDP)
 
 Les EDP modélisent de nombreux phénomènes physiques tels que le transfert de chaleur, la propagation d’ondes ou les écoulements fluides. Par exemple, l’équation de la chaleur en 1D s’exprime par  
-
-<div>
-$$
-\frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2}
-$$
-</div>
-
-<p>\(\frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2}\)</p>
-
+<p>
+<div class="cmath"> `f(x) = (x+2)/(2x+1)`          `x in RR,\ x !=-1/2`</div>
+</p>
 
 ```math
 \frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2}
@@ -495,9 +489,10 @@ Pour un domaine donné, les équations de Saint-Venant se décomposent en deux p
 ```
 
    où  
-   - $h = h(\mathbf{x},t)$ est la hauteur d’eau (profondeur locale),  
-   - $\mathbf{u} = \mathbf{u}(\mathbf{x},t)$ est le vecteur vitesse moyen (horizontal),  
-   - $\nabla\cdot (h\,\mathbf{u})$ représente le flux volumique horizontal.
+
+- $h = h(\mathbf{x},t)$ est la hauteur d’eau (profondeur locale),  
+- $\mathbf{u} = \mathbf{u}(\mathbf{x},t)$ est le vecteur vitesse moyen (horizontal),  
+- $\nabla\cdot (h\,\mathbf{u})$ représente le flux volumique horizontal.
 
 2. **Conservation de la quantité de mouvement :**
 
@@ -506,9 +501,10 @@ Pour un domaine donné, les équations de Saint-Venant se décomposent en deux p
 ```
 
    où  
-   - $g$ est l’accélération due à la pesanteur,  
-   - $z_b$ représente l’élévation du lit,  
-   - $\tau$ désigne les termes de frottement (résultant de la rugosité du lit ou d’autres pertes).
+
+- $g$ est l’accélération due à la pesanteur,  
+- $z_b$ représente l’élévation du lit,  
+- $\tau$ désigne les termes de frottement (résultant de la rugosité du lit ou d’autres pertes).
 
 Cette formulation permet de décrire l’évolution de l’écoulement en fonction des variations locales de la profondeur $h$ et du champ de vitesse $\mathbf{u}$.
 
@@ -910,7 +906,7 @@ plt.show()
   \frac{\partial (h\,C_i)}{\partial t} + \nabla \cdot (h\,\mathbf{u}\,C_i) = \nabla \cdot (h\,D_i\,\nabla C_i) + h \sum_{j=1}^{NR} \mu_{i,j}\,R_j.
   ```
 
-   - **Étape 3 :** Dans le cas où $h$ est constant, diviser par $h$ pour obtenir une équation plus simple.
+- **Étape 3 :** Dans le cas où $h$ est constant, diviser par $h$ pour obtenir une équation plus simple.
 
 3. **Application au cas 1D avec A, B et C :**  
    En supposant $u$ constant et issu d’une simulation hydraulique découplée, nous obtenons un système d’équations d’advection–diffusion–réaction pour A, B et C. L’implémentation en Python ci-dessus illustre cette approche en utilisant un schéma explicite en différences finies.
