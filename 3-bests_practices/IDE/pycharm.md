@@ -12,7 +12,7 @@
 
 # PyCharm
 
-## Utilisation de PyCharm
+## Installation, configuration et prise en main de PyCharm
 
 Voici comment installer, configurer et utiliser PyCharm pour le développement Python :
 
