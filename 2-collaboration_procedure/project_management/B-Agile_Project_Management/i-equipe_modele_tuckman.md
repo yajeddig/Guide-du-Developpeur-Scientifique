@@ -71,7 +71,7 @@ En nous appuyant sur les études de Bruce Wayne Tuckman, nous adoptons une appro
 
 Ces phases aident à construire une équipe soudée, autogérée, et performante sans recourir à l'autoritarisme.
 
-# 2 Formez votre équipe
+# 2. Formez votre équipe
 
 Dans la phase initiale "Forming" du modèle de Bruce Tuckman, l'équipe semble calme mais est en réalité en pleine évaluation mutuelle. Cette phase critique nécessite une observation attentive. L'équipe se forme, évaluant les relations et les compétences de chacun, ce qui définira comment ils travailleront ensemble. Il est essentiel de dissiper les incertitudes pendant cette période fondamentale.
 
