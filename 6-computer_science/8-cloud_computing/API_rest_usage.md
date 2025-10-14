@@ -1,7 +1,7 @@
 # Comprendre et utiliser une API avec Python
 
 **Durée :** 60 minutes  
-**Prérequis :** [Python Basics](../../../3-bests_practices/python_environment.md), [Requêtes HTTP](intro_to_cloud_services.md)  
+**Prérequis :** [Python Basics](../../../3-bests_practices/python_environment.md), Requêtes HTTP  
 **Objectifs :**
 - Comprendre le concept d'API et son utilité
 - Maîtriser les requêtes HTTP avec Python
