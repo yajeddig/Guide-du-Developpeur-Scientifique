@@ -1,3 +1,15 @@
+---
+⏱️ **Durée estimée :** 35 minutes (lecture + exercice de conception)
+📋 **Prérequis :** Bases de la programmation, notions de conception logicielle
+🎯 **Objectifs :** 
+- Comprendre l'importance de l'architecture logicielle
+- Apprendre à décomposer un projet en modules
+- Maîtriser la planification des interactions entre composants
+- Lier architecture et gestion des tâches de développement
+
+**TL;DR :** Ce chapitre explique comment concevoir l'architecture d'un logiciel avant de programmer pour organiser et faciliter le développement.
+---
+
 # L'Importance de Définir l'Architecture d'un Code
 
 Imaginons que vous construisez une maison. Avant même de penser à la peinture des murs ou au style des meubles, vous devez avoir un plan précis : où seront les pièces, comment l'eau et l'électricité seront distribuées, etc. En développement logiciel, définir l'architecture d'un code, c'est un peu comme dessiner ce plan. Cela vous aide à :

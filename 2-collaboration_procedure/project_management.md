@@ -1,4 +1,16 @@
-# La gestion d'un projet de développement en général, et avec GitHub ou GitLab.
+---
+⏱️ **Durée estimée :** 20 minutes (lecture + exploration ressources)
+📋 **Prérequis :** Notions de collaboration, compte GitHub/GitLab
+🎯 **Objectifs :** 
+- Découvrir les ressources de gestion de projet
+- Comprendre les différentes méthodologies disponibles
+- Identifier les outils GitHub/GitLab pour la gestion de projet
+- Choisir l'approche adaptée à son contexte
+
+**TL;DR :** Ce chapitre rassemble les meilleures ressources pour apprendre la gestion de projet avec GitHub et GitLab.
+---
+
+# La gestion d'un projet de développement en général, et avec GitHub ou GitLab
 
 ## Ressources
 

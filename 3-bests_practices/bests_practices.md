@@ -1,3 +1,15 @@
+---
+⏱️ **Durée estimée :** 25 minutes (lecture + navigation)
+📋 **Prérequis :** Notions de programmation, installation Python
+🎯 **Objectifs :** 
+- Découvrir l'écosystème des bonnes pratiques
+- Comprendre l'importance de la qualité du code
+- Identifier les outils et méthodes essentiels
+- Planifier son apprentissage des best practices
+
+**TL;DR :** Ce chapitre présente les domaines clés des bonnes pratiques : code, IDE, environnements et documentation.
+---
+
 # Best Practices
 
 Bienvenue dans la section "Best Practices" d'INEVO. Cette section est dédiée aux bonnes pratiques que nous recommandons pour assurer la qualité, la maintenabilité et l'efficacité de vos projets. Vous trouverez ici des directives sur la rédaction de code, l'utilisation des IDE, la gestion des environnements Python, la structure des dossiers, et bien plus encore.

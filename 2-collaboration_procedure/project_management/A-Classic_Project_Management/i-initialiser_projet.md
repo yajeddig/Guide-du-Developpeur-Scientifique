@@ -1,6 +1,19 @@
-[[_TOC_]]
-
 # Analysez les besoins de votre client
+
+---
+⏱️ **Durée estimée :** 40 minutes (lecture + exercices pratiques)
+📋 **Prérequis :** Notions de base en gestion de projet
+🎯 **Objectifs :**
+
+- Maîtriser l'analyse des besoins clients
+- Comprendre les contraintes qualité/coût/délai
+- Apprendre la rédaction d'appels d'offres
+- Réaliser des études de faisabilité techniques et économiques
+
+**TL;DR :** Ce chapitre couvre l'initialisation de projet : de l'analyse des besoins à l'étude de faisabilité
+---
+
+[[_TOC_]]
 
 ## Introduction à la Gestion de Projet
 

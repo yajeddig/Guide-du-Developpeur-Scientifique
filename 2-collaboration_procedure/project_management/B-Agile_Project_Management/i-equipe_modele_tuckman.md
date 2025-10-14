@@ -1,6 +1,19 @@
-[[_TOC_]]
+# Découvrez l'importance de l'esprit d'équipe en gestion de projet agile
 
-# 1\. Découvrez l'importance de l'esprit d'équipe en gestion de projet agile
+---
+⏱️ **Durée estimée :** 40 minutes (lecture + exercices équipe)
+📋 **Prérequis :** Notions d'agilité, expérience de travail en équipe
+🎯 **Objectifs :**
+
+- Comprendre les valeurs du Manifeste Agile
+- Maîtriser le modèle de Tuckman pour les équipes
+- Identifier les dynamiques humaines en projet
+- Appliquer l'intelligence collective
+
+**TL;DR :** Ce chapitre explore la formation d'équipes agiles et les étapes de développement selon le modèle de Tuckman
+---
+
+[[_TOC_]]
 
 Dans le contexte de la gestion de projet, la dynamique humaine est cruciale. Les attentes d'innovation du client, la tendance du chef de projet à s'en tenir au connu, et l'équilibre que l'équipe cherche à maintenir entre les deux posent des défis uniques. La méthode séquentielle peut être inadéquate pour des besoins évolutifs, alors qu'une approche agile offre la flexibilité nécessaire. L'agilité invite à l'implication du client et à une adaptabilité accrue. Cette section explore comment l'agilité peut adresser ces enjeux.
 

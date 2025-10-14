@@ -1,4 +1,16 @@
 
+---
+⏱️ **Durée estimée :** 40 minutes (lecture + configuration)
+📋 **Prérequis :** Installation de VSCode, bases de la programmation
+🎯 **Objectifs :** 
+- Maîtriser l'interface et les fonctionnalités de VSCode
+- Configurer l'environnement pour le développement Python
+- Utiliser Git et les outils de versioning intégrés
+- Installer et gérer les extensions essentielles
+
+**TL;DR :** Ce chapitre guide la configuration et l'utilisation optimale de Visual Studio Code pour le développement scientifique.
+---
+
 # Utiliser l'IDE Visual Studio Code
 
 ## Introduction

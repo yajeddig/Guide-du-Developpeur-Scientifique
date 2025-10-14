@@ -1,4 +1,16 @@
-# Introduction aux Tests en Programmation : Votre bouclier contre les bugs !
+---
+⏱️ **Durée estimée :** 25 minutes (lecture + réflexion)
+📋 **Prérequis :** Bases de la programmation Python
+🎯 **Objectifs :** 
+- Comprendre l'importance des tests en développement
+- Découvrir les différents types de tests
+- Identifier les avantages d'une stratégie de test
+- Préparer la mise en place de tests automatisés
+
+**TL;DR :** Ce chapitre introduit les concepts fondamentaux des tests et leur importance critique pour un code scientifique fiable.
+---
+
+# Introduction aux Tests en Programmation : Votre bouclier contre les bugs
 
 ## Les tests : un véritable atout dans votre boîte à outils de développement
 

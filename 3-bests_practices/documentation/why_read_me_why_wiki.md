@@ -1,5 +1,15 @@
 # Bonnes Pratiques de Documentation avec Git, GitHub et GitLab
 
+**Durée :** 45 minutes  
+**Prérequis :** [Git Basics](../../../1-git_basics/1-git_basics.md), [Gestion d'Environnement Python](../python_environment/anaconda.md)  
+**Objectifs :**
+- Comprendre l'importance de la documentation dans les projets scientifiques
+- Maîtriser la rédaction de README efficaces
+- Savoir utiliser les wikis pour la documentation étendue
+- Distinguer README et wiki selon le contexte d'usage
+
+**TL;DR :** Guide complet pour documenter efficacement vos projets avec README et wikis, deux outils complémentaires essentiels pour la collaboration scientifique.
+
 ## 1. Introduction
 
 Git est comme un journal de bord pour votre code, qui enregistre chaque modification apportée au fil du temps. GitHub et GitLab sont des plateformes en ligne qui hébergent ces journaux de bord (appelés "dépôts"), facilitant la collaboration et le partage de code entre plusieurs personnes. **GitHub** est particulièrement populaire pour les projets open-source, tandis que **GitLab** offre des fonctionnalités supplémentaires pour la gestion de projets et le déploiement de code.

@@ -1,3 +1,15 @@
+---
+⏱️ **Durée estimée :** 35 minutes (lecture + application)
+📋 **Prérequis :** Expérience de recherche, notions de rédaction scientifique
+🎯 **Objectifs :** 
+- Comprendre l'importance de la documentation scientifique
+- Maîtriser la structure et les éléments clés
+- Apprendre la documentation des modèles mathématiques
+- Intégrer aspects techniques et scientifiques
+
+**TL;DR :** Ce chapitre détaille la rédaction de documentation scientifique rigoureuse pour assurer reproductibilité et communication.
+---
+
 # Rédaction de la Documentation Scientifique : Le Guide Essentiel
 
 ## Pourquoi documenter ?

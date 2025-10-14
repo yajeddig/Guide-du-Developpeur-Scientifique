@@ -1,3 +1,18 @@
+# Collectez les besoins utilisateurs
+
+---
+⏱️ **Durée estimée :** 45 minutes (lecture + exercices UX)
+📋 **Prérequis :** Équipe constituée, bases d'UX design
+🎯 **Objectifs :**
+
+- Maîtriser les techniques de collecte des besoins
+- Créer des personas représentatifs
+- Réaliser des entretiens utilisateurs efficaces
+- Concevoir des storyboards et parcours utilisateur
+
+**TL;DR :** Ce chapitre détaille la collecte et l'analyse des besoins utilisateurs dans une approche agile centrée utilisateur
+---
+
 [[_TOC_]]
 
 Après la constitution de votre équipe agile, nous allons voir l'importance du client, mais surtout de l'utilisateur final dans la gestion du projet.

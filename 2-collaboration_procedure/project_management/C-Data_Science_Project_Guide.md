@@ -1,3 +1,16 @@
+---
+⏱️ **Durée estimée :** 60 minutes (lecture + application)
+📋 **Prérequis :** Notions de data science, méthodologie CRISP-DM
+🎯 **Objectifs :**
+
+- Maîtriser le cycle de vie d'un projet data science
+- Comprendre les enjeux business et analytiques
+- Apprendre la collecte et préparation des données
+- Gérer le déploiement et la maintenance des modèles
+
+**TL;DR :** Ce chapitre détaille la méthodologie spécifique aux projets de data science, de la compréhension métier au déploiement
+---
+
 # Démarche de Déroulement d'un Projet en Data Science
 
 La méthodologie en Data Science suit une approche structurée pour répondre aux questions commerciales à travers l'analyse de données. Elle se décompose en plusieurs étapes clés, chacune ayant son propre objectif et ses actions spécifiques.

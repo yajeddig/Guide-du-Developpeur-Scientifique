@@ -1,3 +1,15 @@
+---
+⏱️ **Durée estimée :** 35 minutes (lecture + réflexion)
+📋 **Prérequis :** Bases de Git, expérience avec les commits
+🎯 **Objectifs :** 
+- Comprendre les défis de la collaboration en équipe
+- Découvrir les stratégies de gestion des conflits
+- Apprendre les bonnes pratiques de communication
+- Préparer la mise en place d'un workflow collaboratif
+
+**TL;DR :** Ce chapitre présente les fondamentaux de la collaboration efficace et les défis à surmonter en équipe.
+---
+
 # Comment collaborer efficacement sur un projet de développement : Un guide pour les scientifiques
 
 ## Transformer le chaos en harmonie : Maîtriser la collaboration dans le développement

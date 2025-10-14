@@ -1,4 +1,19 @@
 
+# Gestion de Projet Classique (Méthodologie en Cascade)
+
+---
+⏱️ **Durée estimée :** 50 minutes (lecture + exercices)
+📋 **Prérequis :** Notions de gestion de projet, expérience collaborative
+🎯 **Objectifs :**
+
+- Maîtriser la méthodologie en cascade
+- Apprendre l'analyse des besoins et la faisabilité
+- Construire des plannings Gantt et budgets
+- Rédiger cahiers des charges fonctionnels et techniques
+
+**TL;DR :** Ce chapitre détaille la gestion de projet classique séquentielle, de l'initialisation à l'exploitation
+---
+
 > **Très** **très** **très** largement inspiré du cours [Gérez un projet digital avec une méthodologie en cascade - OpenClassRoom](https://openclassrooms.com/fr/courses/4296701-gerez-un-projet-digital-avec-une-methodologie-en-cascade)
 
 Assurer la livraison d’un projet, quel qu’il soit, tout en respectant un planning, des exigences de qualité, et des contraintes budgétaires est un défi complexe. C’est un véritable métier, celui de chef·fe de projet.

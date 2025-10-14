@@ -1,4 +1,16 @@
-### Les Tests d'Intégration
+---
+⏱️ **Durée estimée :** 40 minutes (lecture + pratique)
+📋 **Prérequis :** Tests unitaires, architecture modulaire
+🎯 **Objectifs :** 
+- Comprendre la différence avec les tests unitaires
+- Apprendre à tester les interactions entre modules
+- Maîtriser la configuration des environnements de test
+- Identifier les stratégies d'intégration appropriées
+
+**TL;DR :** Ce chapitre explique comment tester les interactions entre composants pour assurer la cohérence globale du système.
+---
+
+# Les Tests d'Intégration
 
 #### Présentation des Tests d'Intégration
 

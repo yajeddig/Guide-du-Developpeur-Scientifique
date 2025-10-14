@@ -1,3 +1,18 @@
+# Gestion de Projet Agile
+
+---
+⏱️ **Durée estimée :** 45 minutes (lecture + vidéos)
+📋 **Prérequis :** Bases de gestion de projet, travail en équipe
+🎯 **Objectifs :**
+
+- Comprendre les principes de l'agilité
+- Maîtriser le modèle de Tuckman pour les équipes
+- Apprendre la gestion des besoins utilisateurs (personas, stories)
+- Utiliser les outils agiles (Kanban, Backlog, Burndown)
+
+**TL;DR :** Ce chapitre introduit les méthodologies agiles pour gérer l'incertitude et favoriser la collaboration
+---
+
 > Initiation à la gestion de projet agile **très** **très** **très** inspiré du cours [Initiez-vous à la gestion de projet agile - OpenClassRoom](https://openclassrooms.com/fr/courses/4507926-initiez-vous-a-la-gestion-de-projet-agile)
 
 ### Gestion empirique de projets informatiques
