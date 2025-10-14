@@ -79,15 +79,17 @@ La longueur idéale d'un CDC dépend de la complexité du projet. Voici quelques
 <tr>
 <td>
 
-* Moins il y a aura de risques pour que la commande ne soit pas respectée
-* Plus il vous prendra du temps (et donc de l'argent) à rédiger
-* Plus il sera difficile à consulter et à mettre à jour 
+- Moins il y a aura de risques pour que la commande ne soit pas respectée
+- Plus il vous prendra du temps (et donc de l'argent) à rédiger
+- Plus il sera difficile à consulter et à mettre à jour
+
 </td>
 <td>
 
-* Plus il y aura de risques liés à son interprétation
-* Moins il vous prendra de temps (et donc d'argent) à rédiger
-* Plus il sera facile à consulter et à mettre à jour
+- Plus il y aura de risques liés à son interprétation
+- Moins il vous prendra de temps (et donc d'argent) à rédiger
+- Plus il sera facile à consulter et à mettre à jour
+
 </td>
 </tr>
 </table>
@@ -199,16 +201,16 @@ Il est essentiel de clarifier avec le commanditaire l'étendue des services atte
 - **Définir le Périmètre** : Assurez-vous que les attentes du commanditaire en matière de marketing sont bien comprises et clairement définies dans le contrat.
 - **Allocation des Ressources** : Évaluez les ressources disponibles et évitez d'investir du temps dans des activités qui ne sont pas couvertes par l'accord.
 
-### Pour résumer :
+### Pour résumer
 
-* Assurez-vous de bien **comprendre le marché cible** de votre projet avant de vous y lancer.
-* Faire un **benchmark n'est pas une perte de temps**, au contraire.
-* Créer un cahier des charges peut être un exercice de **communication visuel, fun et stimulant**.
-* Chaque section du cahier des charges doit être développée dans la **juste mesure de la commande**.
+- Assurez-vous de bien **comprendre le marché cible** de votre projet avant de vous y lancer.
+- Faire un **benchmark n'est pas une perte de temps**, au contraire.
+- Créer un cahier des charges peut être un exercice de **communication visuel, fun et stimulant**.
+- Chaque section du cahier des charges doit être développée dans la **juste mesure de la commande**.
 
 # Rédigez les spécifications fonctionnelles de votre projet
 
-Dans un projet digital, les spécifications fonctionnelles sont une section du cahier des charges ou un document à part entière qui spécifie, décrit, précise les fonctionnalités du site, de l'application ou du logiciel en question. 
+Dans un projet digital, les spécifications fonctionnelles sont une section du cahier des charges ou un document à part entière qui spécifie, décrit, précise les fonctionnalités du site, de l'application ou du logiciel en question.
 
 ## Définition du Périmètre Fonctionnel via l'Impact Mapping
 
@@ -274,10 +276,10 @@ La création d'une arborescence de site nécessite d'abord une visualisation cla
 
 ## En résumé
 
-* Définissez le périmètre fonctionnel de votre site de la manière la plus exhaustive possible avant de passer à la suite.
-* Ne commencez pas à concevoir votre site avant d'avoir défini son arborescence.
-* Pour réaliser ces schémas, utilisez l'outil avec lequel vous êtes le plus à l'aise.
-* N'hésitez pas à consulter vos coéquipiers pour enrichir vos spécifications fonctionnelles.
+- Définissez le périmètre fonctionnel de votre site de la manière la plus exhaustive possible avant de passer à la suite.
+- Ne commencez pas à concevoir votre site avant d'avoir défini son arborescence.
+- Pour réaliser ces schémas, utilisez l'outil avec lequel vous êtes le plus à l'aise.
+- N'hésitez pas à consulter vos coéquipiers pour enrichir vos spécifications fonctionnelles.
 
 # Réalisez le zoning et le wireframe d'un site web
 
@@ -340,9 +342,9 @@ C'est une couche de détail en plus sur vos maquettes. Si vous avez un zoning bi
 
 À ce stade, vous n'avez toujours pas à vous soucier de l'exactitude de :
 
-* la taille des éléments,
-* ni de leur couleur,
-* ni de leur alignement.
+- la taille des éléments,
+- ni de leur couleur,
+- ni de leur alignement.
 
 Votre graphiste s'en chargera pendant la phase de conception. En revanche, assurez-vous de **bien placer tous les éléments nécessaires pour que le site remplisse ses fonctions**.
 
@@ -352,17 +354,17 @@ Cela vous économisera des aller-retours potentiellement chronophages et donc co
 
 ![image](image/2-basse_res.png)
 
-### Pour finir :
+### Pour finir
 
-* Se discipliner pour d'abord passer des maquettes basse fidélité aux maquettes moyenne fidélité, puis des maquettes moyenne fidélité aux maquettes haute fidélité, n'est pas une perte de temps, au contraire.
-* Réalisez vos maquettes en étroite collaboration avec votre graphiste ou déléguez-lui.
-* Faites régulièrement valider vos maquettes par le commanditaire. 
+- Se discipliner pour d'abord passer des maquettes basse fidélité aux maquettes moyenne fidélité, puis des maquettes moyenne fidélité aux maquettes haute fidélité, n'est pas une perte de temps, au contraire.
+- Réalisez vos maquettes en étroite collaboration avec votre graphiste ou déléguez-lui.
+- Faites régulièrement valider vos maquettes par le commanditaire.
 
 # Rédigez les spécifications techniques de votre projet
 
 ![image.png](image\sommaire_spec_tech.png)
 
-Avant de renvoyer votre cahier des charges au client pour une dernière validation, vous allez devoir **traduire ou faire traduire vos spécifications fonctionnelles** (vues au dernier chapitre) **en spécifications techniques**. 
+Avant de renvoyer votre cahier des charges au client pour une dernière validation, vous allez devoir **traduire ou faire traduire vos spécifications fonctionnelles** (vues au dernier chapitre) **en spécifications techniques**.
 
 ## **Rédiger des spécifications techniques**
 
@@ -548,7 +550,7 @@ La scorecard est un outil d'aide à la décision qui permet de comparer objectiv
 
 6. Calculez le score total (pondéré) de chaque option en multipliant chaque score par le poids de sa colonne.
 
-    **`Score total Wordpress`** `= (0,9 * 0,4) + (0,8 * 0,3) + (1 * 0,3) = `**`0,9` **
+    **`Score total Wordpress`** `= (0,9 * 0,4) + (0,8 * 0,3) + (1 * 0,3) =`**`0,9`**
 
    <table>
    <tr>
@@ -602,6 +604,5 @@ La scorecard est un outil d'aide à la décision qui permet de comparer objectiv
    <td>0.41</td>
    </tr>
    </table>
-
 
 Vous pouvez utiliser la technique de la score card pour rationaliser n'importe quelle autre prise de décision, que ce soit pour choisir un hébergeur, recruter un collaborateur ou choisir une destination de voyage. :wink:

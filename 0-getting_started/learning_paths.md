@@ -272,5 +272,3 @@ Les parcours peuvent être personnalisés selon :
 
 *Dernière mise à jour : Octobre 2025*
 *Version : 1.0*
- 
- 

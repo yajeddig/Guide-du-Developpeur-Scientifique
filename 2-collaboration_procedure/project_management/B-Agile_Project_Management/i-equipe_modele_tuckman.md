@@ -30,12 +30,12 @@ L'approche valorise l'"intelligence collective" et s'appuie sur des modèles tel
 
 ### Mise en situation complexe
 
-* **Le client** souhaite une balançoire “innovante”. Il propose la conception ci-dessous. Avec ce produit, il veut se démarquer de la concurrence ; mais les utilisateurs de la balançoire seront-ils vraiment satisfaits par une superposition de trois planches ? L'équipe parviendra-t-elle à traduire l'idée du client en balançoire fonctionnelle ?
-* **Le chef de projet**, quant à lui, tend à rapprocher le besoin du client d’un produit qu'il connaît et dont il maîtrise déjà la conception. Deux cordes et une planche forment une balançoire standard ! Cette solution sera-t-elle assez “innovante”, et donc satisfaisante pour le client ?
-* **L’équipe** tend donc vers un compromis entre les besoins exprimés par le client, les instructions du chef de projet et sa propre vision du produit. Le projet devra-t-il être aussi complexe ?
-* **Le livrable** est présenté au client à la fin du projet. Une maquette incomplète ou un prototype approximatif permettent une avancée très rapide ! Le client et l'utilisateur auront-ils toujours la même vision du produit au cours de son développement ?
-* **La promesse commerciale** et la stratégie marketing sont à la hauteur de ce que le client va payer. La balançoire est luxueuse et son "innovation" réside surtout dans son confort ! La gestion de projet devra-t-elle se limiter à valoriser les avantages concurrentiels du produit ?
-* **L'utilisateur** voulait une balançoire sans prétention. Il souhaitait quelque chose de simple, amusant et économique ! Les facteurs de réussite d’un projet seront-ils seulement observés après le déploiement du produit ?
+- **Le client** souhaite une balançoire “innovante”. Il propose la conception ci-dessous. Avec ce produit, il veut se démarquer de la concurrence ; mais les utilisateurs de la balançoire seront-ils vraiment satisfaits par une superposition de trois planches ? L'équipe parviendra-t-elle à traduire l'idée du client en balançoire fonctionnelle ?
+- **Le chef de projet**, quant à lui, tend à rapprocher le besoin du client d’un produit qu'il connaît et dont il maîtrise déjà la conception. Deux cordes et une planche forment une balançoire standard ! Cette solution sera-t-elle assez “innovante”, et donc satisfaisante pour le client ?
+- **L’équipe** tend donc vers un compromis entre les besoins exprimés par le client, les instructions du chef de projet et sa propre vision du produit. Le projet devra-t-il être aussi complexe ?
+- **Le livrable** est présenté au client à la fin du projet. Une maquette incomplète ou un prototype approximatif permettent une avancée très rapide ! Le client et l'utilisateur auront-ils toujours la même vision du produit au cours de son développement ?
+- **La promesse commerciale** et la stratégie marketing sont à la hauteur de ce que le client va payer. La balançoire est luxueuse et son "innovation" réside surtout dans son confort ! La gestion de projet devra-t-elle se limiter à valoriser les avantages concurrentiels du produit ?
+- **L'utilisateur** voulait une balançoire sans prétention. Il souhaitait quelque chose de simple, amusant et économique ! Les facteurs de réussite d’un projet seront-ils seulement observés après le déploiement du produit ?
 
 ### Réalité de la Gestion de Projet
 
@@ -71,7 +71,7 @@ En nous appuyant sur les études de Bruce Wayne Tuckman, nous adoptons une appro
 
 Ces phases aident à construire une équipe soudée, autogérée, et performante sans recourir à l'autoritarisme.
 
-# 2\. Formez votre équipe
+# 2 Formez votre équipe
 
 Dans la phase initiale "Forming" du modèle de Bruce Tuckman, l'équipe semble calme mais est en réalité en pleine évaluation mutuelle. Cette phase critique nécessite une observation attentive. L'équipe se forme, évaluant les relations et les compétences de chacun, ce qui définira comment ils travailleront ensemble. Il est essentiel de dissiper les incertitudes pendant cette période fondamentale.
 
@@ -97,7 +97,7 @@ Le Niko-Niko est conçu par et pour l'équipe, incarnant un principe de mesure c
 
 > Le principe de Gilb ne dit pas que définir un nouvel indicateur est toujours une bonne chose, ni que ces indicateurs doivent mettre vos collaborateurs en concurrence.
 
-# 3\. Lancez votre travail en équipe
+# 3 Lancez votre travail en équipe
 
 La phase "Storming" est cruciale pour l'évolution d'une équipe, marquée par des conflits et des tensions. Il est essentiel d'adopter une approche non autoritaire, favorisant plutôt l'écoute et la résolution constructive des différends pour maintenir l'unité et encourager une vision partagée du projet. Cette étape, bien que délicate, est nécessaire pour forger la cohésion et définir les dynamiques de groupe.
 
@@ -135,7 +135,7 @@ La technique Pomodoro suggère des sessions de travail de 25 minutes, entrecoup�
 
 Après chaque session de travail chronométré, effectuez un bilan pour déterminer si les objectifs sont atteints. Évaluez si les tâches fixées ont été complétées entièrement ou partiellement, en visant une perspective de réussite claire (0 % ou 100 %). Cette approche vous aide à mesurer précisément l'avancement et à ajuster les efforts pour les sessions futures.
 
-# 4\. Régularisez le travail de votre équipe
+# 4 Régularisez le travail de votre équipe
 
 La troisième étape du modèle de constitution d’équipe de Tuckman (Norming/régularisation) est une phase où vous serez peut-être tenté de prendre des décisions à la place de votre équipe... Attention ! :triumph:
 
@@ -172,7 +172,7 @@ Le ROTI est une technique agile utilisée pour évaluer l'efficacité d'une réu
 - **4 doigts :** Bonne, temps bien investi.
 - **5 doigts :** Excellente, très bénéfique.
 
-### Pour Améliorer :
+### Pour Améliorer
 
 La règle veut qu’on interroge seulement les participants qui ont noté 1 et 2 doigts, mais je vous conseille plutôt de poser une seule et même question aux membres de votre équipe : « Qu'est-ce qui pourrait être fait pour augmenter ma note d'un point ? ». :thinking:
 
@@ -184,7 +184,7 @@ Après l’évaluation du ROTI, vous devez simplement prendre acte de la note mo
 
 Cette pratique est une parfaite initiation à la transparence et au management visuel. En gestion de projet, le ROTI nous invite à rester humbles. :bow:
 
-# 5\. Performez en équipe
+# 5 Performez en équipe
 
 Dans la quatrième étape du modèle de constitution d’équipe de Bruce Tuckman, appelée Performing ou Exécution, vous n'êtes plus aussi enclin à renforcer vos liens avec l'équipe, à maintenir une présence régulière ou à dépendre fortement de chaque membre. Au lieu de cela, vous prenez du recul et vous analysez de manière continue le travail de votre équipe afin de partager vos observations. C'est une phase où l'accent est mis sur l'exécution efficace des tâches et la réalisation des objectifs, tout en permettant à chaque membre de l'équipe de fonctionner de manière autonome.
 
@@ -205,11 +205,11 @@ Restez à l'affût des nouveaux logiciels qui favorisent le pilotage par **les l
 
 Lorsque votre équipe atteint un niveau de performance élevé et produit de manière systématique, il est temps d'envisager le déploiement d'outils dédiés à la gestion de projet. Voici une sélection de quelques options parmi les plus populaires :
 
-* [Jira](https://www.atlassian.com/software/jira)
-* [Trello](https://trello.com/)
-* [Wrike](https://www.wrike.com/)
-* [Asana](https://asana.com/)
-* [Liste plus exhaustive ici](https://fr.wikipedia.org/wiki/Logiciel_de_gestion_de_projets)
+- [Jira](https://www.atlassian.com/software/jira)
+- [Trello](https://trello.com/)
+- [Wrike](https://www.wrike.com/)
+- [Asana](https://asana.com/)
+- [Liste plus exhaustive ici](https://fr.wikipedia.org/wiki/Logiciel_de_gestion_de_projets)
 
 En utilisant des outils d'analyse appropriés, vous pouvez identifier les causes des écarts, suivre leur évolution et découvrir des leviers d'action pour corriger le cours du projet. Cette approche vous permet de prendre des décisions éclairées basées sur les données. :rocket: #datadriven
 
@@ -219,9 +219,9 @@ Ici nous exploiterons les fonctionnalités de GitLab dans sa version gratuite (c
 
 Lorsque chaque membre est concentré sur **l’atteinte des objectifs** en tant qu’équipe :
 
-* L’individu n’existe plus ou disparaît.
-* Les membres de votre équipe ne dépendent pas d'un chef de projet.
-* Les membres peuvent résoudre des problèmes sans manager.
-* La supervision quotidienne de votre équipe n’est plus indispensable.
+- L’individu n’existe plus ou disparaît.
+- Les membres de votre équipe ne dépendent pas d'un chef de projet.
+- Les membres peuvent résoudre des problèmes sans manager.
+- La supervision quotidienne de votre équipe n’est plus indispensable.
 
 La réussite d'une équipe ne se décide pas simplement ! Le modèle de Tuckman représente une ressource inestimable pour former une équipe agile tout en tenant compte du tempo individuel de chaque membre. Que vous soyez Scrum Master, coach agile, manager, chef de projet, responsable, entrepreneur ou dirigeant d’entreprise, nous sommes tous des bénéficiaires lorsque les conditions optimales du travail collaboratif sont présentes.

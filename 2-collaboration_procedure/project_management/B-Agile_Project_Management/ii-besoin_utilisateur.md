@@ -31,14 +31,14 @@ Idéalement, premières rencontres en physique dans un **lieu neutre** (médiath
 
 Objectif de la première rencontre : **faire parler le client !** et recueillir le plus d'information possible :
 
-* Délai
-* Budget
-* Disponibilité
-* Finalité
-* Vision
-* Évolution
-* Inspiration
-* Concurrence
+- Délai
+- Budget
+- Disponibilité
+- Finalité
+- Vision
+- Évolution
+- Inspiration
+- Concurrence
 
 Poser des **questions ouvertes**, où le client ne peut répondre par "oui" ou "non".
 
@@ -52,8 +52,8 @@ Ne gaspillez pas votre temps dans des projets qui ne vous inspirent pas. Le risq
 
 Red Flags :
 
-* Personnes non coopératives
-* Client avec une vision déjà trop figée de leur produit ou de la solution à concevoir et à développer Vous serez vite fixé en échangeant sur vos méthodes de travail.
+- Personnes non coopératives
+- Client avec une vision déjà trop figée de leur produit ou de la solution à concevoir et à développer Vous serez vite fixé en échangeant sur vos méthodes de travail.
 
 ### N'ayez pas peur de paraître débutant
 

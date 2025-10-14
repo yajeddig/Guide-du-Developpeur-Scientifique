@@ -48,10 +48,10 @@ L'établissement d'un dialogue ouvert avec le commanditaire est essentiel pour c
 
 Lors de vos échanges exploratoires, au-delà d'un relationnel irréprochable, vous allez porter une attention particulière à 4 choses :
 
-* les **besoins explicites** du client
-* les **besoins implicites** du client
-* les **livrables potentiels**
-* et sa **grille de lecture** supposée
+- les **besoins explicites** du client
+- les **besoins implicites** du client
+- les **livrables potentiels**
+- et sa **grille de lecture** supposée
 
 ### Analyse et Recueil des Besoins
 
@@ -59,10 +59,10 @@ La première tâche du chef de projet est de comprendre et de compléter les bes
 
 Lors de vos échanges exploratoires, au-delà d'un relationnel irréprochable, vous allez porter une attention particulière à 4 choses :
 
-* les **besoins explicites** du client
-* les **besoins implicites** du client
-* les **livrables potentiels**
-* et sa **grille de lecture** supposée
+- les **besoins explicites** du client
+- les **besoins implicites** du client
+- les **livrables potentiels**
+- et sa **grille de lecture** supposée
 
 #### Besoins explicites
 
@@ -219,14 +219,16 @@ Un projet en cascade par exemple se déroule généralement en **5 phases** :
 <tr>
 <td>
 
-* Précision des échéances
-* Clarté et visualisation de l'état d'avancement
-* Budgetisation facile
+- Précision des échéances
+- Clarté et visualisation de l'état d'avancement
+- Budgetisation facile
+
 </td>
 <td>
 
-* Détection tardive des risques
-* Peu de marge d'erreur
+- Détection tardive des risques
+- Peu de marge d'erreur
+
 </td>
 </tr>
 </table>
@@ -243,13 +245,15 @@ Un projet en cascade par exemple se déroule généralement en **5 phases** :
 <tr>
 <td>
 
-* Meilleur réactivité aux imprévues
-* Détection rapide des risques
+- Meilleur réactivité aux imprévues
+- Détection rapide des risques
+
 </td>
 <td>
 
-* Planification peu précise
-* Budgetisation difficile
+- Planification peu précise
+- Budgetisation difficile
+
 </td>
 </tr>
 </table>
@@ -266,9 +270,9 @@ Si vous évaluer votre projet entre les deux, trouvez un compromis entre vos pr�
 
 Plus le projet a d'inconnues, plus vous aurez besoin d'agilité pour y faire face. En revanche, si celui-ci est très prévisible, vous aurez intérêt à privilégier la précision pour vous organiser et communiquer plus efficacement son avancée.
 
-> Si le risque technologique est insignifiant, le projet lui, n'est pas sans risque non plus. À ce risque technologique peut alors se substituer un risque humain. Ainsi, un projet jugé "trop facile" ou "peu stimulant" peut parfois être pris à la légère et susciter un manque de rigueur. 
+> Si le risque technologique est insignifiant, le projet lui, n'est pas sans risque non plus. À ce risque technologique peut alors se substituer un risque humain. Ainsi, un projet jugé "trop facile" ou "peu stimulant" peut parfois être pris à la légère et susciter un manque de rigueur.
 >
-> Au même titre qu'une équipe peut être **sous-qualifiée** pour un projet elle peut aussi être **sur-qualifiée**. 
+> Au même titre qu'une équipe peut être **sous-qualifiée** pour un projet elle peut aussi être **sur-qualifiée**.
 
 Pour la création d'un site web permettant de faire des réservations pour un hôtel, c'est un projet avec peu d'inconnu et assez bien maîtrisé. C'est donc une méthodologie classique qui conviendra.
 
@@ -315,10 +319,10 @@ Bien que moins intuitif que des logiciels spécialisés, un tableur peut être u
 
 > Voici quelques logiciels libres et gratuits vous permettant d’utiliser le diagramme de Gantt :
 >
-> * [**ProjectLibre**](https://sourceforge.net/projects/projectlibre/) : solution de gestion de projet open source, gratuite et très plébiscitée
-> * [**TaskJuggler**](https://taskjuggler.org/) : original dans son approche avec un mode édition pour la description des tâches et leurs dépendances ainsi qu'un mode rapport pour pouvoir visualiser l’ensemble
-> * [**GanttProject**](https://www.ganttproject.biz/) : logiciel libre et gratuit à installer sur son ordinateur
-> * [**Redmine**](https://www.redmine.org/) : une autre application web libre de gestion de projets comportant également d’autres fonctionnalités
+> - [**ProjectLibre**](https://sourceforge.net/projects/projectlibre/) : solution de gestion de projet open source, gratuite et très plébiscitée
+> - [**TaskJuggler**](https://taskjuggler.org/) : original dans son approche avec un mode édition pour la description des tâches et leurs dépendances ainsi qu'un mode rapport pour pouvoir visualiser l’ensemble
+> - [**GanttProject**](https://www.ganttproject.biz/) : logiciel libre et gratuit à installer sur son ordinateur
+> - [**Redmine**](https://www.redmine.org/) : une autre application web libre de gestion de projets comportant également d’autres fonctionnalités
 >
 > La gestion de projet par diagramme de Gantt peut aussi se faire avec des outils en ligne comme [**Monday**](https://monday.com/), [**Asana**](https://asana.com/) ou encore [**Wrike**](https://wrike.com/). Attention, néanmoins, car leur version gratuite reste moins performante que leur contrepartie payante.
 >
@@ -454,14 +458,16 @@ La gestion efficace de la progression du projet nécessite vigilance, adaptabili
 <tr>
 <td>
 
-* simple à créer 
-* précis
-* facile à comprendre pour toutes les parties prenantes
+- simple à créer
+- précis
+- facile à comprendre pour toutes les parties prenantes
+
 </td>
 <td>
 
-* nécessite des mises à jour régulières
-* éventuels problèmes d'affichage sur des projets complexes
+- nécessite des mises à jour régulières
+- éventuels problèmes d'affichage sur des projets complexes
+
 </td>
 </tr>
 </table>
@@ -474,9 +480,9 @@ Le budget calculé en interne n'est pas le budget proposé au client. Ici nous a
 
 Cela peut correspondre par exemple à :
 
-* des ressources **matérielles**
-* des ressources **informatique** (licences, logiciels)
-* des ressources **humaines** (salaires)
+- des ressources **matérielles**
+- des ressources **informatique** (licences, logiciels)
+- des ressources **humaines** (salaires)
 
 Selon la nature de votre projet, certains postes de dépenses seront plus importants que d'autres.
 
@@ -498,7 +504,6 @@ Pour trouver le coût journalier de la personne impliquée, référez-vous à vo
 
 Maintenant, il faut faire cela pour toute les tâches (vive excel) :  ![image](image/1-cout_projet.png)
 
-
 > Lorsque vous avez des ressources matérielles ou informatiques, n'oubliez pas de les inclure dans votre calcul. Ici l'achat de la licence complète du thème WordPress gonfle le budget prévisionnel de 2700 € ; ce n'est pas négligeable.
 
 On peut aussi calculer le coût de chaque phase : ![image](image/1-cout_etape_projet.png)
@@ -511,20 +516,20 @@ On peut aussi calculer le coût de chaque phase : ![image](image/1-cout_etape_pr
 
 Après avoir soigneusement **recueilli et analysé les besoins du client**, tenu une **réunion de cadrage** productive avec votre équipe et **planifié le projet** en détail, vous avez acquis une compréhension solide des exigences du projet et établi un **budget prévisionnel**. Vous êtes désormais prêt à **finaliser l'étude de faisabilité** et à passer à la rédaction de la **proposition commerciale**.
 
-> Si votre proposition ne parvient pas à convaincre le client de vous sélectionner, alors tout le travail fait jusqu'à présent aura été une perte de temps et donc d'argent... 
+> Si votre proposition ne parvient pas à convaincre le client de vous sélectionner, alors tout le travail fait jusqu'à présent aura été une perte de temps et donc d'argent...
 
 ## Structure du document
 
 Au minimum,
 
-* Une page de garde
-* Une note de synthèse
-* Un devis
+- Une page de garde
+- Une note de synthèse
+- Un devis
 
 mais aussi,
 
-* des conditions de ventes en annexe
-* une version plus rédigée de l'étude de faisabilité
+- des conditions de ventes en annexe
+- une version plus rédigée de l'étude de faisabilité
 
 Selon l'ampleur du projet concerné, son niveau de complexité, le risque et le profil du client, votre proposition commerciale sera plus ou moins détaillée. Ainsi vous n'adresserez pas la même proposition au gérant d'une organisation de 10 personnes pour un projet de 10000 € et au comité d'une organisation de 5000 personnes pour un projet de 500000 €. Cela peut sembler être du bon sens mais ça ne coûte rien de le re-préciser. :smile:
 
@@ -557,11 +562,11 @@ A la suite de la note de synthèse sera inclu un devis. Un devis est une proposi
 
 ### Poser la trame
 
-Ayez en tête qu'un devis est un document juridique. Il faut donc faire attention à respecter les normes et la réglementation en vigueur dans le pays concerné. En France, certaines mentions obligatoires doivent figurer sur le devis : 
+Ayez en tête qu'un devis est un document juridique. Il faut donc faire attention à respecter les normes et la réglementation en vigueur dans le pays concerné. En France, certaines mentions obligatoires doivent figurer sur le devis :
 
-* La durée de validité de l'offre
-* L'indication manuscrite, datée et signée du client : « Lu et accepté »
-* la mention « Lu et accepté », daté et signé par l'entrepreneur
+- La durée de validité de l'offre
+- L'indication manuscrite, datée et signée du client : « Lu et accepté »
+- la mention « Lu et accepté », daté et signé par l'entrepreneur
 
 Pour approfondir le cadre juridique du devis, [voici la documentation officielle du gouvernement](https://entreprendre.service-public.fr/vosdroits/F31144). Si impératif juridique spécifique à votre activité, il y a, vous pouvez ajouter **des annexes**, spécifiant les termes et conditions de ces services annexe (service après vente, formation etc...)📎
 
@@ -569,14 +574,14 @@ Pour approfondir le cadre juridique du devis, [voici la documentation officielle
 
 une fois la trame posée, il ne reste plus qu'a la remplir avec les informations de base, la liste des livrables du projet et les prix que vous proposez.
 
-Deux risques principaux : 
+Deux risques principaux :
 
-* **Une proposition trop chère** augmente le risque de ne pas remporter l'appel d'offre
-* **Une proposition pas assez cher** et vous risquez de tirer peu de profit, voir d'être en perte.
+- **Une proposition trop chère** augmente le risque de ne pas remporter l'appel d'offre
+- **Une proposition pas assez cher** et vous risquez de tirer peu de profit, voir d'être en perte.
 
 Pour diminuer le risque, il faudra habillement calculer le prix de vente, et donc votre marge commerciale.
 
-`Marge commerciale = prix de vente - coût de revient` 
+`Marge commerciale = prix de vente - coût de revient`
 
 `Prix de vente = marge commerciale + coût de revient`
 
@@ -584,9 +589,9 @@ Dans l'exemple du site web de l'hôtel Paradis, le coût de revient est de 8427 
 
 Pour la marge maximale, on utilise directement le budget client, par exemple ici 15 000 €.
 
-`Marge maximum = 15 000 - 8427 = `**`6 573 €`**
+`Marge maximum = 15 000 - 8427 =`**`6 573 €`**
 
-Pour la marge minimale, on peut se référer à la politique de votre entreprise. Imaginons que l'agence réalisant le site web encourage ses chefs de projet à ne pas se lancer dans des projets avec moins de 50% de taux de marge : 
+Pour la marge minimale, on peut se référer à la politique de votre entreprise. Imaginons que l'agence réalisant le site web encourage ses chefs de projet à ne pas se lancer dans des projets avec moins de 50% de taux de marge :
 
 `Taux de marge = (marge commerciale / coût de revient) * 100`
 
@@ -594,20 +599,20 @@ Pour la marge minimale, on peut se référer à la politique de votre entreprise
 
 `Marge commerciale minimum = 4 213 €`
 
-`Prix de vente minimum = 4 213 + 8 427 = `**`12 640 €`**
+`Prix de vente minimum = 4 213 + 8 427 =`**`12 640 €`**
 
 `Taux de marge maximum = (6 573 / 8 427) * 100 = 78%`
 
 À vous donc de manoeuvrer entre :
 
-* Une **marge minimum de 50%** pour un prix de vente de **12 640 €** qui se voudrait être très compétitif.
-* Une **marge maximum de 78%** pour un prix de vente de **15 000 €** qui se voudrait être très gourmande.
+- Une **marge minimum de 50%** pour un prix de vente de **12 640 €** qui se voudrait être très compétitif.
+- Une **marge maximum de 78%** pour un prix de vente de **15 000 €** qui se voudrait être très gourmande.
 
 Pour décider, vous pourrez prendre en compte divers critères tels que la santé de votre entreprise, celle de votre client, et votre connaissance du marché.
 
 Toujours dans notre exemple, disons que l'agence qui réalise le site web se porte mieux que l'hôtel Paradis, il conviendra donc de faire une proposition qui tende vers le bas. Combien proposeriez-vous ?
 
-Personnellement, je proposerais un prix de vente brut à **13 500 €** HT. Cela représenterait un taux de marge de **59%** qui semble équilibré. 
+Personnellement, je proposerais un prix de vente brut à **13 500 €** HT. Cela représenterait un taux de marge de **59%** qui semble équilibré.
 
 Vous allez donc pouvoir impacter plus ou moins proportionnellement cette marge sur tous les livrables listés dans votre devis.
 
@@ -615,7 +620,7 @@ Vous allez donc pouvoir impacter plus ou moins proportionnellement cette marge s
 
 # Défendez votre proposition commerciale
 
-Si votre offre a suffisamment intéressé le commanditaire de l'appel d'offre, il se peut que vous soyez invité à défendre votre offre lors d'une soutenance. 
+Si votre offre a suffisamment intéressé le commanditaire de l'appel d'offre, il se peut que vous soyez invité à défendre votre offre lors d'une soutenance.
 
 ## Préparer sa soutenance
 
@@ -629,7 +634,7 @@ Un support visuel peut être intéressant pour appuyer votre soutenance. Anticip
 
 ### Jouer une soutenance
 
-La soutenance d'un projet est une véritable performance, où l'art de communiquer est tout aussi crucial que le contenu présenté. Voici comment marquer positivement votre audience et inspirer confiance. 
+La soutenance d'un projet est une véritable performance, où l'art de communiquer est tout aussi crucial que le contenu présenté. Voici comment marquer positivement votre audience et inspirer confiance.
 
 #### Stratégies de Conviction
 
@@ -663,9 +668,9 @@ Projeter une image de confiance et de compétence est crucial lors d'une soutena
 
 #### Gestion des Questions
 
-* Scénario Idéal : Le client attend la fin de votre présentation pour poser ses questions, vous permettant de développer votre argumentation sans interruption.
+- Scénario Idéal : Le client attend la fin de votre présentation pour poser ses questions, vous permettant de développer votre argumentation sans interruption.
 
-* Scénario d'Interruptions : Préparez-vous à être interrompu et à répondre aux questions au fil de l'eau. Anticipez les objections courantes pour y répondre avec assurance.
+- Scénario d'Interruptions : Préparez-vous à être interrompu et à répondre aux questions au fil de l'eau. Anticipez les objections courantes pour y répondre avec assurance.
 
 #### Conclusion et Suivi
 
@@ -673,10 +678,3 @@ Projeter une image de confiance et de compétence est crucial lors d'une soutena
 - Convenez ensemble d'une date pour un prochain contact, préparant le terrain pour une réponse positive.
 
 En suivant ces conseils, vous serez mieux préparé à gérer votre soutenance de projet, à instaurer une atmosphère de confiance et d'engagement, et à naviguer avec aisance dans les différentes phases de l'interaction avec votre client.
-
-
-
-
-
-
-

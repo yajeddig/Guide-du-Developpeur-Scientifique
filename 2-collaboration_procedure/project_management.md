@@ -30,9 +30,7 @@
 * [Collaborating using Git and GitHub | Branches, Pull Requests, Merging vs Rebasing](https://youtu.be/_wQdY_5Tb5Q?si=fzoPe7LIxQ-AKNpW)
 * [Playlist : Git & Github](https://youtube.com/playlist?list=PLuWyq_EO5_AJO0AOFGp4Dte1VuabRbKsf&si=WvSMwMJr_kT1GjKH)
 
-
 ### Project Management with GitLab
 
 * [YouTube-Gestion de projet agile avec GitLab](https://www.youtube.com/watch?v=wX2j8On2U8w)
 * [YouTube-Méthode AGILE SCRUM](https://youtu.be/anZcEIQlpoY?si=IkU07GGGUwbDPfsr)
-
