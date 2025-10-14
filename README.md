@@ -96,17 +96,17 @@ Que vous soyez débutant ou que vous cherchiez à renforcer vos compétences, ce
 
 | **Sujet** | **Description** |
 |-----------|-----------------|
-| [Fundamentals -_En contstruction_](6-computer_science/1-fundamentals/) | Concepts fondamentaux en algorithmique et structures de données. |
+| [Fundamentals -_En construction_](6-computer_science/1-fundamentals/) | Concepts fondamentaux en algorithmique et structures de données. |
 | &nbsp;&nbsp;&nbsp;• [Algorithm Complexity](6-computer_science/1-fundamentals/algorithm_complexity.md) | Introduction à la complexité algorithmique. |
 | &nbsp;&nbsp;&nbsp;• [Data Structures & Algorithms](6-computer_science/1-fundamentals/data_structure_and_algorithm.md) | Principes des structures de données et algorithmes. |
-| [Programming Languages -_En contstruction_](6-computer_science/2-programming_languages/) | Présentation de plusieurs langages (R, Python, C/C++/C#, JavaScript, Matlab, Rust/Go). |
-| [Database Management -_En contstruction_](6-computer_science/3-database_management/) | Concepts et pratiques avancées en SQL et gestion de données. |
-| [Big Data -_En contstruction_](6-computer_science/4-big_data/) | Introduction aux concepts de Hadoop, Spark, MapReduce et au streaming. |
-| [Machine Learning -_En contstruction_](6-computer_science/5-machine_learning/) | Bases et techniques du machine learning et du deep learning. |
-| [DevOps -_En contstruction_](6-computer_science/6-devops/) | Principes de CI/CD, containerisation et infrastructure as code. |
-| [Cybersecurity -_En contstruction_](6-computer_science/7-cybersecurity/) | Bonnes pratiques et stratégies de sécurité pour les applications web. |
-| [Cloud Computing -_En contstruction_](6-computer_science/8-cloud_computing/) | Concepts d'API REST, services cloud et architectures microservices. |
-| [Computer Science Overview -_En contstruction_](6-computer_science/computer_science.md) | Synthèse des notions clés en informatique. |
+| [Programming Languages -_En construction_](6-computer_science/2-programming_languages/) | Présentation de plusieurs langages (R, Python, C/C++/C#, JavaScript, Matlab, Rust/Go). |
+| [Database Management -_En construction_](6-computer_science/3-database_management/) | Concepts et pratiques avancées en SQL et gestion de données. |
+| [Big Data -_En construction_](6-computer_science/4-big_data/) | Introduction aux concepts de Hadoop, Spark, MapReduce et au streaming. |
+| [Machine Learning -_En construction_](6-computer_science/5-machine_learning/) | Bases et techniques du machine learning et du deep learning. |
+| [DevOps -_En construction_](6-computer_science/6-devops/) | Principes de CI/CD, containerisation et infrastructure as code. |
+| [Cybersecurity -_En construction_](6-computer_science/7-cybersecurity/) | Bonnes pratiques et stratégies de sécurité pour les applications web. |
+| [Cloud Computing -_En construction_](6-computer_science/8-cloud_computing/) | Concepts d'API REST, services cloud et architectures microservices. |
+| [Computer Science Overview -_En construction_](6-computer_science/computer_science.md) | Synthèse des notions clés en informatique. |
 
 ---
 
