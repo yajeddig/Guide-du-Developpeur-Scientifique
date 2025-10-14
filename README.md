@@ -15,6 +15,24 @@ Ce guide a pour but de vous fournir les bases nécessaires pour :
 
 Que vous soyez débutant ou que vous cherchiez à renforcer vos compétences, ce guide vous accompagnera dans votre parcours pour devenir un développeur scientifique autonome et efficace.
 
+## 📊 Statut des sections
+
+| Section | Statut | Dernière MàJ | Niveau recommandé |
+|---------|--------|--------------|-------------------|
+| 1 - Git Basics | ✅ Complet | 2025-01 | Débutant |
+| 2 - Collaboration | 🚧 En révision | - | Avancé |
+| 3A - Survival Kit | ✅ Complet | 2025-01 | Débutant |
+| 3B - Code propre | 🟡 Partiel | 2024-12 | Intermédiaire |
+| 3C - Collab avancée | 🟡 Partiel | 2024-12 | Avancé |
+| 4 - Tests | 🚧 En révision | - | Intermédiaire |
+| 5 - Scientific (2 exemples) | ✅ Complet | 2025-01 | Tous niveaux |
+| 5 - Scientific (complet) | 🚧 En cours | - | - |
+| 6 - Lexique CS | 📝 Planifié | - | Tous niveaux |
+
+**Légende :** ✅ Utilisable en prod | 🟡 Utilisable mais incomplet | 🚧 En travaux | 📝 Pas commencé
+
+_Note:_ Les dates « Dernière MàJ » pour les lignes marquées ✅ sont mises à jour automatiquement lors des pushes sur la branche par défaut via GitHub Actions.
+
 ## 🎯 Parcours d'Apprentissage
 
 Pour vous guider dans votre progression, nous avons conçu **[des parcours d'apprentissage structurés](0-getting_started/learning_paths.md)** avec trois niveaux de compétences :

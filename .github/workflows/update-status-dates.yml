@@ -1,0 +1,35 @@
+name: Update Status Dates
+
+on:
+  push:
+    branches: [ main, master ]
+  workflow_dispatch:
+
+jobs:
+  update-dates:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Run updater
+        run: |
+          node .github/workflows/scripts/update-readme-dates.js
+      - name: Commit changes
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@users.noreply.github.com"
+          if ! git diff --quiet; then
+            git add README.md
+            git commit -m "chore: auto-update README status dates"
+            git push
+          else
+            echo "No changes to commit."
+          fi
