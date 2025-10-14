@@ -1,7 +1,7 @@
 # Introduction aux Algorithmes et à l'Analyse de Complexité
 
 **Durée :** 60 minutes  
-**Prérequis :** [Bases Python](../../3-bests_practices/code_writing.md), [Structures de Données](data_structure_and_algorithm.md)  
+**Prérequis :** [Bases Python](../../../3-bests_practices/code_writing.md), [Structures de Données](data_structure_and_algorithm.md)  
 **Objectifs :**
 - Comprendre la notion d'algorithme et d'analyse de complexité
 - Maîtriser la notation Big O et ses implications pratiques
