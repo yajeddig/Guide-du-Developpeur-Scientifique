@@ -15,6 +15,18 @@ Ce guide a pour but de vous fournir les bases nécessaires pour :
 
 Que vous soyez débutant ou que vous cherchiez à renforcer vos compétences, ce guide vous accompagnera dans votre parcours pour devenir un développeur scientifique autonome et efficace.
 
+## 🎯 Parcours d'Apprentissage
+
+Pour vous guider dans votre progression, nous avons conçu **[des parcours d'apprentissage structurés](0-getting_started/learning_paths.md)** avec trois niveaux de compétences :
+
+- **🌱 Niveau 1 - Débutant (0-6 mois)** : Git + Survival Kit + Premier projet collaboratif
+- **🚀 Niveau 2 - Autonome (6-12 mois)** : Code propre + Tests + Méthodes numériques  
+- **🎯 Niveau 3 - Expert (12+ mois)** : Collaboration avancée + Gestion projet + Culture CS
+
+Chaque niveau propose des durées estimées, des critères de validation mesurables et des projets concrets pour valider vos acquis.
+
+**➡️ [Découvrir les parcours d'apprentissage](0-getting_started/learning_paths.md)**
+
 ---
 
 ## Table des Matières
