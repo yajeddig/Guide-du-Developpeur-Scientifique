@@ -550,7 +550,7 @@ La scorecard est un outil d'aide à la décision qui permet de comparer objectiv
 
 6. Calculez le score total (pondéré) de chaque option en multipliant chaque score par le poids de sa colonne.
 
-    **`Score total Wordpress`** `= (0,9 * 0,4) + (0,8 * 0,3) + (1 * 0,3) =`**`0,9`**
+    `Score total Wordpress = (0,9 * 0,4) + (0,8 * 0,3) + (1 * 0,3) =` **0,9**
 
    <table>
    <tr>
