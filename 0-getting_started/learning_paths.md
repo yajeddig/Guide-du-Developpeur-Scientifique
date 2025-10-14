@@ -170,7 +170,7 @@ Maîtriser la gestion de projets complexes et développer une expertise en archi
 
 - **Contenu :**
   - [Programmation orientée objet avancée](../6-computer_science/1-fundamentals/object_oriented_programming)
-  - [Programmation fonctionnelle](../6-computer_science/1-fundamentals/functionnal_oriented_programming)
+  - [Programmation fonctionnelle](../6-computer_science/1-fundamentals/functional_oriented_programming)
   - [Structures de données avancées](../6-computer_science/1-fundamentals/data_structure_and_algorithm.md)
 - **Durée estimée :** 50-65h
 - **Compétences :**
