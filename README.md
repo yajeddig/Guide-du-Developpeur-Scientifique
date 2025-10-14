@@ -57,6 +57,7 @@ Chaque niveau propose des durées estimées, des critères de validation mesurab
 | [Local & Remote Repositories](1-git_basics/2-local_remote_repositories.md) | Gestion des dépôts locaux et distants. |
 | [Getting Started with GitHub](1-git_basics/3-getting_started_with_github.md) | Premiers pas avec GitHub. |
 | [Branching Strategy](1-git_basics/4-branching_strategy.md) | Stratégies de branchement pour une gestion efficace du code. |
+| [**🎯 Exercice Fil Rouge**](1-git_basics/5-exercice_fil_rouge.md) | **Exercice pratique complet : votre première contribution open source !** |
 
 ---
 
