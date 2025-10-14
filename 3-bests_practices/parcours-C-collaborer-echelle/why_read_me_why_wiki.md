@@ -1,7 +1,7 @@
 # Bonnes Pratiques de Documentation avec Git, GitHub et GitLab
 
 **Durée :** 45 minutes  
-**Prérequis :** [Git Basics](../../../1-git_basics/1-git_basics.md), [Gestion d'Environnement Python](../../python_environment/anaconda.md)  
+**Prérequis :** [Git Basics](../../../1-git_basics/git_basics.md), [Gestion d'Environnement Python](../../python_environment/anaconda.md)  
 **Objectifs :**
 
 - Comprendre l'importance de la documentation dans les projets scientifiques

@@ -1,7 +1,7 @@
 # Bonne pratique d'organisation d'un dépôt de code (repository)
 
 **Durée :** 40 minutes  
-**Prérequis :** [Git Basics](../../../1-git_basics/1-git_basics.md), [Procédures de Collaboration](../../../2-collaboration_procedure/collab_procedure.md)  
+**Prérequis :** [Git Basics](../../1-git_basics/1-git_basics.md), [Procédures de Collaboration](../../2-collaboration_procedure/collab_procedure.md)  
 **Objectifs :**
 - Comprendre l'importance d'une structure de projet normalisée
 - Connaître les conventions d'organisation pour les projets scientifiques
