@@ -12,6 +12,7 @@
 
 # **Guide Stylistique PEP8 pour Python**
 
+
 La formation [OpenClassRoom - Écrivez du code Python maintenable](https://openclassrooms.com/fr/courses/7160741-ecrivez-du-code-python-maintenable) est assez courte et vous apprends toute les bonnes pratiques de rédaction d'un code maintenable.
 
 ## **Introduction**
@@ -144,10 +145,11 @@ Black peut être intégré dans de nombreux éditeurs de code, comme VSCode, PyC
 
 Black simplifie la vie des développeurs Python en s'occupant du formatage du code pour eux. Cela vous permet de vous concentrer sur la création de fonctionnalités plutôt que sur le style de votre code. En suivant ce tutoriel, vous devriez être en mesure d'installer et d'utiliser Black pour améliorer la lisibilité et la cohérence de votre code Python.
 
-## Ressources
+## Ressources 
 
 [OpenClassRoom - Écrivez du code Python maintenable](https://openclassrooms.com/fr/courses/7160741-ecrivez-du-code-python-maintenable)
 
-<https://realpython.com/python-pep8/>
+https://realpython.com/python-pep8/
 
 Voir la partie [Architecture](architecture.md) pour comprendre le lien entre architecture et lisibilité du code.
+

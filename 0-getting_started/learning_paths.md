@@ -33,9 +33,11 @@ Acquérir les compétences fondamentales pour commencer à travailler en équipe
 #### 2. Survival Kit du Développeur (3-4 semaines)
 
 - **Contenu :**
-  - [Configuration IDE](../3-bests_practices/IDE.md)
-  - [Environnement Python](../3-bests_practices/python_environment.md)
-  - [Structure de projet](../3-bests_practices/repository_structure/project_arborescence.md)
+  - [Parcours A - Survival Kit](../3-bests_practices/parcours-A-survival-kit/README.md)
+    - [Environnement Python (basics)](../3-bests_practices/parcours-A-survival-kit/python_environment_basics.md)
+    - [README minimal](../3-bests_practices/parcours-A-survival-kit/readme_minimal.md)
+    - [Structure dépôt minimale](../3-bests_practices/parcours-A-survival-kit/repo_structure_minimal.md)
+  - Pour la structure complète : [Structure de dépôt avancée](../3-bests_practices/parcours-C-collaborer-echelle/repository_structure_complete/project_arborescence.md)
 - **Durée estimée :** 25-30h
 - **Compétences :**
   - Configurer un environnement de développement
@@ -83,9 +85,9 @@ Développer l'autonomie technique et la capacité à produire du code de qualit�
 #### 1. Code Propre et Bonnes Pratiques (6-8 semaines)
 
 - **Contenu :**
-  - [Architecture logicielle](../3-bests_practices/code_writing/architecture.md)
-  - [Style de programmation](../3-bests_practices/code_writing/programming_style.md)
-  - [PEP8 et code lisible](../3-bests_practices/code_writing/beautiful_code_pep8.md)
+  - [Architecture logicielle](../3-bests_practices/parcours-B-coder-proprement/architecture.md)
+  - [Style de programmation](../3-bests_practices/parcours-B-coder-proprement/programming_style.md)
+  - [PEP8 et code lisible](../3-bests_practices/parcours-B-coder-proprement/beautiful_code_pep8.md)
 - **Durée estimée :** 45-60h
 - **Compétences :**
   - Appliquer les principes SOLID

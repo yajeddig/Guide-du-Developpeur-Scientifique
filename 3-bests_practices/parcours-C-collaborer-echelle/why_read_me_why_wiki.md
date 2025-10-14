@@ -1,7 +1,7 @@
 # Bonnes Pratiques de Documentation avec Git, GitHub et GitLab
 
 **Durée :** 45 minutes  
-**Prérequis :** [Git Basics](../../../1-git_basics/1-git_basics.md), [Gestion d'Environnement Python](../python_environment/anaconda.md)  
+**Prérequis :** [Git Basics](../../../1-git_basics/1-git_basics.md), [Gestion d'Environnement Python](../../python_environment/anaconda.md)  
 **Objectifs :**
 
 - Comprendre l'importance de la documentation dans les projets scientifiques
@@ -29,7 +29,8 @@ Imaginez le `README` comme la porte d'entrée de votre projet. C'est le premier 
 
 - **Titre du Projet :** Le nom de votre projet, clair et descriptif.
 - **Description :** Un bref résumé de l'objectif du projet, de ses fonctionnalités principales et de son public cible.
-- **Arborescence :** Idéalement l'arborescence du dossier afin de rapidement s'y retrouver [voir arborescence](../../3-bests_practices/repository_structure/project_arborescence.md)* **Installation :** Des instructions étape par étape pour installer les logiciels nécessaires et configurer l'environnement de développement.
+- **Arborescence :** Idéalement l'arborescence du dossier afin de rapidement s'y retrouver [voir arborescence](repository_structure_complete/project_arborescence.md)
+- **Installation :** Des instructions étape par étape pour installer les logiciels nécessaires et configurer l'environnement de développement.
 - **Utilisation :** Des explications claires sur comment exécuter votre code, avec des exemples concrets si possible.
 - **Contribution :** Si vous souhaitez que d'autres personnes contribuent à votre projet, expliquez comment ils peuvent le faire (par exemple, en soumettant des modifications via des "pull requests").
 - **Crédits :** Mentionnez les auteurs et les contributeurs du projet.
