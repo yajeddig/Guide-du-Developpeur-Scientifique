@@ -12,7 +12,7 @@
 
 # Best Practices
 
-Bienvenue dans la section "Best Practices" d'INEVO. Cette section est dédiée aux bonnes pratiques que nous recommandons pour assurer la qualité, la maintenabilité et l'efficacité de vos projets. Vous trouverez ici des directives sur la rédaction de code, l'utilisation des IDE, la gestion des environnements Python, la structure des dossiers, et bien plus encore.
+Bienvenue dans la section "Best Practices". Cette section est dédiée aux bonnes pratiques que nous recommandons pour assurer la qualité, la maintenabilité et l'efficacité de vos projets. Vous trouverez ici des directives sur la rédaction de code, l'utilisation des IDE, la gestion des environnements Python, la structure des dossiers, et bien plus encore.
 
 ## Code Writing
 
@@ -27,7 +27,7 @@ Rédiger un code propre, lisible et maintenable est essentiel pour la réussite 
 
 ## IDE
 
-Choisir le bon environnement de développement intégré (IDE) peut grandement améliorer votre productivité. Voici quelques recommandations pour les IDE les plus utilisés chez INEVO :
+Choisir le bon environnement de développement intégré (IDE) peut grandement améliorer votre productivité. Voici quelques recommandations pour les IDE les plus utilisés  :
 
 - [IDE](IDE.md)
   - [Visual Studio Code](IDE/visual_studio_code.md)
@@ -75,10 +75,10 @@ Une gestion de projet efficace assure que toutes les tâches sont bien suivies e
 - Utilisation de GitLab: comment organiser et suivre les tâches de projet.
 - Communication et collaboration : meilleures pratiques pour les réunions d'équipe, la gestion des tâches et le suivi des progrès.
 
-## Importer un Package INEVO
+## Importer un Package 
 
-Découvrez comment importer et utiliser les packages INEVO dans vos projets :
+Découvrez comment importer et utiliser les packages  dans vos projets :
 
-- [Importer un package INEVO](import_inevo_packages.md)
+- [Importer un package ](import__packages.md)
 
 ---
