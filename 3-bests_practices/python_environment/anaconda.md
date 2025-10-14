@@ -1,3 +1,15 @@
+---
+⏱️ **Durée estimée :** 50 minutes (installation + pratique)
+📋 **Prérequis :** Bases de Python, droits d'administration système
+🎯 **Objectifs :** 
+- Comprendre les problèmes d'environnements Python
+- Maîtriser l'installation et configuration d'Anaconda
+- Apprendre à gérer les environnements avec conda
+- Utiliser conda et pip ensemble efficacement
+
+**TL;DR :** Ce chapitre détaille l'utilisation d'Anaconda pour gérer proprement les environnements et dépendances Python.
+---
+
 # Gestion des Environnements Python avec Anaconda & pip
 
 ## Introduction

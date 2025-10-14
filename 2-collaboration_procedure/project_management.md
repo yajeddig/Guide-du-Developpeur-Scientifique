@@ -1,4 +1,16 @@
-# La gestion d'un projet de développement en général, et avec GitHub ou GitLab.
+---
+⏱️ **Durée estimée :** 20 minutes (lecture + exploration ressources)
+📋 **Prérequis :** Notions de collaboration, compte GitHub/GitLab
+🎯 **Objectifs :** 
+- Découvrir les ressources de gestion de projet
+- Comprendre les différentes méthodologies disponibles
+- Identifier les outils GitHub/GitLab pour la gestion de projet
+- Choisir l'approche adaptée à son contexte
+
+**TL;DR :** Ce chapitre rassemble les meilleures ressources pour apprendre la gestion de projet avec GitHub et GitLab.
+---
+
+# La gestion d'un projet de développement en général, et avec GitHub ou GitLab
 
 ## Ressources
 
@@ -18,9 +30,7 @@
 * [Collaborating using Git and GitHub | Branches, Pull Requests, Merging vs Rebasing](https://youtu.be/_wQdY_5Tb5Q?si=fzoPe7LIxQ-AKNpW)
 * [Playlist : Git & Github](https://youtube.com/playlist?list=PLuWyq_EO5_AJO0AOFGp4Dte1VuabRbKsf&si=WvSMwMJr_kT1GjKH)
 
-
 ### Project Management with GitLab
 
 * [YouTube-Gestion de projet agile avec GitLab](https://www.youtube.com/watch?v=wX2j8On2U8w)
 * [YouTube-Méthode AGILE SCRUM](https://youtu.be/anZcEIQlpoY?si=IkU07GGGUwbDPfsr)
-

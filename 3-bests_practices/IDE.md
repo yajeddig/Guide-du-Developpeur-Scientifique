@@ -1,3 +1,15 @@
+---
+⏱️ **Durée estimée :** 35 minutes (lecture + comparaison)
+📋 **Prérequis :** Notions d'installation de logiciels
+🎯 **Objectifs :** 
+- Comparer les IDEs populaires pour Python
+- Comprendre les critères de choix d'un IDE
+- Identifier l'outil adapté à son workflow
+- Connaître les avantages/inconvénients de chaque solution
+
+**TL;DR :** Ce chapitre compare VSCode, PyCharm, JupyterLab et autres IDEs pour vous aider à choisir l'outil optimal.
+---
+
 # Travailler avec un IDE : Lequel ?
 
 ## Introduction

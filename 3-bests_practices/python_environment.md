@@ -1,3 +1,15 @@
+---
+⏱️ **Durée estimée :** 30 minutes (lecture + installation)
+📋 **Prérequis :** Python installé, notions de ligne de commande
+🎯 **Objectifs :** 
+- Comprendre l'importance des environnements Python
+- Comparer Anaconda, Miniconda, Mamba et venv
+- Choisir l'outil adapté à ses besoins
+- Éviter les conflits de dépendances
+
+**TL;DR :** Ce chapitre explique comment gérer proprement les dépendances Python avec les outils d'environnements virtuels.
+---
+
 # Gérer son environnement de développement Python : L'art de dompter les dépendances
 
 ## Pourquoi est-ce crucial ?

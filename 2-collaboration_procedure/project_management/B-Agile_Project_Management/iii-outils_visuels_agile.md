@@ -1,3 +1,18 @@
+# Utilisez les outils visuels agiles
+
+---
+⏱️ **Durée estimée :** 50 minutes (lecture + manipulation outils)
+📋 **Prérequis :** User stories définies, équipe agile formée
+🎯 **Objectifs :**
+
+- Maîtriser la rédaction et évaluation des User Stories (INVEST)
+- Utiliser le Product Backlog pour prioriser
+- Implémenter Kanban pour le workflow
+- Analyser la vélocité avec les Burndown Charts
+
+**TL;DR :** Ce chapitre présente les outils visuels essentiels de l'agilité : Backlog, Kanban et métriques de suivi
+---
+
 [[_TOC_]]
 
 ## Inspecter les User Stories

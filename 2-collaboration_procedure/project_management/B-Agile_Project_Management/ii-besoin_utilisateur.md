@@ -1,3 +1,18 @@
+# Collectez les besoins utilisateurs
+
+---
+⏱️ **Durée estimée :** 45 minutes (lecture + exercices UX)
+📋 **Prérequis :** Équipe constituée, bases d'UX design
+🎯 **Objectifs :**
+
+- Maîtriser les techniques de collecte des besoins
+- Créer des personas représentatifs
+- Réaliser des entretiens utilisateurs efficaces
+- Concevoir des storyboards et parcours utilisateur
+
+**TL;DR :** Ce chapitre détaille la collecte et l'analyse des besoins utilisateurs dans une approche agile centrée utilisateur
+---
+
 [[_TOC_]]
 
 Après la constitution de votre équipe agile, nous allons voir l'importance du client, mais surtout de l'utilisateur final dans la gestion du projet.
@@ -16,14 +31,14 @@ Idéalement, premières rencontres en physique dans un **lieu neutre** (médiath
 
 Objectif de la première rencontre : **faire parler le client !** et recueillir le plus d'information possible :
 
-* Délai
-* Budget
-* Disponibilité
-* Finalité
-* Vision
-* Évolution
-* Inspiration
-* Concurrence
+- Délai
+- Budget
+- Disponibilité
+- Finalité
+- Vision
+- Évolution
+- Inspiration
+- Concurrence
 
 Poser des **questions ouvertes**, où le client ne peut répondre par "oui" ou "non".
 
@@ -37,8 +52,8 @@ Ne gaspillez pas votre temps dans des projets qui ne vous inspirent pas. Le risq
 
 Red Flags :
 
-* Personnes non coopératives
-* Client avec une vision déjà trop figée de leur produit ou de la solution à concevoir et à développer Vous serez vite fixé en échangeant sur vos méthodes de travail.
+- Personnes non coopératives
+- Client avec une vision déjà trop figée de leur produit ou de la solution à concevoir et à développer Vous serez vite fixé en échangeant sur vos méthodes de travail.
 
 ### N'ayez pas peur de paraître débutant
 

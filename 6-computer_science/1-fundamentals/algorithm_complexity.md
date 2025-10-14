@@ -1,6 +1,16 @@
 # Introduction aux Algorithmes et à l'Analyse de Complexité
 
-Un **algorithme** est une suite finie d'instructions précises permettant de résoudre un problème ou d’accomplir une tâche. Pour évaluer la performance d’un algorithme, on utilise la **notation BigO**. Celle-ci décrit le comportement asymptotique du temps de calcul (ou de l’utilisation mémoire) en fonction de la taille de l’entrée, souvent notée *n*.  
+**Durée :** 60 minutes  
+**Prérequis :** [Bases Python](../../../3-bests_practices/code_writing.md), [Structures de Données](data_structure_and_algorithm.md)  
+**Objectifs :**
+- Comprendre la notion d'algorithme et d'analyse de complexité
+- Maîtriser la notation Big O et ses implications pratiques
+- Analyser la performance des algorithmes courants
+- Savoir choisir l'algorithme approprié selon la taille des données
+
+**TL;DR :** Introduction essentielle à l'analyse de complexité algorithmique avec la notation Big O pour optimiser vos codes scientifiques.
+
+Un **algorithme** est une suite finie d'instructions précises permettant de résoudre un problème ou d'accomplir une tâche. Pour évaluer la performance d'un algorithme, on utilise la **notation BigO**. Celle-ci décrit le comportement asymptotique du temps de calcul (ou de l'utilisation mémoire) en fonction de la taille de l'entrée, souvent notée *n*.
 
 - **O(1)** signifie un temps constant, peu importe la taille des données.  
 - **O(n)** indique que le temps d’exécution augmente de manière linéaire avec *n*.  

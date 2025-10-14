@@ -1,4 +1,16 @@
-# les systèmes d'équations algébro-différentielles
+---
+⏱️ **Durée estimée :** 75 minutes (lecture + implémentation)
+📋 **Prérequis :** EDO, algèbre linéaire, Python scientifique
+🎯 **Objectifs :** 
+- Comprendre les systèmes algébro-différentiels
+- Maîtriser l'indice et les conditions de compatibilité
+- Implémenter des solveurs DAE spécialisés
+- Appliquer aux systèmes contraints et aux équilibres
+
+**TL;DR :** Ce chapitre traite de la résolution des systèmes mêlant équations différentielles et contraintes algébriques.
+---
+
+# Les systèmes d'équations algébro-différentielles
 
 Les équations différentielles-algébriques (DAE) constituent un cadre mathématique essentiel pour la modélisation de systèmes complexes où la dynamique est soumise à des contraintes instantanées. En effet, contrairement aux équations différentielles ordinaires (ODE) qui décrivent uniquement l’évolution temporelle d’un système, les DAE intègrent simultanément des équations différentielles et des équations algébriques. Cette combinaison impose non seulement de résoudre la dynamique des variables d’état, mais également de satisfaire des contraintes qui doivent être vérifiées à tout instant.
 

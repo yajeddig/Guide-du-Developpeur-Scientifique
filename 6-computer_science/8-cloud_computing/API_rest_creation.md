@@ -1,5 +1,16 @@
 # Concevoir et coder une API RESTful en Python
 
+**Durée :** 90 minutes  
+**Prérequis :** Python Avancé, [Architecture](../../../3-bests_practices/code_writing/architecture.md)  
+**Objectifs :**
+- Comprendre les principes REST et les APIs RESTful
+- Maîtriser Flask pour créer des APIs Python
+- Implémenter les méthodes HTTP (GET, POST, PUT, DELETE)
+- Gérer l'authentification et la sécurité de base
+- Tester et documenter une API
+
+**TL;DR :** Guide complet pour créer une API RESTful en Python avec Flask, de la conception au déploiement.
+
 Cette page vous guide dans la conception et le développement d'une API RESTful en Python. Nous utiliserons le framework **Flask** pour illustrer le processus, car il est simple et adapté aux débutants. Ce guide s'adresse aux personnes non initiées et présente les concepts de base ainsi qu'un exemple de code complet.
 
 ---

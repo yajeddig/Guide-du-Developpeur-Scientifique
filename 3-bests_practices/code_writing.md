@@ -1,3 +1,15 @@
+---
+⏱️ **Durée estimée :** 40 minutes (lecture + exemples)
+📋 **Prérequis :** Bases de la programmation Python
+🎯 **Objectifs :** 
+- Maîtriser les piliers d'un code de qualité
+- Apprendre les techniques de refactoring
+- Comprendre l'importance de la documentation
+- Adopter un style de programmation cohérent
+
+**TL;DR :** Ce chapitre couvre les principes essentiels pour écrire du code maintenable, lisible et professionnel.
+---
+
 # Bonnes pratiques de rédaction de code : Le guide essentiel pour les scientifiques
 
 Écrire du code, c'est un peu comme écrire une histoire. Si elle est bien écrite, elle est facile à suivre, agréable à lire, et on comprend facilement le message. Dans le monde de la programmation, un code bien écrit est non seulement plus facile à comprendre pour vous-même, mais aussi pour vos collègues (présents et futurs). Il est plus facile à maintenir, à modifier, et à déboguer.
