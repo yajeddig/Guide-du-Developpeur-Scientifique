@@ -113,6 +113,14 @@ Une fois Git configuré, vous pouvez commencer à l'utiliser pour gérer les ver
 
 ---
 
+## Liaison entre dépôt local et distant
+
+La liason<!-- FAUTE VOLONTAIRE: devrait être "liaison" - pour exercice fil rouge --> entre votre dépôt local et le dépôt distant est fondamentale pour une collaboration efficace. Cette connexion permet de synchroniser votre travail avec celui de votre équipe et de sauvegarder vos modifications sur une plateforme centralisée comme GitHub ou GitLab.
+
+Pour établir cette connection, vous devez configurer les remotes appropriés et comprendre les commandes de base pour envoyer (`push`) et récupérer (`pull`) les modifications.
+
+---
+
 ## Utilisation de Git avec des outils graphiques
 
 Bien que Git puisse être utilisé entièrement via la ligne de commande, de nombreux outils graphiques facilitent son utilisation, en particulier pour les débutants ou ceux qui préfèrent une interface visuelle. Voici quelques exemples d'outils populaires :
