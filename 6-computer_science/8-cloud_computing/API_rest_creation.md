@@ -1,7 +1,7 @@
 # Concevoir et coder une API RESTful en Python
 
 **Durée :** 90 minutes  
-**Prérequis :** [Python Avancé](../2-programming_languages/advanced_python.md), [Architecture](../../../3-bests_practices/code_writing/architecture.md)  
+**Prérequis :** Python Avancé, [Architecture](../../../3-bests_practices/code_writing/architecture.md)  
 **Objectifs :**
 - Comprendre les principes REST et les APIs RESTful
 - Maîtriser Flask pour créer des APIs Python
