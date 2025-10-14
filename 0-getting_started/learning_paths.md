@@ -158,7 +158,7 @@ Maîtriser la gestion de projets complexes et développer une expertise en archi
 - **Contenu :**
   - [Gestion de projet classique](../2-collaboration_procedure/project_management/A-Classic_Project_Management.md)
   - [Méthodologies agiles](../2-collaboration_procedure/project_management/B-Agile_Project_Management.md)
-  - [CI/CD avancé](../6-computer_science/6-devops/ci_cd.md)
+  - CI/CD avancé (module à venir)
 - **Durée estimée :** 60-80h
 - **Compétences :**
   - Diriger une équipe de développement
