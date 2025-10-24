@@ -54,5 +54,5 @@ Dans cette section, nous allons explorer les principes clés pour écrire du cod
 ## Pour aller plus loin
 
 * Consultez [la page sur l'architecture](code_writing/architecture.md) du code pour en savoir plus sur l'organisation de votre projet.
-* [Explorez le PEP 8](3-bests_practices/code_writing/beautiful_code_pep8.md) en détail pour maîtriser les conventions de style de Python.
+* [Explorez le PEP 8](code_writing/beautiful_code_pep8.md) en détail pour maîtriser les conventions de style de Python.
 * Découvrez les différents [styles de programmation](code_writing/programming_style.md) ([objet](code_writing/programming_style/object_oriented_programming.md), fonctionnelle) et choisissez celui qui convient le mieux à votre projet

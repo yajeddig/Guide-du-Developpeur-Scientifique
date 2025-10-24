@@ -44,13 +44,13 @@ En maîtrisant ces outils et ces méthodes, vous pourrez transformer la collabor
 |------------------------------------------------------------------------|-----------------------------------------------------|
 | Présentation du sujet, de la problématique et des enjeux               | [Présentation](collab_procedure.md) |
 | Ressources externe formateur en gestion de projet                      | [Ressources en ligne](project_management.md)  |
-| **Introduction à la gestion de projet Classique**                      | [Introduction Gest. Proj. Classique](A-Classic_Project_Management.md) |
-|    * i-Initialiser un projet                                           | [Initialisation](A-Classic_Project_Management/i-initialiser_projet.md)  |
-|    * ii-Lancer un projet                                               | [Lancement](A-Classic_Project_Management/ii-lancer-projet.md) |
-|    * iii-Conception, production, exploitation                          | [Conduite](A-Classic_Project_Management/iii-conception_production_exploitation.md)  |
-| **Introduction à la gestion de projet Agile**                          | [Introduction Gest. Proj. Agile](B-Agile_Project_Management.md) |
-|    * i-Équipe et modèle de Tuckman                                     | [Équipe et modèle de Tuckman](B-Agile_Project_Management/i-equipe_modele_tuckman.md)  |
-|    * ii-Besoins utilisateurs                                           | [Besoins utilisateurs](B-Agile_Project_Management/ii-besoin_utilisateur.md) |
-|    * iii-Outils visuels Agile                                          | [Outils visuels Agile](B-Agile_Project_Management/iii-outils_visuels_agile.md)  |
-|    * iv-Conclusion                                                     | [Conclusion Agile](B-Agile_Project_Management/iv-conclusion.md) |
-| **Guide de gestion de projet en Data Science**                         | [Guide Data Science](C-Data_Science_Project_Guide.md) |
+| **Introduction à la gestion de projet Classique**                      | [Introduction Gest. Proj. Classique](project_management/A-Classic_Project_Management.md) |
+|    * i-Initialiser un projet                                           | [Initialisation](project_management/A-Classic_Project_Management/i-initialiser_projet.md)  |
+|    * ii-Lancer un projet                                               | [Lancement](project_management/A-Classic_Project_Management/ii-lancer-projet.md) |
+|    * iii-Conception, production, exploitation                          | [Conduite](project_management/A-Classic_Project_Management/iii-conception_production_exploitation.md)  |
+| **Introduction à la gestion de projet Agile**                          | [Introduction Gest. Proj. Agile](project_management/B-Agile_Project_Management.md) |
+|    * i-Équipe et modèle de Tuckman                                     | [Équipe et modèle de Tuckman](project_management/B-Agile_Project_Management/i-equipe_modele_tuckman.md)  |
+|    * ii-Besoins utilisateurs                                           | [Besoins utilisateurs](project_management/B-Agile_Project_Management/ii-besoin_utilisateur.md) |
+|    * iii-Outils visuels Agile                                          | [Outils visuels Agile](project_management/B-Agile_Project_Management/iii-outils_visuels_agile.md)  |
+|    * iv-Conclusion                                                     | [Conclusion Agile](project_management/B-Agile_Project_Management/iv-conclusion.md) |
+| **Guide de gestion de projet en Data Science**                         | [Guide Data Science](project_management/C-Data_Science_Project_Guide.md) |

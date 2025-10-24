@@ -25,7 +25,7 @@ Python, en tant que langage polyvalent, supporte différents styles de programma
   * Pour approfondir la POO en Python, explorez ces ressources :
     * [le petit cours introductif en POO sur python de ce guide](programming_style/object_oriented_programming.md)
     * [OpenClassrooms - Apprenez la programmation orientée objet avec Python](https://openclassrooms.com/fr/courses/7150616-apprenez-la-programmation-orientee-objet-avec-python)
-    * [Harvard CS50’s Introduction to Programming with Python – Full University Course (16h)](https://youtu.be/nLRL_NcnK-4?si=66aI2Nj-V-fnikv-) (Cours complet en anglais)
+    * [Harvard CS50's Introduction to Programming with Python – Full University Course (16h)](https://youtu.be/nLRL_NcnK-4?si=66aI2Nj-V-fnikv-) (Cours complet en anglais)
     * [Python : La programmation orientée objet (Docstring)](https://youtu.be/h6jciR8K43E?si=YoQYGyidnTGmwgtN)
 
 ## Quel style choisir ?

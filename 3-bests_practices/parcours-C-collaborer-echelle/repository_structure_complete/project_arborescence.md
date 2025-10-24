@@ -1,8 +1,9 @@
 # Bonne pratique d'organisation d'un dépôt de code (repository)
 
 **Durée :** 40 minutes  
-**Prérequis :** [Git Basics](../../1-git_basics/1-git_basics.md), [Procédures de Collaboration](../../2-collaboration_procedure/collab_procedure.md)  
+**Prérequis :** [Git Basics](../../../../1-git_basics/1-git_basics.md), [Procédures de Collaboration](../../../../2-collaboration_procedure/collab_procedure.md)  
 **Objectifs :**
+
 - Comprendre l'importance d'une structure de projet normalisée
 - Connaître les conventions d'organisation pour les projets scientifiques
 - Savoir adapter la structure selon le type d'activité
@@ -79,6 +80,7 @@ project_root/
 5. **.gitignore** : Fichier pour indiquer quels fichiers et dossiers doivent être ignorés par Git.
 6. **README.md** : Fichier de documentation principal pour une vue d'ensemble rapide du projet.
 7. **requirements.txt** : Fichier listant les dépendances Python nécessaires pour le projet.
+
 Cette structure permet une organisation claire et modulaire, facilitant la maintenance et l'extensibilité du projet.
 
 ## Script pour générer automatiquement cet arborescence

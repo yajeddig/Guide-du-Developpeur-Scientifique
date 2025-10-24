@@ -1,15 +1,13 @@
-
 ---
 ⏱️ **Durée estimée :** 40 minutes (lecture + configuration)
 📋 **Prérequis :** Installation de VSCode, bases de la programmation
-🎯 **Objectifs :**
-
+🎯 **Objectifs :** 
 - Maîtriser l'interface et les fonctionnalités de VSCode
 - Configurer l'environnement pour le développement Python
 - Utiliser Git et les outils de versioning intégrés
 - Installer et gérer les extensions essentielles
 
-**TL;DR :** Ce chapitre guide la configuration et l'utilisation optimale de Visual Studio Code pour le développement scientifique
+**TL;DR :** Ce chapitre guide la configuration et l'utilisation optimale de Visual Studio Code pour le développement scientifique.
 ---
 
 # Utiliser l'IDE Visual Studio Code
@@ -41,7 +39,7 @@ VSCode est extrêmement extensible grâce à ses nombreuses extensions disponibl
 
 Les extensions sont gérées directement depuis l'interface de VSCode. La **zone orange** dans l'image suivante montre où vous pouvez gérer vos extensions.
 
-![image](image/VScode-addons.jpg)
+![image](../../IDE/image/VScode-addons.jpg)
 
 Il y a trois zones distinctes dans cette interface :
 
@@ -116,11 +114,11 @@ Jupyter TOC est une extension qui permet de numéroter automatiquement les secti
 
 - Accédez aux options de Jupyter TOC : `File > Preferences > Settings > Extensions > Jupyter TOC`.
 - Activez la numérotation (Numbering) comme illustré ci-dessous :
-![image](image/Jupyter_TOC_config.PNG)
+
+![image](../../IDE/image/Jupyter_TOC_config.PNG)
 
 ##### Utilisation
 
 Créez la table des matières en cliquant sur *Generate table of contents*, comme montré ci-dessous. La numérotation se met à jour automatiquement en répétant ce processus.
-![image](image/Jupyter_TOC_table_of_contents.png)
 
----
+![image](../../IDE/image/Jupyter_TOC_table_of_contents.png)

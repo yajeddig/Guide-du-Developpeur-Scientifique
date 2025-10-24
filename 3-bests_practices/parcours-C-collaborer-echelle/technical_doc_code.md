@@ -47,7 +47,7 @@ La [PEP 257](https://peps.python.org/pep-0257/) fournit des conventions de style
 
 - **Docstrings pour les modules** : Doivent mentionner les objets exportés par le module, ainsi que tout concept ou convention importante.
 
-- **Docstrings pour les classes** : Doivent résumer l’objectif de la classe et mentionner les méthodes et attributs importants.
+- **Docstrings pour les classes** : Doivent résumer l'objectif de la classe et mentionner les méthodes et attributs importants.
 
 - **Docstrings pour les méthodes et fonctions** : Doivent décrire leur comportement, leurs arguments, leur valeur de retour et les exceptions qu'elles peuvent lever.
 
@@ -73,7 +73,7 @@ Les docstrings sont un outil puissant pour documenter le code Python. En suivant
 
 Pour générer la documentation technique d'un code à partir des docstrings en utilisant le format Markdown, vous pouvez utiliser des outils comme **pdoc**, **Sphinx**, ou **pydocmd**. Ces outils peuvent extraire les docstrings des modules Python et générer des fichiers de documentation en différents formats, y compris Markdown ou HTML.
 
-**Exemple avec pdoc3**
+### Exemple avec pdoc3
 
 1. **Installer pdoc3:**
 
@@ -91,6 +91,6 @@ Pour générer la documentation technique d'un code à partir des docstrings en 
 
 Vous pouvez ensuite intégrer ces fichiers Markdown dans le wiki de votre projet ou les utiliser pour créer un site web de documentation statique.
 
-**Conclusion**
+### Conclusion
 
 Les docstrings sont un élément essentiel de la documentation technique d'un code Python. En les utilisant de manière cohérente et en suivant les conventions établies, vous facilitez la compréhension, la maintenance et la collaboration sur votre projet. N'hésitez pas à explorer les différents outils de génération de documentation pour automatiser ce processus et rendre votre documentation encore plus accessible et utile.

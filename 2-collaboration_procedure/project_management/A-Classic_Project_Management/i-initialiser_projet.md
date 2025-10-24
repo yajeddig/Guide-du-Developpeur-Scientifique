@@ -341,7 +341,7 @@ Lors de la gestion d'un projet, en particulier dans une approche en cascade, il 
 
 #### Estimation de la Charge de Travail
 
-- **Unité de Mesure** : La charge de travail est souvent exprimée en jours-homme ou demi-journée-homme, représentant le temps nécessaire pour qu'une personne accomplisse une tâche donnée (Chez INEVO : ETP = Equivalent Temps Plein).
+- **Unité de Mesure** : La charge de travail est souvent exprimée en jours-homme ou demi-journée-homme, représentant le temps nécessaire pour qu'une personne accomplisse une tâche donnée (ETP = Equivalent Temps Plein).
 - **Regroupement des Petites Tâches** : Pour les tâches de courte durée, envisagez de les regrouper pour simplifier la planification et maintenir la clarté du projet.
 
 #### Équilibrage de la Granularité des Tâches

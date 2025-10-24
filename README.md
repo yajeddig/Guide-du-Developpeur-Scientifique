@@ -76,26 +76,27 @@ Chaque niveau propose des durées estimées, des critères de validation mesurab
 
 ---
 
-### 3. Best Practices
+### 3. Best Practices (Parcours)
 
-| **Sujet** | **Description** |
-|-----------|-----------------|
-| [Best Practices](3-bests_practices/bests_practices.md) | Bonnes pratiques de développement. |
-| [Code Writing](3-bests_practices/code_writing.md) | Conseils pour écrire du code propre et maintenable. |
-| &nbsp;&nbsp;&nbsp;• [Architecture](3-bests_practices/code_writing/architecture.md) | Principes d'architecture logicielle. |
-| &nbsp;&nbsp;&nbsp;• [Beautiful Code (PEP8)](3-bests_practices/code_writing/beautiful_code_pep8.md) | Normes et conseils pour un code lisible. |
-| &nbsp;&nbsp;&nbsp;• [Programming Style](3-bests_practices/code_writing/programming_style.md) | Différents styles de programmation. |
-| &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(_Voir également le dossier_ `programming_style/` _pour la programmation orientée objet_) | |
-| [IDE](3-bests_practices/IDE.md) | Choix et configuration des environnements de développement intégrés. |
-| &nbsp;&nbsp;&nbsp;• [Visual Studio Code](3-bests_practices/IDE/visual_studio_code.md) | Guide pour utiliser Visual Studio Code. |
-| &nbsp;&nbsp;&nbsp;• [PyCharm](3-bests_practices/IDE/pycharm.md) | Guide pour utiliser PyCharm. |
-| [Python Environment](3-bests_practices/python_environment.md) | Gestion des environnements Python (Anaconda, Miniconda, Mamba, venv). |
-| &nbsp;&nbsp;&nbsp;• (Détails dans le dossier `python_environment/`) | |
-| [Repository Structure](3-bests_practices/repository_structure/project_arborescence.md) | Conseils pour organiser les répertoires de projets. |
-| [Documentation](3-bests_practices/documentation/why_read_me_why_wiki.md) | Comment rédiger une documentation claire (ReadMe, Wiki, Docstrings). |
-| &nbsp;&nbsp;&nbsp;• [Markdown](3-bests_practices/documentation/markdown.md) | Introduction au langage Markdown. |
-| &nbsp;&nbsp;&nbsp;• [Technical Documentation](3-bests_practices/documentation/technical_doc_code.md) | Documentation technique pour le code. |
-| &nbsp;&nbsp;&nbsp;• [Scientific Documentation](3-bests_practices/documentation/scientific_doc.md) | Rédiger une documentation scientifique concise et précise. |
+| **Parcours / Module** | **Description** |
+|-----------------------|-----------------|
+| [Index des Parcours](3-bests_practices/README.md) | Vue d'ensemble des trois parcours progressifs. |
+| 🥉 [Parcours A - Survival Kit](3-bests_practices/parcours-A-survival-kit/README.md) | Bases minimales professionnelles (env, README, structure minimale). |
+| &nbsp;&nbsp;&nbsp;• [Environnement Python - Basics](3-bests_practices/parcours-A-survival-kit/python_environment_basics.md) | Créer et gérer un environnement léger. |
+| &nbsp;&nbsp;&nbsp;• [README minimal](3-bests_practices/parcours-A-survival-kit/readme_minimal.md) | Structurer un README efficace rapidement. |
+| &nbsp;&nbsp;&nbsp;• [Structure dépôt minimale](3-bests_practices/parcours-A-survival-kit/repo_structure_minimal.md) | Organisation initiale simple. |
+| 🥈 [Parcours B - Coder Proprement](3-bests_practices/parcours-B-coder-proprement/README.md) | Lisibilité, architecture et qualité du code. |
+| &nbsp;&nbsp;&nbsp;• [PEP8 / Beautiful Code](3-bests_practices/parcours-B-coder-proprement/beautiful_code_pep8.md) | Conventions de style et formatters. |
+| &nbsp;&nbsp;&nbsp;• [Architecture](3-bests_practices/parcours-B-coder-proprement/architecture.md) | Structurer le logiciel avant de coder. |
+| &nbsp;&nbsp;&nbsp;• [Styles de Programmation](3-bests_practices/parcours-B-coder-proprement/programming_style.md) | Paradigmes et choix contextuels. |
+| &nbsp;&nbsp;&nbsp;• [VSCode](3-bests_practices/parcours-B-coder-proprement/IDE/visual_studio_code.md) | Configuration productive VSCode. |
+| &nbsp;&nbsp;&nbsp;• [PyCharm](3-bests_practices/parcours-B-coder-proprement/IDE/pycharm.md) | Utilisation de PyCharm. |
+| 🥇 [Parcours C - Collaborer à l'Échelle](3-bests_practices/parcours-C-collaborer-echelle/README.md) | Standardisation, doc avancée, collaboration. |
+| &nbsp;&nbsp;&nbsp;• [Documentation Scientifique](3-bests_practices/parcours-C-collaborer-echelle/scientific_doc.md) | Structurer une doc de recherche. |
+| &nbsp;&nbsp;&nbsp;• [Documentation Technique](3-bests_practices/parcours-C-collaborer-echelle/technical_doc_code.md) | Docstrings & génération automatique. |
+| &nbsp;&nbsp;&nbsp;• [README vs Wiki](3-bests_practices/parcours-C-collaborer-echelle/why_read_me_why_wiki.md) | Choisir l'outil adapté. |
+| &nbsp;&nbsp;&nbsp;• [Structure dépôt complète](3-bests_practices/parcours-C-collaborer-echelle/repository_structure_complete/project_arborescence.md) | Organisation modulaire avancée. |
+| &nbsp;&nbsp;&nbsp;• [Workflows Git Avancés](3-bests_practices/parcours-C-collaborer-echelle/advanced_git_workflows.md) | Branching & collaboration avancée. |
 
 ---
 
