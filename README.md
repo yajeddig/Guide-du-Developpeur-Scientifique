@@ -58,6 +58,7 @@ Chaque niveau propose des durées estimées, des critères de validation mesurab
 | [Getting Started with GitHub](1-git_basics/3-getting_started_with_github.md) | Premiers pas avec GitHub. |
 | [Branching Strategy](1-git_basics/4-branching_strategy.md) | Stratégies de branchement pour une gestion efficace du code. |
 | [**🎯 Exercice Fil Rouge**](1-git_basics/5-exercice_fil_rouge.md) | **Exercice pratique complet : votre première contribution open source !** |
+| [**📝 Quiz d'Auto-Évaluation**](1-git_basics/6-quiz_autoevaluation.md) | **Testez vos connaissances avec 15 questions (30% théorie, 70% pratique)** |
 
 ---
 
@@ -144,6 +145,7 @@ Chaque niveau propose des durées estimées, des critères de validation mesurab
 
 ## Ressources complémentaires
 
+- **📦 Templates Prêts à l'Emploi** : Consultez le dossier [templates/](templates/) pour des modèles réutilisables (README, .gitignore, requirements.txt, PR checklist)
 - **LICENSE** : Consultez le fichier [LICENSE](LICENSE) pour les détails sur les droits d'utilisation.
 
 ---
