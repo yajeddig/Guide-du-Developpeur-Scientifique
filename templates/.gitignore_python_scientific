@@ -1,0 +1,400 @@
+# ========================================
+# .gitignore pour Projets Python Scientifiques
+# ========================================
+#
+# Ce fichier couvre :
+# - Projets Python standards
+# - Calcul scientifique (NumPy, SciPy, Pandas)
+# - Machine Learning (TensorFlow, PyTorch, scikit-learn)
+# - Jupyter Notebooks
+# - Environnements virtuels (venv, conda, poetry)
+# - IDEs populaires (PyCharm, VSCode, Spyder)
+# - Données volumineuses et résultats de simulations
+#
+# Usage : Renommer en .gitignore à la racine de votre projet
+# ========================================
+
+# ========================================
+# Python
+# ========================================
+
+# Bytecode compilé
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# PyInstaller (si vous créez des exécutables)
+*.manifest
+*.spec
+
+# Installer les logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+.pytest_cache/
+.hypothesis/
+
+# Sphinx documentation
+docs/_build/
+docs/_static/
+docs/_templates/
+
+# PyBuilder
+.pybuilder/
+target/
+
+# ========================================
+# Environnements Virtuels
+# ========================================
+
+# venv
+venv/
+ENV/
+env/
+.venv/
+
+# virtualenv
+.virtualenv/
+
+# Conda
+.conda/
+*.conda
+
+# Poetry
+.poetry/
+poetry.lock  # Décommenter si vous voulez tracker les versions exactes
+
+# Pipenv
+Pipfile.lock
+
+# ========================================
+# Jupyter Notebooks
+# ========================================
+
+# Checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# Résultats de cellules (optionnel - décommenter si vous ne voulez PAS tracker les outputs)
+# *.ipynb
+
+# JupyterLab settings
+.jupyter/
+
+# Jupyter widgets
+*-checkpoint.ipynb
+
+# ========================================
+# Données et Résultats Scientifiques
+# ========================================
+
+# Fichiers de données volumineux
+*.csv
+*.tsv
+*.dat
+*.txt  # Décommenter avec précaution - peut exclure des fichiers importants
+*.json  # Décommenter avec précaution
+*.xml   # Décommenter avec précaution
+
+# Formats scientifiques
+*.h5
+*.hdf5
+*.nc
+*.cdf
+*.mat
+*.npy
+*.npz
+*.pkl
+*.pickle
+
+# Images et visualisations (générer à nouveau si besoin)
+# Décommenter seulement si vos figures sont reproductibles
+# *.png
+# *.jpg
+# *.jpeg
+# *.gif
+# *.svg
+# *.pdf
+# *.eps
+
+# Fichiers texte de sortie
+*.out
+*.log
+*.err
+
+# Dossiers de résultats courants
+results/
+output/
+outputs/
+figures/
+plots/
+data/raw/
+data/processed/
+data/interim/
+experiments/
+runs/
+checkpoints/
+
+# ========================================
+# Machine Learning / Deep Learning
+# ========================================
+
+# Modèles entraînés (trop volumineux pour Git)
+*.h5
+*.hdf5
+*.pb
+*.pth
+*.pt
+*.ckpt
+*.weights
+*.model
+*.pkl
+*.joblib
+
+# TensorFlow
+*.tfrecord
+*.tfevents.*
+logs/
+tensorboard/
+tf_logs/
+
+# PyTorch
+lightning_logs/
+wandb/
+
+# MLflow
+mlruns/
+mlflow/
+
+# Weights & Biases
+wandb/
+
+# DVC (Data Version Control) - cache local uniquement
+.dvc/cache/
+.dvc/tmp/
+
+# ========================================
+# IDEs et Éditeurs
+# ========================================
+
+# PyCharm
+.idea/
+*.iml
+*.iws
+.idea_modules/
+
+# VSCode
+.vscode/
+*.code-workspace
+.history/
+
+# Spyder
+.spyderproject
+.spyproject
+
+# Jupyter
+.ipynb_checkpoints
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Vim
+*.swp
+*.swo
+*~
+.*.swp
+.*.swo
+
+# Emacs
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+
+# ========================================
+# Système d'Exploitation
+# ========================================
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ========================================
+# Secrets et Configuration Sensible
+# ========================================
+
+# Variables d'environnement
+.env
+.env.local
+.env.*.local
+*.env
+
+# Fichiers de configuration avec secrets
+config.ini
+config.yaml  # Décommenter avec précaution
+secrets.json
+credentials.json
+*.pem
+*.key
+*.cert
+
+# Clés API
+api_keys.txt
+*.api
+
+# Bases de données locales
+*.db
+*.sqlite
+*.sqlite3
+
+# ========================================
+# Compilation et Build
+# ========================================
+
+# C extensions
+*.so
+*.dylib
+*.dll
+*.o
+*.a
+
+# Fortran (si vous utilisez f2py, Cython avec Fortran)
+*.mod
+
+# Cython
+*.c  # Généré par Cython - décommenter avec précaution
+*.cpp  # Généré par Cython - décommenter avec précaution
+
+# ========================================
+# Divers
+# ========================================
+
+# Archives (à moins que nécessaires pour le projet)
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Fichiers temporaires
+*.tmp
+*.temp
+*.bak
+*.swp
+*.old
+
+# Profiling
+*.prof
+*.lprof
+
+# MyPy type checker
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# Pyre type checker
+.pyre/
+
+# pytype static type analyzer
+.pytype/
+
+# Rope (refactoring library)
+.ropeproject
+
+# ========================================
+# Dossiers Personnalisés du Projet
+# ========================================
+
+# TODO: Ajoutez ici des dossiers spécifiques à votre projet
+# Par exemple :
+# scratch/
+# deprecated/
+# old_experiments/
+# tmp/
+
+# ========================================
+# Fichiers à INCLURE malgré les règles ci-dessus
+# ========================================
+
+# Exemples de données minimales (pour tests/documentation)
+!data/examples/*.csv
+!data/samples/*.json
+
+# Résultats de référence (pour tests de régression)
+!tests/fixtures/*.npy
+!tests/expected_outputs/*.pkl
+
+# ========================================
+# Notes d'Utilisation
+# ========================================
+#
+# 1. Git LFS pour fichiers volumineux :
+#    Si vous devez tracker des fichiers >50MB, utilisez Git LFS
+#    git lfs track "*.nc"
+#    git lfs track "data/large/*.csv"
+#
+# 2. DVC pour données scientifiques :
+#    Pour versionner données et modèles : https://dvc.org/
+#
+# 3. Exceptions avec '!' :
+#    Pour forcer l'inclusion d'un fichier normalement exclu :
+#    !important_data.csv
+#
+# 4. Vérifier avant de commit :
+#    git status
+#    git add -n .  # Dry-run pour voir ce qui serait ajouté
+#
+# ========================================
