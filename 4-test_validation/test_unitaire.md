@@ -1,3 +1,15 @@
+---
+⏱️ **Durée estimée :** 45 minutes (lecture + pratique)
+📋 **Prérequis :** Bases Python, notions de fonctions
+🎯 **Objectifs :** 
+- Maîtriser les concepts des tests unitaires
+- Apprendre à utiliser pytest et unittest
+- Écrire ses premiers tests automatisés
+- Comprendre les assertions et mocks
+
+**TL;DR :** Ce chapitre détaille l'implémentation pratique des tests unitaires avec des exemples concrets et des bonnes pratiques.
+---
+
 # Les Tests Unitaires
 
 ## Présentation des Tests Unitaires

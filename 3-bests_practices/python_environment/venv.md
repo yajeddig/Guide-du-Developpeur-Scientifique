@@ -1,4 +1,16 @@
-# Gestion des Environnements Python avec venv**
+---
+⏱️ **Durée estimée :** 30 minutes (lecture + pratique)
+📋 **Prérequis :** Python 3.3+, ligne de commande basique
+🎯 **Objectifs :** 
+- Maîtriser l'outil venv natif de Python
+- Créer et gérer des environnements virtuels légers
+- Comprendre les avantages de la solution intégrée
+- Utiliser venv pour des projets simples et portables
+
+**TL;DR :** Ce chapitre présente venv comme solution native et légère pour la gestion d'environnements Python sans outils externes.
+---
+
+# Gestion des Environnements Python avec venv
 
 ## Introduction
 

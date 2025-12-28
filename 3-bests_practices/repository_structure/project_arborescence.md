@@ -1,5 +1,15 @@
 # Bonne pratique d'organisation d'un dépôt de code (repository)
 
+**Durée :** 40 minutes  
+**Prérequis :** [Git Basics](../../1-git_basics/1-git_basics.md), [Procédures de Collaboration](../../2-collaboration_procedure/collab_procedure.md)  
+**Objectifs :**
+- Comprendre l'importance d'une structure de projet normalisée
+- Connaître les conventions d'organisation pour les projets scientifiques
+- Savoir adapter la structure selon le type d'activité
+- Maîtriser les bonnes pratiques de séparation données/code/documentation
+
+**TL;DR :** Guide pour structurer efficacement vos dépôts de code scientifique avec une organisation claire et des conventions standardisées.
+
 L'organisation d'un dépôt de code doit être normalisé et formalisé au sein d'une organisation, et adapté à un type d'activité.
 
 ## Proposition d'organisation d'un dossier

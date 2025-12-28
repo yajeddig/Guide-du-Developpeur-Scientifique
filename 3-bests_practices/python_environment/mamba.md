@@ -1,3 +1,15 @@
+---
+⏱️ **Durée estimée :** 40 minutes (installation + optimisation)
+📋 **Prérequis :** Conda installé, expérience avec les gestionnaires de paquets
+🎯 **Objectifs :** 
+- Comprendre les avantages de Mamba sur Conda
+- Maîtriser l'installation et migration vers Mamba
+- Optimiser les performances de gestion des environnements
+- Utiliser Mamba pour des workflows rapides et efficaces
+
+**TL;DR :** Ce chapitre présente Mamba comme alternative ultra-rapide à Conda pour la gestion des environnements Python.
+---
+
 # Gestion des Environnements Python avec Mamba & pip
 
 ## Introduction

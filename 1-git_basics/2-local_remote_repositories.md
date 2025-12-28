@@ -1,3 +1,15 @@
+---
+⏱️ **Durée estimée :** 40 minutes (lecture + pratique)
+📋 **Prérequis :** Git installé, notions de base de Git
+🎯 **Objectifs :** 
+- Comprendre la différence entre dépôts local et distant
+- Maîtriser la zone de staging et les commits
+- Configurer Git pour la première fois
+- Apprendre les commandes essentielles du workflow local
+
+**TL;DR :** Ce chapitre explique le fonctionnement interne de Git et comment gérer les versions de vos projets en local.
+---
+
 # Git : Utilisation en Local
 
 Git est avant tout un outil conçu pour être utilisé localement, c'est-à-dire sur votre propre ordinateur. Il vous permet de gérer l'historique des modifications de vos projets, de revenir à des versions antérieures en cas de besoin, et de collaborer efficacement avec d'autres développeurs.
@@ -98,6 +110,14 @@ Une fois Git configuré, vous pouvez commencer à l'utiliser pour gérer les ver
    Le message de commit doit être bref et explicite, indiquant clairement ce qui a été modifié. Par exemple, `git commit -m "Correction d'un bug dans l'authentification utilisateur"`.
 
    > **Conseil :** Un bon message de commit aide à comprendre l'historique du projet et à identifier rapidement les changements apportés.
+
+---
+
+## Liaison entre dépôt local et distant
+
+La liason<!-- FAUTE VOLONTAIRE: devrait être "liaison" - pour exercice fil rouge --> entre votre dépôt local et le dépôt distant est fondamentale pour une collaboration efficace. Cette connexion permet de synchroniser votre travail avec celui de votre équipe et de sauvegarder vos modifications sur une plateforme centralisée comme GitHub ou GitLab.
+
+Pour établir cette connection, vous devez configurer les remotes appropriés et comprendre les commandes de base pour envoyer (`push`) et récupérer (`pull`) les modifications.
 
 ---
 

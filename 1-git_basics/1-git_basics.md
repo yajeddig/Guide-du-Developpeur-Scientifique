@@ -1,3 +1,15 @@
+---
+⏱️ **Durée estimée :** 45 minutes (lecture + pratique)
+📋 **Prérequis :** Aucun prérequis technique
+🎯 **Objectifs :** 
+- Comprendre les concepts fondamentaux de Git
+- Découvrir l'écosystème de contrôle de version
+- Identifier les cas d'usage pour les scientifiques
+- Connaître les ressources d'apprentissage essentielles
+
+**TL;DR :** Introduction complète à Git avec ressources vidéo et concepts de base pour démarrer le contrôle de version.
+---
+
 # Fondamentaux de Git : Un guide pour les scientifiques
 
 ## Ressources Recommandées

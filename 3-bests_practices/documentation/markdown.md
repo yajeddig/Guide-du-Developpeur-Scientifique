@@ -1,3 +1,15 @@
+---
+⏱️ **Durée estimée :** 25 minutes (lecture + pratique syntaxe)
+📋 **Prérequis :** Notions de rédaction, éditeur de texte
+🎯 **Objectifs :** 
+- Maîtriser la syntaxe Markdown essentielle
+- Comprendre les avantages pour la documentation technique
+- Apprendre l'intégration avec Git et les dépôts de code
+- Utiliser Markdown pour README, Wiki et documentation
+
+**TL;DR :** Ce chapitre présente Markdown comme langage de balisage léger idéal pour la documentation technique et scientifique.
+---
+
 # Markdown : Le Langage de Balisage Léger pour une Documentation Efficace
 
 [Markdown Guide](https://www.markdownguide.org/)

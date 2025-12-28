@@ -1,3 +1,15 @@
+---
+⏱️ **Durée estimée :** 35 minutes (lecture + pratique)
+📋 **Prérequis :** Tests unitaires et d'intégration, scénarios utilisateur
+🎯 **Objectifs :** 
+- Comprendre la perspective utilisateur dans les tests
+- Apprendre à valider les exigences fonctionnelles
+- Maîtriser les outils de test end-to-end
+- Concevoir des scénarios de test réalistes
+
+**TL;DR :** Ce chapitre explique comment tester les fonctionnalités complètes du point de vue de l'utilisateur final.
+---
+
 # Les Tests Fonctionnels
 
 ## Présentation des Tests Fonctionnels

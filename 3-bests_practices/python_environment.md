@@ -1,3 +1,15 @@
+---
+⏱️ **Durée estimée :** 30 minutes (lecture + installation)
+📋 **Prérequis :** Python installé, notions de ligne de commande
+🎯 **Objectifs :** 
+- Comprendre l'importance des environnements Python
+- Comparer Anaconda, Miniconda, Mamba et venv
+- Choisir l'outil adapté à ses besoins
+- Éviter les conflits de dépendances
+
+**TL;DR :** Ce chapitre explique comment gérer proprement les dépendances Python avec les outils d'environnements virtuels.
+---
+
 # Gérer son environnement de développement Python : L'art de dompter les dépendances
 
 ## Pourquoi est-ce crucial ?
@@ -14,10 +26,10 @@ Les environnements Python vous permettent d'installer les bibliothèques nécess
 
 Plusieurs outils vous aident à gérer vos environnements Python :
 
-1. **Anaconda:** Une distribution complète de Python et de bibliothèques scientifiques populaires, avec un gestionnaire d'environnements intégré (conda). Idéal pour les scientifiques et les data scientists. [En savoir plus](3-bests_practices/python_environment/anaconda.md)
-2. **Miniconda:** Une version allégée d'Anaconda, vous permettant d'installer uniquement les bibliothèques dont vous avez besoin. [En savoir plus](3-bests_practices/python_environment/minicondama.md)
-3. **Mamba:** Un gestionnaire d'environnements plus rapide que conda, compatible avec les environnements conda. [En savoir plus](3-bests_practices/python_environment/mamba.md)
-4. **venv:** L'outil standard de Python pour créer des environnements virtuels légers. Simple et efficace, mais moins riche en fonctionnalités que conda ou mamba. [En savoir plus](3-bests_practices/python_environment/vend.md)
+1. **Anaconda:** Une distribution complète de Python et de bibliothèques scientifiques populaires, avec un gestionnaire d'environnements intégré (conda). Idéal pour les scientifiques et les data scientists. [En savoir plus](python_environment/anaconda.md)
+2. **Miniconda:** Une version allégée d'Anaconda, vous permettant d'installer uniquement les bibliothèques dont vous avez besoin. [En savoir plus](python_environment/miniconda.md)
+3. **Mamba:** Un gestionnaire d'environnements plus rapide que conda, compatible avec les environnements conda. [En savoir plus](python_environment/mamba.md)
+4. **venv:** L'outil standard de Python pour créer des environnements virtuels légers. Simple et efficace, mais moins riche en fonctionnalités que conda ou mamba. [En savoir plus](python_environment/venv.md)
 
 ## Choisissez l'outil qui vous convient
 

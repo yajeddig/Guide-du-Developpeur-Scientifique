@@ -1,3 +1,15 @@
+---
+⏱️ **Durée estimée :** 30 minutes (lecture + navigation)
+📋 **Prérequis :** Bases de programmation, curiosité technique
+🎯 **Objectifs :** 
+- Découvrir l'écosystème informatique complet
+- Identifier les domaines d'approfondissement
+- Comprendre les connexions entre les technologies
+- Planifier son parcours d'apprentissage CS
+
+**TL;DR :** Ce chapitre présente la cartographie complète des compétences informatiques pour scientifiques.
+---
+
 # 6. Computer Science
 
 ## 1. Concepts Fondamentaux

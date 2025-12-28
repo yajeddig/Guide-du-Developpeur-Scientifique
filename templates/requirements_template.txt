@@ -1,0 +1,309 @@
+# ========================================
+# Requirements Template pour Projets Python Scientifiques
+# ========================================
+#
+# Ce fichier organise les dépendances par catégories pour faciliter :
+# - La compréhension des dépendances du projet
+# - L'installation sélective selon les besoins
+# - La maintenance et les mises à jour
+#
+# USAGE :
+# 1. Remplacer les versions par celles qui fonctionnent avec votre projet
+# 2. Supprimer les sections non utilisées
+# 3. Ajouter vos dépendances spécifiques
+# 4. Installer avec : pip install -r requirements.txt
+#
+# VERSIONING :
+# - '==' : Version exacte (recommandé pour reproductibilité)
+# - '>=' : Version minimale (plus flexible, risque de breaking changes)
+# - '~=' : Compatible release (ex: ~=1.2 accepte 1.2.x mais pas 1.3)
+#
+# ========================================
+
+# ========================================
+# 1. CORE - Dépendances Essentielles
+# ========================================
+# Ces packages sont absolument nécessaires pour exécuter le code
+
+# Python version (spécifier dans setup.py ou pyproject.toml)
+# python>=3.8,<3.12
+
+# Numpy - Calcul numérique fondamental
+numpy==1.24.3
+# Raison : Base de tout calcul scientifique en Python
+# Note : Attention aux breaking changes entre versions majeures
+
+# SciPy - Algorithmes scientifiques
+scipy==1.10.1
+# Raison : Optimisation, intégration, algèbre linéaire, etc.
+
+# Pandas - Manipulation de données tabulaires
+pandas==2.0.3
+# Raison : DataFrames, séries temporelles, I/O de données
+# Note : v2.0+ apporte des améliorations de performance
+
+
+# ========================================
+# 2. CALCUL SCIENTIFIQUE - Calculs Avancés
+# ========================================
+
+# SymPy - Calcul symbolique
+sympy==1.12
+# Raison : Manipulation algébrique, résolution symbolique
+
+# Numba - Compilation JIT pour accélération
+numba==0.57.1
+# Raison : Accélérer les boucles Python jusqu'à 100x
+# Note : Nécessite LLVM installé
+
+# CuPy - Calcul GPU (optionnel - décommenter si GPU disponible)
+# cupy-cuda11x==12.1.0
+# Raison : Accélération GPU pour arrays style NumPy
+# Note : Remplacer cuda11x par votre version CUDA
+
+# Dask - Calcul parallèle et big data
+# dask[complete]==2023.5.0
+# Raison : Calcul distribué pour datasets > RAM
+
+
+# ========================================
+# 3. MACHINE LEARNING / IA
+# ========================================
+
+# Scikit-learn - ML classique
+scikit-learn==1.3.0
+# Raison : Classification, régression, clustering, etc.
+
+# TensorFlow (décommenter si utilisé)
+# tensorflow==2.13.0
+# tensorflow-gpu==2.13.0  # Si GPU disponible
+# Raison : Deep learning, réseaux de neurones
+
+# PyTorch (décommenter si utilisé - NE PAS combiner avec TF dans le même projet)
+# torch==2.0.1
+# torchvision==0.15.2
+# torchaudio==2.0.2
+# Raison : Deep learning, recherche en IA
+
+# XGBoost - Gradient boosting
+# xgboost==1.7.6
+# Raison : Algorithme performant pour données tabulaires
+
+# LightGBM - Alternative rapide à XGBoost
+# lightgbm==4.0.0
+
+
+# ========================================
+# 4. VISUALISATION
+# ========================================
+
+# Matplotlib - Graphiques de base
+matplotlib==3.7.2
+# Raison : Visualisations scientifiques standards
+
+# Seaborn - Graphiques statistiques
+seaborn==0.12.2
+# Raison : Visualisations statistiques élégantes
+
+# Plotly - Graphiques interactifs
+plotly==5.15.0
+# Raison : Dashboards et visualisations web interactives
+
+# Bokeh - Alternative interactive à Plotly
+# bokeh==3.2.1
+
+# Altair - Grammaire de graphiques
+# altair==5.0.1
+
+
+# ========================================
+# 5. DATA I/O - Lecture/Écriture de Données
+# ========================================
+
+# OpenPyXL - Fichiers Excel (.xlsx)
+openpyxl==3.1.2
+# Raison : Lire/écrire Excel moderne
+
+# H5py - Fichiers HDF5
+h5py==3.9.0
+# Raison : Format standard pour grandes données scientifiques
+
+# NetCDF4 - Fichiers NetCDF (données climatiques, océanographiques)
+# netCDF4==1.6.4
+# Raison : Format standard en sciences de la Terre
+
+# PyArrow - Format Parquet et Arrow
+# pyarrow==12.0.1
+# Raison : Format columnar performant pour big data
+
+# SQLAlchemy - Bases de données SQL
+# sqlalchemy==2.0.19
+# Raison : ORM pour PostgreSQL, MySQL, SQLite, etc.
+
+
+# ========================================
+# 6. CALCUL HAUTE PERFORMANCE
+# ========================================
+
+# Joblib - Parallélisation facile
+joblib==1.3.1
+# Raison : Exécution parallèle, cache disque
+
+# Ray - Calcul distribué
+# ray[default]==2.5.1
+# Raison : Scaling horizontal, reinforcement learning
+
+# Multiprocessing (built-in Python)
+# Pas besoin d'installer
+
+
+# ========================================
+# 7. UTILITAIRES
+# ========================================
+
+# Tqdm - Barres de progression
+tqdm==4.65.0
+# Raison : Feedback visuel pour boucles longues
+
+# Python-dotenv - Variables d'environnement
+python-dotenv==1.0.0
+# Raison : Charger config depuis fichiers .env
+
+# PyYAML - Fichiers de configuration YAML
+pyyaml==6.0.1
+# Raison : Config files lisibles
+
+# Click - CLI applications
+# click==8.1.5
+# Raison : Créer des interfaces en ligne de commande
+
+# Loguru - Logging amélioré
+# loguru==0.7.0
+# Raison : Alternative moderne au module logging
+
+
+# ========================================
+# 8. JUPYTER & NOTEBOOKS
+# ========================================
+
+# Jupyter Lab - Environnement notebooks moderne
+jupyterlab==4.0.3
+# Raison : IDE pour data science interactif
+
+# IPython - Console interactive améliorée
+ipython==8.14.0
+
+# Jupyter Widgets - Interactivité dans notebooks
+ipywidgets==8.0.7
+
+# NBconvert - Conversion de notebooks
+# nbconvert==7.7.3
+# Raison : Convertir .ipynb en PDF, HTML, etc.
+
+
+# ========================================
+# 9. DÉVELOPPEMENT & TESTS (optionnel - voir requirements-dev.txt)
+# ========================================
+
+# Ces packages NE SONT PAS nécessaires en production
+# Décommenter seulement si pas de fichier requirements-dev.txt séparé
+
+# pytest==7.4.0
+# pytest-cov==4.1.0
+# black==23.7.0
+# flake8==6.0.0
+# mypy==1.4.1
+# isort==5.12.0
+# pre-commit==3.3.3
+
+
+# ========================================
+# 10. DÉPENDANCES SPÉCIFIQUES À VOTRE DOMAINE
+# ========================================
+
+# TODO: Ajouter ici vos packages spécifiques
+# Exemples par domaine :
+
+# Bioinformatique
+# biopython==1.81
+# pysam==0.21.0
+
+# Chimie
+# rdkit==2023.3.2
+# openbabel-wheel==3.1.1.1
+
+# Astronomie
+# astropy==5.3.1
+
+# Traitement d'images
+# opencv-python==4.8.0.74
+# Pillow==10.0.0
+# scikit-image==0.21.0
+
+# Traitement du langage naturel (NLP)
+# nltk==3.8.1
+# spacy==3.6.0
+# transformers==4.31.0
+
+# Signal processing
+# pywavelets==1.4.1
+# librosa==0.10.0.post2
+
+# Géospatial
+# geopandas==0.13.2
+# shapely==2.0.1
+# rasterio==1.3.8
+
+# Finance quantitative
+# yfinance==0.2.27
+# ta-lib==0.4.27
+
+
+# ========================================
+# NOTES D'UTILISATION
+# ========================================
+
+# 1. CRÉER UN ENVIRONNEMENT VIRTUEL (recommandé) :
+#    python -m venv venv
+#    source venv/bin/activate  # Linux/Mac
+#    venv\Scripts\activate     # Windows
+
+# 2. INSTALLER LES DÉPENDANCES :
+#    pip install -r requirements.txt
+
+# 3. FIGER LES VERSIONS (après installation) :
+#    pip freeze > requirements-frozen.txt
+
+# 4. METTRE À JOUR LES PACKAGES :
+#    pip install --upgrade -r requirements.txt
+#    # Puis tester !
+
+# 5. SÉPARER DEV ET PROD :
+#    Créer requirements-dev.txt pour outils de développement
+#    pip install -r requirements.txt -r requirements-dev.txt
+
+# 6. COMPATIBILITÉ :
+#    Tester avec : pip check
+#    Vérifier vulnérabilités : pip-audit
+
+# 7. DOCUMENTATION :
+#    Documenter POURQUOI chaque package est nécessaire (voir commentaires ci-dessus)
+
+# ========================================
+# BONNES PRATIQUES
+# ========================================
+
+# ✅ FAIRE :
+# - Spécifier les versions exactes pour reproductibilité
+# - Organiser par catégories logiques
+# - Commenter les raisons d'inclusion
+# - Séparer requirements.txt et requirements-dev.txt
+# - Mettre à jour régulièrement (mais tester après !)
+
+# ❌ ÉVITER :
+# - Installer des packages "au cas où"
+# - Mélanger dépendances de prod et dev
+# - Laisser des versions sans contraintes
+# - Oublier de documenter les dépendances non-évidentes
+
+# ========================================

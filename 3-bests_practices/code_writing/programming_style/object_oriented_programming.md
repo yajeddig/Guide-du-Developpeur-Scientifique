@@ -1,6 +1,16 @@
-# Objets et Classes en Python
+---
+⏱️ **Durée estimée :** 45 minutes (lecture + exercices pratiques)
+📋 **Prérequis :** Bases de Python, notions de fonctions et variables
+🎯 **Objectifs :** 
+- Maîtriser les concepts fondamentaux de la POO
+- Comprendre classes, objets, attributs et méthodes
+- Apprendre l'encapsulation, héritage et polymorphisme
+- Implémenter des exemples concrets en Python
 
-**Temps estimé nécessaire :** 10 minutes
+**TL;DR :** Ce chapitre couvre les bases de la programmation orientée objet en Python avec des exemples pratiques.
+---
+
+# Objets et Classes en Python
 
 ## Objectifs
 

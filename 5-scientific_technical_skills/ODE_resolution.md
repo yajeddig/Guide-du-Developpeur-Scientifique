@@ -1,3 +1,15 @@
+---
+⏱️ **Durée estimée :** 60 minutes (lecture + pratique)
+📋 **Prérequis :** Python, NumPy, SciPy, équations différentielles de base
+🎯 **Objectifs :** 
+- Maîtriser la résolution d'EDO avec SciPy
+- Comprendre les différentes méthodes numériques
+- Implémenter des systèmes d'EDO complexes
+- Analyser et visualiser les solutions
+
+**TL;DR :** Ce chapitre détaille la résolution pratique des systèmes d'équations différentielles ordinaires avec Python.
+---
+
 # Résolution d'un Système d'Équations Différentielles Ordinaires en Python
 
 ## Introduction

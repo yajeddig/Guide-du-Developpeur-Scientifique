@@ -1,3 +1,15 @@
+---
+⏱️ **Durée estimée :** 40 minutes (lecture + exercices docstrings)
+📋 **Prérequis :** Bases de Python, expérience avec les fonctions
+🎯 **Objectifs :** 
+- Maîtriser la rédaction de docstrings efficaces
+- Comprendre les différents styles de documentation
+- Apprendre l'auto-génération de documentation
+- Documenter classes, méthodes et modules Python
+
+**TL;DR :** Ce chapitre détaille la documentation technique du code avec docstrings, commentaires et génération automatique.
+---
+
 # Documentation technique d'un code
 
 ## Qu'est-ce qu'un Docstring ?
@@ -51,9 +63,9 @@ Le style NumPy/SciPy est particulièrement populaire dans les projets scientifiq
 
 Les docstrings peuvent être accédées de différentes manières :
 
-* **Via l'attribut `__doc__`** : Chaque objet Python (module, classe, fonction, méthode) possède un attribut `__doc__` qui contient son docstring.
-* **Avec la fonction `help()`** : La fonction `help()` affiche le docstring d'un objet, fournissant ainsi une aide interactive.
-* **Génération de documentation automatique** : Des outils comme Sphinx, pdoc3 ou pydocmd peuvent extraire les docstrings de votre code et générer une documentation complète au format HTML ou autre.
+- **Via l'attribut `__doc__`** : Chaque objet Python (module, classe, fonction, méthode) possède un attribut `__doc__` qui contient son docstring.
+- **Avec la fonction `help()`** : La fonction `help()` affiche le docstring d'un objet, fournissant ainsi une aide interactive.
+- **Génération de documentation automatique** : Des outils comme Sphinx, pdoc3 ou pydocmd peuvent extraire les docstrings de votre code et générer une documentation complète au format HTML ou autre.
 
 ## Générer la documentation technique d'un code grâce aux docstrings
 
@@ -81,4 +93,4 @@ Vous pouvez ensuite intégrer ces fichiers Markdown dans le wiki de votre projet
 
 **Conclusion**
 
-Les docstrings sont un élément essentiel de la documentation technique d'un code Python. En les utilisant de manière cohérente et en suivant les conventions établies, vous facilitez la compréhension, la maintenance et la collaboration sur votre projet. N'hésitez pas à explorer les différents outils de génération de documentation pour automatiser ce processus et rendre votre documentation encore plus accessible et utile. 
+Les docstrings sont un élément essentiel de la documentation technique d'un code Python. En les utilisant de manière cohérente et en suivant les conventions établies, vous facilitez la compréhension, la maintenance et la collaboration sur votre projet. N'hésitez pas à explorer les différents outils de génération de documentation pour automatiser ce processus et rendre votre documentation encore plus accessible et utile.

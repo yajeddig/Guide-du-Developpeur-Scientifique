@@ -1,3 +1,15 @@
+---
+⏱️ **Durée estimée :** 40 minutes (lecture + exemples)
+📋 **Prérequis :** Bases de la programmation Python
+🎯 **Objectifs :** 
+- Maîtriser les piliers d'un code de qualité
+- Apprendre les techniques de refactoring
+- Comprendre l'importance de la documentation
+- Adopter un style de programmation cohérent
+
+**TL;DR :** Ce chapitre couvre les principes essentiels pour écrire du code maintenable, lisible et professionnel.
+---
+
 # Bonnes pratiques de rédaction de code : Le guide essentiel pour les scientifiques
 
 Écrire du code, c'est un peu comme écrire une histoire. Si elle est bien écrite, elle est facile à suivre, agréable à lire, et on comprend facilement le message. Dans le monde de la programmation, un code bien écrit est non seulement plus facile à comprendre pour vous-même, mais aussi pour vos collègues (présents et futurs). Il est plus facile à maintenir, à modifier, et à déboguer.
@@ -42,5 +54,5 @@ Dans cette section, nous allons explorer les principes clés pour écrire du cod
 ## Pour aller plus loin
 
 * Consultez [la page sur l'architecture](code_writing/architecture.md) du code pour en savoir plus sur l'organisation de votre projet.
-* [Explorez le PEP 8](3-bests_practices/code_writing/beautiful_code_pep8.md) en détail pour maîtriser les conventions de style de Python.
+* [Explorez le PEP 8](code_writing/beautiful_code_pep8.md) en détail pour maîtriser les conventions de style de Python.
 * Découvrez les différents [styles de programmation](code_writing/programming_style.md) ([objet](code_writing/programming_style/object_oriented_programming.md), fonctionnelle) et choisissez celui qui convient le mieux à votre projet

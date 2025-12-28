@@ -1,3 +1,15 @@
+---
+⏱️ **Durée estimée :** 25 minutes (lecture + ressources vidéo)
+📋 **Prérequis :** Bases de Python, notions de fonctions
+🎯 **Objectifs :** 
+- Comprendre les différents paradigmes de programmation
+- Distinguer programmation fonctionnelle, orientée objet et déclarative
+- Apprendre à choisir le style adapté au problème
+- Découvrir la flexibilité de Python pour combiner les approches
+
+**TL;DR :** Ce chapitre présente les styles de programmation disponibles en Python et guide le choix selon le contexte.
+---
+
 # Les différents styles de programmation : Un aperçu pour les scientifiques
 
 Python, en tant que langage polyvalent, supporte différents styles de programmation, chacun avec ses propres avantages et cas d'utilisation. Comprendre ces styles vous aidera à choisir l'approche la plus adaptée à vos projets scientifiques. Sachez que ces concepts sont adaptable à d'autres langages.
@@ -32,7 +44,7 @@ L'un des grands avantages de Python est sa flexibilité. Vous n'êtes pas oblig�
 
 Comprendre les différents styles de programmation vous permettra d'écrire un code Python plus efficace, plus lisible et plus facile à maintenir. N'hésitez pas à explorer ces différents paradigmes et à les expérimenter dans vos projets pour découvrir celui qui vous convient le mieux.
 
-## Pour aller plus loin 
+## Pour aller plus loin
 
 * Explorez des exemples de code Python utilisant différents styles pour mieux comprendre leurs applications concrètes.
-* N'ayez pas peur d'expérimenter et de combiner différents styles pour trouver l'approche qui vous convient le mieux. 
+* N'ayez pas peur d'expérimenter et de combiner différents styles pour trouver l'approche qui vous convient le mieux.
