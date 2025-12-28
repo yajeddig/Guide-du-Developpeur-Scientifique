@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+
 ⏱️ **Durée estimée :** 40 minutes (lecture + exercices docstrings)
 📋 **Prérequis :** Bases de Python, expérience avec les fonctions
 🎯 **Objectifs :** 
@@ -8,8 +11,6 @@
 - Documenter classes, méthodes et modules Python
 
 **TL;DR :** Ce chapitre détaille la documentation technique du code avec docstrings, commentaires et génération automatique.
----
-
 # Documentation technique d'un code
 
 ## Qu'est-ce qu'un Docstring ?

@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+
 ⏱️ **Durée estimée :** 30 minutes (lecture + exercices de style)
 📋 **Prérequis :** Bases de Python, expérience de programmation
 🎯 **Objectifs :** 
@@ -8,8 +11,6 @@
 - Adopter un style cohérent et professionnel
 
 **TL;DR :** Ce chapitre détaille les conventions PEP8 pour écrire du Python lisible et maintenable selon les standards.
----
-
 # **Guide Stylistique PEP8 pour Python**
 
 La formation [OpenClassRoom - Écrivez du code Python maintenable](https://openclassrooms.com/fr/courses/7160741-ecrivez-du-code-python-maintenable) est assez courte et vous apprends toute les bonnes pratiques de rédaction d'un code maintenable.

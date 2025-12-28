@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+
 ⏱️ **Durée estimée :** 30-40 minutes
 📋 **Prérequis :** Avoir lu les 4 sections Git Basics
 🎯 **Objectifs :**
@@ -8,8 +11,6 @@
 - Vous préparer à collaborer efficacement
 
 **TL;DR :** Quiz d'auto-évaluation avec 15 questions (30% théorie, 70% pratique) pour valider vos acquis Git.
----
-
 # 🎯 Quiz d'Auto-Évaluation - Section 1 : Git Basics
 
 ## 📖 Comment utiliser ce quiz ?

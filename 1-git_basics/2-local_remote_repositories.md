@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+
 ⏱️ **Durée estimée :** 40 minutes (lecture + pratique)
 📋 **Prérequis :** Git installé, notions de base de Git
 🎯 **Objectifs :** 
@@ -8,8 +11,6 @@
 - Apprendre les commandes essentielles du workflow local
 
 **TL;DR :** Ce chapitre explique le fonctionnement interne de Git et comment gérer les versions de vos projets en local.
----
-
 # Git : Utilisation en Local
 
 Git est avant tout un outil conçu pour être utilisé localement, c'est-à-dire sur votre propre ordinateur. Il vous permet de gérer l'historique des modifications de vos projets, de revenir à des versions antérieures en cas de besoin, et de collaborer efficacement avec d'autres développeurs.

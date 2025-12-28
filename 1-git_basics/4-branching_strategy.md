@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+
 ⏱️ **Durée estimée :** 35 minutes (lecture + pratique)
 📋 **Prérequis :** Bases de Git, expérience avec les commits
 🎯 **Objectifs :** 
@@ -8,8 +11,6 @@
 - Savoir organiser son workflow de développement
 
 **TL;DR :** Ce chapitre présente les stratégies de branchement pour organiser efficacement le développement collaboratif.
----
-
 # Stratégie de Gestion des Branches dans Git/GitHub
 
 ## Introduction

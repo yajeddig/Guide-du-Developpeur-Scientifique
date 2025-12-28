@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+
 ⏱️ **Durée estimée :** 50 minutes (lecture + rédaction)
 📋 **Prérequis :** Phase d'initialisation terminée, besoins analysés
 🎯 **Objectifs :**
@@ -9,8 +12,6 @@
 - Formaliser les exigences et contraintes du projet
 
 **TL;DR :** Ce chapitre explique comment formaliser le projet dans un cahier des charges fonctionnel et technique
----
-
 # Formalisez votre projet dans un cahier des charges
 
 Deuxième bonne nouvelle, dans notre scénario, la proposition commerciale que nous avons adressée puis défendue à l'hôtel Paradis a été acceptée. Le client a signé le devis. Nous avons remporté l'appel d'offres ! :confetti_ball:

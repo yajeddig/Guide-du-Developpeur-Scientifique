@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+
 ⏱️ **Durée estimée :** 30 minutes (lecture + pratique)
 📋 **Prérequis :** Git installé, compte GitHub créé
 🎯 **Objectifs :** 
@@ -8,8 +11,6 @@
 - Effectuer ses premiers push et pull
 
 **TL;DR :** Ce chapitre explique comment synchroniser ton travail local avec GitHub et commencer à collaborer.
----
-
 # Démarrer avec Git et GitHub : Un guide pour les scientifiques
 
 L'objectif de cette section est de vous guider dans les premières étapes de l'utilisation de Git et GitHub pour gérer vos projets et simulateurs.

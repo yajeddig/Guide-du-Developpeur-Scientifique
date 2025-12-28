@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+
 ⏱️ **Durée estimée :** 40 minutes (lecture + configuration)
 📋 **Prérequis :** Installation de VSCode, bases de la programmation
 🎯 **Objectifs :** 
@@ -8,8 +11,6 @@
 - Installer et gérer les extensions essentielles
 
 **TL;DR :** Ce chapitre guide la configuration et l'utilisation optimale de Visual Studio Code pour le développement scientifique.
----
-
 # Utiliser l'IDE Visual Studio Code
 
 ## Introduction

@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+
 ⏱️ **Durée estimée :** 35 minutes (lecture + réflexion)
 📋 **Prérequis :** Bases de Git, expérience avec les commits
 🎯 **Objectifs :** 
@@ -8,8 +11,6 @@
 - Préparer la mise en place d'un workflow collaboratif
 
 **TL;DR :** Ce chapitre présente les fondamentaux de la collaboration efficace et les défis à surmonter en équipe.
----
-
 # Comment collaborer efficacement sur un projet de développement : Un guide pour les scientifiques
 
 ## Transformer le chaos en harmonie : Maîtriser la collaboration dans le développement

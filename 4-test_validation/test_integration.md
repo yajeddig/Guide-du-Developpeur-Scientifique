@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+
 ⏱️ **Durée estimée :** 40 minutes (lecture + pratique)
 📋 **Prérequis :** Tests unitaires, architecture modulaire
 🎯 **Objectifs :** 
@@ -8,8 +11,6 @@
 - Identifier les stratégies d'intégration appropriées
 
 **TL;DR :** Ce chapitre explique comment tester les interactions entre composants pour assurer la cohérence globale du système.
----
-
 # Les Tests d'Intégration
 
 #### Présentation des Tests d'Intégration

@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+
 ⏱️ **Durée estimée :** 45 minutes (lecture + exercices pratiques)
 📋 **Prérequis :** Bases de Python, notions de fonctions et variables
 🎯 **Objectifs :** 
@@ -8,8 +11,6 @@
 - Implémenter des exemples concrets en Python
 
 **TL;DR :** Ce chapitre couvre les bases de la programmation orientée objet en Python avec des exemples pratiques.
----
-
 # Objets et Classes en Python
 
 ## Objectifs

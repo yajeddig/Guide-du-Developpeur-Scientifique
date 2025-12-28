@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+
 ⏱️ **Durée estimée :** 35 minutes (lecture + comparaison)
 📋 **Prérequis :** Notions d'installation de logiciels
 🎯 **Objectifs :** 
@@ -8,8 +11,6 @@
 - Connaître les avantages/inconvénients de chaque solution
 
 **TL;DR :** Ce chapitre compare VSCode, PyCharm, JupyterLab et autres IDEs pour vous aider à choisir l'outil optimal.
----
-
 # Travailler avec un IDE : Lequel ?
 
 ## Introduction

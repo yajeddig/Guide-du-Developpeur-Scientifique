@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+
 ⏱️ **Durée estimée :** 90 minutes (lecture + implémentation)
 📋 **Prérequis :** Calcul différentiel, NumPy, notions d'EDP
 🎯 **Objectifs :** 
@@ -8,8 +11,6 @@
 - Analyser la stabilité et la convergence
 
 **TL;DR :** Ce chapitre couvre la résolution numérique des équations aux dérivées partielles avec des méthodes avancées.
----
-
 # Introduction aux Équations aux Dérivées Partielles (EDP)
 
 Les EDP modélisent de nombreux phénomènes physiques tels que le transfert de chaleur, la propagation d’ondes ou les écoulements fluides. Par exemple, l’équation de la chaleur en 1D s’exprime par  

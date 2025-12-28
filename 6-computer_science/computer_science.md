@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+
 ⏱️ **Durée estimée :** 30 minutes (lecture + navigation)
 📋 **Prérequis :** Bases de programmation, curiosité technique
 🎯 **Objectifs :** 
@@ -8,8 +11,6 @@
 - Planifier son parcours d'apprentissage CS
 
 **TL;DR :** Ce chapitre présente la cartographie complète des compétences informatiques pour scientifiques.
----
-
 # 6. Computer Science
 
 ## 1. Concepts Fondamentaux

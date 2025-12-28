@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+
 ⏱️ **Durée estimée :** 45 minutes (exercice pratique complet)
 📋 **Prérequis :** [Git Basics](1-git_basics.md), [Local & Remote Repositories](2-local_remote_repositories.md), [Getting Started with GitHub](3-getting_started_with_github.md), [Branching Strategy](4-branching_strategy.md)
 🎯 **Objectifs :** 
@@ -8,8 +11,6 @@
 - Valider ses acquis en situation réelle
 
 **TL;DR :** Exercice fil rouge qui vous guide pour faire votre première contribution open source en corrigeant une faute d'orthographe dans ce guide.
----
-
 # 🎯 Exercice Fil Rouge : Votre Première Contribution
 
 ## 🚀 Objectif de l'exercice

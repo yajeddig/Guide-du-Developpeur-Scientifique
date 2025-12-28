@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+
 ⏱️ **Durée estimée :** 45 minutes (lecture + pratique)
 📋 **Prérequis :** Bases Python, notions de fonctions
 🎯 **Objectifs :** 
@@ -8,7 +11,6 @@
 - Comprendre les assertions et mocks
 
 **TL;DR :** Ce chapitre détaille l'implémentation pratique des tests unitaires avec des exemples concrets et des bonnes pratiques.
----
 
 # Les Tests Unitaires
 

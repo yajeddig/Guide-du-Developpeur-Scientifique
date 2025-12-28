@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+
 ⏱️ **Durée estimée :** 50 minutes (lecture + pratique)
 📋 **Prérequis :** Algèbre non-linéaire, SciPy, méthodes numériques
 🎯 **Objectifs :** 
@@ -8,8 +11,6 @@
 - Gérer la convergence et les solutions multiples
 
 **TL;DR :** Ce chapitre explique la résolution des systèmes d'équations algébriques non-linéaires avec Python.
----
-
 # Résolution de Systèmes d'Équations Algébriques Non Linéaires en Python : Un guide pour les scientifiques
 
 ## Introduction

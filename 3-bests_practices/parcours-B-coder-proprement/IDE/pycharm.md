@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+
 ⏱️ **Durée estimée :** 35 minutes (installation + configuration)
 📋 **Prérequis :** Notions de Python, installation de PyCharm
 🎯 **Objectifs :** 
@@ -8,8 +11,6 @@
 - Comprendre les avantages et inconvénients vs VSCode
 
 **TL;DR :** Ce chapitre présente PyCharm comme alternative IDE pour le développement Python professionnel.
----
-
 # PyCharm
 
 ## Installation, configuration et prise en main de PyCharm

@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+
 ⏱️ **Durée estimée :** 35 minutes (lecture + application)
 📋 **Prérequis :** Expérience de recherche, notions de rédaction scientifique
 🎯 **Objectifs :** 
@@ -8,8 +11,6 @@
 - Intégrer aspects techniques et scientifiques
 
 **TL;DR :** Ce chapitre détaille la rédaction de documentation scientifique rigoureuse pour assurer reproductibilité et communication.
----
-
 # Rédaction de la Documentation Scientifique : Le Guide Essentiel
 
 ## Pourquoi documenter ?

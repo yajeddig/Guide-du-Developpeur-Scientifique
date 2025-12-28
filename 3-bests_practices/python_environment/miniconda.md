@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+
 ⏱️ **Durée estimée :** 45 minutes (installation + configuration)
 📋 **Prérequis :** Bases de Python, ligne de commande
 🎯 **Objectifs :** 
@@ -8,8 +11,6 @@
 - Combiner conda et pip pour une gestion optimale
 
 **TL;DR :** Ce chapitre présente Miniconda comme alternative légère à Anaconda pour une gestion précise des environnements.
----
-
 # Gestion des Environnements Python avec Miniconda & pip
 
 ## Introduction

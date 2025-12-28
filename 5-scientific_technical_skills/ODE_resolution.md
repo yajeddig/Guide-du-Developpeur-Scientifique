@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+
 ⏱️ **Durée estimée :** 60 minutes (lecture + pratique)
 📋 **Prérequis :** Python, NumPy, SciPy, équations différentielles de base
 🎯 **Objectifs :** 
@@ -8,8 +11,6 @@
 - Analyser et visualiser les solutions
 
 **TL;DR :** Ce chapitre détaille la résolution pratique des systèmes d'équations différentielles ordinaires avec Python.
----
-
 # Résolution d'un Système d'Équations Différentielles Ordinaires en Python
 
 ## Introduction

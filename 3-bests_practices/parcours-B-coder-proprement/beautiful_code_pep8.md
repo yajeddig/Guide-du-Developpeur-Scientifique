@@ -1,4 +1,7 @@
 ---
+layout: default
+---
+
 ⏱️ **Durée estimée :** 30 minutes (lecture + exercices de style)
 📋 **Prérequis :** Bases de Python, expérience de programmation
 🎯 **Objectifs :** 
@@ -8,8 +11,6 @@
 - Adopter un style cohérent et professionnel
 
 **TL;DR :** Ce chapitre détaille les conventions PEP8 pour écrire du Python lisible et maintenable selon les standards.
----
-
 # **Guide Stylistique PEP8 pour Python**
 
 
