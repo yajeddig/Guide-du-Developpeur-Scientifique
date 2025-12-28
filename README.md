@@ -143,6 +143,75 @@ Chaque niveau propose des durées estimées, des critères de validation mesurab
 
 ---
 
+## 🗺️ Roadmap du Projet
+
+### ✅ Phase 1 - Fondations (Terminée)
+- [x] Section 1 : Git Basics - Complète avec exercices et quiz
+- [x] Section 2 : Collaboration - Gestion de projet classique et Agile
+- [x] Section 3 : Best Practices - 3 parcours progressifs (A, B, C)
+- [x] Section 4 : Tests - Unitaires, intégration, fonctionnels
+- [x] Section 5 : Calcul scientifique - ODE, DAE, PDE, PBE
+- [x] Templates : README, .gitignore, requirements, PR checklist
+
+### 🚧 Phase 2 - Machine Learning & Langages (Q1 2025)
+
+| Fichier | Description | Priorité |
+|---------|-------------|----------|
+| `6-computer_science/5-machine_learning/introduction.md` | Concepts ML, types d'apprentissage | ⭐⭐⭐ |
+| `6-computer_science/5-machine_learning/supervised_classification.md` | Scikit-learn, métriques, validation | ⭐⭐⭐ |
+| `6-computer_science/5-machine_learning/supervised_regression.md` | Régression, feature engineering | ⭐⭐⭐ |
+| `6-computer_science/5-machine_learning/unsupervised.md` | Clustering, PCA, réduction dimensionnalité | ⭐⭐ |
+| `6-computer_science/5-machine_learning/time_series.md` | ARIMA, Prophet, forecasting | ⭐⭐ |
+| `6-computer_science/5-machine_learning/deeplearning_framework.md` | PyTorch/TensorFlow basics | ⭐⭐ |
+| `6-computer_science/2-programming_languages/advanced_python.md` | Decorators, generators, async/await | ⭐⭐⭐ |
+| `6-computer_science/2-programming_languages/c_cpp_csharp.md` | Pointeurs, mémoire, interop Python | ⭐⭐ |
+| `6-computer_science/2-programming_languages/matlab.md` | Bases MATLAB pour scientifiques | ⭐⭐ |
+
+### 📅 Phase 3 - DevOps & Cloud (Q2 2025)
+
+| Fichier | Description | Priorité |
+|---------|-------------|----------|
+| `6-computer_science/6-devops/ci_cd.md` | GitHub Actions, Jenkins, pipelines | ⭐⭐⭐ |
+| `6-computer_science/6-devops/contener.md` | Docker, Kubernetes basics | ⭐⭐⭐ |
+| `6-computer_science/6-devops/infrastructure_as_code.md` | Terraform, Ansible | ⭐⭐ |
+| `6-computer_science/8-cloud_computing/intro_to_cloud_services.md` | AWS/Azure/GCP overview | ⭐⭐ |
+| `6-computer_science/8-cloud_computing/microservices_scalable_architectures.md` | Architecture microservices | ⭐⭐ |
+
+### 📅 Phase 4 - Big Data & Sécurité (Q3 2025)
+
+| Fichier | Description | Priorité |
+|---------|-------------|----------|
+| `6-computer_science/4-big_data/hadoop_spark.md` | Écosystème Hadoop, Spark basics | ⭐⭐ |
+| `6-computer_science/4-big_data/mapreduce_concept.md` | Paradigme MapReduce | ⭐⭐ |
+| `6-computer_science/4-big_data/streaming.md` | Kafka, traitement temps réel | ⭐ |
+| `6-computer_science/7-cybersecurity/security_principles.md` | Principes fondamentaux sécurité | ⭐⭐ |
+| `6-computer_science/7-cybersecurity/webapp_security.md` | OWASP, sécurité web | ⭐⭐ |
+| `6-computer_science/7-cybersecurity/best_practice.md` | Bonnes pratiques développeur | ⭐ |
+
+### 📅 Phase 5 - Compléments (Q4 2025)
+
+| Fichier | Description | Priorité |
+|---------|-------------|----------|
+| `6-computer_science/1-fundamentals/data_structure_and_algorithm.md` | Structures avancées, graphes | ⭐ |
+| `6-computer_science/3-database_management/datalake_datawharehouse.md` | Data lakes vs warehouses | ⭐ |
+| `6-computer_science/3-database_management/optimized_request.md` | Optimisation SQL avancée | ⭐ |
+| `6-computer_science/2-programming_languages/R.md` | R pour statistiques | ⭐ |
+| `6-computer_science/2-programming_languages/javascript.md` | JS pour visualisation | ⭐ |
+| `6-computer_science/2-programming_languages/rust_go.md` | Langages systèmes modernes | ⭐ |
+
+### 💡 Comment contribuer
+
+Vous souhaitez aider à compléter ce guide ?
+
+1. Consultez la roadmap ci-dessus et choisissez un fichier à compléter
+2. Créez une branche `feature/nom-du-fichier`
+3. Utilisez les templates existants comme référence ([templates/](templates/))
+4. Soumettez une PR avec le [checklist PR](templates/PR_checklist.md)
+
+Les contributions sont les bienvenues, même partielles ! Un fichier avec 50% du contenu est mieux qu'un fichier vide.
+
+---
+
 ## Ressources complémentaires
 
 - **📦 Templates Prêts à l'Emploi** : Consultez le dossier [templates/](templates/) pour des modèles réutilisables (README, .gitignore, requirements.txt, PR checklist)
