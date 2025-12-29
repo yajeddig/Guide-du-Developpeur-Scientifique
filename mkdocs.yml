@@ -1,0 +1,77 @@
+site_name: Guide du Développeur Scientifique
+site_url: https://yajeddig.github.io/Guide-du-Developpeur-Scientifique
+docs_dir: .
+site_author: Younes AJEDDIG
+site_description: >-
+  Guide complet pour les ingénieurs, chercheurs et scientifiques qui codent.
+
+repo_name: yajeddig/Guide-du-Developpeur-Scientifique
+repo_url: https://github.com/yajeddig/Guide-du-Developpeur-Scientifique
+
+theme:
+  name: material
+  language: fr
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Mode sombre
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Mode clair
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search:
+      lang: fr
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+  - pymdownx.arithmatex:
+      generic: true
+  - admonition
+  - pymdownx.details
+  - tables
+  - toc:
+      permalink: true
+
+extra_javascript:
+  - javascripts/mathjax.js
+  - https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js
+
+nav:
+  - Accueil: index.md
+  - Parcours: 0-getting_started/learning_paths.md
+  - Git Basics:
+    - Introduction: 1-git_basics/1-git_basics.md
+    - Dépôts: 1-git_basics/2-local_remote_repositories.md
+    - GitHub: 1-git_basics/3-getting_started_with_github.md
+    - Branching: 1-git_basics/4-branching_strategy.md
+    - Exercice: 1-git_basics/5-exercice_fil_rouge.md
+    - Quiz: 1-git_basics/6-quiz_autoevaluation.md
+  - Collaboration:
+    - Introduction: 2-collaboration_procedure/collab_procedure.md
+    - Gestion de projet: 2-collaboration_procedure/project_management.md
+  - Best Practices:
+    - Vue d'ensemble: 3-bests_practices/bests_practices.md
+  - Tests:
+    - Introduction: 4-test_validation/test_valid.md
+  - Calcul Scientifique:
+    - ODE: 5-scientific_technical_skills/ODE_resolution.md
+    - DAE: 5-scientific_technical_skills/DAE_resolution.md
+    - PDE: 5-scientific_technical_skills/PDE_resolution.md
+  - Computer Science:
+    - Overview: 6-computer_science/computer_science.md
