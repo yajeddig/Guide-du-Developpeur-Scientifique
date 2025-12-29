@@ -26,6 +26,9 @@ Que vous soyez débutant ou que vous cherchiez à renforcer vos compétences, ce
 
 
 
+
+
+
 | Section | Statut | Dernière MàJ | Niveau recommandé |
 |---------|--------|--------------|-------------------|
 | 1 - Git Basics | ✅ Complet | 2025-01 | Débutant |
