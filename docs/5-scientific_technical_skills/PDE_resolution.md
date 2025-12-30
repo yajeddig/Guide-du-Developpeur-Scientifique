@@ -15,17 +15,17 @@ layout: default
 
 Les EDP modélisent de nombreux phénomènes physiques tels que le transfert de chaleur, la propagation d’ondes ou les écoulements fluides. Par exemple, l’équation de la chaleur en 1D s’exprime par  
 
-```math
+$$
 \frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2}
-```
+$$
 
 où $u(x,t)$ est la température, $\alpha$ le coefficient de diffusion, $x$ la variable spatiale et $t$ le temps.
 
 Les mêmes concepts s’étendent naturellement aux problèmes en 2D et 3D. Par exemple, l’équation de la chaleur en 2D s’écrit  
 
-```math
+$$
 \frac{\partial u}{\partial t} = \alpha \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} \right),
-```  
+$$  
 
 et en 3D, on ajoute la dérivée selon $z$.
 
@@ -47,27 +47,30 @@ Nous présentons ici trois grandes familles de méthodes et leur extension aux p
 
 Pour l’équation de la chaleur en 1D,
 
-```math
+$$
 \frac{\partial u}{\partial t} = \alpha \frac{\partial^2 u}{\partial x^2},
-```  
+$$  
 
 on remplace la dérivée temporelle par une différence avancée et la dérivée spatiale seconde par une différence centrée :
   
 - **Dérivée temporelle (forward) :**  
 
-  ```math
-  \frac{\partial u}{\partial t}(x_i,t^n) \approx \frac{u_i^{n+1} - u_i^n}{\Delta t}.
+  $$
+\frac{\partial u}{\partial t}(x_i,t^n) \approx \frac{u_i^{n+1} - u_i^n}{\Delta t}.
   ```
   
 - **Dérivée spatiale seconde (centrée) :**  
 
-  ```math
+  $$
+  
+
   \frac{\partial^2 u}{\partial x^2}(x_i,t^n) \approx \frac{u_{i+1}^n - 2u_i^n + u_{i-1}^n}{(\Delta x)^2}.
-  ```
+  
+
+  $$
   
 Le schéma s’écrit alors :
-
-```math
+$$math
 u_i^{n+1} = u_i^n + \lambda \left( u_{i+1}^n - 2u_i^n + u_{i-1}^n \right),
 ```  
 
@@ -116,9 +119,9 @@ plt.show()
 
 En 2D, pour l’équation
 
-```math
+$$
 \frac{\partial u}{\partial t} = \alpha \left( \frac{\partial^2 u}{\partial x^2} + \frac{\partial^2 u}{\partial y^2} \right),
-```  
+$$  
 
 la discrétisation implique deux directions spatiales. Par exemple, en FTCS 2D :
 
@@ -175,9 +178,9 @@ La FEM repose sur :
 - **La discrétisation du domaine** en éléments (triangles en 2D, tétraèdres en 3D ou segments en 1D) à l’aide d’un maillage.
 - **La formulation variationnelle** du problème, par exemple en recherchant $u$ tel que pour toute fonction test $v$,
   
-```math
+$$
 \int_\Omega k(x) \frac{du}{dx}\frac{dv}{dx}\,dx = \int_\Omega f(x)v(x)\,dx.
-```
+$$
 
 - **L'assemblage d'un système linéaire** $KU = F$, où $K$ est la matrice de rigidité.
 
@@ -231,9 +234,9 @@ La FVM divise le domaine en volumes de contrôle et applique le principe de cons
 
 - **Intégration sur chaque volume :** Pour l’équation de la chaleur en 1D, l’intégration sur un volume $V_i$ donne
   
-```math
+$$
 \frac{d}{dt}\int_{V_i} u\,dx = \alpha \left( \text{flux entrant} - \text{flux sortant} \right).
-```
+$$
 
 - **Approximation des flux :** Ceux-ci sont calculés à partir des valeurs moyennes dans les volumes adjacents.
 
@@ -308,9 +311,9 @@ Ci-dessous se trouve une présentation en trois parties : d’abord les équat
 
 Pour un système comportant NC constituants transportés et NR réactions de cinétique, on peut écrire pour chaque espèce $i$ (avec $i=1,\dots,NC$) l’équation de transport réactif sous la forme générale suivante :
 
-```math
+$$
 \frac{\partial C_i}{\partial t} + \nabla \cdot \Bigl(\mathbf{u}\, C_i\Bigr) = \nabla \cdot \Bigl( D_i\, \nabla C_i \Bigr) + \sum_{j=1}^{NR} \mu_{i,j}\, R_j(C_1, C_2, \dots, C_{NC}),
-```
+$$
 
 où :
 
@@ -328,9 +331,9 @@ Cette équation se veut indépendante du système de coordonnées ou de la dimen
 
 Nous considérons maintenant un exemple en 1D où trois espèces (A, B et C) sont transportées dans un canal avec écoulement, diffusent et réagissent selon la réaction :
 
-```math
+$$
 \text{A} + \text{B} \longrightarrow \text{C}.
-```
+$$
 
 Pour ce cas particulier :
 
@@ -345,21 +348,29 @@ En 1D (la variable spatiale étant $x$), et en supposant un écoulement constant
 
 - Pour l’espèce A :
 
-  ```math
-  \frac{\partial C_A}{\partial t} + u\,\frac{\partial C_A}{\partial x} = D_A\,\frac{\partial^2 C_A}{\partial x^2} - k_r\, C_A\, C_B,
+  $$
+\frac{\partial C_A}{\partial t} + u\,\frac{\partial C_A}{\partial x} = D_A\,\frac{\partial^2 C_A}{\partial x^2} - k_r\, C_A\, C_B,
   ```
 
 - Pour l’espèce B :
 
-  ```math
+  $$
+
+
   \frac{\partial C_B}{\partial t} + u\,\frac{\partial C_B}{\partial x} = D_B\,\frac{\partial^2 C_B}{\partial x^2} - k_r\, C_A\, C_B,
-  ```
+
+
+  $$
 
 - Pour l’espèce C :
 
-  ```math
+  $$
+
+
   \frac{\partial C_C}{\partial t} + u\,\frac{\partial C_C}{\partial x} = D_C\,\frac{\partial^2 C_C}{\partial x^2} + k_r\, C_A\, C_B.
-  ```
+
+
+  $$
 
 Ici, $k_r$ est la constante de réaction selon une loi de masse d’action, et $D_A$, $D_B$ et $D_C$ sont les coefficients de diffusion respectifs.
 
@@ -368,8 +379,7 @@ Ici, $k_r$ est la constante de réaction selon une loi de masse d’action, et $
 ### Implémentation en Python
 
 L’exemple suivant montre comment discrétiser et résoudre ces équations en 1D à l’aide d’un schéma en différences finies. L’advection est traitée à l’aide d’un schéma en différences arrière (upwind) et la diffusion par un schéma centré.
-
-```python
+$$python
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -451,20 +461,20 @@ plt.show()
 1. **Équations générales :**  
    Les équations de transport réactif se généralisent pour $NC$ espèces et $NR$ réactions avec  
 
-```math
+$$
 \frac{\partial C_i}{\partial t} + \nabla \cdot (\mathbf{u}\,C_i) = \nabla \cdot (D_i\,\nabla C_i) + \sum_{j=1}^{NR} \mu_{i,j}\, R_j(C_1,\dots,C_{NC}).
-```
+$$
 
 2. **Cas spécifique 1D (A, B, C) :**  
    Pour la réaction A + B → C, avec $\mu_{A,1}=\mu_{B,1}=-1$ et $\mu_{C,1}=+1$, les équations deviennent
 
-```math
+$$
 \begin{aligned}
 \frac{\partial C_A}{\partial t} + u\,\frac{\partial C_A}{\partial x} &= D_A\,\frac{\partial^2 C_A}{\partial x^2} - k_r\,C_A\,C_B, \\
 \frac{\partial C_B}{\partial t} + u\,\frac{\partial C_B}{\partial x} &= D_B\,\frac{\partial^2 C_B}{\partial x^2} - k_r\,C_A\,C_B, \\
 \frac{\partial C_C}{\partial t} + u\,\frac{\partial C_C}{\partial x} &= D_C\,\frac{\partial^2 C_C}{\partial x^2} + k_r\,C_A\,C_B.
 \end{aligned}
-```
+$$
 
 3. **Implémentation en Python :**  
    Le code présenté utilise un schéma en différences finies (upwind pour l’advection et centré pour la diffusion) pour résoudre ces équations dans un domaine 1D.
@@ -494,9 +504,9 @@ Pour un domaine donné, les équations de Saint-Venant se décomposent en deux p
 
 1. **Conservation de la masse (équation de continuité) :**
 
-```math
+$$
 \frac{\partial h}{\partial t} + \nabla\cdot (h\,\mathbf{u}) = 0,
-```
+$$
 
    où  
 
@@ -506,9 +516,9 @@ Pour un domaine donné, les équations de Saint-Venant se décomposent en deux p
 
 2. **Conservation de la quantité de mouvement :**
 
-```math
+$$
 \frac{\partial (h\,\mathbf{u})}{\partial t} + \nabla\cdot \Bigl(h\,\mathbf{u}\otimes\mathbf{u} + \frac{1}{2}\,g\,h^2\,\mathbf{I}\Bigr) = -g\,h\,\nabla z_b - \tau,
-```
+$$
 
    où  
 
@@ -524,9 +534,9 @@ Cette formulation permet de décrire l’évolution de l’écoulement en foncti
 
 Pour modéliser le transport de constituants dissous (ou en suspension) dans l’écoulement et leur réaction chimique, on ajoute pour chaque espèce $i$ (avec $i=1,\dots,NC$) une équation de transport qui tient compte de l’advection, de la diffusion et de la réaction. Dans une formulation très généraliste (indépendante du système de coordonnées ou de la dimension spatiale), on peut écrire :
 
-```math
+$$
 \frac{\partial (h\,C_i)}{\partial t} + \nabla \cdot \Bigl(h\,\mathbf{u}\,C_i\Bigr) = \nabla \cdot \Bigl(h\,D_i\,\nabla C_i\Bigr) + h \sum_{j=1}^{NR} \mu_{i,j}\, R_j(C_1, C_2, \dots, C_{NC}),
-```
+$$
 
 avec :
 
@@ -548,9 +558,9 @@ Pour illustrer, nous considérons un canal 1D (variable $x$) dans lequel le rég
 
 Dans ce cas, la conservation de la masse se réduit à :
 
-```math
+$$
 \frac{\partial h}{\partial t} + \frac{\partial (h\,u)}{\partial x} = 0.
-```
+$$
 
 En régime stationnaire, $h$ et $u$ sont constants. La conservation du moment ne sera pas résolue ici puisque nous imposons directement $h$ et $u$.
 
@@ -558,9 +568,9 @@ En régime stationnaire, $h$ et $u$ sont constants. La conservation du moment ne
 
 Pour le transport des trois espèces A, B et C, et pour la réaction unique :
 
-```math
+$$
 \text{A} + \text{B} \longrightarrow \text{C},
-```
+$$
 
 les coefficients stœchiométriques sont :
 
@@ -572,41 +582,61 @@ Les équations de transport, en supposant $h$ constant, s’écrivent alors pour
 
 - Pour A :
 
-  ```math
-  \frac{\partial (h\,C_A)}{\partial t} + \frac{\partial (h\,u\,C_A)}{\partial x} = \frac{\partial}{\partial x}\Bigl(h\,D_A\,\frac{\partial C_A}{\partial x}\Bigr) - h\,k_r\,C_A\,C_B.
+  $$
+\frac{\partial (h\,C_A)}{\partial t} + \frac{\partial (h\,u\,C_A)}{\partial x} = \frac{\partial}{\partial x}\Bigl(h\,D_A\,\frac{\partial C_A}{\partial x}\Bigr) - h\,k_r\,C_A\,C_B.
   ```
 
 - Pour B :
 
-  ```math
+  $$
+
+
   \frac{\partial (h\,C_B)}{\partial t} + \frac{\partial (h\,u\,C_B)}{\partial x} = \frac{\partial}{\partial x}\Bigl(h\,D_B\,\frac{\partial C_B}{\partial x}\Bigr) - h\,k_r\,C_A\,C_B.
-  ```
+
+
+  $$
 
 - Pour C :
 
-  ```math
+  $$
+
+
   \frac{\partial (h\,C_C)}{\partial t} + \frac{\partial (h\,u\,C_C)}{\partial x} = \frac{\partial}{\partial x}\Bigl(h\,D_C\,\frac{\partial C_C}{\partial x}\Bigr) + h\,k_r\,C_A\,C_B.
-  ```
+
+
+  $$
 
 En divisant par $h$ (constante et non nulle), on obtient :
 
 - Pour A :
 
-  ```math
+  $$
+
+
   \frac{\partial C_A}{\partial t} + u\,\frac{\partial C_A}{\partial x} = D_A\,\frac{\partial^2 C_A}{\partial x^2} - k_r\,C_A\,C_B,
-  ```
+
+
+  $$
 
 - Pour B :
 
-  ```math
+  $$
+
+
   \frac{\partial C_B}{\partial t} + u\,\frac{\partial C_B}{\partial x} = D_B\,\frac{\partial^2 C_B}{\partial x^2} - k_r\,C_A\,C_B,
-  ```
+
+
+  $$
 
 - Pour C :
 
-  ```math
+  $$
+
+
   \frac{\partial C_C}{\partial t} + u\,\frac{\partial C_C}{\partial x} = D_C\,\frac{\partial^2 C_C}{\partial x^2} + k_r\,C_A\,C_B.
-  ```
+
+
+  $$
 
 Ces équations reprennent la structure d’un problème de transport advection-diffusion réactif, mais dans le contexte d’un écoulement décrit par les équations de Saint-Venant en régime stationnaire.
 
@@ -615,8 +645,7 @@ Ces équations reprennent la structure d’un problème de transport advection-d
 ### 4. Implémentation en Python (Cas 1D)
 
 Dans l’exemple ci-dessous, nous supposons un canal 1D avec une hauteur d’eau $h$ et une vitesse $u$ constantes. Nous résolvons les équations de transport réactif pour les espèces A, B et C en utilisant un schéma explicite en différences finies : un schéma « upwind » pour l’advection et un schéma centré pour la diffusion.
-
-```python
+$$python
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -704,9 +733,9 @@ plt.show()
 2. **Transport Réactif :**  
    En ajoutant une équation de transport pour chaque constituant, on peut décrire l’advection, la diffusion et la réaction des espèces. La formulation générale est :
 
-```math
+$$
 \frac{\partial (h\,C_i)}{\partial t} + \nabla \cdot (h\,\mathbf{u}\,C_i) = \nabla \cdot (h\,D_i\,\nabla C_i) + h \sum_{j=1}^{NR} \mu_{i,j}\,R_j(C_1,\dots,C_{NC}).
-```
+$$
 
 3. **Cas 1D avec A, B, C :**  
    Pour la réaction A + B → C (avec $\mu_{A,1}=\mu_{B,1}=-1$ et $\mu_{C,1}=+1$), et en supposant un régime hydraulique stationnaire ( $h$ et $u$ constants), les équations se simplifient et prennent la forme usuelle d’un problème advection–diffusion–réaction.
@@ -750,15 +779,19 @@ Les équations de Saint-Venant (ou de Barré de Saint-Venant) en dimension gén�
 
 - **Conservation de la masse :**  
   
-  ```math
-  \frac{\partial h}{\partial t} + \nabla\cdot (h\,\mathbf{u}) = 0,
+  $$
+\frac{\partial h}{\partial t} + \nabla\cdot (h\,\mathbf{u}) = 0,
   ```
 
 - **Conservation de la quantité de mouvement :**  
   
-  ```math
+  $$
+  
+  
   \frac{\partial (h\,\mathbf{u})}{\partial t} + \nabla\cdot \Bigl(h\,\mathbf{u}\otimes\mathbf{u} + \frac{1}{2}\,g\,h^2\,\mathbf{I}\Bigr) = -g\,h\,\nabla z_b - \tau,
-  ```
+  
+  
+  $$
 
 où $z_b$ est l'élévation du lit, $g$ la pesanteur et $\tau$ les pertes de charge ou frottements.
 
@@ -767,8 +800,7 @@ En résolvant ces équations (par exemple avec un schéma numérique adapté), o
 #### b. Application Découplée au Transport Réactif
 
 Une fois le champ hydraulique obtenu, on considère ce dernier comme donné dans l’équation de transport des constituants. La formulation générale pour chaque espèce $i$ (pour $i=1,\dots,NC$) est alors :
-
-```math
+$$math
 \frac{\partial (h\,C_i)}{\partial t} + \nabla \cdot \Bigl(h\,\mathbf{u}\, C_i\Bigr) = \nabla \cdot \Bigl(h\,D_i\, \nabla C_i\Bigr) + h \sum_{j=1}^{NR} \mu_{i,j}\, R_j(C_1,\dots,C_{NC}),
 ```
 
@@ -780,9 +812,9 @@ où :
 
 Si $h$ est constant ou si l’on souhaite travailler avec des concentrations « normalisées » par la hauteur, on peut diviser l’équation par $h$ (non nul) pour obtenir :
 
-```math
+$$
 \frac{\partial C_i}{\partial t} + \mathbf{u}\cdot\nabla C_i = D_i\, \Delta C_i + \sum_{j=1}^{NR} \mu_{i,j}\, R_j(C_1,\dots,C_{NC}).
-```
+$$
 
 Cette équation de transport réactif est ainsi traitée de manière découplée en utilisant $\mathbf{u}$ et éventuellement $h$ fournis par la résolution hydraulique.
 
@@ -800,29 +832,36 @@ En appliquant le découplage, et en supposant $h$ constant (nous prendrons $h = 
 
 - **Pour l’espèce A :**
   
-  ```math
-  \frac{\partial C_A}{\partial t} + u\,\frac{\partial C_A}{\partial x} = D_A\,\frac{\partial^2 C_A}{\partial x^2} - k_r\, C_A\, C_B,
+  $$
+\frac{\partial C_A}{\partial t} + u\,\frac{\partial C_A}{\partial x} = D_A\,\frac{\partial^2 C_A}{\partial x^2} - k_r\, C_A\, C_B,
   ```
 
 - **Pour l’espèce B :**
   
-  ```math
+  $$
+
+  
   \frac{\partial C_B}{\partial t} + u\,\frac{\partial C_B}{\partial x} = D_B\,\frac{\partial^2 C_B}{\partial x^2} - k_r\, C_A\, C_B,
-  ```
+
+  
+  $$
 
 - **Pour l’espèce C :**
   
-  ```math
+  $$
+
+  
   \frac{\partial C_C}{\partial t} + u\,\frac{\partial C_C}{\partial x} = D_C\,\frac{\partial^2 C_C}{\partial x^2} + k_r\, C_A\, C_B.
-  ```
+
+  
+  $$
 
 Ici, $k_r$ est la constante de réaction (loi de masse d’action), et $u$ est le champ de vitesse obtenu préalablement de la résolution hydraulique.
 
 #### c. Implémentation en Python
 
 Dans cet exemple, nous supposons que le champ hydraulique a été calculé séparément et que nous disposons d’un $u$ constant (par exemple, $u = 1.0$ m/s). Nous utilisons un schéma explicite en différences finies avec un traitement "upwind" pour l’advection.
-
-```python
+$$python
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -912,9 +951,13 @@ plt.show()
    - **Étape 1 :** Résoudre les équations de Saint-Venant pour obtenir $h(\mathbf{x},t)$ et $\mathbf{u}(\mathbf{x},t)$.  
    - **Étape 2 :** Utiliser ces champs, supposés indépendants, comme données dans l’équation de transport réactif :
 
-  ```math
+  $$
+
+
   \frac{\partial (h\,C_i)}{\partial t} + \nabla \cdot (h\,\mathbf{u}\,C_i) = \nabla \cdot (h\,D_i\,\nabla C_i) + h \sum_{j=1}^{NR} \mu_{i,j}\,R_j.
-  ```
+
+
+  $$
 
 - **Étape 3 :** Dans le cas où $h$ est constant, diviser par $h$ pour obtenir une équation plus simple.
 

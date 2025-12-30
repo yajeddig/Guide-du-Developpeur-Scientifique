@@ -70,6 +70,11 @@ plugins:
   - search:
       lang: fr
   - tags
+  - mkdocs-jupyter:
+      include_source: true
+      execute: false
+      allow_errors: false
+      include_requirejs: true
 
 extra:
   social:
@@ -147,5 +152,8 @@ nav:
     - ODE: 5-scientific_technical_skills/ODE_resolution.md
     - DAE: 5-scientific_technical_skills/DAE_resolution.md
     - PDE: 5-scientific_technical_skills/PDE_resolution.md
+    - Notebooks:
+      - Réacteur Batch: 5-scientific_technical_skills/2-ode_dae_systems/example_batch_reactor.ipynb
+      - DAE GCGP: 5-scientific_technical_skills/2-ode_dae_systems/example_dae_gcgp.ipynb
   - Computer Science:
     - Overview: 6-computer_science/computer_science.md
