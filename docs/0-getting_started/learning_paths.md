@@ -171,8 +171,8 @@ Maîtriser la gestion de projets complexes et développer une expertise en archi
 #### 2. Architecture et Design Patterns (6-8 semaines)
 
 - **Contenu :**
-  - [Programmation orientée objet avancée](../6-computer_science/1-fundamentals/object_oriented_programming)
-  - [Programmation fonctionnelle](../6-computer_science/1-fundamentals/functional_oriented_programming)
+  - [Programmation orientée objet avancée](../6-computer_science/1-fundamentals/object_oriented_programming.md)
+  - [Programmation fonctionnelle](../6-computer_science/1-fundamentals/functional_oriented_programming.md)
   - [Structures de données avancées](../6-computer_science/1-fundamentals/data_structure_and_algorithm.md)
 - **Durée estimée :** 50-65h
 - **Compétences :**
@@ -184,10 +184,10 @@ Maîtriser la gestion de projets complexes et développer une expertise en archi
 #### 3. Culture Computer Science (10-12 semaines)
 
 - **Contenu :** Choisir 2 spécialisations parmi :
-  - [Machine Learning](../6-computer_science/5-machine_learning/)
-  - [Big Data](../6-computer_science/4-big_data/)
-  - [Bases de données avancées](../6-computer_science/3-database_management/)
-  - [Cloud Computing](../6-computer_science/8-cloud_computing/)
+  - [Machine Learning](../6-computer_science/5-machine_learning/introduction.md)
+  - [Big Data](../6-computer_science/4-big_data/hadoop_spark.md)
+  - [Bases de données avancées](../6-computer_science/3-database_management/fundamentals_sql.md)
+  - [Cloud Computing](../6-computer_science/8-cloud_computing/intro_to_cloud_services.md)
 - **Durée estimée :** 80-100h
 - **Compétences :**
   - Maîtriser des technologies de pointe

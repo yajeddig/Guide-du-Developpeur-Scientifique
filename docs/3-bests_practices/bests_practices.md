@@ -56,15 +56,15 @@ La documentation est un aspect clé pour le succès à long terme de vos projets
 
 - [ReadMe ? Wiki ?](documentation/why_read_me_why_wiki.md)
 - [Documentation technique du code et Docstrings](documentation/technical_doc_code.md)
-- [Documentation scientifique du projet - Analyse fonctionnelle](documentation/scientific_documentation.md) (en cours)
-- [Documentation du cas d'application - Use case](documentation/use_case_documentation.md) (en cours)
+- [Documentation scientifique du projet - Analyse fonctionnelle](documentation/scientific_doc.md) (en cours)
+- Documentation du cas d'application - Use case (en cours)
 
 ## Gestion des Versions et Contrôle des Sources (Git et GitLab)
 
 Utiliser des pratiques de gestion des versions et de contrôle des sources est crucial pour la collaboration et la qualité du code. Voici nos recommandations :
 
 - Utilisation de Git : guide sur les commandes de base et les bonnes pratiques.
-  - [Git Basics](../1-git_basics/git_basics.md)
+  - [Git Basics](../1-git_basics/1-git_basics.md)
   - [Commencer avec GitHub](../1-git_basics/3-getting_started_with_github.md)
 - [Workflows et branches : stratégies pour gérer les branches (feature branches, develop, main, etc.)](../1-git_basics/4-branching_strategy.md)
 - Conventions de commit : comment rédiger des messages de commit clairs et informatifs.
@@ -80,6 +80,6 @@ Une gestion de projet efficace assure que toutes les tâches sont bien suivies e
 
 Découvrez comment importer et utiliser les packages  dans vos projets :
 
-- [Importer un package ](import__packages.md)
+- Importer un package (en cours)
 
 ---

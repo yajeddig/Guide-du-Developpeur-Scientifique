@@ -14,13 +14,13 @@
 
 ## 📥 Templates Prêts à l'Emploi
 
-Pour vous faciliter la tâche, nous avons préparé des **[templates réutilisables](../../templates/)** :
+Pour vous faciliter la tâche, nous avons préparé des **[templates réutilisables](../../templates/README.md)** :
 - **README_template.md** : Structure complète avec badges et sections annotées
 - **.gitignore_python_scientific** : Fichiers à ignorer pour projets Python scientifiques
 - **requirements_template.txt** : Gestion des dépendances organisée par catégories
 - **PR_checklist.md** : Checklist de validation pour Pull Requests
 
-👉 **[Accéder aux templates](../../templates/)**
+👉 **[Accéder aux templates](../../templates/README.md)**
 
 ## ✅ Compétences visées
 - Créer un environnement Python isolé

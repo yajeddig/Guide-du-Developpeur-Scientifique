@@ -363,7 +363,7 @@ Cela vous économisera des aller-retours potentiellement chronophages et donc co
 
 # Rédigez les spécifications techniques de votre projet
 
-![image.png](image\sommaire_spec_tech.png)
+![image.png](image/sommaire_spec_tech.png)
 
 Avant de renvoyer votre cahier des charges au client pour une dernière validation, vous allez devoir **traduire ou faire traduire vos spécifications fonctionnelles** (vues au dernier chapitre) **en spécifications techniques**.
 

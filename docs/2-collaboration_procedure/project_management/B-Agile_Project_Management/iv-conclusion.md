@@ -135,4 +135,4 @@ Ces quatre valeurs, issues du [Manifeste Agile](https://agilemanifesto.org/iso/f
 
 |  Précédent | Index | Suivant  |
 |-------------|-------|-----------|
-| [Outils visuels Agile](iii-outils_visuels_agile.md) | [Gestion de projet](../project_management.md) | [Data Science Project Guide](../C-Data_Science_Project_Guide.md) |
+| [Outils visuels Agile](iii-outils_visuels_agile.md) | [Gestion de projet](../../project_management.md) | [Data Science Project Guide](../C-Data_Science_Project_Guide.md) |

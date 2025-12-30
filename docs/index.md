@@ -38,6 +38,9 @@ Que vous soyez débutant ou que vous cherchiez à renforcer vos compétences, ce
 
 
 
+
+
+
 | Section | Statut | Dernière MàJ | Niveau recommandé |
 |---------|--------|--------------|-------------------|
 | 1 - Git Basics | ✅ Complet | 2025-01 | Débutant |
@@ -94,7 +97,7 @@ Chaque niveau propose des durées estimées, des critères de validation mesurab
 | &nbsp;&nbsp;&nbsp;• [Agile Project Management](2-collaboration_procedure/project_management/B-Agile_Project_Management.md) | Gestion de projet Agile, incluant le modèle d'équipe de Tuckman et les outils visuels. |
 | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(_Consultez le dossier_ `B-Agile_Project_Management/` _pour des exemples concrets_) | |
 | &nbsp;&nbsp;&nbsp;• [Data Science Project Guide](2-collaboration_procedure/project_management/C-Data_Science_Project_Guide.md) | Guide dédié à la gestion de projets en Data Science. |
-| [Project Management Resources](2-collaboration_procedure/project_management/) | Ressources graphiques (images, schémas) associées à la gestion de projet. |
+| [Project Management Resources](2-collaboration_procedure/project_management.md) | Ressources graphiques (images, schémas) associées à la gestion de projet. |
 
 ---
 
@@ -150,16 +153,16 @@ Chaque niveau propose des durées estimées, des critères de validation mesurab
 
 | **Sujet** | **Description** |
 |-----------|-----------------|
-| [Fundamentals -_En construction_](6-computer_science/1-fundamentals/) | Concepts fondamentaux en algorithmique et structures de données. |
+| [Fundamentals -_En construction_](6-computer_science/1-fundamentals/algorithm_complexity.md) | Concepts fondamentaux en algorithmique et structures de données. |
 | &nbsp;&nbsp;&nbsp;• [Algorithm Complexity](6-computer_science/1-fundamentals/algorithm_complexity.md) | Introduction à la complexité algorithmique. |
 | &nbsp;&nbsp;&nbsp;• [Data Structures & Algorithms](6-computer_science/1-fundamentals/data_structure_and_algorithm.md) | Principes des structures de données et algorithmes. |
-| [Programming Languages -_En construction_](6-computer_science/2-programming_languages/) | Présentation de plusieurs langages (R, Python, C/C++/C#, JavaScript, Matlab, Rust/Go). |
-| [Database Management -_En construction_](6-computer_science/3-database_management/) | Concepts et pratiques avancées en SQL et gestion de données. |
-| [Big Data -_En construction_](6-computer_science/4-big_data/) | Introduction aux concepts de Hadoop, Spark, MapReduce et au streaming. |
-| [Machine Learning -_En construction_](6-computer_science/5-machine_learning/) | Bases et techniques du machine learning et du deep learning. |
-| [DevOps -_En construction_](6-computer_science/6-devops/) | Principes de CI/CD, containerisation et infrastructure as code. |
-| [Cybersecurity -_En construction_](6-computer_science/7-cybersecurity/) | Bonnes pratiques et stratégies de sécurité pour les applications web. |
-| [Cloud Computing -_En construction_](6-computer_science/8-cloud_computing/) | Concepts d'API REST, services cloud et architectures microservices. |
+| [Programming Languages -_En construction_](6-computer_science/2-programming_languages/advanced_python.md) | Présentation de plusieurs langages (R, Python, C/C++/C#, JavaScript, Matlab, Rust/Go). |
+| [Database Management -_En construction_](6-computer_science/3-database_management/fundamentals_sql.md) | Concepts et pratiques avancées en SQL et gestion de données. |
+| [Big Data -_En construction_](6-computer_science/4-big_data/hadoop_spark.md) | Introduction aux concepts de Hadoop, Spark, MapReduce et au streaming. |
+| [Machine Learning -_En construction_](6-computer_science/5-machine_learning/introduction.md) | Bases et techniques du machine learning et du deep learning. |
+| [DevOps -_En construction_](6-computer_science/6-devops/ci_cd.md) | Principes de CI/CD, containerisation et infrastructure as code. |
+| [Cybersecurity -_En construction_](6-computer_science/7-cybersecurity/security_principles.md) | Bonnes pratiques et stratégies de sécurité pour les applications web. |
+| [Cloud Computing -_En construction_](6-computer_science/8-cloud_computing/intro_to_cloud_services.md) | Concepts d'API REST, services cloud et architectures microservices. |
 | [Computer Science Overview -_En construction_](6-computer_science/computer_science.md) | Synthèse des notions clés en informatique. |
 
 ---
@@ -235,8 +238,8 @@ Les contributions sont les bienvenues, même partielles ! Un fichier avec 50% du
 
 ## Ressources complémentaires
 
-- **📦 Templates Prêts à l'Emploi** : Consultez le dossier [templates/](templates/) pour des modèles réutilisables (README, .gitignore, requirements.txt, PR checklist)
-- **LICENSE** : Consultez le fichier [LICENSE](LICENSE) pour les détails sur les droits d'utilisation.
+- **📦 Templates Prêts à l'Emploi** : Consultez le dossier [templates/](templates/README.md) pour des modèles réutilisables (README, .gitignore, requirements.txt, PR checklist)
+- **LICENSE** : Consultez le fichier [LICENSE](https://github.com/yajeddig/Guide-du-Developpeur-Scientifique/blob/main/LICENSE) pour les détails sur les droits d'utilisation.
 
 ---
 
