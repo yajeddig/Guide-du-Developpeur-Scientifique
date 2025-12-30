@@ -17,4 +17,5 @@ jobs:
         with:
           python-version: '3.11'
       - run: pip install mkdocs-material
+      - run: sed 's|(docs/|(|g' README.md > docs/index.md
       - run: mkdocs gh-deploy --force
