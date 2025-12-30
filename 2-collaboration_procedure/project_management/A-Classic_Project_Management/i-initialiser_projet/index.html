@@ -1,0 +1,2357 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guide complet pour les ingénieurs, chercheurs et scientifiques qui codent.">
+      
+      
+        <meta name="author" content="Younes AJEDDIG">
+      
+      
+        <link rel="canonical" href="https://yajeddig.github.io/Guide-du-Developpeur-Scientifique/2-collaboration_procedure/project_management/A-Classic_Project_Management/i-initialiser_projet/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Analysez les besoins de votre client - Guide du Développeur Scientifique</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M64%20480c-35.3%200-64-28.7-64-64V96c0-35.3%2028.7-64%2064-64h320c35.3%200%2064%2028.7%2064%2064v213.5c0%2017-6.7%2033.3-18.7%2045.3L322.7%20461.3c-12%2012-28.3%2018.7-45.3%2018.7zm325.5-176H296c-13.3%200-24%2010.7-24%2024v93.5z%22/%3E%3C/svg%3E');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M384%20512H96c-53%200-96-43-96-96V96C0%2043%2043%200%2096%200h304c26.5%200%2048%2021.5%2048%2048v288c0%2020.9-13.4%2038.7-32%2045.3V448c17.7%200%2032%2014.3%2032%2032s-14.3%2032-32%2032zM96%20384c-17.7%200-32%2014.3-32%2032s14.3%2032%2032%2032h256v-64zm32-232c0%2013.3%2010.7%2024%2024%2024h176c13.3%200%2024-10.7%2024-24s-10.7-24-24-24H152c-13.3%200-24%2010.7-24%2024m24%2072c-13.3%200-24%2010.7-24%2024s10.7%2024%2024%2024h176c13.3%200%2024-10.7%2024-24s-10.7-24-24-24z%22/%3E%3C/svg%3E');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M256%20512a256%20256%200%201%200%200-512%20256%20256%200%201%200%200%20512m-32-352a32%2032%200%201%201%2064%200%2032%2032%200%201%201-64%200m-8%2064h48c13.3%200%2024%2010.7%2024%2024v88h8c13.3%200%2024%2010.7%2024%2024s-10.7%2024-24%2024h-80c-13.3%200-24-10.7-24-24s10.7-24%2024-24h24v-64h-24c-13.3%200-24-10.7-24-24s10.7-24%2024-24%22/%3E%3C/svg%3E');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20384%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M292.9%20384c7.3-22.3%2021.9-42.5%2038.4-59.9C364%20289.7%20384%20243.2%20384%20192%20384%2086%20298%200%20192%200S0%2086%200%20192c0%2051.2%2020%2097.7%2052.7%20132.1%2016.5%2017.4%2031.2%2037.6%2038.4%2059.9h201.7zm-4.9%2048H96v16c0%2044.2%2035.8%2080%2080%2080h32c44.2%200%2080-35.8%2080-80zM184%20112c-39.8%200-72%2032.2-72%2072%200%2013.3-10.7%2024-24%2024s-24-10.7-24-24c0-66.3%2053.7-120%20120-120%2013.3%200%2024%2010.7%2024%2024s-10.7%2024-24%2024%22/%3E%3C/svg%3E');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M434.8%2070.1c14.3%2010.4%2017.5%2030.4%207.1%2044.7l-256%20352c-5.5%207.6-14%2012.3-23.4%2013.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8%200-45.3s32.8-12.5%2045.3%200l101.5%20101.5%20234-321.7c10.4-14.3%2030.4-17.5%2044.7-7.1z%22/%3E%3C/svg%3E');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M256%20512a256%20256%200%201%200%200-512%20256%20256%200%201%200%200%20512m0-336c-17.7%200-32%2014.3-32%2032%200%2013.3-10.7%2024-24%2024s-24-10.7-24-24c0-44.2%2035.8-80%2080-80s80%2035.8%2080%2080c0%2047.2-36%2067.2-56%2074.5v3.8c0%2013.3-10.7%2024-24%2024s-24-10.7-24-24v-8.1c0-20.5%2014.8-35.2%2030.1-40.2%206.4-2.1%2013.2-5.5%2018.2-10.3%204.3-4.2%207.7-10%207.7-19.6%200-17.7-14.3-32-32-32zm-32%20192a32%2032%200%201%201%2064%200%2032%2032%200%201%201-64%200%22/%3E%3C/svg%3E');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M256%200c14.7%200%2028.2%208.1%2035.2%2021l216%20400c6.7%2012.4%206.4%2027.4-.8%2039.5S486.1%20480%20472%20480H40c-14.1%200-27.2-7.4-34.4-19.5s-7.5-27.1-.8-39.5l216-400c7-12.9%2020.5-21%2035.2-21m0%20352a32%2032%200%201%200%200%2064%2032%2032%200%201%200%200-64m0-192c-18.2%200-32.7%2015.5-31.4%2033.7l7.4%20104c.9%2012.5%2011.4%2022.3%2023.9%2022.3%2012.6%200%2023-9.7%2023.9-22.3l7.4-104c1.3-18.2-13.1-33.7-31.4-33.7z%22/%3E%3C/svg%3E');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20576%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M480-16c6.9%200%2013%204.4%2015.2%2010.9l13.5%2040.4%2040.4%2013.5C555.6%2051%20560%2057.1%20560%2064s-4.4%2013-10.9%2015.2l-40.4%2013.5-13.5%2040.4c-2.2%206.5-8.3%2010.9-15.2%2010.9s-13-4.4-15.2-10.9l-13.5-40.4-40.4-13.5C404.4%2077%20400%2070.9%20400%2064s4.4-13%2010.9-15.2l40.4-13.5%2013.5-40.4C467-11.6%20473.1-16%20480-16M321.4%2097.4c12.5-12.5%2032.8-12.5%2045.3%200l80%2080c12.5%2012.5%2012.5%2032.8%200%2045.3l-10.9%2010.9c7.9%2022%2012.2%2045.7%2012.2%2070.5%200%20114.9-93.1%20208-208%20208S32%20418.9%2032%20304%20125.1%2096%20240%2096c24.7%200%2048.5%204.3%2070.5%2012.3zM144%20304c0-53%2043-96%2096-96%2013.3%200%2024-10.7%2024-24s-10.7-24-24-24c-79.5%200-144%2064.5-144%20144%200%2013.3%2010.7%2024%2024%2024s24-10.7%2024-24%22/%3E%3C/svg%3E');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M416%20427.4c58.5-44%2096-111.6%2096-187.4C512%20107.5%20397.4%200%20256%200S0%20107.5%200%20240c0%2075.8%2037.5%20143.4%2096%20187.4V464c0%2026.5%2021.5%2048%2048%2048h32v-40c0-13.3%2010.7-24%2024-24s24%2010.7%2024%2024v40h64v-40c0-13.3%2010.7-24%2024-24s24%2010.7%2024%2024v40h32c26.5%200%2048-21.5%2048-48zM96%20256a64%2064%200%201%201%20128%200%2064%2064%200%201%201-128%200m256-64a64%2064%200%201%201%200%20128%2064%2064%200%201%201%200-128%22/%3E%3C/svg%3E');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20576%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M192%2096c0-53%2043-96%2096-96s96%2043%2096%2096v3.6c0%2015.7-12.7%2028.4-28.4%2028.4H220.5c-15.7%200-28.4-12.7-28.4-28.4V96zm345.6%2012.8c10.6%2014.1%207.7%2034.2-6.4%2044.8l-97.8%2073.3c5.3%208.9%209.3%2018.7%2011.8%2029.1H544c17.7%200%2032%2014.3%2032%2032s-14.3%2032-32%2032h-96v32c0%202.6-.1%205.3-.2%207.9l83.4%2062.5c14.1%2010.6%2017%2030.7%206.4%2044.8s-30.7%2017-44.8%206.4l-63.1-47.3c-23.2%2044.2-66.5%2076.2-117.7%2083.9V280c0-13.3-10.7-24-24-24s-24%2010.7-24%2024v230.2c-51.2-7.7-94.5-39.7-117.7-83.9l-63.1%2047.3c-14.1%2010.6-34.2%207.7-44.8-6.4s-7.7-34.2%206.4-44.8l83.4-62.5c-.1-2.6-.2-5.2-.2-7.9v-32H32c-17.7%200-32-14.3-32-32s14.3-32%2032-32h98.8c2.5-10.4%206.5-20.2%2011.8-29.1l-97.8-73.3c-14.1-10.6-17-30.7-6.4-44.8s30.7-17%2044.8-6.4L192%20184c12.3-5.1%2025.8-8%2040-8h112c14.2%200%2027.7%202.8%2040%208l108.8-81.6c14.1-10.6%2034.2-7.7%2044.8%206.4%22/%3E%3C/svg%3E');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M288%200H128c-17.7%200-32%2014.3-32%2032s14.3%2032%2032%2032v151.5L7.5%20426.3C2.6%20435%200%20444.7%200%20454.7%200%20486.4%2025.6%20512%2057.3%20512h333.4c31.6%200%2057.3-25.6%2057.3-57.3%200-10-2.6-19.8-7.5-28.4L320%20215.5V64c17.7%200%2032-14.3%2032-32S337.7%200%20320%200zm-96%20215.5V64h64v151.5c0%2011.1%202.9%2022.1%208.4%2031.8L306%20320H142l41.6-72.7c5.5-9.7%208.4-20.6%208.4-31.8%22/%3E%3C/svg%3E');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M0%20216C0%20149.7%2053.7%2096%20120%2096h8c17.7%200%2032%2014.3%2032%2032s-14.3%2032-32%2032h-8c-30.9%200-56%2025.1-56%2056v8h64c35.3%200%2064%2028.7%2064%2064v64c0%2035.3-28.7%2064-64%2064H64c-35.3%200-64-28.7-64-64zm256%200c0-66.3%2053.7-120%20120-120h8c17.7%200%2032%2014.3%2032%2032s-14.3%2032-32%2032h-8c-30.9%200-56%2025.1-56%2056v8h64c35.3%200%2064%2028.7%2064%2064v64c0%2035.3-28.7%2064-64%2064h-64c-35.3%200-64-28.7-64-64z%22/%3E%3C/svg%3E');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-XXXXXXXXXX"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-XXXXXXXXXX",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#analysez-les-besoins-de-votre-client" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../../../.." title="Guide du Développeur Scientifique" class="md-header__button md-logo" aria-label="Guide du Développeur Scientifique" data-md-component="logo">
+      
+  <img src="../../../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guide du Développeur Scientifique
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Analysez les besoins de votre client
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="teal"  aria-label="Passer en mode sombre"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Passer en mode sombre" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="teal"  aria-label="Passer en mode clair"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Passer en mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Partager" aria-label="Partager" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/yajeddig/Guide-du-Developpeur-Scientifique" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yajeddig/Guide-du-Developpeur-Scientifique
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../0-getting_started/learning_paths/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Parcours
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../1-git_basics/1-git_basics/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Git Basics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../collab_procedure/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Collaboration
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../3-bests_practices/bests_practices/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Best Practices
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../4-test_validation/test_valid/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Tests
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../5-scientific_technical_skills/ODE_resolution/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Calcul Scientifique
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../6-computer_science/computer_science/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Computer Science
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Guide du Développeur Scientifique" class="md-nav__button md-logo" aria-label="Guide du Développeur Scientifique" data-md-component="logo">
+      
+  <img src="../../../../assets/logo.svg" alt="logo">
+
+    </a>
+    Guide du Développeur Scientifique
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/yajeddig/Guide-du-Developpeur-Scientifique" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yajeddig/Guide-du-Developpeur-Scientifique
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../0-getting_started/learning_paths/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parcours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git Basics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Git Basics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../1-git_basics/1-git_basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../1-git_basics/2-local_remote_repositories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dépôts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../1-git_basics/3-getting_started_with_github/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../1-git_basics/4-branching_strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Branching
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../1-git_basics/5-exercice_fil_rouge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../1-git_basics/6-quiz_autoevaluation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quiz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Collaboration
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Collaboration
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../collab_procedure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestion de projet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Best Practices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Best Practices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../3-bests_practices/bests_practices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vue d'ensemble
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tests
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tests
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../4-test_validation/test_valid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calcul Scientifique
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Calcul Scientifique
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../5-scientific_technical_skills/ODE_resolution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ODE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../5-scientific_technical_skills/DAE_resolution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DAE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../5-scientific_technical_skills/PDE_resolution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PDE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notebooks
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Notebooks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../5-scientific_technical_skills/2-ode_dae_systems/example_batch_reactor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Résolution de Systèmes DAE : Du Simple au Complexe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../5-scientific_technical_skills/2-ode_dae_systems/example_dae_gcgp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systèmes DAE en Génie des Procédés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Computer Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Computer Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../6-computer_science/computer_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tldr-ce-chapitre-couvre-linitialisation-de-projet-de-lanalyse-des-besoins-a-letude-de-faisabilite" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TL;DR : Ce chapitre couvre l'initialisation de projet : de l'analyse des besoins à l'étude de faisabilité
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#introduction-a-la-gestion-de-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Introduction à la Gestion de Projet
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Introduction à la Gestion de Projet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cles-de-la-gestion-de-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Clés de la Gestion de Projet
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#contexte-du-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Contexte du projet
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Contexte du projet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#projets-digitaux" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Projets Digitaux
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#demarrage-dun-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Démarrage d'un Projet
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#communication-avec-le-commanditaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Communication avec le Commanditaire
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#analyse-et-recueil-des-besoins" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Analyse et Recueil des Besoins
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#decrypter-la-grille-de-lecture-du-commanditaire" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Décrypter la Grille de Lecture du Commanditaire
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#en-resume" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        En Résumé
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="analysez-les-besoins-de-votre-client">Analysez les besoins de votre client<a class="headerlink" href="#analysez-les-besoins-de-votre-client" title="Permanent link">&para;</a></h1>
+<hr />
+<p>⏱️ <strong>Durée estimée :</strong> 40 minutes (lecture + exercices pratiques)
+📋 <strong>Prérequis :</strong> Notions de base en gestion de projet
+🎯 <strong>Objectifs :</strong></p>
+<ul>
+<li>Maîtriser l'analyse des besoins clients</li>
+<li>Comprendre les contraintes qualité/coût/délai</li>
+<li>Apprendre la rédaction d'appels d'offres</li>
+<li>Réaliser des études de faisabilité techniques et économiques</li>
+</ul>
+<h2 id="tldr-ce-chapitre-couvre-linitialisation-de-projet-de-lanalyse-des-besoins-a-letude-de-faisabilite"><strong>TL;DR :</strong> Ce chapitre couvre l'initialisation de projet : de l'analyse des besoins à l'étude de faisabilité<a class="headerlink" href="#tldr-ce-chapitre-couvre-linitialisation-de-projet-de-lanalyse-des-besoins-a-letude-de-faisabilite" title="Permanent link">&para;</a></h2>
+<p>[[<em>TOC</em>]]</p>
+<h2 id="introduction-a-la-gestion-de-projet">Introduction à la Gestion de Projet<a class="headerlink" href="#introduction-a-la-gestion-de-projet" title="Permanent link">&para;</a></h2>
+<p>La gestion de projet est une discipline qui combine l'organisation, l'administration, et le contrôle des ressources pour réaliser un objectif spécifique, en respectant des normes de qualité, des coûts et des délais prédéfinis. Un projet, par définition, est un effort temporaire entrepris pour créer un produit, service ou résultat unique, ayant un début et une fin clairement définis.</p>
+<h3 id="cles-de-la-gestion-de-projet">Clés de la Gestion de Projet<a class="headerlink" href="#cles-de-la-gestion-de-projet" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Gestion</strong> : Organiser et administrer les ressources disponibles pour atteindre les objectifs du projet.</li>
+<li><strong>Projet</strong> : Ensemble d'activités coordonnées visant un objectif spécifique, avec des contraintes de qualité, coûts, et délais.</li>
+</ul>
+<blockquote>
+<p>Un projet est un ensemble d'activités coordonnées et maîtrisées pour atteindre un objectif en respectant des exigences de qualité, de coûts et de délais. Un projet a une date de début et une date de fin.
+<img alt="image" src="../image/1-triangle_cout_delai.png" /></p>
+</blockquote>
+<h2 id="contexte-du-projet">Contexte du projet<a class="headerlink" href="#contexte-du-projet" title="Permanent link">&para;</a></h2>
+<h3 id="projets-digitaux">Projets Digitaux<a class="headerlink" href="#projets-digitaux" title="Permanent link">&para;</a></h3>
+<p>Ce cours se concentrera sur les projets digitaux, tels que la création de sites web, d'applications mobiles, ou de logiciels. Bien que ces projets aient des caractéristiques et des exigences spécifiques, ils suivent les mêmes principes fondamentaux de gestion de projet.</p>
+<h3 id="demarrage-dun-projet">Démarrage d'un Projet<a class="headerlink" href="#demarrage-dun-projet" title="Permanent link">&para;</a></h3>
+<p>Tout projet commence par l'identification d'un besoin, qui est ensuite formulé en objectif(s). La clarté et la précision de cette étape sont cruciales pour la réussite du projet.</p>
+<h4 id="projets-internes-vs-externes">Projets Internes vs. Externes<a class="headerlink" href="#projets-internes-vs-externes" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Projets Internes</strong> : Initiés et gérés au sein de l'organisation. Leurs défis incluent souvent l'alignement, les ressources, et la méthodologie de gestion.</li>
+<li><strong>Projets Externes</strong> : Lancés par une organisation mais réalisés par un prestataire externe. L'expression des besoins et la sélection du prestataire sont des étapes clés.</li>
+</ul>
+<h3 id="communication-avec-le-commanditaire">Communication avec le Commanditaire<a class="headerlink" href="#communication-avec-le-commanditaire" title="Permanent link">&para;</a></h3>
+<p>L'établissement d'un dialogue ouvert avec le commanditaire est essentiel pour cerner les besoins explicites et implicites, les traduire en livrables potentiels, et comprendre la grille de lecture du commanditaire pour maximiser les chances de réussite de l'appel d'offres.</p>
+<p>Lors de vos échanges exploratoires, au-delà d'un relationnel irréprochable, vous allez porter une attention particulière à 4 choses :</p>
+<ul>
+<li>les <strong>besoins explicites</strong> du client</li>
+<li>les <strong>besoins implicites</strong> du client</li>
+<li>les <strong>livrables potentiels</strong></li>
+<li>et sa <strong>grille de lecture</strong> supposée</li>
+</ul>
+<h3 id="analyse-et-recueil-des-besoins">Analyse et Recueil des Besoins<a class="headerlink" href="#analyse-et-recueil-des-besoins" title="Permanent link">&para;</a></h3>
+<p>La première tâche du chef de projet est de comprendre et de compléter les besoins exprimés, les traduire en objectifs clairs et définir les livrables.</p>
+<p>Lors de vos échanges exploratoires, au-delà d'un relationnel irréprochable, vous allez porter une attention particulière à 4 choses :</p>
+<ul>
+<li>les <strong>besoins explicites</strong> du client</li>
+<li>les <strong>besoins implicites</strong> du client</li>
+<li>les <strong>livrables potentiels</strong></li>
+<li>et sa <strong>grille de lecture</strong> supposée</li>
+</ul>
+<h4 id="besoins-explicites">Besoins explicites<a class="headerlink" href="#besoins-explicites" title="Permanent link">&para;</a></h4>
+<p>Par "besoins explicites", comprenez les besoins exprimés clairement, sans ambiguïté et sur lesquels il y a un consensus. Pour s'assurer de la compréhension de ces besoins, essayez de reformuler et observer la réaction de votre interlocuteur.</p>
+<table>
+<thead>
+<tr>
+<th>Besoin</th>
+<th>Livrable(s) potentiel(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Développer une présence en ligne</td>
+<td>Site vitrine, plan web marketing</td>
+</tr>
+<tr>
+<td>Moderniser une image de marque</td>
+<td>Plateforme de marque avec charte graphique et logo</td>
+</tr>
+<tr>
+<td>Permettre aux clients de réserver en ligne</td>
+<td>Système de réservation</td>
+</tr>
+</tbody>
+</table>
+<h4 id="besoins-implicites">Besoins implicites<a class="headerlink" href="#besoins-implicites" title="Permanent link">&para;</a></h4>
+<p>Ce sont les besoins qui ne seront pas explicité par le commanditaire, mais dont vous savez l'importance cruciale pour que le projet soit utile. Il faudra le prendre en compte dès le début du projet. Ce sont souvent des besoins que vous relevez après avoir discuter de manoère très ouverte avec le commanditaire.</p>
+<table>
+<thead>
+<tr>
+<th>Besoins explicites</th>
+<th>Besoins implicites</th>
+<th>Livrable(s) potentiel(s)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Développer une présence en ligne</td>
+<td>Rendre le site accessible dans 4 langues</td>
+<td>Site web (multilingue)</td>
+</tr>
+<tr>
+<td>Moderniser une image de marque</td>
+<td>Conserver le nom et le logo de l'établissement</td>
+<td>Adaptation de la charte graphique</td>
+</tr>
+<tr>
+<td>Système de réservation</td>
+<td>Permettre au staff de l'hôtel de gérer ses prix et ses réservations en back-office</td>
+<td>Système de réservation + gestion</td>
+</tr>
+</tbody>
+</table>
+<h4 id="livrables-du-projet">Livrables du Projet<a class="headerlink" href="#livrables-du-projet" title="Permanent link">&para;</a></h4>
+<p><strong>Livrables</strong> : Résultats de la réalisation du projet, pouvant être tangibles ou intangibles, mais clairement définis et livrés au client.</p>
+<h3 id="decrypter-la-grille-de-lecture-du-commanditaire">Décrypter la Grille de Lecture du Commanditaire<a class="headerlink" href="#decrypter-la-grille-de-lecture-du-commanditaire" title="Permanent link">&para;</a></h3>
+<p>Lors de la communication avec un client potentiel, une étape clé est de comprendre sa "grille de lecture". Cette grille représente les critères sur lesquels le commanditaire va baser sa sélection du prestataire pour le projet. Comprendre ces critères est crucial pour anticiper les attentes du client et adapter votre proposition commerciale de manière stratégique.</p>
+<h4 id="comprendre-la-grille-de-lecture">Comprendre la Grille de Lecture<a class="headerlink" href="#comprendre-la-grille-de-lecture" title="Permanent link">&para;</a></h4>
+<p>La grille de lecture peut varier grandement d'un commanditaire à l'autre, mettant l'accent sur différents aspects tels que :</p>
+<ul>
+<li><strong>Compréhension de la Problématique</strong> : Degré auquel le prestataire saisit les enjeux du projet.</li>
+<li><strong>Budget</strong> : Alignement des estimations du prestataire avec les contraintes financières du commanditaire.</li>
+<li><strong>Esthétique des Livrables</strong> : Importance de la qualité visuelle et du design des outputs du projet.</li>
+<li><strong>Relationnel avec le Prestataire</strong> : Valeur accordée à la qualité de la communication et de la relation de travail.</li>
+</ul>
+<h4 id="exercice-de-decryptage">Exercice de Décryptage<a class="headerlink" href="#exercice-de-decryptage" title="Permanent link">&para;</a></h4>
+<p>Pour décoder efficacement la grille de lecture de votre client potentiel, engagez-vous dans les actions suivantes :</p>
+<ol>
+<li><strong>Listez les Critères</strong> : Identifiez les aspects que le commanditaire semble privilégier lors de vos échanges.</li>
+<li><strong>Établissez une Hiérarchie</strong> : Classez ces critères par ordre d'importance, selon votre compréhension des priorités du commanditaire.</li>
+</ol>
+<h4 id="exemple-de-grille-de-lecture-supposee">Exemple de Grille de Lecture Supposée<a class="headerlink" href="#exemple-de-grille-de-lecture-supposee" title="Permanent link">&para;</a></h4>
+<p>Voici un exemple simplifié pour illustrer comment vous pourriez organiser la grille de lecture de votre commanditaire, basée sur des critères fréquemment rencontrés :</p>
+<table>
+<thead>
+<tr>
+<th>Critère de Sélection</th>
+<th>Importance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Compréhension de la Problématique</td>
+<td>Très important</td>
+</tr>
+<tr>
+<td>Budget</td>
+<td>Important</td>
+</tr>
+<tr>
+<td>Esthétique des Livrables</td>
+<td>Moyennement important</td>
+</tr>
+<tr>
+<td>Relationnel avec le Prestataire</td>
+<td>Peu important</td>
+</tr>
+</tbody>
+</table>
+<h4 id="application-pratique">Application Pratique<a class="headerlink" href="#application-pratique" title="Permanent link">&para;</a></h4>
+<p>En disposant d'une grille de lecture supposée, vous pouvez mieux orienter votre proposition commerciale pour qu'elle réponde aux attentes prioritaires de votre commanditaire. Ce processus n'est pas seulement un exercice de devinette mais nécessite une écoute active, une analyse fine des retours du commanditaire, et une certaine intuition professionnelle.</p>
+<p>N'oubliez pas, cependant, que cette grille n'est qu'une hypothèse de départ et qu'elle peut évoluer au fur et à mesure que vous approfondissez votre relation avec le client. Restez donc attentif et flexible, prêt à ajuster votre compréhension des besoins et attentes du commanditaire.</p>
+<h3 id="en-resume">En Résumé<a class="headerlink" href="#en-resume" title="Permanent link">&para;</a></h3>
+<p>La gestion de projet est un processus dynamique qui nécessite une compréhension claire des objectifs, une planification rigoureuse, et une communication efficace avec toutes les parties prenantes. Que ce soit pour un projet interne ou externe, la réussite dépend de l'analyse approfondie des besoins, de la traduction de ces besoins en actions concrètes, et de la capacité à naviguer dans les spécificités et les attentes du commanditaire.</p>
+<p>Le chemin vers la réussite d'un projet digital est pavé de défis uniques, mais aussi d'opportunités d'apprentissage et de croissance. Prêts à plonger dans l'aventure de la gestion de projet digital ? Suivez-nous dans les prochains chapitres pour une exploration approfondie de chaque étape du processus de gestion de projet.</p>
+<h1 id="cadrez-le-projet-avec-votre-equipe">Cadrez le projet avec votre équipe<a class="headerlink" href="#cadrez-le-projet-avec-votre-equipe" title="Permanent link">&para;</a></h1>
+<p>A ce moment là, nous avons recueilli le besoin client, et décrypter une grille de lecture.<img alt="🕵" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f575.svg" title=":spy:" /></p>
+<p>Cependant vous ne pouvez pas encore faire de proposition commerciale. Vous pourrez tout de même présenter suffisament d'éléments à votre équipe, les solliciter pour apporter les informations manquantes à la réalisation d'une proposition commerciale.</p>
+<p>Autrement dit, au début d'un projet, lors de la phase d'initialisation, vous allez commencer par recueillir et analyser les informations du client, pour ensuite les mettre en commun avec celles de votre équipe afin de planifier, budgétiser et synthétiser le tout dans un document contractuel. <img alt="📑" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4d1.svg" title=":bookmark_tabs:" /></p>
+<blockquote>
+<p>Appelons "<strong>étude de faisabilité</strong>" toutes les étapes qui précédent la proposition commerciale. Pour vous, chef de projet, cette phase est une sorte de chasse aux informations. Celle-ci s'arrête lorsque vous connaîtrez suffisamment les tenants et aboutissants du projet pour informer vos prises de décisions et évaluer l'intérêt de celui-ci.</p>
+</blockquote>
+<h2 id="le-role-du-chef-de-projet">Le rôle du chef de projet<a class="headerlink" href="#le-role-du-chef-de-projet" title="Permanent link">&para;</a></h2>
+<p>Rôle transverse parfois difficile à appréhender, car il est plus facile pour nous de comprendre le rôle d'un développeur ou d'un ingénieur car leurs compétences sont facilement identifiables.</p>
+<p>Le chef de projet est l'interface entre toutes les parties prennantes d'un projet (corps de métiers et commanditaire). Tel un chef d'orchestre, ne sachant jouer d'un instrument mais capable d'organiser la marche commune de tout les musiciens pour arriver au résultat escompté. On peut aussi utiliser l'analogie du metter en scène <img alt="😄" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f604.svg" title=":smile:" /> .</p>
+<blockquote>
+<p>Un chef de projet coordonne l'ensemble des activités du projet pour garantir l'atteinte de l'objectif et le respect des exigences de qualité, de coûts et de délais.</p>
+</blockquote>
+<p>Le chef de projet a deux maître-mots : <code>Organisation</code> et <code>Communication</code>. La majeur partie de son temps est passé dans la création et ma mise à jour de document, et communiquer par message électroniques et réunion.</p>
+<h2 id="lexpertise">L'expertise<a class="headerlink" href="#lexpertise" title="Permanent link">&para;</a></h2>
+<p>Le chef de projet n'est pas expert en tout. En revanche, il doit être capable de s'appuyer sur lexpertise de son équipe, et leur permettre d'avoir les meilleurs conditions de travail.</p>
+<p>Certes, avoir des compétences fondamentales dans les corps de métiers que vous coordonnez est un avantage mais ne vous y méprenez pas, sauf exception ou double-casquette, c'est sur vos compétences de gestion de projet que vous serez attendu.</p>
+<p>Ne vous substituez donc pas à vos experts. Cela peut s'avérer frustrant pour eux et parfois même contre-productif pour le projet.</p>
+<h3 id="reunion-de-cadrage">Réunion de cadrage<a class="headerlink" href="#reunion-de-cadrage" title="Permanent link">&para;</a></h3>
+<p>La réunion de cadrage est cruciale dans le processus de gestion de projet. Elle sert à aligner tous les membres de l'équipe sur les besoins du client et à poser les bases pour l'élaboration d'une solution adaptée. Voici comment structurer et mener cette réunion pour en maximiser l'efficacité.</p>
+<h4 id="ordre-du-jour-type">Ordre du Jour Type<a class="headerlink" href="#ordre-du-jour-type" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>Restitution des Besoins</strong> : Commencez par une présentation claire des besoins exprimés par le client. Utilisez des documents, des notes ou des visuels pour appuyer votre exposé et assurez-vous que l'expression des besoins soit la plus précise et complète possible.</li>
+<li><strong>Élaboration d'une Solution</strong> : Engagez l'équipe dans une discussion pour élaborer une solution globale qui répond aux besoins identifiés. Encouragez la collaboration et la créativité, permettant à chaque expert de contribuer à partir de son domaine de compétence.</li>
+<li><strong>Estimation de la Charge de Travail</strong> : Avec l'aide des experts techniques, commencez à estimer la charge de travail requise pour réaliser le projet. Cela implique d'évaluer le temps, les ressources et les compétences nécessaires.</li>
+</ol>
+<h4 id="conseils-pour-une-reunion-efficace">Conseils pour une Réunion Efficace<a class="headerlink" href="#conseils-pour-une-reunion-efficace" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Préparation</strong> : Assurez-vous que tous les participants ont accès aux informations relatives aux besoins du client avant la réunion pour qu'ils puissent venir préparés.</li>
+<li><strong>Participation Active</strong> : Encouragez la participation de tous les membres de l'équipe. Chaque perspective est importante pour une compréhension complète du projet.</li>
+<li><strong>Consignation des Décisions</strong> : Documentez les solutions proposées, les estimations de charge de travail et tout autre décision importante prise pendant la réunion. Ces notes seront cruciales pour la planification ultérieure du projet.</li>
+<li><strong>Gestion du Temps</strong> : Gardez la réunion ciblée et efficace. Un bon cadrage en amont permet d'éviter que la réunion ne s'éternise sans aboutir à des résultats concrets.</li>
+</ul>
+<h4 id="a-lissue-de-la-reunion">À l'Issue de la Réunion<a class="headerlink" href="#a-lissue-de-la-reunion" title="Permanent link">&para;</a></h4>
+<p>Vous devriez avoir une vision claire des prochaines étapes nécessaires pour la planification du projet. Si des informations complémentaires sont nécessaires, identifiez qui sera responsable de les collecter et fixez des délais. La réussite de cette réunion est un premier pas décisif vers la réussite du projet.</p>
+<p>Une réunion de cadrage bien conduite met en place les fondations solides nécessaires à la gestion efficace d'un projet, en s'assurant que toutes les parties prenantes sont alignées et prêtes à collaborer vers la réalisation des objectifs communs.</p>
+<h3 id="la-reunionite-aigue">La réunionite aiguë<a class="headerlink" href="#la-reunionite-aigue" title="Permanent link">&para;</a></h3>
+<p>Une image vaut mille mots :</p>
+<p><img alt="image.png" src="../image/1-cout_reunion.png" /></p>
+<p>Utilsez un minuteur pour gérer vos réunions, et respectez votre ordre du jour. N'hésitez pas à recadrer les dérives qui arrivent (car nous sommes tous humain). Ne jouez pas l'autorité, mais inspirez la productivité et l'enthousiasme !</p>
+<h2 id="la-methodologie-de-gestion-de-projet">La méthodologie de gestion de projet<a class="headerlink" href="#la-methodologie-de-gestion-de-projet" title="Permanent link">&para;</a></h2>
+<p>Lors de la réunion de cadrage, un des points cruciaux à aborder est le choix de la méthodologie de gestion de projet qui sera employée. Tout comme un développeur sélectionne la technologie adaptée à un projet, le choix de la méthodologie est déterminant pour la conduite du projet.</p>
+<p>Les méthodologies de gestion de projet se divisent en deux grandes catégories : classiques et agiles. Chaque famille a ses spécificités et est adaptée à des contextes de projet différents.</p>
+<h3 id="les-methodologies-classiques">Les Méthodologies Classiques<a class="headerlink" href="#les-methodologies-classiques" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Les méthodologies de gestion de projet classiques, aussi appelées méthodes prédictives, séquentielles comme la méthode en cascade ou le cycle en V, impliquent un déroulement en étapes, en séquences, en phases. Ces phases correspondent à des ensembles de tâches prédéfinies dans un planning de réalisation précis.</p>
+</blockquote>
+<p>Un projet en cascade par exemple se déroule généralement en <strong>5 phases</strong> :</p>
+<ol>
+<li>La phase d'<strong>initialisation</strong> : dans laquelle nous sommes actuellement, qui précède la proposition commerciale et qui prend fin au moment de l'acceptation du devis. <img alt="🔍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f50d.svg" title=":mag:" /> <img alt="🎯" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f3af.svg" title=":dart:" /></li>
+<li>La phase de <strong>lancement</strong> : dans laquelle vous re-préciserez et formaliserez tous les éléments du projet dans un "cahier des charges". Vous apprendrez ce qu'est un cahier des charges et comment en rédiger un dans la deuxième partie de ce cours. Cette phase se termine à la signature de ce fameux document. <img alt="📝" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f4dd.svg" title=":pencil:" /> <img alt="✍" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/270d.svg" title=":writing_hand:" />️</li>
+<li>La phase de <strong>conception</strong> : dans laquelle vous accompagnerez votre équipe dans la création des éléments graphiques et textuels à partir desquelles le site sera développé, produit. <img alt="✂" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/2702.svg" title=":scissors:" />️ <img alt="🖼" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f5bc.svg" title=":frame_photo:" /></li>
+<li>La phase de <strong>production</strong> : dans laquelle votre équipe créera le produit final à partir des éléments réalisés en phase de conception. Cette phase s'achève à la livraison du produit. <img alt="🛠" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f6e0.svg" title=":tools:" /> <img alt="🎁" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f381.svg" title=":gift:" /></li>
+<li>La phase d'<strong>exploitation</strong> : dans laquelle le produit est livré conformément aux attentes et qu'il suffit de maintenir ou de faire évoluer. <img alt="🚀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f680.svg" title=":rocket:" /> <img alt="♻" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/267b.svg" title=":recycle:" />️</li>
+</ol>
+<blockquote>
+<p><img alt="image.png" src="../image/1-planning_cascade_gant.png" />
+Pour plus de contrôle, fixez des dates de début et de fin à chacune des phases voire à chaque tâche si nécessaire. Ces deadlines intermédiaires s'appellent des "<strong>jalons</strong>". <img alt="⏲" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/23f2.svg" title=":timer:" /></p>
+</blockquote>
+<table>
+<tr>
+<th>Avantages</th>
+<th>Inconvénients</th>
+</tr>
+<tr>
+<td>
+
+- Précision des échéances
+- Clarté et visualisation de l'état d'avancement
+- Budgetisation facile
+
+</td>
+<td>
+
+- Détection tardive des risques
+- Peu de marge d'erreur
+
+</td>
+</tr>
+</table>
+
+<h3 id="les-methodologies-agiles">Les Méthodologies Agiles<a class="headerlink" href="#les-methodologies-agiles" title="Permanent link">&para;</a></h3>
+<blockquote>
+<p>Les méthodologies agiles se veulent être itératives, incrémentales et adaptives. Autrement dit, plutôt que de rigidement compléter des étapes les unes après les autres, le développement du produit se fait par couches amenant chacune de nouvelles évolutions. Ainsi, le produit peut être testé et amélioré en continu (petit à petit) tout au long du projet plutôt qu'à la fin.</p>
+</blockquote>
+<table>
+<tr>
+<th>Avantages</th>
+<th>Inconvénients</th>
+</tr>
+<tr>
+<td>
+
+- Meilleur réactivité aux imprévues
+- Détection rapide des risques
+
+</td>
+<td>
+
+- Planification peu précise
+- Budgetisation difficile
+
+</td>
+</tr>
+</table>
+
+<h3 id="classique-ou-agile">Classique ou Agile ?<a class="headerlink" href="#classique-ou-agile" title="Permanent link">&para;</a></h3>
+<p>L'agile est très tendance dans le digital, et le classique est très traditionnel dans les domaines plus ancien comme l'ingénierie ou le BTP.</p>
+<p>L'agilité, plus récente et moderne, peut paraître plus attrayant, <strong>mais attention</strong> : ne choisissez pas votre méthodologie en fonction de sa réputation ou sa modernité. Il vous faudra choisir en fonction de la <strong>prédictibilité</strong> de votre projet.</p>
+<p><img alt="image.png" src="../image/1-chois_agile_classique.png" /></p>
+<p>Si vous évaluer votre projet entre les deux, trouvez un compromis entre vos préférences, celles de votre équipe et la solution qui rassurera le plus votre client.</p>
+<p>Plus le projet a d'inconnues, plus vous aurez besoin d'agilité pour y faire face. En revanche, si celui-ci est très prévisible, vous aurez intérêt à privilégier la précision pour vous organiser et communiquer plus efficacement son avancée.</p>
+<blockquote>
+<p>Si le risque technologique est insignifiant, le projet lui, n'est pas sans risque non plus. À ce risque technologique peut alors se substituer un risque humain. Ainsi, un projet jugé "trop facile" ou "peu stimulant" peut parfois être pris à la légère et susciter un manque de rigueur.</p>
+<p>Au même titre qu'une équipe peut être <strong>sous-qualifiée</strong> pour un projet elle peut aussi être <strong>sur-qualifiée</strong>.</p>
+</blockquote>
+<p>Pour la création d'un site web permettant de faire des réservations pour un hôtel, c'est un projet avec peu d'inconnu et assez bien maîtrisé. C'est donc une méthodologie classique qui conviendra.</p>
+<p>Puis au sein même d'une famille de méthodologie classique, vous pourrez aussi hésiter entre les différentes méthodes : <strong>Cascade</strong>, <strong>Cycle en V</strong> et autres.. Nous verrons ici la méthode en cascade, et son outil de plannification : <strong>le diagramme de Gantt</strong></p>
+<p><img alt="image.png" src="../image/1-methode_v.png" /></p>
+<h1 id="planifiez-la-realisation-de-votre-projet-avec-un-diagramme-de-gantt">Planifiez la réalisation de votre projet avec un diagramme de Gantt<a class="headerlink" href="#planifiez-la-realisation-de-votre-projet-avec-un-diagramme-de-gantt" title="Permanent link">&para;</a></h1>
+<p>Une fois que vous avez une estimation claire de la charge de travail de votre équipe, il est temps de passer à la phase de planification du projet. Cette étape cruciale détermine non seulement le calendrier de votre projet mais établit également les attentes en termes de délais que vous vous engagez à respecter tout au long du projet.</p>
+<p><img alt="image.png" src="../image/1-triangle_cout_delai_2.png" /></p>
+<h2 id="creer-un-diagramme-de-gantt">Créer un diagramme de Gantt<a class="headerlink" href="#creer-un-diagramme-de-gantt" title="Permanent link">&para;</a></h2>
+<p>Le diagramme de Gantt est une méthode classique de planification et de gestion qui permet de représenter visuellement l'état d'avancement d'un projet.</p>
+<p><img alt="image.png" src="../image/1-vrai_gant.png" /></p>
+<h3 id="choisir-son-outil">Choisir son outil<a class="headerlink" href="#choisir-son-outil" title="Permanent link">&para;</a></h3>
+<p>Choisir l'outil de gestion de projet le plus adapté est crucial pour le bon déroulement de votre projet. Comme pour tout choix technique, il est judicieux d'établir une grille de lecture basée sur vos besoins spécifiques et les critères qui sont les plus importants pour vous et votre équipe.</p>
+<p>Lors de la sélection de votre outil de gestion de projet, considérez les critères suivants, classés par ordre d'importance :</p>
+<ol>
+<li><strong>Fonctionnalités</strong> : Évaluez la gamme de fonctionnalités offertes par l'outil et leur pertinence par rapport aux besoins de votre projet.</li>
+<li><strong>Présentation</strong> : La lisibilité et l'ergonomie de l'outil sont essentielles pour une utilisation quotidienne efficace.</li>
+<li><strong>Prix</strong> : Déterminez si l'outil offre un bon rapport qualité-prix, en considérant les options gratuites comme payantes selon votre budget.</li>
+</ol>
+<p>Pour un projet nécessitant une collaboration étroite et une esthétique soignée, un outil comme Monday pourrait être privilégié malgré son coût, en raison de ses fonctionnalités collaboratives avancées et de son interface utilisateur attrayante.</p>
+<p>Cependant, il est possible de gérer un projet efficacement avec des outils plus basiques et accessibles, comme un tableur excel, particulièrement pour la création d'un diagramme de Gantt.</p>
+<p><strong>Avantages d'un Tableur :</strong></p>
+<ul>
+<li><strong>Coût</strong> : Souvent disponible gratuitement ou inclus dans des suites bureautiques déjà acquises.</li>
+<li><strong>Flexibilité</strong> : Permet une personnalisation complète selon vos besoins spécifiques.</li>
+<li><strong>Accessibilité</strong> : La plupart des membres de l'équipe sont familiers avec l'utilisation des tableurs.</li>
+</ul>
+<p>Bien que moins intuitif que des logiciels spécialisés, un tableur peut être une solution efficace et économique pour créer un diagramme de Gantt, surtout avec l'utilisation d'un template préparé.</p>
+<ul>
+<li><strong>Template Préparé</strong> : Utilisez un modèle déjà conçu pour économiser du temps et vous concentrer sur l'essentiel de la planification du projet.</li>
+<li><strong>Apprentissage Transférable</strong> : Maîtriser la création d'un diagramme de Gantt dans un tableur vous préparera à utiliser des outils spécialisés plus complexes avec facilité.</li>
+</ul>
+<blockquote>
+<p>Voici quelques logiciels libres et gratuits vous permettant d’utiliser le diagramme de Gantt :</p>
+<ul>
+<li><a href="https://sourceforge.net/projects/projectlibre/"><strong>ProjectLibre</strong></a> : solution de gestion de projet open source, gratuite et très plébiscitée</li>
+<li><a href="https://taskjuggler.org/"><strong>TaskJuggler</strong></a> : original dans son approche avec un mode édition pour la description des tâches et leurs dépendances ainsi qu'un mode rapport pour pouvoir visualiser l’ensemble</li>
+<li><a href="https://www.ganttproject.biz/"><strong>GanttProject</strong></a> : logiciel libre et gratuit à installer sur son ordinateur</li>
+<li><a href="https://www.redmine.org/"><strong>Redmine</strong></a> : une autre application web libre de gestion de projets comportant également d’autres fonctionnalités</li>
+</ul>
+<p>La gestion de projet par diagramme de Gantt peut aussi se faire avec des outils en ligne comme <a href="https://monday.com/"><strong>Monday</strong></a>, <a href="https://asana.com/"><strong>Asana</strong></a> ou encore <a href="https://wrike.com/"><strong>Wrike</strong></a>. Attention, néanmoins, car leur version gratuite reste moins performante que leur contrepartie payante.</p>
+<p><em>Notez qu'une bonne partie de ces logiciels sont intégralement en anglais.</em></p>
+<p>Vous préférez utiliser Notion ? Retrouvez ici un tutoriel vous expliquant comment "<a href="https://vimeo.com/814518894/1e012d447d"><strong>Créer un diagramme de Gantt sur Notion</strong></a>".</p>
+</blockquote>
+<h3 id="detail-des-taches-et-estimation-de-la-charge-de-travail">Détail des Tâches et Estimation de la Charge de Travail<a class="headerlink" href="#detail-des-taches-et-estimation-de-la-charge-de-travail" title="Permanent link">&para;</a></h3>
+<p>Lors de la gestion d'un projet, en particulier dans une approche en cascade, il est essentiel de détailler précisément les tâches de chaque phase du projet et d'estimer leur charge de travail. Cette planification vous permet de prévoir les ressources nécessaires et de structurer le projet de manière cohérente.</p>
+<h4 id="comment-identifier-les-taches">Comment Identifier les Tâches ?<a class="headerlink" href="#comment-identifier-les-taches" title="Permanent link">&para;</a></h4>
+<ol>
+<li><strong>Projection dans les Phases du Projet</strong> : Envisagez le déroulé des cinq phases principales du projet (Initialisation, Lancement, Conception, Production, Exploitation) et listez les tâches spécifiques à chacune.</li>
+<li><strong>Consultation des Experts</strong> : Pour les domaines hors de votre expertise (ex. développement, graphisme), consultez directement les membres de l'équipe concernés pour obtenir une liste précise des tâches et une estimation de leur charge de travail.</li>
+</ol>
+<h4 id="estimation-de-la-charge-de-travail">Estimation de la Charge de Travail<a class="headerlink" href="#estimation-de-la-charge-de-travail" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Unité de Mesure</strong> : La charge de travail est souvent exprimée en jours-homme ou demi-journée-homme, représentant le temps nécessaire pour qu'une personne accomplisse une tâche donnée (ETP = Equivalent Temps Plein).</li>
+<li><strong>Regroupement des Petites Tâches</strong> : Pour les tâches de courte durée, envisagez de les regrouper pour simplifier la planification et maintenir la clarté du projet.</li>
+</ul>
+<h4 id="equilibrage-de-la-granularite-des-taches">Équilibrage de la Granularité des Tâches<a class="headerlink" href="#equilibrage-de-la-granularite-des-taches" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Trouver l'Équilibre</strong> : Une liste de tâches trop détaillée peut nuire à la lisibilité du projet, tandis qu'une liste pas assez détaillée peut rendre le diagramme moins utile. Votre objectif est de trouver le juste milieu.</li>
+<li><strong>Granularité Adaptée</strong> : Visez une granularité qui permette de comprendre facilement le flux de travail sans se perdre dans les détails mineurs.</li>
+</ul>
+<h4 id="exemple-de-detail-des-taches-par-phase">Exemple de Détail des Tâches par Phase<a class="headerlink" href="#exemple-de-detail-des-taches-par-phase" title="Permanent link">&para;</a></h4>
+<h5 id="phase-dinitialisation">Phase d'Initialisation<a class="headerlink" href="#phase-dinitialisation" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Définition du périmètre du projet</li>
+<li>Établissement des objectifs et des livrables</li>
+</ul>
+<h5 id="phase-de-lancement">Phase de Lancement<a class="headerlink" href="#phase-de-lancement" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Rédaction du cahier des charges</li>
+<li>Validation des spécifications techniques</li>
+</ul>
+<h5 id="phase-de-conception">Phase de Conception<a class="headerlink" href="#phase-de-conception" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Création des maquettes et prototypes</li>
+<li>Validation du design avec le client</li>
+</ul>
+<h5 id="phase-de-production">Phase de Production<a class="headerlink" href="#phase-de-production" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Développement des fonctionnalités</li>
+<li>Tests et corrections des bugs</li>
+</ul>
+<h5 id="phase-dexploitation">Phase d'Exploitation<a class="headerlink" href="#phase-dexploitation" title="Permanent link">&para;</a></h5>
+<ul>
+<li>Mise en production</li>
+<li>Suivi et maintenance</li>
+</ul>
+<h3 id="assigner-les-taches-aux-membres-de-lequipe">Assigner les tâches aux membres de l'équipe<a class="headerlink" href="#assigner-les-taches-aux-membres-de-lequipe" title="Permanent link">&para;</a></h3>
+<p>Après avoir établi la liste des tâches et leur durée estimée, l'étape suivante consiste à les attribuer aux membres de votre équipe. Cette phase est cruciale pour assurer que chaque tâche est confiée à la personne la mieux adaptée pour la mener à bien.</p>
+<h4 id="choix-des-membres-dequipe-pour-les-taches">Choix des Membres d'Équipe pour les Tâches<a class="headerlink" href="#choix-des-membres-dequipe-pour-les-taches" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Évaluation des Compétences et de la Disponibilité</strong> : Identifiez la personne la plus apte à réaliser chaque tâche, en prenant en compte non seulement les compétences et l'expérience mais aussi la disponibilité.</li>
+<li><strong>Équilibrage entre Expérience et Coût</strong> : Parfois, les membres les moins expérimentés peuvent être les plus appropriés pour certaines tâches, permettant d'économiser des ressources sans sacrifier la qualité du travail.</li>
+</ul>
+<h4 id="gestion-des-disponibilites">Gestion des Disponibilités<a class="headerlink" href="#gestion-des-disponibilites" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Vérification de la Disponibilité</strong> : Avant d'attribuer une tâche, assurez-vous que la personne assignée est disponible pour y travailler dans le délai requis.</li>
+<li><strong>Gestion des Priorités et des Projets Multiples</strong> : Soyez conscient que vous et votre équipe pouvez être impliqués dans plusieurs projets à la fois. Planifiez en conséquence pour éviter les surcharges.</li>
+</ul>
+<h4 id="planification-des-taches">Planification des Tâches<a class="headerlink" href="#planification-des-taches" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Assignation des Dates de Début et de Fin</strong> : Définissez des dates de début et de fin pour chaque tâche et chaque phase du projet, en tenant compte des estimations de charge de travail.</li>
+<li><strong>Gestion des Dépendances et des Chevauchements</strong> : Identifiez les tâches qui dépendent d'autres tâches et planifiez-les de manière séquentielle pour éviter les goulots d'étranglement. Faites attention aux chevauchements potentiels et ajustez le planning si nécessaire.</li>
+</ul>
+<blockquote>
+<p><img alt="image" src="../image/1-gant1.png" /></p>
+<p>Dépendances de plusieurs tâches : Pour qu'un projet soit mené de manière optimale, vous devez chercher à minimiser les temps morts, c'est-à-dire les périodes d'inactivité durant lesquelles un ou plusieurs membres de l'équipe sont bloqués à cause d'une dépendance.</p>
+<p><img alt="image" src="../image/1-gant2.png" /></p>
+<p>Chevauchement de trois tâches</p>
+</blockquote>
+<h4 id="conseils-pour-une-planification-efficace">Conseils pour une Planification Efficace<a class="headerlink" href="#conseils-pour-une-planification-efficace" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Communication Claire</strong> : Informez chaque membre de l'équipe des tâches qui lui sont attribuées, des attentes en termes de délais et de qualité, et de l'importance de sa contribution au projet global.</li>
+<li><strong>Flexibilité</strong> : Soyez prêt à ajuster les attributions de tâches et le planning en fonction de l'évolution du projet et des imprévus.</li>
+<li><strong>Suivi et Soutien</strong> : Assurez un suivi régulier de l'avancement des tâches et soyez disponible pour fournir soutien et conseils aux membres de l'équipe en cas de besoin.</li>
+</ul>
+<p>En suivant ces étapes et conseils, vous serez en mesure de créer un planning de projet réaliste et efficace, où chaque tâche est attribuée de manière judicieuse, maximisant ainsi les chances de réussite du projet.</p>
+<h3 id="suivi-et-mise-a-jour-de-la-progression-du-projet">Suivi et Mise à Jour de la Progression du Projet<a class="headerlink" href="#suivi-et-mise-a-jour-de-la-progression-du-projet" title="Permanent link">&para;</a></h3>
+<p>Lorsque votre planification est en place et que chaque tâche a été attribuée, avec des estimations de temps, des responsables désignés, ainsi que des dates de début et de fin prévues, votre diagramme de Gantt devient un outil central non seulement pour la planification mais aussi pour le suivi quotidien du projet. Voici comment gérer efficacement la mise à jour de votre progression.</p>
+<h4 id="suivi-de-la-progression-des-taches">Suivi de la Progression des Tâches<a class="headerlink" href="#suivi-de-la-progression-des-taches" title="Permanent link">&para;</a></h4>
+<h5 id="trois-scenarios-possibles">Trois Scénarios Possibles<a class="headerlink" href="#trois-scenarios-possibles" title="Permanent link">&para;</a></h5>
+<ol>
+<li><strong>Retard</strong> : Si vous constatez que les tâches prennent plus de temps que prévu, il est crucial d'identifier rapidement les causes du retard et de prendre les mesures nécessaires pour y remédier.</li>
+<li><strong>Dans les Temps</strong> : Si le projet avance conformément au planning, continuez le suivi régulier pour maintenir cette dynamique.</li>
+<li><strong>Avance</strong> : Une progression plus rapide que prévue peut libérer des ressources plus tôt et augmenter la marge bénéficiaire du projet.</li>
+</ol>
+<h5 id="gestion-de-la-progression">Gestion de la Progression<a class="headerlink" href="#gestion-de-la-progression" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Mise à Jour Régulière</strong> : Actualisez le niveau de progression de chaque tâche dans votre diagramme de Gantt à intervalles réguliers pour refléter l'avancement réel du projet.</li>
+<li><strong>Communication</strong> : Informez les parties prenantes des mises à jour significatives, qu'il s'agisse de retards, de conformité aux délais, ou d'avances notables.</li>
+</ul>
+<h4 id="ajustements-et-actions-correctives">Ajustements et Actions Correctives<a class="headerlink" href="#ajustements-et-actions-correctives" title="Permanent link">&para;</a></h4>
+<h5 id="en-cas-de-retard">En Cas de Retard<a class="headerlink" href="#en-cas-de-retard" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Analyse des Causes</strong> : Identifiez les raisons du retard pour apporter les corrections nécessaires.</li>
+<li><strong>Réaffectation des Ressources</strong> : Considérez la possibilité de réallouer des ressources pour accélérer les tâches en retard.</li>
+<li><strong>Révision du Planning</strong> : Si nécessaire, ajustez les dates de fin prévues pour refléter la nouvelle réalité du projet.</li>
+</ul>
+<h5 id="en-cas-davance">En Cas d'Avance<a class="headerlink" href="#en-cas-davance" title="Permanent link">&para;</a></h5>
+<ul>
+<li><strong>Réévaluation des Ressources</strong> : Déterminez si les ressources libérées peuvent être utilisées pour d'autres tâches ou projets.</li>
+<li><strong>Anticipation des Prochaines Phases</strong> : Profitez de l'avance pour préparer les étapes suivantes du projet.</li>
+</ul>
+<h4 id="bilan-et-amelioration-continue">Bilan et Amélioration Continue<a class="headerlink" href="#bilan-et-amelioration-continue" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Évaluation des Estimations</strong> : Prenez le temps d'évaluer la précision de vos estimations initiales pour améliorer vos techniques de planification pour les futurs projets.</li>
+<li><strong>Capitalisation sur l'Expérience</strong> : Documentez les leçons apprises et les meilleures pratiques émergentes pour enrichir le savoir-faire de l'équipe.</li>
+</ul>
+<p>La gestion efficace de la progression du projet nécessite vigilance, adaptabilité et communication transparente. En suivant ces principes et en ajustant activement votre planification, vous maximiserez les chances de succès de votre projet, tout en renforçant vos compétences en gestion de projet.</p>
+<h2 id="avantages-et-limites-du-diagramme-de-gantt">Avantages et limites du diagramme de Gantt<a class="headerlink" href="#avantages-et-limites-du-diagramme-de-gantt" title="Permanent link">&para;</a></h2>
+<table>
+<tr>
+<th>Avantages</th>
+<th>Inconvénients</th>
+</tr>
+<tr>
+<td>
+
+- simple à créer
+- précis
+- facile à comprendre pour toutes les parties prenantes
+
+</td>
+<td>
+
+- nécessite des mises à jour régulières
+- éventuels problèmes d'affichage sur des projets complexes
+
+</td>
+</tr>
+</table>
+
+<h1 id="budgetisez-votre-projet">Budgétisez votre projet<a class="headerlink" href="#budgetisez-votre-projet" title="Permanent link">&para;</a></h1>
+<p>Le budget calculé en interne n'est pas le budget proposé au client. Ici nous allons calculer le budget interne, c'est à dire le coût de revient du projet. c'est à partir de celui ci qu'on prépare la proposition commerciale avec le budget client.</p>
+<h2 id="differencier-les-postes-de-depenses">Différencier les postes de dépenses<a class="headerlink" href="#differencier-les-postes-de-depenses" title="Permanent link">&para;</a></h2>
+<p>Cela peut correspondre par exemple à :</p>
+<ul>
+<li>des ressources <strong>matérielles</strong></li>
+<li>des ressources <strong>informatique</strong> (licences, logiciels)</li>
+<li>des ressources <strong>humaines</strong> (salaires)</li>
+</ul>
+<p>Selon la nature de votre projet, certains postes de dépenses seront plus importants que d'autres.</p>
+<p>Dans un projet digital comme celui de notre scénario (réalisation d'un site web pour un hôtel), avant même de calculer précisément le budget, vous pouvez vous attendre à ce que les ressources humaines représentent le premier poste de dépense.</p>
+<blockquote>
+<p><img alt="image" src="../image/1-poste_depense.png" /></p>
+</blockquote>
+<h2 id="calculer-le-cout-total-du-projet">Calculer le coût total du projet<a class="headerlink" href="#calculer-le-cout-total-du-projet" title="Permanent link">&para;</a></h2>
+<p>Calculer le budget prévisionnel d'un projet revient à calculer le coût de chacune des 5 phases qui le composent.</p>
+<p><code>**Coût total du projet** = coût phase d'initialisation + coût phase de lancement + coût phase de conception + coût phase de production + coût phase d'exploitation</code> Avec : <code>**Coût total d'une phase** = coût tâche 1 + coût tâche 2 + coût tâche n...</code> et ; <code>**Coût estimé d'une tâche** = durée estimée de la tâche * coût des personnes impliquées</code></p>
+<p>Pour trouver le coût journalier de la personne impliquée, référez-vous à votre grille de salaires :</p>
+<p><img alt="image" src="../image/1-cout_employe.png" /></p>
+<blockquote>
+<p>Pour l'entreprise, un salarié coûte plus cher que son salaire brut. Pour prévoir et gérer au mieux les coûts de votre projet, demandez à votre comptable ou à votre directeur de vous transmettre le coût global/total d'un salarié. <strong>Coût d'un salarié = salaire brut + charges patronales</strong></p>
+</blockquote>
+<p>Maintenant, il faut faire cela pour toute les tâches (vive excel) :  <img alt="image" src="../image/1-cout_projet.png" /></p>
+<blockquote>
+<p>Lorsque vous avez des ressources matérielles ou informatiques, n'oubliez pas de les inclure dans votre calcul. Ici l'achat de la licence complète du thème WordPress gonfle le budget prévisionnel de 2700 € ; ce n'est pas négligeable.</p>
+</blockquote>
+<p>On peut aussi calculer le coût de chaque phase : <img alt="image" src="../image/1-cout_etape_projet.png" /></p>
+<blockquote>
+<p>Notez qu'au stade de la budgétisation prévisionnelle, ces coûts ne sont que des estimations et pas des coûts réels. Au fur et à mesure du projet, vous allez donc suivre l'évolution de ces coûts et mettre à jour votre budget en fonction. À la fin du projet, vous allez donc faire un comparatif entre le prévisionnel et le réel.</p>
+<p>Vous préférez utiliser Notion ? Retrouvez ici un tutoriel vous expliquant comment "<a href="https://vimeo.com/814518864/88f40c44c4"><strong>Créer un budget sur Notion</strong></a>".</p>
+</blockquote>
+<h1 id="redigez-votre-proposition-commerciale">Rédigez votre proposition commerciale<a class="headerlink" href="#redigez-votre-proposition-commerciale" title="Permanent link">&para;</a></h1>
+<p>Après avoir soigneusement <strong>recueilli et analysé les besoins du client</strong>, tenu une <strong>réunion de cadrage</strong> productive avec votre équipe et <strong>planifié le projet</strong> en détail, vous avez acquis une compréhension solide des exigences du projet et établi un <strong>budget prévisionnel</strong>. Vous êtes désormais prêt à <strong>finaliser l'étude de faisabilité</strong> et à passer à la rédaction de la <strong>proposition commerciale</strong>.</p>
+<blockquote>
+<p>Si votre proposition ne parvient pas à convaincre le client de vous sélectionner, alors tout le travail fait jusqu'à présent aura été une perte de temps et donc d'argent...</p>
+</blockquote>
+<h2 id="structure-du-document">Structure du document<a class="headerlink" href="#structure-du-document" title="Permanent link">&para;</a></h2>
+<p>Au minimum,</p>
+<ul>
+<li>Une page de garde</li>
+<li>Une note de synthèse</li>
+<li>Un devis</li>
+</ul>
+<p>mais aussi,</p>
+<ul>
+<li>des conditions de ventes en annexe</li>
+<li>une version plus rédigée de l'étude de faisabilité</li>
+</ul>
+<p>Selon l'ampleur du projet concerné, son niveau de complexité, le risque et le profil du client, votre proposition commerciale sera plus ou moins détaillée. Ainsi vous n'adresserez pas la même proposition au gérant d'une organisation de 10 personnes pour un projet de 10000 € et au comité d'une organisation de 5000 personnes pour un projet de 500000 €. Cela peut sembler être du bon sens mais ça ne coûte rien de le re-préciser. <img alt="😄" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f604.svg" title=":smile:" /></p>
+<p>Ci-dessous un exemple de structure de proposition commerciale plus détaillé :</p>
+<ol>
+<li><strong>Introduction</strong> : Commencez par une introduction engageante, présentant brièvement votre entreprise et l'objectif de la proposition.</li>
+<li><strong>Compréhension des Besoins</strong> : Démontrez une compréhension profonde des besoins et des attentes du client, reflétant votre écoute et votre analyse préalables.</li>
+<li><strong>Solution Proposée</strong> : Décrivez la solution que vous proposez, en insistant sur sa pertinence par rapport aux besoins identifiés et comment elle répond aux objectifs du client.</li>
+<li><strong>Planification et Méthodologie</strong> : Fournissez un aperçu de votre plan de projet, y compris les phases clés, la méthodologie de gestion de projet choisie et la manière dont vous assurez le respect des délais et du budget.</li>
+<li><strong>Budget et Estimations</strong> : Présentez un résumé clair et détaillé du budget, en justifiant les coûts prévus et en mettant en avant le rapport qualité-prix de votre offre.</li>
+<li><strong>Équipe Projet</strong> : Mettez en avant les compétences et l'expertise de votre équipe, soulignant pourquoi elle est la mieux placée pour réaliser ce projet.</li>
+<li><strong>Témoignages et Références</strong> : Incluez des témoignages de clients précédents et des études de cas pertinentes pour renforcer votre crédibilité.</li>
+<li><strong>Conclusion et Appel à l'Action</strong> : Terminez par une conclusion forte, réaffirmant votre enthousiasme pour le projet et invitant le client à prendre les prochaines étapes avec vous.</li>
+</ol>
+<h2 id="rediger-une-note-de-synthese">Rédiger une note de synthèse<a class="headerlink" href="#rediger-une-note-de-synthese" title="Permanent link">&para;</a></h2>
+<p>Trois sous parties devraient suffire :</p>
+<ol>
+<li>Une <strong>description du projet et des besoins</strong> qui lui sont propres.</li>
+<li>La <strong>solution préconisée</strong> pour répondre à ces besoins.</li>
+<li>L'<strong>objectif daté et si possible chiffré</strong> du projet.</li>
+</ol>
+<p><img alt="image.png" height="470" src="../image/1-note_synthese.png" width="523" /></p>
+<blockquote>
+<p>Lorsque vous rédigez votre note de synthèse, gardez à l'esprit la grille de lecture supposée du client.</p>
+</blockquote>
+<h2 id="formaliser-un-devis">Formaliser un devis<a class="headerlink" href="#formaliser-un-devis" title="Permanent link">&para;</a></h2>
+<p>A la suite de la note de synthèse sera inclu un devis. Un devis est une proposition de prix que vous vous engagez à ne pas modifier tant que le client ne s'est pas engagé contractuellement.</p>
+<h3 id="poser-la-trame">Poser la trame<a class="headerlink" href="#poser-la-trame" title="Permanent link">&para;</a></h3>
+<p>Ayez en tête qu'un devis est un document juridique. Il faut donc faire attention à respecter les normes et la réglementation en vigueur dans le pays concerné. En France, certaines mentions obligatoires doivent figurer sur le devis :</p>
+<ul>
+<li>La durée de validité de l'offre</li>
+<li>L'indication manuscrite, datée et signée du client : « Lu et accepté »</li>
+<li>la mention « Lu et accepté », daté et signé par l'entrepreneur</li>
+</ul>
+<p>Pour approfondir le cadre juridique du devis, <a href="https://entreprendre.service-public.fr/vosdroits/F31144">voici la documentation officielle du gouvernement</a>. Si impératif juridique spécifique à votre activité, il y a, vous pouvez ajouter <strong>des annexes</strong>, spécifiant les termes et conditions de ces services annexe (service après vente, formation etc...)📎</p>
+<h3 id="calculer-votre-marge-commerciale">Calculer votre marge commerciale<a class="headerlink" href="#calculer-votre-marge-commerciale" title="Permanent link">&para;</a></h3>
+<p>une fois la trame posée, il ne reste plus qu'a la remplir avec les informations de base, la liste des livrables du projet et les prix que vous proposez.</p>
+<p>Deux risques principaux :</p>
+<ul>
+<li><strong>Une proposition trop chère</strong> augmente le risque de ne pas remporter l'appel d'offre</li>
+<li><strong>Une proposition pas assez cher</strong> et vous risquez de tirer peu de profit, voir d'être en perte.</li>
+</ul>
+<p>Pour diminuer le risque, il faudra habillement calculer le prix de vente, et donc votre marge commerciale.</p>
+<p><code>Marge commerciale = prix de vente - coût de revient</code></p>
+<p><code>Prix de vente = marge commerciale + coût de revient</code></p>
+<p>Dans l'exemple du site web de l'hôtel Paradis, le coût de revient est de 8427 €. Pour déterminer à combien nous allons vendre au client, il faut déterminer une marge de manoeuvre. Il faut donc déterminer une marge <strong>minimale</strong> et <strong>maximale.</strong></p>
+<p>Pour la marge maximale, on utilise directement le budget client, par exemple ici 15 000 €.</p>
+<p><code>Marge maximum = 15 000 - 8427 =</code><strong><code>6 573 €</code></strong></p>
+<p>Pour la marge minimale, on peut se référer à la politique de votre entreprise. Imaginons que l'agence réalisant le site web encourage ses chefs de projet à ne pas se lancer dans des projets avec moins de 50% de taux de marge :</p>
+<p><code>Taux de marge = (marge commerciale / coût de revient) * 100</code></p>
+<p><code>Marge commerciale minimum = 8 427 * 0,5</code></p>
+<p><code>Marge commerciale minimum = 4 213 €</code></p>
+<p><code>Prix de vente minimum = 4 213 + 8 427 =</code><strong><code>12 640 €</code></strong></p>
+<p><code>Taux de marge maximum = (6 573 / 8 427) * 100 = 78%</code></p>
+<p>À vous donc de manoeuvrer entre :</p>
+<ul>
+<li>Une <strong>marge minimum de 50%</strong> pour un prix de vente de <strong>12 640 €</strong> qui se voudrait être très compétitif.</li>
+<li>Une <strong>marge maximum de 78%</strong> pour un prix de vente de <strong>15 000 €</strong> qui se voudrait être très gourmande.</li>
+</ul>
+<p>Pour décider, vous pourrez prendre en compte divers critères tels que la santé de votre entreprise, celle de votre client, et votre connaissance du marché.</p>
+<p>Toujours dans notre exemple, disons que l'agence qui réalise le site web se porte mieux que l'hôtel Paradis, il conviendra donc de faire une proposition qui tende vers le bas. Combien proposeriez-vous ?</p>
+<p>Personnellement, je proposerais un prix de vente brut à <strong>13 500 €</strong> HT. Cela représenterait un taux de marge de <strong>59%</strong> qui semble équilibré.</p>
+<p>Vous allez donc pouvoir impacter plus ou moins proportionnellement cette marge sur tous les livrables listés dans votre devis.</p>
+<blockquote>
+<p>Dernier point : plus la santé financière de votre client est mauvaise, plus vous aurez intérêt à demander un acompte important pour compenser le risque de défaut de paiement. Dans notre scénario, nous demanderons à être payé 40% du montant (5 400 €) avant de mobiliser des ressources sur le projet de l'hôtel Paradis.</p>
+</blockquote>
+<h1 id="defendez-votre-proposition-commerciale">Défendez votre proposition commerciale<a class="headerlink" href="#defendez-votre-proposition-commerciale" title="Permanent link">&para;</a></h1>
+<p>Si votre offre a suffisamment intéressé le commanditaire de l'appel d'offre, il se peut que vous soyez invité à défendre votre offre lors d'une soutenance.</p>
+<h2 id="preparer-sa-soutenance">Préparer sa soutenance<a class="headerlink" href="#preparer-sa-soutenance" title="Permanent link">&para;</a></h2>
+<p>La préparation est essentielle. Ne venez pas en équipe, un seul interlocuteur est plus facile pour votre commanditaire. Ceci est le rôle du chef de projet. De plus, mobiliser toute une équipe a un coût non négligeable.</p>
+<p>En tant que chef de projet, vous devez être capable de répondre à tout type de question : technique ou autre. Il faut donc comprendre les choix fait par vos experts et être capable de les défendre. Il faut être capable de les vulgariser si nécessaire, sans prendre de haut votre interlocuteur, ni le perdre.</p>
+<p>Un support visuel peut être intéressant pour appuyer votre soutenance. Anticipez la logistique si vous vous déplacer. Vous n'aurez pas forcément un rétroprojecteur à disposition.</p>
+<h2 id="defendez-votre-proposition">Défendez votre proposition<a class="headerlink" href="#defendez-votre-proposition" title="Permanent link">&para;</a></h2>
+<h3 id="jouer-une-soutenance">Jouer une soutenance<a class="headerlink" href="#jouer-une-soutenance" title="Permanent link">&para;</a></h3>
+<p>La soutenance d'un projet est une véritable performance, où l'art de communiquer est tout aussi crucial que le contenu présenté. Voici comment marquer positivement votre audience et inspirer confiance.</p>
+<h4 id="strategies-de-conviction">Stratégies de Conviction<a class="headerlink" href="#strategies-de-conviction" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Adaptez votre approche</strong> : Choisissez entre émouvoir ou convaincre par la logique en fonction du profil de l'interlocuteur.</li>
+<li><strong>Projetez une relation future</strong> : Montrez-vous comme le partenaire idéal, capable de dépasser les attentes.</li>
+</ul>
+<h4 id="maitrise-et-communication">Maîtrise et Communication<a class="headerlink" href="#maitrise-et-communication" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Préparez-vous</strong> : Une bonne connaissance de votre présentation vous permettra de vous concentrer sur le comment plutôt que sur le quoi.</li>
+<li><strong>Exercez-vous</strong> : La répétition transforme le stress en assurance et affûte votre message.</li>
+<li><strong>Utilisez un langage corporel positif</strong> : Une posture ouverte et un contact visuel soutenu renforcent votre message.</li>
+<li><strong>Soyez interactif</strong> : Impliquez votre auditoire pour maintenir son attention et ajustez votre discours en fonction de ses réactions.</li>
+</ul>
+<h3 id="adopter-la-bonne-posture">Adopter la bonne posture<a class="headerlink" href="#adopter-la-bonne-posture" title="Permanent link">&para;</a></h3>
+<p>Projeter une image de confiance et de compétence est crucial lors d'une soutenance de projet. Voici quelques stratégies pour vous assurer de laisser une impression positive et gérer efficacement les interactions avec votre client.</p>
+<h4 id="signaux-de-confiance">Signaux de Confiance<a class="headerlink" href="#signaux-de-confiance" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>Posture</strong> : Tenez-vous droit pour projeter confiance et préparation.</li>
+<li><strong>Détente</strong> : Gardez vos épaules détendues pour montrer que vous êtes à l'aise.</li>
+<li><strong>Sourire</strong> : Un sourire sincère invite à la communication positive.</li>
+<li><strong>Rythme</strong> : Parlez à un rythme contrôlé, évitant la précipitation ou l'hésitation.</li>
+<li><strong>Écoute active</strong> : Montrez que vous êtes attentif aux besoins et questions de votre interlocuteur.</li>
+<li><strong>Code vestimentaire</strong> : Adaptez votre tenue aux normes de votre client pour créer une première impression positive.</li>
+</ul>
+<h4 id="gestion-de-la-parole">Gestion de la Parole<a class="headerlink" href="#gestion-de-la-parole" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Maîtrisez la conversation sans la monopoliser pour éviter de frustrer votre interlocuteur.</li>
+<li>Soyez prêt à faire des pauses pour permettre des questions ou des commentaires.</li>
+</ul>
+<h4 id="gestion-des-questions">Gestion des Questions<a class="headerlink" href="#gestion-des-questions" title="Permanent link">&para;</a></h4>
+<ul>
+<li>
+<p>Scénario Idéal : Le client attend la fin de votre présentation pour poser ses questions, vous permettant de développer votre argumentation sans interruption.</p>
+</li>
+<li>
+<p>Scénario d'Interruptions : Préparez-vous à être interrompu et à répondre aux questions au fil de l'eau. Anticipez les objections courantes pour y répondre avec assurance.</p>
+</li>
+</ul>
+<h4 id="conclusion-et-suivi">Conclusion et Suivi<a class="headerlink" href="#conclusion-et-suivi" title="Permanent link">&para;</a></h4>
+<ul>
+<li>À la fin de la session de questions/réponses, remerciez votre client pour son attention et son temps.</li>
+<li>Convenez ensemble d'une date pour un prochain contact, préparant le terrain pour une réponse positive.</li>
+</ul>
+<p>En suivant ces conseils, vous serez mieux préparé à gérer votre soutenance de projet, à instaurer une atmosphère de confiance et d'engagement, et à naviguer avec aisance dans les différentes phases de l'interaction avec votre client.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Retour en haut de la page
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/yajeddig" target="_blank" rel="noopener" title="GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "navigation.footer", "navigation.indexes", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow", "announce.dismiss"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

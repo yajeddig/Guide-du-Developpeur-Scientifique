@@ -1,0 +1,1892 @@
+
+<!doctype html>
+<html lang="fr" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Guide complet pour les ingénieurs, chercheurs et scientifiques qui codent.">
+      
+      
+        <meta name="author" content="Younes AJEDDIG">
+      
+      
+        <link rel="canonical" href="https://yajeddig.github.io/Guide-du-Developpeur-Scientifique/2-collaboration_procedure/project_management/B-Agile_Project_Management/i-equipe_modele_tuckman/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>Découvrez l'importance de l'esprit d'équipe en gestion de projet agile - Guide du Développeur Scientifique</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+  
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+    
+      
+      
+    
+  
+  
+  <style>:root{--md-admonition-icon--note:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M64%20480c-35.3%200-64-28.7-64-64V96c0-35.3%2028.7-64%2064-64h320c35.3%200%2064%2028.7%2064%2064v213.5c0%2017-6.7%2033.3-18.7%2045.3L322.7%20461.3c-12%2012-28.3%2018.7-45.3%2018.7zm325.5-176H296c-13.3%200-24%2010.7-24%2024v93.5z%22/%3E%3C/svg%3E');--md-admonition-icon--abstract:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M384%20512H96c-53%200-96-43-96-96V96C0%2043%2043%200%2096%200h304c26.5%200%2048%2021.5%2048%2048v288c0%2020.9-13.4%2038.7-32%2045.3V448c17.7%200%2032%2014.3%2032%2032s-14.3%2032-32%2032zM96%20384c-17.7%200-32%2014.3-32%2032s14.3%2032%2032%2032h256v-64zm32-232c0%2013.3%2010.7%2024%2024%2024h176c13.3%200%2024-10.7%2024-24s-10.7-24-24-24H152c-13.3%200-24%2010.7-24%2024m24%2072c-13.3%200-24%2010.7-24%2024s10.7%2024%2024%2024h176c13.3%200%2024-10.7%2024-24s-10.7-24-24-24z%22/%3E%3C/svg%3E');--md-admonition-icon--info:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M256%20512a256%20256%200%201%200%200-512%20256%20256%200%201%200%200%20512m-32-352a32%2032%200%201%201%2064%200%2032%2032%200%201%201-64%200m-8%2064h48c13.3%200%2024%2010.7%2024%2024v88h8c13.3%200%2024%2010.7%2024%2024s-10.7%2024-24%2024h-80c-13.3%200-24-10.7-24-24s10.7-24%2024-24h24v-64h-24c-13.3%200-24-10.7-24-24s10.7-24%2024-24%22/%3E%3C/svg%3E');--md-admonition-icon--tip:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20384%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M292.9%20384c7.3-22.3%2021.9-42.5%2038.4-59.9C364%20289.7%20384%20243.2%20384%20192%20384%2086%20298%200%20192%200S0%2086%200%20192c0%2051.2%2020%2097.7%2052.7%20132.1%2016.5%2017.4%2031.2%2037.6%2038.4%2059.9h201.7zm-4.9%2048H96v16c0%2044.2%2035.8%2080%2080%2080h32c44.2%200%2080-35.8%2080-80zM184%20112c-39.8%200-72%2032.2-72%2072%200%2013.3-10.7%2024-24%2024s-24-10.7-24-24c0-66.3%2053.7-120%20120-120%2013.3%200%2024%2010.7%2024%2024s-10.7%2024-24%2024%22/%3E%3C/svg%3E');--md-admonition-icon--success:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M434.8%2070.1c14.3%2010.4%2017.5%2030.4%207.1%2044.7l-256%20352c-5.5%207.6-14%2012.3-23.4%2013.1s-18.5-2.7-25.1-9.3l-128-128c-12.5-12.5-12.5-32.8%200-45.3s32.8-12.5%2045.3%200l101.5%20101.5%20234-321.7c10.4-14.3%2030.4-17.5%2044.7-7.1z%22/%3E%3C/svg%3E');--md-admonition-icon--question:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M256%20512a256%20256%200%201%200%200-512%20256%20256%200%201%200%200%20512m0-336c-17.7%200-32%2014.3-32%2032%200%2013.3-10.7%2024-24%2024s-24-10.7-24-24c0-44.2%2035.8-80%2080-80s80%2035.8%2080%2080c0%2047.2-36%2067.2-56%2074.5v3.8c0%2013.3-10.7%2024-24%2024s-24-10.7-24-24v-8.1c0-20.5%2014.8-35.2%2030.1-40.2%206.4-2.1%2013.2-5.5%2018.2-10.3%204.3-4.2%207.7-10%207.7-19.6%200-17.7-14.3-32-32-32zm-32%20192a32%2032%200%201%201%2064%200%2032%2032%200%201%201-64%200%22/%3E%3C/svg%3E');--md-admonition-icon--warning:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M256%200c14.7%200%2028.2%208.1%2035.2%2021l216%20400c6.7%2012.4%206.4%2027.4-.8%2039.5S486.1%20480%20472%20480H40c-14.1%200-27.2-7.4-34.4-19.5s-7.5-27.1-.8-39.5l216-400c7-12.9%2020.5-21%2035.2-21m0%20352a32%2032%200%201%200%200%2064%2032%2032%200%201%200%200-64m0-192c-18.2%200-32.7%2015.5-31.4%2033.7l7.4%20104c.9%2012.5%2011.4%2022.3%2023.9%2022.3%2012.6%200%2023-9.7%2023.9-22.3l7.4-104c1.3-18.2-13.1-33.7-31.4-33.7z%22/%3E%3C/svg%3E');--md-admonition-icon--failure:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20576%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M480-16c6.9%200%2013%204.4%2015.2%2010.9l13.5%2040.4%2040.4%2013.5C555.6%2051%20560%2057.1%20560%2064s-4.4%2013-10.9%2015.2l-40.4%2013.5-13.5%2040.4c-2.2%206.5-8.3%2010.9-15.2%2010.9s-13-4.4-15.2-10.9l-13.5-40.4-40.4-13.5C404.4%2077%20400%2070.9%20400%2064s4.4-13%2010.9-15.2l40.4-13.5%2013.5-40.4C467-11.6%20473.1-16%20480-16M321.4%2097.4c12.5-12.5%2032.8-12.5%2045.3%200l80%2080c12.5%2012.5%2012.5%2032.8%200%2045.3l-10.9%2010.9c7.9%2022%2012.2%2045.7%2012.2%2070.5%200%20114.9-93.1%20208-208%20208S32%20418.9%2032%20304%20125.1%2096%20240%2096c24.7%200%2048.5%204.3%2070.5%2012.3zM144%20304c0-53%2043-96%2096-96%2013.3%200%2024-10.7%2024-24s-10.7-24-24-24c-79.5%200-144%2064.5-144%20144%200%2013.3%2010.7%2024%2024%2024s24-10.7%2024-24%22/%3E%3C/svg%3E');--md-admonition-icon--danger:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20512%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M416%20427.4c58.5-44%2096-111.6%2096-187.4C512%20107.5%20397.4%200%20256%200S0%20107.5%200%20240c0%2075.8%2037.5%20143.4%2096%20187.4V464c0%2026.5%2021.5%2048%2048%2048h32v-40c0-13.3%2010.7-24%2024-24s24%2010.7%2024%2024v40h64v-40c0-13.3%2010.7-24%2024-24s24%2010.7%2024%2024v40h32c26.5%200%2048-21.5%2048-48zM96%20256a64%2064%200%201%201%20128%200%2064%2064%200%201%201-128%200m256-64a64%2064%200%201%201%200%20128%2064%2064%200%201%201%200-128%22/%3E%3C/svg%3E');--md-admonition-icon--bug:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20576%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M192%2096c0-53%2043-96%2096-96s96%2043%2096%2096v3.6c0%2015.7-12.7%2028.4-28.4%2028.4H220.5c-15.7%200-28.4-12.7-28.4-28.4V96zm345.6%2012.8c10.6%2014.1%207.7%2034.2-6.4%2044.8l-97.8%2073.3c5.3%208.9%209.3%2018.7%2011.8%2029.1H544c17.7%200%2032%2014.3%2032%2032s-14.3%2032-32%2032h-96v32c0%202.6-.1%205.3-.2%207.9l83.4%2062.5c14.1%2010.6%2017%2030.7%206.4%2044.8s-30.7%2017-44.8%206.4l-63.1-47.3c-23.2%2044.2-66.5%2076.2-117.7%2083.9V280c0-13.3-10.7-24-24-24s-24%2010.7-24%2024v230.2c-51.2-7.7-94.5-39.7-117.7-83.9l-63.1%2047.3c-14.1%2010.6-34.2%207.7-44.8-6.4s-7.7-34.2%206.4-44.8l83.4-62.5c-.1-2.6-.2-5.2-.2-7.9v-32H32c-17.7%200-32-14.3-32-32s14.3-32%2032-32h98.8c2.5-10.4%206.5-20.2%2011.8-29.1l-97.8-73.3c-14.1-10.6-17-30.7-6.4-44.8s30.7-17%2044.8-6.4L192%20184c12.3-5.1%2025.8-8%2040-8h112c14.2%200%2027.7%202.8%2040%208l108.8-81.6c14.1-10.6%2034.2-7.7%2044.8%206.4%22/%3E%3C/svg%3E');--md-admonition-icon--example:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M288%200H128c-17.7%200-32%2014.3-32%2032s14.3%2032%2032%2032v151.5L7.5%20426.3C2.6%20435%200%20444.7%200%20454.7%200%20486.4%2025.6%20512%2057.3%20512h333.4c31.6%200%2057.3-25.6%2057.3-57.3%200-10-2.6-19.8-7.5-28.4L320%20215.5V64c17.7%200%2032-14.3%2032-32S337.7%200%20320%200zm-96%20215.5V64h64v151.5c0%2011.1%202.9%2022.1%208.4%2031.8L306%20320H142l41.6-72.7c5.5-9.7%208.4-20.6%208.4-31.8%22/%3E%3C/svg%3E');--md-admonition-icon--quote:url('data:image/svg+xml;charset=utf-8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%20448%20512%22%3E%3C%21--%21%20Font%20Awesome%20Free%207.1.0%20by%20%40fontawesome%20-%20https%3A//fontawesome.com%20License%20-%20https%3A//fontawesome.com/license/free%20%28Icons%3A%20CC%20BY%204.0%2C%20Fonts%3A%20SIL%20OFL%201.1%2C%20Code%3A%20MIT%20License%29%20Copyright%202025%20Fonticons%2C%20Inc.--%3E%3Cpath%20d%3D%22M0%20216C0%20149.7%2053.7%2096%20120%2096h8c17.7%200%2032%2014.3%2032%2032s-14.3%2032-32%2032h-8c-30.9%200-56%2025.1-56%2056v8h64c35.3%200%2064%2028.7%2064%2064v64c0%2035.3-28.7%2064-64%2064H64c-35.3%200-64-28.7-64-64zm256%200c0-66.3%2053.7-120%20120-120h8c17.7%200%2032%2014.3%2032%2032s-14.3%2032-32%2032h-8c-30.9%200-56%2025.1-56%2056v8h64c35.3%200%2064%2028.7%2064%2064v64c0%2035.3-28.7%2064-64%2064h-64c-35.3%200-64-28.7-64-64z%22/%3E%3C/svg%3E');}</style>
+
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300,300i,400,400i,700,700i%7CJetBrains+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Inter";--md-code-font:"JetBrains Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../stylesheets/extra.css">
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+  
+
+
+  
+  
+
+<script id="__analytics">function __md_analytics(){function e(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],e("js",new Date),e("config","G-XXXXXXXXXX"),document.addEventListener("DOMContentLoaded",(function(){document.forms.search&&document.forms.search.query.addEventListener("blur",(function(){this.value&&e("event","search",{search_term:this.value})}));document$.subscribe((function(){var t=document.forms.feedback;if(void 0!==t)for(var a of t.querySelectorAll("[type=submit]"))a.addEventListener("click",(function(a){a.preventDefault();var n=document.location.pathname,d=this.getAttribute("data-md-value");e("event","feedback",{page:n,data:d}),t.firstElementChild.disabled=!0;var r=t.querySelector(".md-feedback__note [data-md-value='"+d+"']");r&&(r.hidden=!1)})),t.hidden=!1})),location$.subscribe((function(t){e("config","G-XXXXXXXXXX",{page_path:t.pathname})}))}));var t=document.createElement("script");t.async=!0,t.src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX",document.getElementById("__analytics").insertAdjacentElement("afterEnd",t)}</script>
+  
+    <script>"undefined"!=typeof __md_analytics&&__md_analytics()</script>
+  
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="teal">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#decouvrez-limportance-de-lesprit-dequipe-en-gestion-de-projet-agile" class="md-skip">
+          Aller au contenu
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="En-tête">
+    <a href="../../../.." title="Guide du Développeur Scientifique" class="md-header__button md-logo" aria-label="Guide du Développeur Scientifique" data-md-component="logo">
+      
+  <img src="../../../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Guide du Développeur Scientifique
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Découvrez l'importance de l'esprit d'équipe en gestion de projet agile
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="teal"  aria-label="Passer en mode sombre"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Passer en mode sombre" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="teal"  aria-label="Passer en mode clair"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Passer en mode clair" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Rechercher" placeholder="Rechercher" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Recherche">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Partager" aria-label="Partager" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Effacer" aria-label="Effacer" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initialisation de la recherche
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/yajeddig/Guide-du-Developpeur-Scientifique" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yajeddig/Guide-du-Developpeur-Scientifique
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Onglets" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Accueil
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../0-getting_started/learning_paths/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Parcours
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../1-git_basics/1-git_basics/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Git Basics
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../collab_procedure/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Collaboration
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../3-bests_practices/bests_practices/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Best Practices
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../4-test_validation/test_valid/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Tests
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../5-scientific_technical_skills/ODE_resolution/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Calcul Scientifique
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../../6-computer_science/computer_science/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  Computer Science
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Guide du Développeur Scientifique" class="md-nav__button md-logo" aria-label="Guide du Développeur Scientifique" data-md-component="logo">
+      
+  <img src="../../../../assets/logo.svg" alt="logo">
+
+    </a>
+    Guide du Développeur Scientifique
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/yajeddig/Guide-du-Developpeur-Scientifique" title="Aller au dépôt" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    yajeddig/Guide-du-Developpeur-Scientifique
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Accueil
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../0-getting_started/learning_paths/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Parcours
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Git Basics
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Git Basics
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../1-git_basics/1-git_basics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../1-git_basics/2-local_remote_repositories/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Dépôts
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../1-git_basics/3-getting_started_with_github/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    GitHub
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../1-git_basics/4-branching_strategy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Branching
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../1-git_basics/5-exercice_fil_rouge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Exercice
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../1-git_basics/6-quiz_autoevaluation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Quiz
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Collaboration
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Collaboration
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../collab_procedure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Gestion de projet
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Best Practices
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Best Practices
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../3-bests_practices/bests_practices/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Vue d'ensemble
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Tests
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Tests
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../4-test_validation/test_valid/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Introduction
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Calcul Scientifique
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Calcul Scientifique
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../5-scientific_technical_skills/ODE_resolution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    ODE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../5-scientific_technical_skills/DAE_resolution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    DAE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../5-scientific_technical_skills/PDE_resolution/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    PDE
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_7_4" id="__nav_7_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Notebooks
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_7_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Notebooks
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../5-scientific_technical_skills/2-ode_dae_systems/example_batch_reactor/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Résolution de Systèmes DAE : Du Simple au Complexe
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../5-scientific_technical_skills/2-ode_dae_systems/example_dae_gcgp/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Systèmes DAE en Génie des Procédés
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Computer Science
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Computer Science
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../6-computer_science/computer_science/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table des matières">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table des matières
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#tldr-ce-chapitre-explore-la-formation-dequipes-agiles-et-les-etapes-de-developpement-selon-le-modele-de-tuckman" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        TL;DR : Ce chapitre explore la formation d'équipes agiles et les étapes de développement selon le modèle de Tuckman
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#facteur-humain-et-gestion-de-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Facteur Humain et Gestion de Projet
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Facteur Humain et Gestion de Projet">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#mise-en-situation-complexe" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mise en situation complexe
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#realite-de-la-gestion-de-projet" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Réalité de la Gestion de Projet
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lesprit-agile-et-le-manifeste" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        L'Esprit Agile et le Manifeste
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="L&#39;Esprit Agile et le Manifeste">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#les-valeurs-du-manifeste-agile" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Les Valeurs du Manifeste Agile
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lintelligence-collective" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        L'intelligence collective
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+                
+
+
+
+  
+
+
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="decouvrez-limportance-de-lesprit-dequipe-en-gestion-de-projet-agile">Découvrez l'importance de l'esprit d'équipe en gestion de projet agile<a class="headerlink" href="#decouvrez-limportance-de-lesprit-dequipe-en-gestion-de-projet-agile" title="Permanent link">&para;</a></h1>
+<hr />
+<p>⏱️ <strong>Durée estimée :</strong> 40 minutes (lecture + exercices équipe)
+📋 <strong>Prérequis :</strong> Notions d'agilité, expérience de travail en équipe
+🎯 <strong>Objectifs :</strong></p>
+<ul>
+<li>Comprendre les valeurs du Manifeste Agile</li>
+<li>Maîtriser le modèle de Tuckman pour les équipes</li>
+<li>Identifier les dynamiques humaines en projet</li>
+<li>Appliquer l'intelligence collective</li>
+</ul>
+<h2 id="tldr-ce-chapitre-explore-la-formation-dequipes-agiles-et-les-etapes-de-developpement-selon-le-modele-de-tuckman"><strong>TL;DR :</strong> Ce chapitre explore la formation d'équipes agiles et les étapes de développement selon le modèle de Tuckman<a class="headerlink" href="#tldr-ce-chapitre-explore-la-formation-dequipes-agiles-et-les-etapes-de-developpement-selon-le-modele-de-tuckman" title="Permanent link">&para;</a></h2>
+<p>[[<em>TOC</em>]]</p>
+<p>Dans le contexte de la gestion de projet, la dynamique humaine est cruciale. Les attentes d'innovation du client, la tendance du chef de projet à s'en tenir au connu, et l'équilibre que l'équipe cherche à maintenir entre les deux posent des défis uniques. La méthode séquentielle peut être inadéquate pour des besoins évolutifs, alors qu'une approche agile offre la flexibilité nécessaire. L'agilité invite à l'implication du client et à une adaptabilité accrue. Cette section explore comment l'agilité peut adresser ces enjeux.</p>
+<p>La gestion de projet agile met l'accent sur l'importance de l'<strong>esprit d'équipe</strong> et des <strong>interactions humaines</strong>. Elle s'aligne sur les valeurs du Manifeste Agile, qui sont les suivantes :</p>
+<ul>
+<li>Les individus et les interactions plutôt que les processus et les outils.</li>
+<li>Les produits de travail plutôt qu'une documentation complète.</li>
+<li>La collaboration avec le client plutôt que la négociation d'un contrat.</li>
+<li>La réponse au changement plutôt que le suivi d'un plan.</li>
+</ul>
+<p>L'approche valorise l'"intelligence collective" et s'appuie sur des modèles tels que les "étapes du développement de l'équipe" de Tuckman pour améliorer la dynamique de l'équipe. Ce module de cours OpenClassrooms donne un aperçu de la manière de favoriser un environnement d'équipe solide dans un cadre agile.</p>
+<h2 id="facteur-humain-et-gestion-de-projet">Facteur Humain et Gestion de Projet<a class="headerlink" href="#facteur-humain-et-gestion-de-projet" title="Permanent link">&para;</a></h2>
+<h3 id="mise-en-situation-complexe">Mise en situation complexe<a class="headerlink" href="#mise-en-situation-complexe" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Le client</strong> souhaite une balançoire “innovante”. Il propose la conception ci-dessous. Avec ce produit, il veut se démarquer de la concurrence ; mais les utilisateurs de la balançoire seront-ils vraiment satisfaits par une superposition de trois planches ? L'équipe parviendra-t-elle à traduire l'idée du client en balançoire fonctionnelle ?</li>
+<li><strong>Le chef de projet</strong>, quant à lui, tend à rapprocher le besoin du client d’un produit qu'il connaît et dont il maîtrise déjà la conception. Deux cordes et une planche forment une balançoire standard ! Cette solution sera-t-elle assez “innovante”, et donc satisfaisante pour le client ?</li>
+<li><strong>L’équipe</strong> tend donc vers un compromis entre les besoins exprimés par le client, les instructions du chef de projet et sa propre vision du produit. Le projet devra-t-il être aussi complexe ?</li>
+<li><strong>Le livrable</strong> est présenté au client à la fin du projet. Une maquette incomplète ou un prototype approximatif permettent une avancée très rapide ! Le client et l'utilisateur auront-ils toujours la même vision du produit au cours de son développement ?</li>
+<li><strong>La promesse commerciale</strong> et la stratégie marketing sont à la hauteur de ce que le client va payer. La balançoire est luxueuse et son "innovation" réside surtout dans son confort ! La gestion de projet devra-t-elle se limiter à valoriser les avantages concurrentiels du produit ?</li>
+<li><strong>L'utilisateur</strong> voulait une balançoire sans prétention. Il souhaitait quelque chose de simple, amusant et économique ! Les facteurs de réussite d’un projet seront-ils seulement observés après le déploiement du produit ?</li>
+</ul>
+<h3 id="realite-de-la-gestion-de-projet">Réalité de la Gestion de Projet<a class="headerlink" href="#realite-de-la-gestion-de-projet" title="Permanent link">&para;</a></h3>
+<p>La méthode en cascade échoue souvent face à l'imprévu. L'agilité, par ses itérations et son inclusion du client, offre une réponse flexible aux changements et une meilleure satisfaction des besoins.</p>
+<h2 id="lesprit-agile-et-le-manifeste">L'Esprit Agile et le Manifeste<a class="headerlink" href="#lesprit-agile-et-le-manifeste" title="Permanent link">&para;</a></h2>
+<p>L'agilité en gestion de projet a été révolutionnée en 2001 avec le Manifeste Agile, privilégiant une approche pragmatique et adaptative. Ce changement vers plus d'empirisme reconnaît que la rigidité des méthodes classiques ne convient pas aux organisations dynamiques. Le Manifeste et ses 12 principes insistent sur la flexibilité, la réactivité, la transparence et l'anticipation.</p>
+<h3 id="les-valeurs-du-manifeste-agile">Les Valeurs du Manifeste Agile<a class="headerlink" href="#les-valeurs-du-manifeste-agile" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Individus et interactions :</strong> Les projets sont le reflet direct des équipes qui les portent. L'accent est mis sur l'importance cruciale des interactions humaines et la collaboration sur les processus et les outils.</li>
+<li><strong>Produits opérationnels :</strong> L'approche agile privilégie l'opérationnel avec une gestion autonome des équipes, mettant l'accent sur la livraison continue de valeur au client.</li>
+<li><strong>Collaboration client :</strong> Le Manifeste encourage une collaboration étroite avec le client, favorisant les ajustements contractuels au profit de la réussite du projet.</li>
+<li><strong>Acceptation du changement :</strong> La capacité d'adaptation au changement est cruciale, en réponse à un marché en évolution rapide et des technologies avancées.</li>
+</ol>
+<p>Le Manifeste, initialement conçu pour le développement logiciel, est maintenant appliqué dans divers secteurs, prônant l'adaptabilité comme clé de la survie et du succès.</p>
+<h2 id="lintelligence-collective">L'intelligence collective<a class="headerlink" href="#lintelligence-collective" title="Permanent link">&para;</a></h2>
+<p>Comment former votre équipe et l’amener à maturité ? La première phrase de l’article Wikipédia consacré à <a href="https://fr.wikipedia.org/wiki/Intelligence_collective">l’intelligence collective</a> est un bon début de réponse :</p>
+<blockquote>
+<p>L'intelligence collective désigne les capacités cognitives d'une communauté résultant des interactions multiples entre ses membres.</p>
+</blockquote>
+<p>L'esprit d'équipe agile tire parti de l'intelligence collective, similaire à celle observée chez les fourmis ou les abeilles, pour booster la performance organisationnelle.</p>
+<p>En nous appuyant sur les études de Bruce Wayne Tuckman, nous adoptons une approche de "team-building" qui suit des étapes clés :</p>
+<ul>
+<li><strong>Forming (Formation)</strong> : Familiarisation et acceptation mutuelle au sein de l'équipe.</li>
+<li><strong>Storming (Tension)</strong> : Positionnement des membres de l'équipe, confrontation et résolution des conflits.</li>
+<li><strong>Norming (Régularisation)</strong> : Création d'un environnement collaboratif où la confiance et les objectifs communs émergent.</li>
+<li><strong>Performing (Exécution)</strong> : Interdépendance, autonomie et compétence des membres menant à une gestion de projet efficace.</li>
+</ul>
+<p>Ces phases aident à construire une équipe soudée, autogérée, et performante sans recourir à l'autoritarisme.</p>
+<h1 id="2-formez-votre-equipe">2. Formez votre équipe<a class="headerlink" href="#2-formez-votre-equipe" title="Permanent link">&para;</a></h1>
+<p>Dans la phase initiale "Forming" du modèle de Bruce Tuckman, l'équipe semble calme mais est en réalité en pleine évaluation mutuelle. Cette phase critique nécessite une observation attentive. L'équipe se forme, évaluant les relations et les compétences de chacun, ce qui définira comment ils travailleront ensemble. Il est essentiel de dissiper les incertitudes pendant cette période fondamentale.</p>
+<h2 id="accordez-du-temps-a-la-formation-de-lequipe">Accordez du temps à la formation de l'équipe<a class="headerlink" href="#accordez-du-temps-a-la-formation-de-lequipe" title="Permanent link">&para;</a></h2>
+<p>En tant que chef de projet ou coach agile, votre rôle est d'orienter et de soutenir l'équipe :</p>
+<ul>
+<li><strong>Définir les Objectifs :</strong> Clarifiez les buts de l'équipe et les objectifs du projet pour fournir une direction précise.</li>
+<li><strong>Rôles des Équipiers :</strong> Assister chaque membre de l'équipe dans la définition de son rôle.</li>
+<li><strong>Création de Liens :</strong> Encouragez la formation de relations solides entre les membres de l'équipe.</li>
+<li><strong>Support aux Initiatives :</strong> Soutenez activement les membres qui proposent des idées et des solutions.</li>
+<li><strong>Formation :</strong> Proposez des opportunités de formation, tant théoriques que pratiques.</li>
+</ul>
+<p>Favorisez un climat de confiance dès le début pour établir une dynamique de groupe positive et une forte cohésion d'équipe.</p>
+<h2 id="le-niko-niko-pour-mesurer-la-sante-de-la-vie-dequipe">Le Niko-Niko pour mesurer la santé de la vie d'équipe<a class="headerlink" href="#le-niko-niko-pour-mesurer-la-sante-de-la-vie-dequipe" title="Permanent link">&para;</a></h2>
+<p>La pratique du Niko-Niko, introduite par Akinori Sakata, est une méthode agile visant à capturer et visualiser le bien-être quotidien de l'équipe à l'aide de symboles ou de gommettes colorées sur un tableau visible par tous. Cette approche permet d'objectiver les états d'âme et la motivation, des aspects souvent subjectifs, offrant ainsi un aperçu précieux sur le climat général de l'équipe au fil du projet. <img alt="image" src="../image/A-niko.png" /> Le Niko-Niko incarne l'essence de la gestion empirique des projets selon Tom Gilb: la quantification des éléments auparavant considérés comme non quantifiables. Gilb soutient qu'il est toujours plus bénéfique de quantifier, même imparfaitement, plutôt que de ne pas quantifier du tout, facilitant ainsi la mesure de concepts subjectifs tels que le moral ou la motivation de l'équipe.</p>
+<h2 id="ne-mettez-pas-les-membres-de-votre-equipe-en-concurrence-les-uns-avec-les-autres">Ne mettez pas les membres de votre équipe en concurrence les uns avec les autres<a class="headerlink" href="#ne-mettez-pas-les-membres-de-votre-equipe-en-concurrence-les-uns-avec-les-autres" title="Permanent link">&para;</a></h2>
+<p>Le Niko-Niko est conçu par et pour l'équipe, incarnant un principe de mesure collective plutôt que de supervision paternaliste. Il encourage à adopter une approche fraternelle dans les interactions d'équipe, soulignant l'importance de la collaboration et du respect mutuel dans le processus agile.</p>
+<blockquote>
+<p>Le principe de Gilb ne dit pas que définir un nouvel indicateur est toujours une bonne chose, ni que ces indicateurs doivent mettre vos collaborateurs en concurrence.</p>
+</blockquote>
+<h1 id="3-lancez-votre-travail-en-equipe">3 Lancez votre travail en équipe<a class="headerlink" href="#3-lancez-votre-travail-en-equipe" title="Permanent link">&para;</a></h1>
+<p>La phase "Storming" est cruciale pour l'évolution d'une équipe, marquée par des conflits et des tensions. Il est essentiel d'adopter une approche non autoritaire, favorisant plutôt l'écoute et la résolution constructive des différends pour maintenir l'unité et encourager une vision partagée du projet. Cette étape, bien que délicate, est nécessaire pour forger la cohésion et définir les dynamiques de groupe.</p>
+<h2 id="gerer-la-phase-de-storming">Gérer la Phase de "Storming"<a class="headerlink" href="#gerer-la-phase-de-storming" title="Permanent link">&para;</a></h2>
+<p>Aider l'équipe à maintenir une bonne ambiance de travail</p>
+<ul>
+<li>Encourager <strong>écoute</strong>, <strong>compréhension</strong> et <strong>respect</strong> mutuels.</li>
+<li>Établir un environnement de <strong>confiance</strong>, <strong>tolérance</strong>, et <strong>empathie</strong>.</li>
+<li>Promouvoir le <strong>respect</strong>, l'<strong>écoute active</strong>, et le <strong>dialogue</strong>.</li>
+<li><strong>Identifier</strong> clairement les problèmes et <strong>initier des solutions</strong>.</li>
+<li><strong>Réduire les tensions</strong> et <strong>réguler les échanges</strong>, en permettant à chacun de s'exprimer librement.</li>
+<li>Être <strong>assertif</strong> tout en restant à l'écoute des membres de l'équipe, <strong>gérant les conflits</strong> rapidement pour éviter leur envenimation.</li>
+</ul>
+<h2 id="le-time-boxing-pour-maximiser-lefficacite-de-lequipe">Le time-boxing pour maximiser l'efficacité de l'équipe<a class="headerlink" href="#le-time-boxing-pour-maximiser-lefficacite-de-lequipe" title="Permanent link">&para;</a></h2>
+<p>Le "Time Boxing" est une technique agile pour définir et limiter le temps dédié à certaines tâches. Elle se structure autour de huit étapes clés pour l'intégrer efficacement dans la gestion de projet. Cette méthode aide à focaliser l'effort sur l'essentiel, réduisant les réunions inutiles et optimisant le temps de gestion du projet. Pour débuter, la technique Pomodoro est fortement recommandée, offrant un bon équilibre entre travail concentré et pauses courtes, facilitant l'adaptation et l'efficacité de l'équipe.</p>
+<ol>
+<li><strong>Expliquer l'objectif</strong> aux participants.</li>
+<li><strong>Définir les livrables</strong> attendus.</li>
+<li><strong>Indiquer la démarche</strong> à suivre.</li>
+<li><strong>Maîtriser la répartition du temps</strong>.</li>
+<li><strong>Désigner un gardien du temps</strong> (Time Keeper).</li>
+<li><strong>Dérouler les activités</strong> prévues.</li>
+<li><strong>Vérifier l'atteinte des objectifs</strong>.</li>
+<li><strong>Évaluer la satisfaction</strong> des participants.</li>
+</ol>
+<p>Favorisant la concentration et l'efficacité, cette pratique est un levier clé pour une gestion de projet agile et performante.</p>
+<p><img alt="image" src="../image/A-pomodoro.png" /></p>
+<p>La technique Pomodoro suggère des sessions de travail de 25 minutes, entrecoupées de courtes pauses. Cet exercice, conçu pour être ludique et sans esprit de compétition, facilite l'adoption progressive de cette méthode agile. Avec de la pratique, il est possible d'ajuster la durée des sessions pour s'adapter à divers cadres temporels, des journées entières à plusieurs semaines, optimisant ainsi la productivité et le bien-être de l'équipe.</p>
+<h2 id="faire-le-point-apres-chaque-time-boxe">Faire le point après chaque time-boxe<a class="headerlink" href="#faire-le-point-apres-chaque-time-boxe" title="Permanent link">&para;</a></h2>
+<p>Après chaque session de travail chronométré, effectuez un bilan pour déterminer si les objectifs sont atteints. Évaluez si les tâches fixées ont été complétées entièrement ou partiellement, en visant une perspective de réussite claire (0 % ou 100 %). Cette approche vous aide à mesurer précisément l'avancement et à ajuster les efforts pour les sessions futures.</p>
+<h1 id="4-regularisez-le-travail-de-votre-equipe">4 Régularisez le travail de votre équipe<a class="headerlink" href="#4-regularisez-le-travail-de-votre-equipe" title="Permanent link">&para;</a></h1>
+<p>La troisième étape du modèle de constitution d’équipe de Tuckman (Norming/régularisation) est une phase où vous serez peut-être tenté de prendre des décisions à la place de votre équipe... Attention ! <img alt="😤" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f624.svg" title=":triumph:" /></p>
+<h2 id="rester-facilitateur-et-laissez-faire">Rester **facilitateur ** et laissez faire<a class="headerlink" href="#rester-facilitateur-et-laissez-faire" title="Permanent link">&para;</a></h2>
+<p>Faciliter la vie de l'équipe est essentiel. Instaurez des règles communes, recherchez le consensus et créez un langage partagé pour un environnement harmonieux</p>
+<ul>
+<li><strong>Établissement de Règles Communes :</strong> Créez un ensemble de principes acceptés par tous pour un cadre de travail harmonieux.</li>
+<li><strong>Recherche de Consensus :</strong> Encouragez l'équipe à trouver des accords qui favorisent la collaboration.</li>
+<li><strong>Création d'un Langage Commun :</strong> Développez un ensemble de symboles et termes partagés pour faciliter la communication.</li>
+</ul>
+<h3 id="assurer-une-collaboration-efficace">Assurer une Collaboration Efficace<a class="headerlink" href="#assurer-une-collaboration-efficace" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Discipline d'Équipe :</strong> Aidez à maintenir des horaires et des livrables précis.</li>
+<li><strong>Rigueur :</strong> Encouragez l'objectivation des ressentis et l'explicitation des idées.</li>
+<li><strong>Résolution de Conflits :</strong> Continuez à aider l'équipe à gérer les désaccords de manière constructive.</li>
+</ul>
+<h3 id="creation-dun-environnement-de-travail-agile">Création d'un Environnement de Travail Agile<a class="headerlink" href="#creation-dun-environnement-de-travail-agile" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Que ce soit en open space ou non, fournissez les moyens à chaque membre de contribuer à l'environnement de travail commun.</li>
+<li><strong>Environnement Agile :</strong> Établissez une "War Room" ou "Digital Workplace" où l'équipe peut opérer sans perturbations.</li>
+</ul>
+<h2 id="faire-evaluer-lutilite-des-reunion">Faire évaluer l'utilité des réunion<a class="headerlink" href="#faire-evaluer-lutilite-des-reunion" title="Permanent link">&para;</a></h2>
+<p>Le ROTI est une technique agile utilisée pour évaluer l'efficacité d'une réunion en demandant aux participants de noter le retour sur le temps investi. Allouer 60 secondes à la fin de chaque réunion pour cette évaluation rapide peut améliorer significativement la qualité et la pertinence des réunions futures.</p>
+<p><img alt="image" height="259" src="../image/A-roti.png" width="460" /></p>
+<h3 id="evaluation-roti-des-reunions">Évaluation ROTI des Réunions<a class="headerlink" href="#evaluation-roti-des-reunions" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>1 doigt :</strong> Inutile, perte de temps.</li>
+<li><strong>2 doigts :</strong> Utile mais ne justifie pas la durée.</li>
+<li><strong>3 doigts :</strong> Moyenne, neutre.</li>
+<li><strong>4 doigts :</strong> Bonne, temps bien investi.</li>
+<li><strong>5 doigts :</strong> Excellente, très bénéfique.</li>
+</ul>
+<h3 id="pour-ameliorer">Pour Améliorer<a class="headerlink" href="#pour-ameliorer" title="Permanent link">&para;</a></h3>
+<p>La règle veut qu’on interroge seulement les participants qui ont noté 1 et 2 doigts, mais je vous conseille plutôt de poser une seule et même question aux membres de votre équipe : « Qu'est-ce qui pourrait être fait pour augmenter ma note d'un point ? ». <img alt="🤔" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f914.svg" title=":thinking:" /></p>
+<h2 id="les-points-dattention">Les points d'attention<a class="headerlink" href="#les-points-dattention" title="Permanent link">&para;</a></h2>
+<p>Après l’évaluation du ROTI, vous devez simplement prendre acte de la note moyenne :</p>
+<p><img alt="image" src="../image/A-eval_roti.png" /></p>
+<p>Cette pratique est une parfaite initiation à la transparence et au management visuel. En gestion de projet, le ROTI nous invite à rester humbles. <img alt="🙇" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f647.svg" title=":bow:" /></p>
+<h1 id="5-performez-en-equipe">5 Performez en équipe<a class="headerlink" href="#5-performez-en-equipe" title="Permanent link">&para;</a></h1>
+<p>Dans la quatrième étape du modèle de constitution d’équipe de Bruce Tuckman, appelée Performing ou Exécution, vous n'êtes plus aussi enclin à renforcer vos liens avec l'équipe, à maintenir une présence régulière ou à dépendre fortement de chaque membre. Au lieu de cela, vous prenez du recul et vous analysez de manière continue le travail de votre équipe afin de partager vos observations. C'est une phase où l'accent est mis sur l'exécution efficace des tâches et la réalisation des objectifs, tout en permettant à chaque membre de l'équipe de fonctionner de manière autonome.</p>
+<h2 id="equipe-autonome">Équipe autonome<a class="headerlink" href="#equipe-autonome" title="Permanent link">&para;</a></h2>
+<p>Si vous avez bien appliqué les pratiques agiles des trois chapitres précédents, cette dernière étape doit correspondre à celle d'un travail effectif de votre équipe. Les bases de fonctionnement qui ont été mises en place sont pérennes, et votre équipe coopère pour atteindre ensemble les objectifs du projet. <img alt="🎯" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f3af.svg" title=":dart:" /></p>
+<p>Votre équipe peut maintenant résoudre ses problèmes toute seule ; cependant votre rôle reste crucial :</p>
+<ul>
+<li>Soyez la passerelle entre l’équipe et les parties prenantes du projet.</li>
+<li>Soyez le facilitateur de la prise de décision (aux niveaux supérieurs/inférieurs).</li>
+</ul>
+<p>Lors de cette étape, vous ne devez plus vous impliquer directement dans les prises de décision. Les membres de l'équipe sont désormais autonomes et autogérés : ils travaillent ensemble et prennent leurs responsabilités sans vous. Mission accomplie ! <img alt="👏" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f44f.svg" title=":clap:" /> Votre équipe agile est prête !</p>
+<h2 id="pilotage-par-les-resultats-outils-de-gestion-de-projet">Pilotage par les Résultats : outils de gestion de projet<a class="headerlink" href="#pilotage-par-les-resultats-outils-de-gestion-de-projet" title="Permanent link">&para;</a></h2>
+<p>Restez à l'affût des nouveaux logiciels qui favorisent le pilotage par <strong>les livrables ou les résultats</strong>. Cette approche, plus récente, offre des solutions plus agiles que la gestion traditionnelle des ressources. Le pilotage par les résultats se concentre sur les objectifs et les anticipations pour assurer la réussite du projet.</p>
+<p>Lorsque votre équipe atteint un niveau de performance élevé et produit de manière systématique, il est temps d'envisager le déploiement d'outils dédiés à la gestion de projet. Voici une sélection de quelques options parmi les plus populaires :</p>
+<ul>
+<li><a href="https://www.atlassian.com/software/jira">Jira</a></li>
+<li><a href="https://trello.com/">Trello</a></li>
+<li><a href="https://www.wrike.com/">Wrike</a></li>
+<li><a href="https://asana.com/">Asana</a></li>
+<li><a href="https://fr.wikipedia.org/wiki/Logiciel_de_gestion_de_projets">Liste plus exhaustive ici</a></li>
+</ul>
+<p>En utilisant des outils d'analyse appropriés, vous pouvez identifier les causes des écarts, suivre leur évolution et découvrir des leviers d'action pour corriger le cours du projet. Cette approche vous permet de prendre des décisions éclairées basées sur les données. <img alt="🚀" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@16.0.1/assets/svg/1f680.svg" title=":rocket:" /> #datadriven</p>
+<p>Ici nous exploiterons les fonctionnalités de GitLab dans sa version gratuite (certes limité, mais à notre disposition). GitHub permet encore plus de chose</p>
+<h2 id="aider-lequipe-a-atteindre-ses-objectifs">Aider l'équipe à atteindre ses objectifs<a class="headerlink" href="#aider-lequipe-a-atteindre-ses-objectifs" title="Permanent link">&para;</a></h2>
+<p>Lorsque chaque membre est concentré sur <strong>l’atteinte des objectifs</strong> en tant qu’équipe :</p>
+<ul>
+<li>L’individu n’existe plus ou disparaît.</li>
+<li>Les membres de votre équipe ne dépendent pas d'un chef de projet.</li>
+<li>Les membres peuvent résoudre des problèmes sans manager.</li>
+<li>La supervision quotidienne de votre équipe n’est plus indispensable.</li>
+</ul>
+<p>La réussite d'une équipe ne se décide pas simplement ! Le modèle de Tuckman représente une ressource inestimable pour former une équipe agile tout en tenant compte du tempo individuel de chaque membre. Que vous soyez Scrum Master, coach agile, manager, chef de projet, responsable, entrepreneur ou dirigeant d’entreprise, nous sommes tous des bénéficiaires lorsque les conditions optimales du travail collaboratif sont présentes.</p>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Retour en haut de la page
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+        
+<div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/yajeddig" target="_blank" rel="noopener" title="GitHub" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.expand", "navigation.path", "navigation.top", "navigation.footer", "navigation.indexes", "search.suggest", "search.highlight", "search.share", "content.code.copy", "content.code.annotate", "content.tabs.link", "toc.follow", "announce.dismiss"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copi\u00e9 dans le presse-papier", "clipboard.copy": "Copier dans le presse-papier", "search.result.more.one": "1 de plus sur cette page", "search.result.more.other": "# de plus sur cette page", "search.result.none": "Aucun document trouv\u00e9", "search.result.one": "1 document trouv\u00e9", "search.result.other": "# documents trouv\u00e9s", "search.result.placeholder": "Taper pour d\u00e9marrer la recherche", "search.result.term.missing": "Non trouv\u00e9", "select.version": "S\u00e9lectionner la version"}, "version": null}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../../../../javascripts/mathjax.js"></script>
+      
+        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>
