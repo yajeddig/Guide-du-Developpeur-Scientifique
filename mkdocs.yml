@@ -1,6 +1,6 @@
 site_name: Guide du Développeur Scientifique
 site_url: https://yajeddig.github.io/Guide-du-Developpeur-Scientifique
-docs_dir: .
+docs_dir: docs
 site_author: Younes AJEDDIG
 site_description: >-
   Guide complet pour les ingénieurs, chercheurs et scientifiques qui codent.
