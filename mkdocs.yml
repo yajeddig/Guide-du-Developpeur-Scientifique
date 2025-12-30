@@ -7,6 +7,7 @@ site_description: >-
 
 repo_name: yajeddig/Guide-du-Developpeur-Scientifique
 repo_url: https://github.com/yajeddig/Guide-du-Developpeur-Scientifique
+edit_uri: edit/main/docs/
 
 theme:
   name: material
